@@ -32,7 +32,7 @@ The IgnisCore API is resolved from [JitPack](https://jitpack.io/#rowan-smith/Ign
 mvn clean package
 ```
 
-Each extension module produces `packs/<pack>/<blocks|items>/<name>/target/<name>.jar`.
+Each extension module produces `packs/<pack>/<blocks|items>/<name>/target/<name>.jar`. Pack builds embed the `shared` helper classes into every extension JAR so `ExtensionShared` is available at runtime.
 
 ## Integration with IgnisCore
 

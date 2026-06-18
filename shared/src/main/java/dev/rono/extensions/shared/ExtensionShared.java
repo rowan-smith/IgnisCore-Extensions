@@ -26,9 +26,9 @@ import dev.rono.extensions.shared.impl.VariantsApi;
  * (for example {@code ExtensionShared.explosion()}, {@code ExtensionShared.theatrics()}).
  * Do not import implementation classes from {@code dev.rono.extensions.shared.impl}.</p>
  *
- * <p>Depend on {@code dev.rono.extensions:shared} with {@code provided} scope and do not
- * shade this module into extension JARs — helpers are supplied at runtime by the bootstrap
- * plugin.</p>
+ * <p>Depend on {@code dev.rono.extensions:shared} with {@code compile} scope. Pack builds
+ * embed this module into each extension JAR so helpers are available on the extension
+ * classloader without a separate deploy step.</p>
  *
  * @see dev.rono.igniscore.api.strategy.IgnisStrategies
  */
