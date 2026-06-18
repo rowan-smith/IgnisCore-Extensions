@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: obsidian
+  fallback: minecraft:obsidian
 
 model:
   type: "block_display"

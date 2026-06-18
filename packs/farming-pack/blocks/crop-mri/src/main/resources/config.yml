@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: hay
+  fallback: minecraft:hay_block
 
 model:
   type: "block_display"

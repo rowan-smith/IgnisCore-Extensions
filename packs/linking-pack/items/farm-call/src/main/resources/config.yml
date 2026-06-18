@@ -11,7 +11,7 @@ item:
 
 textures:
   icon: icon.png
-  fallback: remote
+  fallback: igniscore:remote
 
 behavior:
   right_click_air: use

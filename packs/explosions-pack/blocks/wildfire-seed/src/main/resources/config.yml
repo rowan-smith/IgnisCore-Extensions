@@ -18,7 +18,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: grass
+  fallback: minecraft:grass_block
 
 model:
   type: "block_display"

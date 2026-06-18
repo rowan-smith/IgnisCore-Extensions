@@ -10,11 +10,17 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class TextureFallbackConfigTest {
+    private static final Set<String> EXTENSION_FALLBACK_IDS = Set.of("grenade", "detonator");
+    private static final Pattern NAMESPACED_FALLBACK = Pattern.compile("^(minecraft|igniscore):[a-z0-9_]+$");
+
     @ParameterizedTest
     @MethodSource("extensionConfigs")
     void texturesDeclareLogicalFallback(Path configPath) throws IOException {
@@ -28,6 +34,12 @@ class TextureFallbackConfigTest {
         Object fallback = textureSection.get("fallback");
         assertFalse(fallback == null || fallback.toString().isBlank(),
                 () -> configPath + " missing textures.fallback");
+
+        String value = fallback.toString().trim();
+        assertTrue(
+                EXTENSION_FALLBACK_IDS.contains(value) || NAMESPACED_FALLBACK.matcher(value).matches(),
+                () -> configPath + " textures.fallback must be minecraft:<id>, igniscore:<id>, or an extension id "
+                        + EXTENSION_FALLBACK_IDS + " but was: " + value);
     }
 
     private static Stream<Path> extensionConfigs() throws IOException {

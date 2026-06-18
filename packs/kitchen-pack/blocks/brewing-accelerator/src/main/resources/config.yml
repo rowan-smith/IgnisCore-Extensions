@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: brewing_stand
+  fallback: minecraft:brewing_stand
 
 model:
   type: "block_display"

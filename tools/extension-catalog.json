@@ -8,7 +8,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "glass",
+    "texture_fallback": "minecraft:glass",
     "path": "packs/building-pack/blocks/display-case"
   },
   "glow-ink-lantern": {
@@ -20,7 +20,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lantern",
+    "texture_fallback": "minecraft:lantern",
     "path": "packs/building-pack/blocks/glow-ink-lantern"
   },
   "item-pedestal-hologram": {
@@ -32,7 +32,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "glass",
+    "texture_fallback": "minecraft:glass",
     "path": "packs/building-pack/blocks/item-pedestal-hologram"
   },
   "mood-lantern": {
@@ -44,7 +44,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lantern",
+    "texture_fallback": "minecraft:lantern",
     "path": "packs/building-pack/blocks/mood-lantern"
   },
   "motion-floodlight": {
@@ -56,7 +56,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lantern",
+    "texture_fallback": "minecraft:lantern",
     "path": "packs/building-pack/blocks/motion-floodlight"
   },
   "paint-mixer": {
@@ -68,7 +68,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/building-pack/blocks/paint-mixer"
   },
   "cable-ties": {
@@ -80,7 +80,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/cable-ties"
   },
   "cookie-cutter-stamp": {
@@ -92,7 +92,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/cookie-cutter-stamp"
   },
   "glow-orb": {
@@ -104,7 +104,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/glow-orb"
   },
   "lock": {
@@ -116,7 +116,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/lock"
   },
   "paint-stripper": {
@@ -128,7 +128,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/paint-stripper"
   },
   "rivet-gun": {
@@ -140,7 +140,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/rivet-gun"
   },
   "sandblaster": {
@@ -152,7 +152,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/sandblaster"
   },
   "smoke-can": {
@@ -164,7 +164,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "smoke",
+    "texture_fallback": "igniscore:smoke",
     "path": "packs/building-pack/items/smoke-can"
   },
   "stencil-plate": {
@@ -176,7 +176,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/building-pack/items/stencil-plate"
   },
   "auto-sieve": {
@@ -188,7 +188,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "grindstone",
+    "texture_fallback": "minecraft:grindstone",
     "path": "packs/crafting-pack/blocks/auto-sieve"
   },
   "deoxidizer": {
@@ -200,7 +200,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "chest",
+    "texture_fallback": "minecraft:chest",
     "path": "packs/crafting-pack/blocks/deoxidizer"
   },
   "lost-and-found-bin": {
@@ -212,7 +212,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "chest",
+    "texture_fallback": "minecraft:chest",
     "path": "packs/crafting-pack/blocks/lost-and-found-bin"
   },
   "piglin-barter-post": {
@@ -224,7 +224,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "chest",
+    "texture_fallback": "minecraft:chest",
     "path": "packs/crafting-pack/blocks/piglin-barter-post"
   },
   "pocket-dimension-cache": {
@@ -236,7 +236,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "chest",
+    "texture_fallback": "minecraft:chest",
     "path": "packs/crafting-pack/blocks/pocket-dimension-cache"
   },
   "recycler": {
@@ -248,7 +248,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "grindstone",
+    "texture_fallback": "minecraft:grindstone",
     "path": "packs/crafting-pack/blocks/recycler"
   },
   "repair-station-block": {
@@ -260,7 +260,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "anvil",
+    "texture_fallback": "minecraft:anvil",
     "path": "packs/crafting-pack/blocks/repair-station-block"
   },
   "blueprint-projector": {
@@ -272,7 +272,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "beacon",
+    "texture_fallback": "minecraft:beacon",
     "path": "packs/exploration-pack/blocks/blueprint-projector"
   },
   "checkpoint-obelisk": {
@@ -284,7 +284,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "beacon",
+    "texture_fallback": "minecraft:beacon",
     "path": "packs/exploration-pack/blocks/checkpoint-obelisk"
   },
   "entity-camera": {
@@ -296,7 +296,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "lodestone",
+    "texture_fallback": "minecraft:lodestone",
     "path": "packs/exploration-pack/blocks/entity-camera"
   },
   "light-beacon": {
@@ -308,7 +308,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "beacon",
+    "texture_fallback": "minecraft:beacon",
     "path": "packs/exploration-pack/blocks/light-beacon"
   },
   "mob-radar": {
@@ -320,7 +320,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lodestone",
+    "texture_fallback": "minecraft:lodestone",
     "path": "packs/exploration-pack/blocks/mob-radar"
   },
   "ore-echo": {
@@ -332,7 +332,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lodestone",
+    "texture_fallback": "minecraft:lodestone",
     "path": "packs/exploration-pack/blocks/ore-echo"
   },
   "ore-sniffer": {
@@ -344,7 +344,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lodestone",
+    "texture_fallback": "minecraft:lodestone",
     "path": "packs/exploration-pack/blocks/ore-sniffer"
   },
   "quarry-cache": {
@@ -356,7 +356,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "ender_chest",
+    "texture_fallback": "minecraft:ender_chest",
     "path": "packs/exploration-pack/blocks/quarry-cache"
   },
   "waypoint-marker": {
@@ -368,7 +368,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "beacon",
+    "texture_fallback": "minecraft:beacon",
     "path": "packs/exploration-pack/blocks/waypoint-marker"
   },
   "xp-vacuum": {
@@ -380,7 +380,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "ender_chest",
+    "texture_fallback": "minecraft:ender_chest",
     "path": "packs/exploration-pack/blocks/xp-vacuum"
   },
   "atlas-imprinter": {
@@ -392,7 +392,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "map",
+    "texture_fallback": "minecraft:map",
     "path": "packs/exploration-pack/items/atlas-imprinter"
   },
   "block-stethoscope": {
@@ -404,7 +404,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "spyglass",
+    "texture_fallback": "minecraft:spyglass",
     "path": "packs/exploration-pack/items/block-stethoscope"
   },
   "chunk-grid-overlay": {
@@ -416,7 +416,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "map",
+    "texture_fallback": "minecraft:map",
     "path": "packs/exploration-pack/items/chunk-grid-overlay"
   },
   "keyring-beacon": {
@@ -428,7 +428,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "map",
+    "texture_fallback": "minecraft:map",
     "path": "packs/exploration-pack/items/keyring-beacon"
   },
   "ore-xray-goggles": {
@@ -440,7 +440,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "spyglass",
+    "texture_fallback": "minecraft:spyglass",
     "path": "packs/exploration-pack/items/ore-xray-goggles"
   },
   "player-chronicle-book": {
@@ -452,7 +452,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "book",
+    "texture_fallback": "minecraft:book",
     "path": "packs/exploration-pack/items/player-chronicle-book"
   },
   "structure-compass": {
@@ -464,7 +464,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "compass",
+    "texture_fallback": "minecraft:compass",
     "path": "packs/exploration-pack/items/structure-compass"
   },
   "trait-badge": {
@@ -476,7 +476,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "badge",
+    "texture_fallback": "igniscore:badge",
     "path": "packs/exploration-pack/items/trait-badge"
   },
   "accelerating-fuse-tnt": {
@@ -487,7 +487,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/accelerating-fuse-tnt"
   },
   "acid-tnt": {
@@ -498,7 +498,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/acid-tnt"
   },
   "anti-gravity-zone": {
@@ -509,7 +509,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/anti-gravity-zone"
   },
   "black-hole-tnt": {
@@ -520,7 +520,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/black-hole-tnt"
   },
   "blink-tnt": {
@@ -532,7 +532,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/blink-tnt"
   },
   "bouncing-betty": {
@@ -543,7 +543,7 @@
     ],
     "mysterious": false,
     "profile": "buried_mine",
-    "texture_fallback": "mine",
+    "texture_fallback": "igniscore:mine",
     "path": "packs/explosions-pack/blocks/bouncing-betty"
   },
   "breaching-charge": {
@@ -554,7 +554,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/breaching-charge"
   },
   "bridge-builder": {
@@ -565,7 +565,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/bridge-builder"
   },
   "cascade-mine": {
@@ -576,7 +576,7 @@
     ],
     "mysterious": false,
     "profile": "buried_mine",
-    "texture_fallback": "mine",
+    "texture_fallback": "igniscore:mine",
     "path": "packs/explosions-pack/blocks/cascade-mine"
   },
   "cavity-tnt": {
@@ -587,7 +587,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/cavity-tnt"
   },
   "centrifuge-tnt": {
@@ -598,7 +598,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/centrifuge-tnt"
   },
   "claymore-mine": {
@@ -609,7 +609,7 @@
     ],
     "mysterious": false,
     "profile": "buried_mine",
-    "texture_fallback": "mine",
+    "texture_fallback": "igniscore:mine",
     "path": "packs/explosions-pack/blocks/claymore-mine"
   },
   "concussion-tnt": {
@@ -620,7 +620,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/concussion-tnt"
   },
   "depth-charge": {
@@ -631,7 +631,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/depth-charge"
   },
   "doppelganger-block": {
@@ -643,7 +643,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "bedrock",
+    "texture_fallback": "minecraft:bedrock",
     "path": "packs/explosions-pack/blocks/doppelganger-block"
   },
   "drill-tnt": {
@@ -654,7 +654,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/drill-tnt"
   },
   "echo-blast": {
@@ -665,7 +665,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/echo-blast"
   },
   "echo-fuse-tnt": {
@@ -676,7 +676,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/echo-fuse-tnt"
   },
   "ember-mine": {
@@ -687,7 +687,7 @@
     ],
     "mysterious": false,
     "profile": "buried_mine",
-    "texture_fallback": "mine",
+    "texture_fallback": "igniscore:mine",
     "path": "packs/explosions-pack/blocks/ember-mine"
   },
   "erupting-tnt": {
@@ -699,7 +699,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/erupting-tnt"
   },
   "fake-bedrock": {
@@ -711,7 +711,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "bedrock",
+    "texture_fallback": "minecraft:bedrock",
     "path": "packs/explosions-pack/blocks/fake-bedrock"
   },
   "featherfall-charge": {
@@ -722,7 +722,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/featherfall-charge"
   },
   "frost-tnt": {
@@ -733,7 +733,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/frost-tnt"
   },
   "glitch-tnt": {
@@ -745,7 +745,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/glitch-tnt"
   },
   "hologram-tnt": {
@@ -757,7 +757,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/hologram-tnt"
   },
   "inferno-tnt": {
@@ -768,7 +768,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/inferno-tnt"
   },
   "invisiwall": {
@@ -779,7 +779,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "glass",
+    "texture_fallback": "minecraft:glass",
     "path": "packs/explosions-pack/blocks/invisiwall"
   },
   "last-stand-charge": {
@@ -790,7 +790,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "redstone",
+    "texture_fallback": "minecraft:redstone_block",
     "path": "packs/explosions-pack/blocks/last-stand-charge"
   },
   "lightning-rod-tnt": {
@@ -801,7 +801,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/lightning-rod-tnt"
   },
   "magnet-tnt": {
@@ -812,7 +812,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/magnet-tnt"
   },
   "mimic-tnt": {
@@ -824,7 +824,7 @@
     ],
     "mysterious": true,
     "profile": "placed_passive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/mimic-tnt"
   },
   "mirage-tnt": {
@@ -836,7 +836,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/mirage-tnt"
   },
   "mirror-world-tnt": {
@@ -848,7 +848,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/mirror-world-tnt"
   },
   "mudslide-tnt": {
@@ -859,7 +859,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/mudslide-tnt"
   },
   "nuke": {
@@ -871,7 +871,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/nuke"
   },
   "orbit-tnt": {
@@ -882,7 +882,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/orbit-tnt"
   },
   "pause-tnt": {
@@ -894,7 +894,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/pause-tnt"
   },
   "phantom-tnt": {
@@ -906,7 +906,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/phantom-tnt"
   },
   "phase-tnt": {
@@ -917,7 +917,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/phase-tnt"
   },
   "poison-cloud-tnt": {
@@ -928,7 +928,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/poison-cloud-tnt"
   },
   "powder-trail": {
@@ -939,7 +939,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/powder-trail"
   },
   "remote-c4": {
@@ -951,7 +951,7 @@
     ],
     "mysterious": false,
     "profile": "remote_charge",
-    "texture_fallback": "redstone",
+    "texture_fallback": "minecraft:redstone_block",
     "path": "packs/explosions-pack/blocks/remote-c4"
   },
   "ricochet-tnt": {
@@ -962,7 +962,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/ricochet-tnt"
   },
   "ring-tnt": {
@@ -973,7 +973,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/ring-tnt"
   },
   "scaffold-charge": {
@@ -984,7 +984,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/scaffold-charge"
   },
   "scare-charge": {
@@ -996,7 +996,7 @@
     ],
     "mysterious": false,
     "profile": "remote_charge",
-    "texture_fallback": "redstone",
+    "texture_fallback": "minecraft:redstone_block",
     "path": "packs/explosions-pack/blocks/scare-charge"
   },
   "screen-shake-charge": {
@@ -1007,7 +1007,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/screen-shake-charge"
   },
   "seismic-tnt": {
@@ -1018,7 +1018,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/seismic-tnt"
   },
   "shrapnel-mine": {
@@ -1029,7 +1029,7 @@
     ],
     "mysterious": false,
     "profile": "buried_mine",
-    "texture_fallback": "mine",
+    "texture_fallback": "igniscore:mine",
     "path": "packs/explosions-pack/blocks/shrapnel-mine"
   },
   "signal-charge": {
@@ -1041,7 +1041,7 @@
     ],
     "mysterious": false,
     "profile": "remote_charge",
-    "texture_fallback": "redstone",
+    "texture_fallback": "minecraft:redstone_block",
     "path": "packs/explosions-pack/blocks/signal-charge"
   },
   "silent-tnt": {
@@ -1052,7 +1052,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/silent-tnt"
   },
   "slingshot-tnt": {
@@ -1063,7 +1063,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/slingshot-tnt"
   },
   "solar-flare-tnt": {
@@ -1074,7 +1074,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/solar-flare-tnt"
   },
   "spider-storm-tnt": {
@@ -1086,7 +1086,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/spider-storm-tnt"
   },
   "splitter-charge": {
@@ -1097,7 +1097,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/splitter-charge"
   },
   "stasis-field": {
@@ -1109,7 +1109,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "obsidian",
+    "texture_fallback": "minecraft:obsidian",
     "path": "packs/explosions-pack/blocks/stasis-field"
   },
   "swap-charge": {
@@ -1120,7 +1120,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/swap-charge"
   },
   "tether-tnt": {
@@ -1131,7 +1131,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/tether-tnt"
   },
   "timed-charge": {
@@ -1143,7 +1143,7 @@
     ],
     "mysterious": false,
     "profile": "remote_charge",
-    "texture_fallback": "redstone",
+    "texture_fallback": "minecraft:redstone_block",
     "path": "packs/explosions-pack/blocks/timed-charge"
   },
   "trampoline-tnt": {
@@ -1154,7 +1154,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/trampoline-tnt"
   },
   "tripwire-charge": {
@@ -1165,7 +1165,7 @@
     ],
     "mysterious": false,
     "profile": "tripwire_charge",
-    "texture_fallback": "tripwire",
+    "texture_fallback": "minecraft:tripwire_hook",
     "path": "packs/explosions-pack/blocks/tripwire-charge"
   },
   "tsunami-charge": {
@@ -1176,7 +1176,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/tsunami-charge"
   },
   "tunneling-tnt": {
@@ -1188,7 +1188,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/tunneling-tnt"
   },
   "wildfire-seed": {
@@ -1199,7 +1199,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "grass",
+    "texture_fallback": "minecraft:grass_block",
     "path": "packs/explosions-pack/blocks/wildfire-seed"
   },
   "wormhole-tnt": {
@@ -1211,7 +1211,7 @@
     ],
     "mysterious": false,
     "profile": "combustible_explosive",
-    "texture_fallback": "tnt",
+    "texture_fallback": "minecraft:tnt",
     "path": "packs/explosions-pack/blocks/wormhole-tnt"
   },
   "cryo-grenade": {
@@ -1233,7 +1233,7 @@
     ],
     "mysterious": false,
     "profile": "throwable",
-    "texture_fallback": "flare",
+    "texture_fallback": "igniscore:flare",
     "path": "packs/explosions-pack/items/decoy-flare"
   },
   "detonator": {
@@ -1300,7 +1300,7 @@
     ],
     "mysterious": false,
     "profile": "throwable",
-    "texture_fallback": "smoke",
+    "texture_fallback": "igniscore:smoke",
     "path": "packs/explosions-pack/items/smoke-grenade"
   },
   "sticky-bomb": {
@@ -1323,7 +1323,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/farming-pack/blocks/chicken-coop-cache"
   },
   "compost-heap": {
@@ -1335,7 +1335,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "composter",
+    "texture_fallback": "minecraft:composter",
     "path": "packs/farming-pack/blocks/compost-heap"
   },
   "crop-accelerator": {
@@ -1347,7 +1347,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/crop-accelerator"
   },
   "crop-mri": {
@@ -1359,7 +1359,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/crop-mri"
   },
   "greenhouse-glass": {
@@ -1371,7 +1371,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "glass",
+    "texture_fallback": "minecraft:glass",
     "path": "packs/farming-pack/blocks/greenhouse-glass"
   },
   "honey-centrifuge": {
@@ -1383,7 +1383,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/honey-centrifuge"
   },
   "hydroponic-tray": {
@@ -1395,7 +1395,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "farmland",
+    "texture_fallback": "minecraft:farmland",
     "path": "packs/farming-pack/blocks/hydroponic-tray"
   },
   "irrigation-sprinkler": {
@@ -1407,7 +1407,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "farmland",
+    "texture_fallback": "minecraft:farmland",
     "path": "packs/farming-pack/blocks/irrigation-sprinkler"
   },
   "kelp-compressor": {
@@ -1419,7 +1419,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/kelp-compressor"
   },
   "milking-station": {
@@ -1431,7 +1431,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/milking-station"
   },
   "moss-creeper": {
@@ -1443,7 +1443,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/moss-creeper"
   },
   "pollinator-block": {
@@ -1455,7 +1455,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/pollinator-block"
   },
   "sapling-nursery": {
@@ -1467,7 +1467,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/farming-pack/blocks/sapling-nursery"
   },
   "scarecrow-anchor": {
@@ -1479,7 +1479,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "hay",
+    "texture_fallback": "minecraft:hay_block",
     "path": "packs/farming-pack/blocks/scarecrow-anchor"
   },
   "shepherd-bell": {
@@ -1491,7 +1491,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "bell",
+    "texture_fallback": "minecraft:bell",
     "path": "packs/farming-pack/blocks/shepherd-bell"
   },
   "mulch-spreader": {
@@ -1503,7 +1503,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "fertilizer",
+    "texture_fallback": "igniscore:fertilizer",
     "path": "packs/farming-pack/items/mulch-spreader"
   },
   "seed-bomb": {
@@ -1515,7 +1515,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "seeds",
+    "texture_fallback": "igniscore:seeds",
     "path": "packs/farming-pack/items/seed-bomb"
   },
   "vine-shears": {
@@ -1527,7 +1527,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "shears",
+    "texture_fallback": "minecraft:shears",
     "path": "packs/farming-pack/items/vine-shears"
   },
   "brewing-accelerator": {
@@ -1539,7 +1539,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "brewing_stand",
+    "texture_fallback": "minecraft:brewing_stand",
     "path": "packs/kitchen-pack/blocks/brewing-accelerator"
   },
   "coffee-brewer": {
@@ -1551,7 +1551,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "brewing_stand",
+    "texture_fallback": "minecraft:brewing_stand",
     "path": "packs/kitchen-pack/blocks/coffee-brewer"
   },
   "compost-tea-brewer": {
@@ -1563,7 +1563,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "brewing_stand",
+    "texture_fallback": "minecraft:brewing_stand",
     "path": "packs/kitchen-pack/blocks/compost-tea-brewer"
   },
   "drying-rack": {
@@ -1575,7 +1575,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "smoker",
+    "texture_fallback": "minecraft:smoker",
     "path": "packs/kitchen-pack/blocks/drying-rack"
   },
   "fish-smoker-rack": {
@@ -1587,7 +1587,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "smoker",
+    "texture_fallback": "minecraft:smoker",
     "path": "packs/kitchen-pack/blocks/fish-smoker-rack"
   },
   "fortune-cookie-maker": {
@@ -1599,7 +1599,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/kitchen-pack/blocks/fortune-cookie-maker"
   },
   "ice-cream-freezer": {
@@ -1611,7 +1611,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/kitchen-pack/blocks/ice-cream-freezer"
   },
   "infuser": {
@@ -1623,7 +1623,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "brewing_stand",
+    "texture_fallback": "minecraft:brewing_stand",
     "path": "packs/kitchen-pack/blocks/infuser"
   },
   "keg-tap": {
@@ -1635,7 +1635,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/kitchen-pack/blocks/keg-tap"
   },
   "picnic-basket": {
@@ -1647,7 +1647,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/kitchen-pack/blocks/picnic-basket"
   },
   "pizza-oven": {
@@ -1659,7 +1659,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "smoker",
+    "texture_fallback": "minecraft:smoker",
     "path": "packs/kitchen-pack/blocks/pizza-oven"
   },
   "prep-counter": {
@@ -1671,7 +1671,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/kitchen-pack/blocks/prep-counter"
   },
   "smoker-stack": {
@@ -1683,7 +1683,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "smoker",
+    "texture_fallback": "minecraft:smoker",
     "path": "packs/kitchen-pack/blocks/smoker-stack"
   },
   "spice-rack": {
@@ -1695,7 +1695,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/kitchen-pack/blocks/spice-rack"
   },
   "antidote-swab": {
@@ -1707,7 +1707,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/antidote-swab"
   },
   "bricklayers-broth": {
@@ -1719,7 +1719,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/bricklayers-broth"
   },
   "cartographers-espresso": {
@@ -1731,7 +1731,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/cartographers-espresso"
   },
   "chorus-bite": {
@@ -1743,7 +1743,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "food",
+    "texture_fallback": "igniscore:food",
     "path": "packs/kitchen-pack/items/chorus-bite"
   },
   "divers-salt": {
@@ -1755,7 +1755,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/divers-salt"
   },
   "farmers-tea": {
@@ -1767,7 +1767,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/farmers-tea"
   },
   "ghost-peppermint": {
@@ -1779,7 +1779,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "food",
+    "texture_fallback": "igniscore:food",
     "path": "packs/kitchen-pack/items/ghost-peppermint"
   },
   "glow-berry-shot": {
@@ -1791,7 +1791,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/glow-berry-shot"
   },
   "heavy-coat-tonic": {
@@ -1803,7 +1803,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/heavy-coat-tonic"
   },
   "honey-throat-coat": {
@@ -1815,7 +1815,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/honey-throat-coat"
   },
   "luck-dust": {
@@ -1827,7 +1827,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "dust",
+    "texture_fallback": "igniscore:dust",
     "path": "packs/kitchen-pack/items/luck-dust"
   },
   "miners-lunch": {
@@ -1839,7 +1839,7 @@
     ],
     "mysterious": false,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/miners-lunch"
   },
   "unlabeled-potion": {
@@ -1851,7 +1851,7 @@
     ],
     "mysterious": true,
     "profile": "item_use",
-    "texture_fallback": "potion",
+    "texture_fallback": "minecraft:potion",
     "path": "packs/kitchen-pack/items/unlabeled-potion"
   },
   "barn-bell": {
@@ -1863,7 +1863,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "bell",
+    "texture_fallback": "minecraft:bell",
     "path": "packs/linking-pack/blocks/barn-bell"
   },
   "keyed-hatch": {
@@ -1875,7 +1875,7 @@
     ],
     "mysterious": false,
     "profile": "placed_passive",
-    "texture_fallback": "trapdoor",
+    "texture_fallback": "minecraft:oak_trapdoor",
     "path": "packs/linking-pack/blocks/keyed-hatch"
   },
   "pipe-valve": {
@@ -1887,7 +1887,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "trapdoor",
+    "texture_fallback": "minecraft:oak_trapdoor",
     "path": "packs/linking-pack/blocks/pipe-valve"
   },
   "socket-lamp": {
@@ -1899,7 +1899,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "lamp",
+    "texture_fallback": "igniscore:lamp",
     "path": "packs/linking-pack/blocks/socket-lamp"
   },
   "sprinkler-head": {
@@ -1911,7 +1911,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "dispenser",
+    "texture_fallback": "minecraft:dispenser",
     "path": "packs/linking-pack/blocks/sprinkler-head"
   },
   "farm-call": {
@@ -1922,7 +1922,7 @@
     ],
     "mysterious": false,
     "profile": "link_item",
-    "texture_fallback": "remote",
+    "texture_fallback": "igniscore:remote",
     "path": "packs/linking-pack/items/farm-call"
   },
   "gate-clicker": {
@@ -1933,7 +1933,7 @@
     ],
     "mysterious": false,
     "profile": "link_item",
-    "texture_fallback": "remote",
+    "texture_fallback": "igniscore:remote",
     "path": "packs/linking-pack/items/gate-clicker"
   },
   "lamp-dimmer": {
@@ -1944,7 +1944,7 @@
     ],
     "mysterious": false,
     "profile": "link_item",
-    "texture_fallback": "remote",
+    "texture_fallback": "igniscore:remote",
     "path": "packs/linking-pack/items/lamp-dimmer"
   },
   "sprinkler-timer": {
@@ -1955,7 +1955,7 @@
     ],
     "mysterious": false,
     "profile": "link_item",
-    "texture_fallback": "remote",
+    "texture_fallback": "igniscore:remote",
     "path": "packs/linking-pack/items/sprinkler-timer"
   },
   "valve-wrench": {
@@ -1966,7 +1966,7 @@
     ],
     "mysterious": false,
     "profile": "link_item",
-    "texture_fallback": "tool",
+    "texture_fallback": "igniscore:tool",
     "path": "packs/linking-pack/items/valve-wrench"
   },
   "ouija-slab": {
@@ -1978,7 +1978,7 @@
     ],
     "mysterious": true,
     "profile": "placed_tick",
-    "texture_fallback": "stone",
+    "texture_fallback": "minecraft:stone",
     "path": "packs/novelty-pack/blocks/ouija-slab"
   },
   "rift-generator": {
@@ -1990,7 +1990,7 @@
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
-    "texture_fallback": "obsidian",
+    "texture_fallback": "minecraft:obsidian",
     "path": "packs/novelty-pack/blocks/rift-generator"
   },
   "gravity-marble": {
@@ -2002,7 +2002,7 @@
     ],
     "mysterious": true,
     "profile": "item_use",
-    "texture_fallback": "marble",
+    "texture_fallback": "igniscore:marble",
     "path": "packs/novelty-pack/items/gravity-marble"
   },
   "quantum-coin": {
@@ -2014,7 +2014,7 @@
     ],
     "mysterious": true,
     "profile": "item_use",
-    "texture_fallback": "coin",
+    "texture_fallback": "igniscore:coin",
     "path": "packs/novelty-pack/items/quantum-coin"
   },
   "chunk-loader-lite": {
@@ -2026,7 +2026,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "beacon",
+    "texture_fallback": "minecraft:beacon",
     "path": "packs/utility-pack/blocks/chunk-loader-lite"
   },
   "mob-grinder-hub": {
@@ -2038,7 +2038,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "beacon",
+    "texture_fallback": "minecraft:beacon",
     "path": "packs/utility-pack/blocks/mob-grinder-hub"
   },
   "per-player-weather-dome": {
@@ -2050,7 +2050,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "glass",
+    "texture_fallback": "minecraft:glass",
     "path": "packs/utility-pack/blocks/per-player-weather-dome"
   },
   "player-proximity-alarm": {
@@ -2062,7 +2062,7 @@
     ],
     "mysterious": false,
     "profile": "placed_tick",
-    "texture_fallback": "bell",
+    "texture_fallback": "minecraft:bell",
     "path": "packs/utility-pack/blocks/player-proximity-alarm"
   },
   "secure-trade-table": {
@@ -2074,7 +2074,7 @@
     ],
     "mysterious": false,
     "profile": "gui_block",
-    "texture_fallback": "barrel",
+    "texture_fallback": "minecraft:barrel",
     "path": "packs/utility-pack/blocks/secure-trade-table"
   }
 }

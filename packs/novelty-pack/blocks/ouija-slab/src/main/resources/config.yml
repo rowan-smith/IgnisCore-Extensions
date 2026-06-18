@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: stone
+  fallback: minecraft:stone
 
 model:
   type: "block_display"

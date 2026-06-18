@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: grindstone
+  fallback: minecraft:grindstone
 
 model:
   type: "block_display"

@@ -39,7 +39,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: tnt
+  fallback: minecraft:tnt
 
 # Authoring note for pack tooling; core reads textures directly
 model:

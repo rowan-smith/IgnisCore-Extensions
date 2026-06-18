@@ -18,7 +18,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: mine
+  fallback: igniscore:mine
 
 model:
   type: "block_display"

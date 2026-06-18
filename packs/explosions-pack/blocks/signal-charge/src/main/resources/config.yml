@@ -26,7 +26,7 @@ textures:
   top: top.jpg
   side: side.jpg
   bottom: bottom.jpg
-  fallback: redstone
+  fallback: minecraft:redstone_block
 
 model:
   type: "block_display"
