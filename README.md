@@ -7,10 +7,20 @@ Bundled block and item extensions for [IgnisCore](https://github.com/rowan-smith
 ## Layout
 
 ```
-shared/   # Optional helpers (ExtensionShared facade)
-blocks/   # Block extension modules
-items/    # Item extension modules
+shared/                    # Optional helpers (ExtensionShared facade)
+packs/
+  explosions-pack/         # TNT, charges, mines, grenades, detonator
+  linking-pack/            # Remote link tools and paired blocks
+  farming-pack/            # Crops, livestock, irrigation
+  kitchen-pack/            # Brewing, cooking, consumables
+  crafting-pack/           # Processing, storage, repair
+  exploration-pack/        # Scanning, wayfinding, mapping
+  building-pack/           # Decoration, construction tools
+  utility-pack/            # Trade, chunk loading, mob utilities
+  novelty-pack/            # Ambient and novelty content
 ```
+
+Each pack contains `blocks/` and/or `items/` subdirectories with extension modules.
 
 ## Build
 
@@ -20,7 +30,7 @@ The IgnisCore API is resolved from [JitPack](https://jitpack.io/#rowan-smith/Ign
 mvn clean package
 ```
 
-Each extension module produces `blocks/<name>/target/<name>.jar` or `items/<name>/target/<name>.jar`.
+Each extension module produces `packs/<pack>/<blocks|items>/<name>/target/<name>.jar`.
 
 ## Integration with IgnisCore
 

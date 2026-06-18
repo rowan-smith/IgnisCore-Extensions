@@ -14,8 +14,7 @@
 
   <modules>
     <module>shared</module>
-    <module>blocks</module>
-    <module>items</module>
+    <module>packs</module>
   </modules>
 
   <properties>

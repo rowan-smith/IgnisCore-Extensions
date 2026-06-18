@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>dev.rono</groupId>
+    <artifactId>igniscore-extensions</artifactId>
+    <version>${revision}</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>dev.rono.packs</groupId>
+  <artifactId>packs</artifactId>
+  <packaging>pom</packaging>
+
+  <name>igniscore-packs</name>
+
+  <modules>
+    <module>building-pack/pom.xml</module>
+    <module>crafting-pack/pom.xml</module>
+    <module>exploration-pack/pom.xml</module>
+    <module>explosions-pack/pom.xml</module>
+    <module>farming-pack/pom.xml</module>
+    <module>kitchen-pack/pom.xml</module>
+    <module>linking-pack/pom.xml</module>
+    <module>novelty-pack/pom.xml</module>
+    <module>utility-pack/pom.xml</module>
+  </modules>
+</project>

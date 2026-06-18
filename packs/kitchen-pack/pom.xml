@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>dev.rono</groupId>
+    <artifactId>igniscore-extensions</artifactId>
+    <version>${revision}</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+
+  <groupId>dev.rono.packs.kitchen</groupId>
+  <artifactId>kitchen-pack</artifactId>
+  <packaging>pom</packaging>
+
+  <name>kitchen-pack</name>
+
+  <modules>
+    <module>blocks/brewing-accelerator</module>
+    <module>blocks/coffee-brewer</module>
+    <module>blocks/compost-tea-brewer</module>
+    <module>blocks/drying-rack</module>
+    <module>blocks/fish-smoker-rack</module>
+    <module>blocks/fortune-cookie-maker</module>
+    <module>blocks/ice-cream-freezer</module>
+    <module>blocks/infuser</module>
+    <module>blocks/keg-tap</module>
+    <module>blocks/picnic-basket</module>
+    <module>blocks/pizza-oven</module>
+    <module>blocks/prep-counter</module>
+    <module>blocks/smoker-stack</module>
+    <module>blocks/spice-rack</module>
+    <module>items/antidote-swab</module>
+    <module>items/bricklayers-broth</module>
+    <module>items/cartographers-espresso</module>
+    <module>items/chorus-bite</module>
+    <module>items/divers-salt</module>
+    <module>items/farmers-tea</module>
+    <module>items/ghost-peppermint</module>
+    <module>items/glow-berry-shot</module>
+    <module>items/heavy-coat-tonic</module>
+    <module>items/honey-throat-coat</module>
+    <module>items/luck-dust</module>
+    <module>items/miners-lunch</module>
+    <module>items/unlabeled-potion</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>dev.rono.extensions</groupId>
+        <artifactId>shared</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
+        <version>${ignis.api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
+        <version>${ignis.api.version}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>dev.rono.extensions</groupId>
+      <artifactId>shared</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>${ignis.api.groupId}</groupId>
+      <artifactId>api</artifactId>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
+          <configuration>
+            <finalName>${project.artifactId}</finalName>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

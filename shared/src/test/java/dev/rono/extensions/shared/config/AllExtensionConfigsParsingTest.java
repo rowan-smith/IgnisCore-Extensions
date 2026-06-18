@@ -26,7 +26,7 @@ class AllExtensionConfigsParsingTest {
     void parsesEveryBlockExtensionConfig(Path configPath) throws IOException {
         Map<String, Object> config = YamlDefinitions.loadMap(configPath);
         String extensionId = configPath.getName(configPath.getNameCount() - 5).toString();
-        ExtensionManifest manifest = manifestFor(extensionId, "block-extension.yml");
+        ExtensionManifest manifest = manifestFor(configPath, "block-extension.yml");
 
         BlockDefinition definition = DefinitionParser.parseBlock(config, extensionId, 10001, extensionId);
         IgnisStrategyDescriptor descriptor = DefinitionParser.parseStrategyDescriptor(manifest);
@@ -42,7 +42,7 @@ class AllExtensionConfigsParsingTest {
     void parsesEveryItemExtensionConfig(Path configPath) throws IOException {
         Map<String, Object> config = YamlDefinitions.loadMap(configPath);
         String extensionId = configPath.getName(configPath.getNameCount() - 5).toString();
-        ExtensionManifest manifest = manifestFor(extensionId, "item-extension.yml");
+        ExtensionManifest manifest = manifestFor(configPath, "item-extension.yml");
 
         ItemDefinition definition = DefinitionParser.parseItem(config, extensionId, 20001, extensionId);
         IgnisStrategyDescriptor descriptor = DefinitionParser.parseStrategyDescriptor(manifest);
@@ -62,23 +62,34 @@ class AllExtensionConfigsParsingTest {
     }
 
     private static Stream<Path> extensionConfigs(String category) throws IOException {
-        Path root = Path.of("..", category);
-        if (!Files.isDirectory(root)) {
+        Path packsRoot = Path.of("..", "packs");
+        if (!Files.isDirectory(packsRoot)) {
             return Stream.empty();
         }
 
-        try (Stream<Path> modules = Files.list(root)) {
-            return modules
-                    .map(module -> module.resolve("src/main/resources/config.yml"))
-                    .filter(Files::exists)
+        try (Stream<Path> packs = Files.list(packsRoot)) {
+            return packs
+                    .filter(Files::isDirectory)
+                    .flatMap(pack -> {
+                        Path categoryRoot = pack.resolve(category);
+                        if (!Files.isDirectory(categoryRoot)) {
+                            return Stream.empty();
+                        }
+                        try (Stream<Path> modules = Files.list(categoryRoot)) {
+                            return modules
+                                    .map(module -> module.resolve("src/main/resources/config.yml"))
+                                    .filter(Files::exists);
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    })
                     .toList()
                     .stream();
         }
     }
 
-    private static ExtensionManifest manifestFor(String extensionId, String fileName) throws IOException {
-        String category = fileName.startsWith("block") ? "blocks" : "items";
-        Path manifestPath = Path.of("..", category, extensionId, "src/main/resources", fileName);
+    private static ExtensionManifest manifestFor(Path configPath, String fileName) throws IOException {
+        Path manifestPath = configPath.getParent().resolve(fileName);
         String manifest = Files.readString(manifestPath, StandardCharsets.UTF_8)
                 .replace("@project.version@", IgnisApiVersion.CURRENT)
                 .replace("@ignis.api.version@", IgnisApiVersion.CURRENT);
