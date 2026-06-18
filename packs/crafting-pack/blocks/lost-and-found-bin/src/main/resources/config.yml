@@ -1,11 +1,11 @@
 id: lost-and-found-bin
 
 display:
-  title: "&eLost & Found Bin"
+  title: "&e&lLost & Found Bin"
   description:
-    - "&7&eOpen&7 to retrieve swept-up items."
-    - "&7Periodically &evacuums&7 nearby item drops into storage."
-    - "&7Collects loot within ~8 blocks."
+    - "&r&r&7&eOpen&7 to retrieve swept-up items."
+    - "&r&r&7Periodically &evacuums&7 nearby item drops into storage."
+    - "&r&r&7Collects loot within ~8 blocks."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: chest
 
 model:
   type: "block_display"

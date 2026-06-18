@@ -1,16 +1,17 @@
 id: cryo-grenade
 
 display:
-  title: "&cCryo Grenade"
+  title: "&c&lCryo Grenade"
   description:
-    - "&7Right-click to &ethrow&7."
-    - "&7Detonates after &e4.0s&7; flash-freezes the area to ice."
+    - "&r&r&7Right-click to &ethrow&7."
+    - "&r&r&7Detonates after &e4.0s&7; flash-freezes the area to ice."
 
 item:
   base_material: snowball
 
 textures:
   icon: icon.png
+  fallback: grenade
 
 behavior:
   right_click_air: throw

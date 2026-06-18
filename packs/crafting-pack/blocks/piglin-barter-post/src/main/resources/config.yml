@@ -1,11 +1,11 @@
 id: piglin-barter-post
 
 display:
-  title: "&ePiglin Barter Post"
+  title: "&e&lPiglin Barter Post"
   description:
-    - "&7Open GUI: insert a &6gold ingot&7."
-    - "&7Trades for random nether loot (pearls, crying &bobsidian&7, etc.)."
-    - "&7Piglin admiring sound on barter."
+    - "&r&r&7Open GUI: insert a &6gold ingot&7."
+    - "&r&r&7Trades for random nether loot (pearls, crying &bobsidian&7, etc.)."
+    - "&r&r&7Piglin admiring sound on barter."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: chest
 
 model:
   type: "block_display"

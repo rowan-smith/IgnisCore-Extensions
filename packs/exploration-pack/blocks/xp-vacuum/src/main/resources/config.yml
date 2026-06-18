@@ -1,11 +1,11 @@
 id: xp-vacuum
 
 display:
-  title: "&bXP Vacuum"
+  title: "&b&lXP Vacuum"
   description:
-    - "&7Pulls experience orbs toward it."
-    - "&e6-block&7 radius, configurable pull strength."
-    - "&7&bEnchant&7 particles while vacuuming."
+    - "&r&r&7Pulls experience orbs toward it."
+    - "&r&r&e6-block&7 radius, configurable pull strength."
+    - "&r&r&7&bEnchant&7 particles while vacuuming."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: ender_chest
 
 model:
   type: "block_display"

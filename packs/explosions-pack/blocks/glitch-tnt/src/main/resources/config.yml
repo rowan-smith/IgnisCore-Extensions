@@ -1,11 +1,11 @@
 id: glitch-tnt
 
 display:
-  title: "&dGlitch TNT"
+  title: "&d&lGlitch TNT"
   description:
-    - "&7It &dflickers&7 between things it cannot decide to be."
-    - "&7Reality &dstutters&7 wherever it sits."
-    - "&7Best not to look too closely."
+    - "&r&r&7It &dflickers&7 between things it cannot decide to be."
+    - "&r&r&7Reality &dstutters&7 wherever it sits."
+    - "&r&r&7Best not to look too closely."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: tnt
 
 model:
   type: "block_display"

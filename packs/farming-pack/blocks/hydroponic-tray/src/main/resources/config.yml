@@ -1,11 +1,11 @@
 id: hydroponic-tray
 
 display:
-  title: "&aHydroponic Tray"
+  title: "&a&lHydroponic Tray"
   description:
-    - "&7Bonemeals crops in a &a2-block&7 radius."
-    - "&7Dripping-water particles each cycle."
-    - "&7Soil-free &bpassive&7 grow tray."
+    - "&r&r&7Bonemeals crops in a &a2-block&7 radius."
+    - "&r&r&7Dripping-water particles each cycle."
+    - "&r&r&7Soil-free &bpassive&7 grow tray."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: farmland
 
 model:
   type: "block_display"

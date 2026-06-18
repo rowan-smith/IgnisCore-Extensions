@@ -1,11 +1,11 @@
 id: irrigation-sprinkler
 
 display:
-  title: "&aIrrigation Sprinkler"
+  title: "&a&lIrrigation Sprinkler"
   description:
-    - "&7Open to load a &9water bucket&7 in the tank slot."
-    - "&7Sprays falling-water particles over nearby &efarmland&7."
-    - "&7Consumes one bucket per watering cycle."
+    - "&r&r&7Open to load a &9water bucket&7 in the tank slot."
+    - "&r&r&7Sprays falling-water particles over nearby &efarmland&7."
+    - "&r&r&7Consumes one bucket per watering cycle."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: farmland
 
 model:
   type: "block_display"

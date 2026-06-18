@@ -1,17 +1,18 @@
 id: seed-bomb
 
 display:
-  title: "&aSeed Bomb"
+  title: "&a&lSeed Bomb"
   description:
-    - "&7Throw an egg that scatters &agrass and flowers&7."
-    - "&7Plants in a radius on dirt/grass after a short fuse."
-    - "&7Consumes one bomb per &ethrow&7."
+    - "&r&r&7Throw an egg that scatters &agrass and flowers&7."
+    - "&r&r&7Plants in a radius on dirt/grass after a short fuse."
+    - "&r&r&7Consumes one bomb per &ethrow&7."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: seeds
 
 behavior:
   right_click_air: use

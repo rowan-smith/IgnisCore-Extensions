@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKS = ROOT / "packs"
 CATALOG_PATH = Path(__file__).with_name("extension-catalog.json")
 DISPLAY_OVERRIDES_PATH = Path(__file__).with_name("display-overrides.json")
+TEXTURE_FALLBACK_OVERRIDES_PATH = Path(__file__).with_name("texture-fallback-overrides.json")
 
 MYSTERIOUS_IDS = {
     "glitch-tnt", "mirage-tnt", "hologram-tnt", "phantom-tnt", "mirror-world-tnt",
@@ -112,7 +113,14 @@ def load_display_overrides() -> dict[str, dict]:
     return json.loads(DISPLAY_OVERRIDES_PATH.read_text(encoding="utf-8"))
 
 
+def load_texture_fallback_overrides() -> dict[str, str]:
+    if not TEXTURE_FALLBACK_OVERRIDES_PATH.exists():
+        return {}
+    return json.loads(TEXTURE_FALLBACK_OVERRIDES_PATH.read_text(encoding="utf-8"))
+
+
 DISPLAY_OVERRIDES = load_display_overrides()
+TEXTURE_FALLBACK_OVERRIDES = load_texture_fallback_overrides()
 
 
 def humanize(ext_id: str) -> str:
@@ -121,7 +129,30 @@ def humanize(ext_id: str) -> str:
 
 
 def strip_title_color(title: str) -> str:
-    return re.sub(r"^&[0-9a-fk-or]", "", title, flags=re.I)
+    _, name = strip_title_decorations(title)
+    return name
+
+
+def strip_title_decorations(title: str) -> tuple[str, str]:
+    color_match = re.match(r"^(&[0-9a-fk-or])", title, re.I)
+    color = color_match.group(1) if color_match else ""
+    name = title[len(color):] if color else title
+    name = re.sub(r"^&l", "", name, flags=re.I)
+    return color, name
+
+
+def format_display_title(title: str, default_color: str = "&6") -> str:
+    color, name = strip_title_decorations(title)
+    if not name:
+        name = title
+    if not color:
+        color = default_color
+    return f"{color}&l{name}"
+
+
+def ensure_non_italic_lore(line: str) -> str:
+    line = re.sub(r"^(&r&r)+", "", line)
+    return f"&r&r{line}"
 
 
 def has_accent_color(line: str) -> bool:
@@ -165,8 +196,14 @@ def title_color(ext_id: str, rel: str) -> str:
 
 
 def themed_title(ext_id: str, rel: str, title: str | None = None) -> str:
-    name = strip_title_color(title) if title else humanize(ext_id)
-    return f"{title_color(ext_id, rel)}{name}"
+    if title:
+        color, name = strip_title_decorations(title)
+        if not name:
+            name = humanize(ext_id)
+        if not color:
+            color = title_color(ext_id, rel)
+        return f"{color}&l{name}"
+    return f"{title_color(ext_id, rel)}&l{humanize(ext_id)}"
 
 
 def polish_lore_lines(lines: list[str]) -> list[str]:
@@ -221,9 +258,9 @@ def polish_lore_lines(lines: list[str]) -> list[str]:
                 flags=re.I,
             )
             line = prefix + body
-        polished.append(line)
+        polished.append(ensure_non_italic_lore(line))
     if len(polished) < 2:
-        polished.append("&7Place or interact to use.")
+        polished.append(ensure_non_italic_lore("&7Place or interact to use."))
     return polished[:5]
 
 
@@ -279,6 +316,165 @@ def fuse_seconds(config: dict) -> float:
         return max(0.5, int(fuse) / 20.0)
     except (TypeError, ValueError):
         return 4.0
+
+
+def infer_block_texture_fallback(ext_id: str, pack: str, profile: str) -> str:
+    if ext_id in {"fake-bedrock", "doppelganger-block"}:
+        return "bedrock"
+    if ext_id == "invisiwall":
+        return "glass"
+    if ext_id in BURIED_MINE_IDS:
+        return "mine"
+    if ext_id in REMOTE_CHARGE_IDS or ext_id == "last-stand-charge":
+        return "redstone"
+    if ext_id in TRIPWIRE_IDS:
+        return "tripwire"
+    if ext_id == "wildfire-seed":
+        return "grass"
+    if ext_id == "stasis-field":
+        return "obsidian"
+    if pack == "explosions-pack":
+        return "tnt"
+    if pack == "farming-pack":
+        if "glass" in ext_id:
+            return "glass"
+        if "bell" in ext_id:
+            return "bell"
+        if "coop" in ext_id or "cache" in ext_id or "nursery" in ext_id:
+            return "barrel"
+        if "compost" in ext_id:
+            return "composter"
+        if "sprinkler" in ext_id or "tray" in ext_id or "irrigation" in ext_id:
+            return "farmland"
+        return "hay"
+    if pack == "kitchen-pack":
+        if "brew" in ext_id or "accelerator" in ext_id or "infuser" in ext_id:
+            return "brewing_stand"
+        if "smoker" in ext_id or "oven" in ext_id or "drying" in ext_id:
+            return "smoker"
+        if "freezer" in ext_id:
+            return "barrel"
+        return "barrel"
+    if pack == "building-pack":
+        if "lantern" in ext_id or "floodlight" in ext_id:
+            return "lantern"
+        if "display" in ext_id or "pedestal" in ext_id:
+            return "glass"
+        return "barrel"
+    if pack == "crafting-pack":
+        if "repair" in ext_id:
+            return "anvil"
+        if "recycler" in ext_id or "sieve" in ext_id:
+            return "grindstone"
+        return "chest"
+    if pack == "exploration-pack":
+        if "beacon" in ext_id or "obelisk" in ext_id:
+            return "beacon"
+        if "radar" in ext_id or "echo" in ext_id or "sniffer" in ext_id or "camera" in ext_id:
+            return "lodestone"
+        if "quarry" in ext_id or "xp-vacuum" in ext_id:
+            return "ender_chest"
+        return "beacon"
+    if pack == "linking-pack":
+        if "bell" in ext_id:
+            return "bell"
+        if "lamp" in ext_id or "socket" in ext_id:
+            return "lamp"
+        if "valve" in ext_id or "hatch" in ext_id:
+            return "trapdoor"
+        if "sprinkler" in ext_id:
+            return "dispenser"
+        return "lever"
+    if pack == "utility-pack":
+        if "trade" in ext_id:
+            return "barrel"
+        if "chunk" in ext_id or "grinder" in ext_id:
+            return "beacon"
+        if "weather" in ext_id:
+            return "glass"
+        return "bell"
+    if pack == "novelty-pack":
+        if ext_id == "rift-generator":
+            return "obsidian"
+        return "stone"
+    return "stone"
+
+
+def infer_item_texture_fallback(ext_id: str, pack: str, profile: str) -> str:
+    if ext_id == "detonator":
+        return "detonator"
+    if profile == "throwable" and pack == "explosions-pack":
+        if "smoke" in ext_id:
+            return "smoke"
+        if "flare" in ext_id or "decoy" in ext_id:
+            return "flare"
+        return "grenade"
+    if pack == "kitchen-pack":
+        if any(token in ext_id for token in ("lunch", "broth", "tea", "espresso", "swab", "salt", "tonic", "shot", "coat")):
+            return "potion"
+        if ext_id in {"ghost-peppermint", "chorus-bite"}:
+            return "food"
+        if ext_id == "luck-dust":
+            return "dust"
+        return "potion"
+    if pack == "farming-pack":
+        if "shears" in ext_id:
+            return "shears"
+        if "seed" in ext_id:
+            return "seeds"
+        if "mulch" in ext_id:
+            return "fertilizer"
+        return "tool"
+    if pack == "building-pack":
+        if ext_id == "smoke-can":
+            return "smoke"
+        return "tool"
+    if pack == "exploration-pack":
+        if "book" in ext_id or "chronicle" in ext_id:
+            return "book"
+        if "compass" in ext_id or "structure-compass" in ext_id:
+            return "compass"
+        if "goggles" in ext_id or "stethoscope" in ext_id:
+            return "spyglass"
+        if "badge" in ext_id:
+            return "badge"
+        if "atlas" in ext_id or "keyring" in ext_id or "chunk-grid" in ext_id:
+            return "map"
+        return "compass"
+    if pack == "linking-pack":
+        if "wrench" in ext_id:
+            return "tool"
+        return "remote"
+    if pack == "novelty-pack":
+        if ext_id == "quantum-coin":
+            return "coin"
+        if ext_id == "gravity-marble":
+            return "marble"
+        return "curio"
+    return "tool"
+
+
+def infer_texture_fallback(ext_id: str, rel: str, kind: str, config: dict, java: str) -> str:
+    if ext_id in TEXTURE_FALLBACK_OVERRIDES:
+        return TEXTURE_FALLBACK_OVERRIDES[ext_id]
+    pack = rel.split("/")[1] if rel.startswith("packs/") else ""
+    profile = detect_profile(ext_id, kind, config, java)
+    if kind == "items":
+        return infer_item_texture_fallback(ext_id, pack, profile)
+    return infer_block_texture_fallback(ext_id, pack, profile)
+
+
+def apply_texture_fallback(config: dict, fallback: str) -> None:
+    textures = dict(config.get("textures") or {})
+    textures["fallback"] = fallback
+    ordered: dict[str, object] = {}
+    for key in ("icon", "top", "side", "bottom", "side-1", "side-2", "side-3", "side-4"):
+        if key in textures:
+            ordered[key] = textures[key]
+    for key, value in textures.items():
+        if key not in ordered:
+            ordered[key] = value
+    config["textures"] = ordered
 
 
 def detect_profile(ext_id: str, kind: str, config: dict, java: str) -> str:
@@ -1077,6 +1273,7 @@ def cmd_catalog(_args):
         catalog[ext_id] = {
             **build_display(ext_id, rel, config, config_text, java),
             "profile": detect_profile(ext_id, kind, config, java),
+            "texture_fallback": infer_texture_fallback(ext_id, rel, kind, config, java),
             "path": rel,
         }
     CATALOG_PATH.write_text(json.dumps(catalog, indent=2), encoding="utf-8")
@@ -1098,13 +1295,34 @@ def patch_config_dict(config_path: Path, merged: dict, meta: dict) -> None:
     config_path.write_text(header + body, encoding="utf-8")
 
 
+def patch_texture_fallback(config_path: Path, fallback: str) -> bool:
+    text = config_path.read_text(encoding="utf-8")
+    if re.search(r"^  fallback: ", text, re.M):
+        new_text, count = re.subn(r"^  fallback: .*$", f"  fallback: {fallback}", text, count=1, flags=re.M)
+        if count:
+            config_path.write_text(new_text, encoding="utf-8")
+            return True
+        return False
+
+    pattern = re.compile(r"^(textures:\n(?:  (?!fallback:).+\n)+)", re.M)
+    match = pattern.search(text)
+    if not match:
+        return False
+    block = match.group(1)
+    new_block = block + f"  fallback: {fallback}\n"
+    config_path.write_text(text.replace(block, new_block, 1), encoding="utf-8")
+    return True
+
+
 def cmd_apply(args):
-    global DISPLAY_OVERRIDES
+    global DISPLAY_OVERRIDES, TEXTURE_FALLBACK_OVERRIDES
     DISPLAY_OVERRIDES = load_display_overrides()
+    TEXTURE_FALLBACK_OVERRIDES = load_texture_fallback_overrides()
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8")) if CATALOG_PATH.exists() else {}
     updated_displays = 0
     updated_behavior = 0
     updated_tests = 0
+    updated_texture_fallbacks = 0
     wired_theatrics = 0
     wired_fuse = 0
 
@@ -1114,8 +1332,15 @@ def cmd_apply(args):
         config, config_text = load_config(config_path)
         java = java_sources(module)
 
-        meta = {k: v for k, v in (catalog.get(ext_id) or build_display(ext_id, rel, config, config_text, java)).items() if k != "profile"}
+        meta = {k: v for k, v in (catalog.get(ext_id) or build_display(ext_id, rel, config, config_text, java)).items() if k not in {"profile", "texture_fallback"}}
         profile = (catalog.get(ext_id) or {}).get("profile") or detect_profile(ext_id, kind, config, java)
+
+        if args.texture_fallbacks:
+            fallback = (catalog.get(ext_id) or {}).get("texture_fallback") or infer_texture_fallback(
+                ext_id, rel, kind, config, java)
+            if patch_texture_fallback(config_path, fallback):
+                updated_texture_fallbacks += 1
+            config, config_text = load_config(config_path)
 
         if args.displays:
             meta = normalize_display_meta(ext_id, rel, meta)
@@ -1154,7 +1379,8 @@ def cmd_apply(args):
 
     print(
         f"Updated displays: {updated_displays}, behavior configs: {updated_behavior}, "
-        f"tests: {updated_tests}, ignite theatrics: {wired_theatrics}, fuse theatrics: {wired_fuse}"
+        f"texture fallbacks: {updated_texture_fallbacks}, tests: {updated_tests}, "
+        f"ignite theatrics: {wired_theatrics}, fuse theatrics: {wired_fuse}"
     )
 
 
@@ -1170,13 +1396,15 @@ def main():
     p_apply.add_argument("--behavior", action="store_true")
     p_apply.add_argument("--tests", action="store_true")
     p_apply.add_argument("--theatrics", action="store_true")
+    p_apply.add_argument("--texture-fallbacks", action="store_true")
     p_apply.add_argument("--force-tests", action="store_true")
     p_apply.add_argument("--upgrade-tests", action="store_true", help="Overwrite weak assertDoesNotThrow tests")
     p_apply.set_defaults(func=cmd_apply)
 
     args = parser.parse_args()
     if args.command == "apply" and not any([
-        args.displays, args.behavior, args.tests, args.theatrics, getattr(args, "upgrade_tests", False)
+        args.displays, args.behavior, args.tests, args.theatrics,
+        getattr(args, "upgrade_tests", False), args.texture_fallbacks,
     ]):
         args.displays = args.behavior = args.tests = args.theatrics = True
     args.func(args)

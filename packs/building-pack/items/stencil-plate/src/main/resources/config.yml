@@ -1,17 +1,18 @@
 id: stencil-plate
 
 display:
-  title: "&6Stencil Plate"
+  title: "&6&lStencil Plate"
   description:
-    - "&7Apply a glow pattern to &fconcrete powder&7."
-    - "&7Decorates powder before it hardens."
-    - "&7Consumes one plate per use."
+    - "&r&r&7Apply a glow pattern to &fconcrete powder&7."
+    - "&r&r&7Decorates powder before it hardens."
+    - "&r&r&7Consumes one plate per use."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: tool
 
 behavior:
   right_click_air: use

@@ -1,11 +1,11 @@
 id: scare-charge
 
 display:
-  title: "&6Scare Charge"
+  title: "&6&lScare Charge"
   description:
-    - "&7Place it, then link a &edetonator&7."
-    - "&7Cannot be lit with &fflint and steel&7."
-    - "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
+    - "&r&r&7Place it, then link a &edetonator&7."
+    - "&r&r&7Cannot be lit with &fflint and steel&7."
+    - "&r&r&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: redstone
 
 model:
   type: "block_display"

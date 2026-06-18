@@ -1,11 +1,11 @@
 id: mirror-world-tnt
 
 display:
-  title: "&dMirror World TNT"
+  title: "&d&lMirror World TNT"
   description:
-    - "&7Whatever happens here also happens &dthere&7."
-    - "&7A reflection across an unseen pane."
-    - "&7Two worlds, one fate."
+    - "&r&r&7Whatever happens here also happens &dthere&7."
+    - "&r&r&7A reflection across an unseen pane."
+    - "&r&r&7Two worlds, one fate."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: tnt
 
 model:
   type: "block_display"

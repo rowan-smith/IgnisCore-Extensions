@@ -1,17 +1,18 @@
 id: structure-compass
 
 display:
-  title: "&bStructure Compass"
+  title: "&b&lStructure Compass"
   description:
-    - "&7Read compass bearing: &fnorth&7, &feast&7, &fsouth&7, or &fwest&7."
-    - "&7Defaults to north if unset."
-    - "&7Pulses an &bend-rod&7 &ering&7 on use."
+    - "&r&r&7Read compass bearing: &fnorth&7, &feast&7, &fsouth&7, or &fwest&7."
+    - "&r&r&7Defaults to north if unset."
+    - "&r&r&7Pulses an &bend-rod&7 &ering&7 on use."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: compass
 
 behavior:
   right_click_air: use

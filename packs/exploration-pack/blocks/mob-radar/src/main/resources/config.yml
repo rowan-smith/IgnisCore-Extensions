@@ -1,11 +1,11 @@
 id: mob-radar
 
 display:
-  title: "&bMob Radar"
+  title: "&b&lMob Radar"
   description:
-    - "&7Detects hostiles within &f16 blocks&7."
-    - "&7Crimson pulse &ering&7 scales with mob count."
-    - "&7Bass note alarm pitch rises with threats."
+    - "&r&r&7Detects hostiles within &f16 blocks&7."
+    - "&r&r&7Crimson pulse &ering&7 scales with mob count."
+    - "&r&r&7Bass note alarm pitch rises with threats."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: lodestone
 
 model:
   type: "block_display"

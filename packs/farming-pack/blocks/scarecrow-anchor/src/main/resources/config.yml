@@ -1,11 +1,11 @@
 id: scarecrow-anchor
 
 display:
-  title: "&aScarecrow Anchor"
+  title: "&a&lScarecrow Anchor"
   description:
-    - "&7Pushes hostiles away within &f8 blocks&7."
-    - "&7Knockback velocity away from anchor."
-    - "&7Protects crop fields from mobs."
+    - "&r&r&7Pushes hostiles away within &f8 blocks&7."
+    - "&r&r&7Knockback velocity away from anchor."
+    - "&r&r&7Protects crop fields from mobs."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: hay
 
 model:
   type: "block_display"

@@ -1,17 +1,18 @@
 id: glow-berry-shot
 
 display:
-  title: "&eGlow Berry Shot"
+  title: "&e&lGlow Berry Shot"
   description:
-    - "&7Drink for &fNight Vision&7 and &eGlowing&7 for 2 minutes."
-    - "&7Lights up your surroundings and marks you."
-    - "&7Consumable with cooldown."
+    - "&r&r&7Drink for &fNight Vision&7 and &eGlowing&7 for 2 minutes."
+    - "&r&r&7Lights up your surroundings and marks you."
+    - "&r&r&7Consumable with cooldown."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: potion
 
 behavior:
   right_click_air: use

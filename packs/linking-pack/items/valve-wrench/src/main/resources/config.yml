@@ -1,16 +1,17 @@
 id: valve-wrench
 
 display:
-  title: "&9Valve Wrench"
+  title: "&9&lValve Wrench"
   description:
-    - "&7Right-click a &epipe valve&7 to link."
-    - "&7Use again to control it remotely."
+    - "&r&r&7Right-click a &epipe valve&7 to link."
+    - "&r&r&7Use again to control it remotely."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: tool
 
 behavior:
   right_click_air: use

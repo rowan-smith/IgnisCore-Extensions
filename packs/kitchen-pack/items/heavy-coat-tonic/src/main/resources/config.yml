@@ -1,17 +1,18 @@
 id: heavy-coat-tonic
 
 display:
-  title: "&eHeavy Coat Tonic"
+  title: "&e&lHeavy Coat Tonic"
   description:
-    - "&7Drink for &8Slowness&7 and &9Resistance II&7."
-    - "&7Trade speed for toughness for 45 seconds."
-    - "&7Consumable with cooldown."
+    - "&r&r&7Drink for &8Slowness&7 and &9Resistance II&7."
+    - "&r&r&7Trade speed for toughness for 45 seconds."
+    - "&r&r&7Consumable with cooldown."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: potion
 
 behavior:
   right_click_air: use

@@ -1,11 +1,11 @@
 id: mirage-tnt
 
 display:
-  title: "&dMirage TNT"
+  title: "&d&lMirage TNT"
   description:
-    - "&7The blast you see is &dnever&7 where it lands."
-    - "&7Heat, light, and cruel misdirection."
-    - "&7Chase the illusion at your peril."
+    - "&r&r&7The blast you see is &dnever&7 where it lands."
+    - "&r&r&7Heat, light, and cruel misdirection."
+    - "&r&r&7Chase the illusion at your peril."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: tnt
 
 model:
   type: "block_display"

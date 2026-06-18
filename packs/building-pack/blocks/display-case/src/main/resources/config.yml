@@ -1,11 +1,11 @@
 id: display-case
 
 display:
-  title: "&6Display Case"
+  title: "&6&lDisplay Case"
   description:
-    - "&7&eOpen&7 to place one item on display."
-    - "&7Showcases a single item in &eslot &e13&7."
-    - "&7Decorative trophy case."
+    - "&r&r&7&eOpen&7 to place one item on display."
+    - "&r&r&7Showcases a single item in &eslot &e13&7."
+    - "&r&r&7Decorative trophy case."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: glass
 
 model:
   type: "block_display"

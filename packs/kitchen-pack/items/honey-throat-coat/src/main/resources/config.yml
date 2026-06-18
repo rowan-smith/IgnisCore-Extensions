@@ -1,17 +1,18 @@
 id: honey-throat-coat
 
 display:
-  title: "&eHoney Throat Coat"
+  title: "&e&lHoney Throat Coat"
   description:
-    - "&7Drink for brief &aRegeneration II&7."
-    - "&7Marks you with a &esweet scent&7 flag."
-    - "&7Soothes poison-themed debuffs."
+    - "&r&r&7Drink for brief &aRegeneration II&7."
+    - "&r&r&7Marks you with a &esweet scent&7 flag."
+    - "&r&r&7Soothes poison-themed debuffs."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: potion
 
 behavior:
   right_click_air: use

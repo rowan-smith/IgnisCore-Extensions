@@ -1,11 +1,11 @@
 id: greenhouse-glass
 
 display:
-  title: "&aGreenhouse Glass"
+  title: "&a&lGreenhouse Glass"
   description:
-    - "&7Bonemeals crops below when a &fglass roof&7 is overhead."
-    - "&7&e2&7-block radius under glass canopy."
-    - "&7Happy-villager growth particles."
+    - "&r&r&7Bonemeals crops below when a &fglass roof&7 is overhead."
+    - "&r&r&7&e2&7-block radius under glass canopy."
+    - "&r&r&7Happy-villager growth particles."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: glass
 
 model:
   type: "block_display"

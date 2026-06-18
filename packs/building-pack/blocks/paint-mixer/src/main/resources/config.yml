@@ -1,11 +1,11 @@
 id: paint-mixer
 
 display:
-  title: "&6Paint Mixer"
+  title: "&6&lPaint Mixer"
   description:
-    - "&7Cycles &bredstone&7, wax, and compost particles."
-    - "&7Ambient color-mixing decoration."
-    - "&7&bPassive&7 while placed."
+    - "&r&r&7Cycles &bredstone&7, wax, and compost particles."
+    - "&r&r&7Ambient color-mixing decoration."
+    - "&r&r&7&bPassive&7 while placed."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: barrel
 
 model:
   type: "block_display"

@@ -1,11 +1,11 @@
 id: socket-lamp
 
 display:
-  title: "&9Socket Lamp"
+  title: "&9&lSocket Lamp"
   description:
-    - "&7When lit remotely, emits &bend-rod&7 particles."
-    - "&7Brightness scales with configured light level."
-    - "&7Pairs with lamp dimmer item."
+    - "&r&r&7When lit remotely, emits &bend-rod&7 particles."
+    - "&r&r&7Brightness scales with configured light level."
+    - "&r&r&7Pairs with lamp dimmer item."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: lamp
 
 model:
   type: "block_display"

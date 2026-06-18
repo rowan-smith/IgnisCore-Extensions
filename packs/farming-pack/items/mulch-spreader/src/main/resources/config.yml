@@ -1,17 +1,18 @@
 id: mulch-spreader
 
 display:
-  title: "&aMulch Spreader"
+  title: "&a&lMulch Spreader"
   description:
-    - "&7Spread mulch on the block below you."
-    - "&7Turns paths into &amosm blocks&7."
-    - "&7Otherwise mossifies blocks near water."
+    - "&r&r&7Spread mulch on the block below you."
+    - "&r&r&7Turns paths into &amosm blocks&7."
+    - "&r&r&7Otherwise mossifies blocks near water."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: fertilizer
 
 behavior:
   right_click_air: use

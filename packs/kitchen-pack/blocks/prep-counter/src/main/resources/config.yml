@@ -1,11 +1,11 @@
 id: prep-counter
 
 display:
-  title: "&6Prep Counter"
+  title: "&6&lPrep Counter"
   description:
-    - "&7Open GUI: load &f3 food items&7 in input slots."
-    - "&7Combines them into a &6golden carrot&7."
-    - "&7Happy-villager sparkle on prep."
+    - "&r&r&7Open GUI: load &f3 food items&7 in input slots."
+    - "&r&r&7Combines them into a &6golden carrot&7."
+    - "&r&r&7Happy-villager sparkle on prep."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: barrel
 
 model:
   type: "block_display"

@@ -1,17 +1,18 @@
 id: unlabeled-potion
 
 display:
-  title: "&dUnlabeled Potion"
+  title: "&d&lUnlabeled Potion"
   description:
-    - "&7No label, no hints, no promises."
-    - "&7Drink it and find out what it &ddoes&7."
-    - "&7Some bottles keep their secrets till the last sip."
+    - "&r&r&7No label, no hints, no promises."
+    - "&r&r&7Drink it and find out what it &ddoes&7."
+    - "&r&r&7Some bottles keep their secrets till the last sip."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: potion
 
 behavior:
   right_click_air: use

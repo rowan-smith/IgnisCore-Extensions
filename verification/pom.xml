@@ -13,7 +13,7 @@
 
   <groupId>dev.rono.extensions</groupId>
   <artifactId>verification</artifactId>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>igniscore-extensions-verification</name>
   <description>Post-packaging verification tests for extension JARs</description>

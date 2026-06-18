@@ -5,17 +5,18 @@
 id: detonator
 
 display:
-  title: "&eDetonator"
+  title: "&e&lDetonator"
   description:
-    - "&7Left-click a &esignal charge&7 to link it."
-    - "&7&eRight-click&7 to detonate all linked charges."
-    - "&7Holds up to &e16&7 paired charges."
+    - "&r&r&7Left-click a &esignal charge&7 to link it."
+    - "&r&r&7&eRight-click&7 to detonate all linked charges."
+    - "&r&r&7Holds up to &e16&7 paired charges."
 
 item:
   base_material: blaze_rod
 
 textures:
   icon: icon.png
+  fallback: detonator
 
 # Item behavior action tokens (interpreted by detonator Strategy):
 #   assign   — left_click_block: link clicked custom block to this detonator

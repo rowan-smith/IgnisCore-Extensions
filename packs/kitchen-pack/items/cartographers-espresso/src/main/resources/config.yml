@@ -1,17 +1,18 @@
 id: cartographers-espresso
 
 display:
-  title: "&eCartographer's Espresso"
+  title: "&e&lCartographer's Espresso"
   description:
-    - "&7Drink for &bSpeed II&7 for 30 seconds."
-    - "&7Sets compass heading toward &fruins&7."
-    - "&7Pulses an &bend-rod&7 &ering&7 at your feet."
+    - "&r&r&7Drink for &bSpeed II&7 for 30 seconds."
+    - "&r&r&7Sets compass heading toward &fruins&7."
+    - "&r&r&7Pulses an &bend-rod&7 &ering&7 at your feet."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: potion
 
 behavior:
   right_click_air: use

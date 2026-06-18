@@ -1,11 +1,11 @@
 id: glow-ink-lantern
 
 display:
-  title: "&6Glow Ink Lantern"
+  title: "&6&lGlow Ink Lantern"
   description:
-    - "&7&bGlow-squid&7 particles and amethyst chime."
-    - "&7Ambient &elight&7 decoration."
-    - "&7&bPassive&7 glow while placed."
+    - "&r&r&7&bGlow-squid&7 particles and amethyst chime."
+    - "&r&r&7Ambient &elight&7 decoration."
+    - "&r&r&7&bPassive&7 glow while placed."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: lantern
 
 model:
   type: "block_display"

@@ -1,17 +1,18 @@
 id: antidote-swab
 
 display:
-  title: "&eAntidote Swab"
+  title: "&e&lAntidote Swab"
   description:
-    - "&7Drink to gain brief &aRegeneration&7."
-    - "&7Clears ailments on use."
-    - "&7Consumable with cooldown."
+    - "&r&r&7Drink to gain brief &aRegeneration&7."
+    - "&r&r&7Clears ailments on use."
+    - "&r&r&7Consumable with cooldown."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: potion
 
 behavior:
   right_click_air: use

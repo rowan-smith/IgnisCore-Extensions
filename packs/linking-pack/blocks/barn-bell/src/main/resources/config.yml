@@ -1,11 +1,11 @@
 id: barn-bell
 
 display:
-  title: "&9Barn Bell"
+  title: "&9&lBarn Bell"
   description:
-    - "&7&eRing&7 to call livestock with a &bbell&7 toll."
-    - "&7Pairs with the &9barn bell&7 linking network."
-    - "&7Short cooldown between rings."
+    - "&r&r&7&eRing&7 to call livestock with a &bbell&7 toll."
+    - "&r&r&7Pairs with the &9barn bell&7 linking network."
+    - "&r&r&7Short cooldown between rings."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: bell
 
 model:
   type: "block_display"

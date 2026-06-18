@@ -1,10 +1,10 @@
 id: echo-fuse-tnt
 
 display:
-  title: "&cEcho Fuse TNT"
+  title: "&c&lEcho Fuse TNT"
   description:
-    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
-    - "&7Fuses for &e4.0s&7, then echoes with phantom aftershocks."
+    - "&r&r&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&r&r&7Fuses for &e4.0s&7, then echoes with phantom aftershocks."
 
 block:
   placeable: true
@@ -18,6 +18,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: tnt
 
 model:
   type: "block_display"

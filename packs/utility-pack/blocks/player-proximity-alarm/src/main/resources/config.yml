@@ -1,11 +1,11 @@
 id: player-proximity-alarm
 
 display:
-  title: "&6Player Proximity Alarm"
+  title: "&6&lPlayer Proximity Alarm"
   description:
-    - "&7Rings a bell when players enter &f12 blocks&7."
-    - "&7Firework sparkles on detection."
-    - "&7Base perimeter alarm."
+    - "&r&r&7Rings a bell when players enter &f12 blocks&7."
+    - "&r&r&7Firework sparkles on detection."
+    - "&r&r&7Base perimeter alarm."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: bell
 
 model:
   type: "block_display"

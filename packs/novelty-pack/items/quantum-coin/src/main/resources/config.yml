@@ -1,17 +1,18 @@
 id: quantum-coin
 
 display:
-  title: "&dQuantum Coin"
+  title: "&d&lQuantum Coin"
   description:
-    - "&7Heads or tails, until you &dlook&7."
-    - "&7Both faces, neither face, every flip."
-    - "&7Chance has never felt so uncertain."
+    - "&r&r&7Heads or tails, until you &dlook&7."
+    - "&r&r&7Both faces, neither face, every flip."
+    - "&r&r&7Chance has never felt so uncertain."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: coin
 
 behavior:
   right_click_air: use

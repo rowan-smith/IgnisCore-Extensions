@@ -1,11 +1,11 @@
 id: honey-centrifuge
 
 display:
-  title: "&aHoney Centrifuge"
+  title: "&a&lHoney Centrifuge"
   description:
-    - "&7Dripping-&bhoney&7 particles and slide sound."
-    - "&7Ambient &bhoney&7 processing station."
-    - "&7Decorative beekeeping equipment."
+    - "&r&r&7Dripping-&bhoney&7 particles and slide sound."
+    - "&r&r&7Ambient &bhoney&7 processing station."
+    - "&r&r&7Decorative beekeeping equipment."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: hay
 
 model:
   type: "block_display"

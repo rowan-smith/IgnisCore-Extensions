@@ -1,17 +1,18 @@
 id: vine-shears
 
 display:
-  title: "&aVine Shears"
+  title: "&a&lVine Shears"
   description:
-    - "&7Click vines to flood-fill cut up to &f32 blocks&7."
-    - "&7Removes vine, weeping, and twisting variants."
-    - "&7Reports cut count in chat."
+    - "&r&r&7Click vines to flood-fill cut up to &f32 blocks&7."
+    - "&r&r&7Removes vine, weeping, and twisting variants."
+    - "&r&r&7Reports cut count in chat."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: shears
 
 behavior:
   right_click_air: use

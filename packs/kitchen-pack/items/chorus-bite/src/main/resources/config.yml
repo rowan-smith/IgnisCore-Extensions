@@ -1,17 +1,18 @@
 id: chorus-bite
 
 display:
-  title: "&eChorus Bite"
+  title: "&e&lChorus Bite"
   description:
-    - "&7&eDrink&7 for a chaotic sideways warp."
-    - "&7Spawns portal particles at origin and destination."
-    - "&7Consumable with cooldown."
+    - "&r&r&7&eDrink&7 for a chaotic sideways warp."
+    - "&r&r&7Spawns portal particles at origin and destination."
+    - "&r&r&7Consumable with cooldown."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: food
 
 behavior:
   right_click_air: use

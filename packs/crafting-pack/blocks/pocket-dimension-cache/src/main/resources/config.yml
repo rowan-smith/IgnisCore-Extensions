@@ -1,11 +1,11 @@
 id: pocket-dimension-cache
 
 display:
-  title: "&ePocket Dimension Cache"
+  title: "&e&lPocket Dimension Cache"
   description:
-    - "&7&eOpen&7 for extra-dimensional storage."
-    - "&7Up to &f3 rows&7 of inventory (configurable)."
-    - "&7Personal stash independent of chunk."
+    - "&r&r&7&eOpen&7 for extra-dimensional storage."
+    - "&r&r&7Up to &f3 rows&7 of inventory (configurable)."
+    - "&r&r&7Personal stash independent of chunk."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: chest
 
 model:
   type: "block_display"

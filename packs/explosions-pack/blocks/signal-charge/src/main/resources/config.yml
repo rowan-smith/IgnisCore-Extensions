@@ -8,11 +8,11 @@
 id: signal-charge
 
 display:
-  title: "&6Signal Charge"
+  title: "&6&lSignal Charge"
   description:
-    - "&7Place it, then link a &edetonator&7."
-    - "&7Cannot be lit with &fflint and steel&7."
-    - "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
+    - "&r&r&7Place it, then link a &edetonator&7."
+    - "&r&r&7Cannot be lit with &fflint and steel&7."
+    - "&r&r&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
 
 block:
   placeable: true
@@ -26,6 +26,7 @@ textures:
   top: top.jpg
   side: side.jpg
   bottom: bottom.jpg
+  fallback: redstone
 
 model:
   type: "block_display"

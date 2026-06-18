@@ -1,11 +1,11 @@
 id: fish-smoker-rack
 
 display:
-  title: "&6Fish Smoker Rack"
+  title: "&6&lFish Smoker Rack"
   description:
-    - "&7&bSmoking&7 particles and fish swim sounds."
-    - "&7Ambient fish-smoking station."
-    - "&7Pairs with kitchen setups."
+    - "&r&r&7&bSmoking&7 particles and fish swim sounds."
+    - "&r&r&7Ambient fish-smoking station."
+    - "&r&r&7Pairs with kitchen setups."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: smoker
 
 model:
   type: "block_display"

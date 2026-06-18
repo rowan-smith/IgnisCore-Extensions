@@ -1,16 +1,17 @@
 id: decoy-flare
 
 display:
-  title: "&cDecoy Flare"
+  title: "&c&lDecoy Flare"
   description:
-    - "&7Right-click to &ethrow&7."
-    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    - "&r&r&7Right-click to &ethrow&7."
+    - "&r&r&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:
   base_material: snowball
 
 textures:
   icon: icon.png
+  fallback: flare
 
 behavior:
   right_click_air: throw

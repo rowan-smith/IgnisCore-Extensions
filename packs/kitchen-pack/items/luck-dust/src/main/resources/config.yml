@@ -1,17 +1,18 @@
 id: luck-dust
 
 display:
-  title: "&eLuck Dust"
+  title: "&e&lLuck Dust"
   description:
-    - "&7&eSprinkle&7 on a block near a chest."
-    - "&7Activates a &6bonus loot roll&7 on next chest open."
-    - "&7Must click a block; consumes one dust."
+    - "&r&r&7&eSprinkle&7 on a block near a chest."
+    - "&r&r&7Activates a &6bonus loot roll&7 on next chest open."
+    - "&r&r&7Must click a block; consumes one dust."
 
 item:
   base_material: paper
 
 textures:
   icon: icon.png
+  fallback: dust
 
 behavior:
   right_click_air: use

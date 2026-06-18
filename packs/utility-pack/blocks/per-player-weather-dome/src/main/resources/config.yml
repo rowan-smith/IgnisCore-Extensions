@@ -1,11 +1,11 @@
 id: per-player-weather-dome
 
 display:
-  title: "&6Per-Player Weather Dome"
+  title: "&6&lPer-Player Weather Dome"
   description:
-    - "&7Rain and cloud particles in a &f5-block&7 dome."
-    - "&7Cloud pulse &ering&7 at base."
-    - "&7Localized weather visual effect."
+    - "&r&r&7Rain and cloud particles in a &f5-block&7 dome."
+    - "&r&r&7Cloud pulse &ering&7 at base."
+    - "&r&r&7Localized weather visual effect."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: glass
 
 model:
   type: "block_display"

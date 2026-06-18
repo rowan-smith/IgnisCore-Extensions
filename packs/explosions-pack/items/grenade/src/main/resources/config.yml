@@ -12,10 +12,10 @@
 id: grenade
 
 display:
-  title: "&cGrenade"
+  title: "&c&lGrenade"
   description:
-    - "&7Right-click to &ethrow&7."
-    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    - "&r&r&7Right-click to &ethrow&7."
+    - "&r&r&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 # item.base_material — vanilla material id (e.g. snowball, paper)
 item:
@@ -23,6 +23,7 @@ item:
 
 textures:
   icon: icon.png
+  fallback: grenade
 
 # Item behavior action tokens (interpreted by grenade Strategy):
 #   left_click_block / right_click_block / left_click_air / right_click_air

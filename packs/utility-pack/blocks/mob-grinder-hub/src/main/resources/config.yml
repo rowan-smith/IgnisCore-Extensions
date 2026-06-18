@@ -1,11 +1,11 @@
 id: mob-grinder-hub
 
 display:
-  title: "&6Mob Grinder Hub"
+  title: "&6&lMob Grinder Hub"
   description:
-    - "&7Pulls hostiles downward in a &f5-block&7 radius."
-    - "&7Damage-indicator particles on trapped mobs."
-    - "&7Iron golem attack sound when grinding."
+    - "&r&r&7Pulls hostiles downward in a &f5-block&7 radius."
+    - "&r&r&7Damage-indicator particles on trapped mobs."
+    - "&r&r&7Iron golem attack sound when grinding."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: beacon
 
 model:
   type: "block_display"

@@ -1,11 +1,11 @@
 id: fake-bedrock
 
 display:
-  title: "&dFake Bedrock"
+  title: "&d&lFake Bedrock"
   description:
-    - "&7Unbreakable, unmovable, the bottom of the world."
-    - "&7Or so it would have you &dbelieve&7."
-    - "&7Some foundations are not what they seem."
+    - "&r&r&7Unbreakable, unmovable, the bottom of the world."
+    - "&r&r&7Or so it would have you &dbelieve&7."
+    - "&r&r&7Some foundations are not what they seem."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: bedrock
 
 model:
   type: "block_display"

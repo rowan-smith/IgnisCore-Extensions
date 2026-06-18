@@ -1,11 +1,11 @@
 id: crop-mri
 
 display:
-  title: "&aCrop MRI"
+  title: "&a&lCrop MRI"
   description:
-    - "&7Scans crops in a &a6-block&7 radius."
-    - "&7Ping pitch scales with crop count found."
-    - "&7Vertical &escan&7 beam while crops detected."
+    - "&r&r&7Scans crops in a &a6-block&7 radius."
+    - "&r&r&7Ping pitch scales with crop count found."
+    - "&r&r&7Vertical &escan&7 beam while crops detected."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: hay
 
 model:
   type: "block_display"

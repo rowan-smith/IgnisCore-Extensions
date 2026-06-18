@@ -7,11 +7,11 @@
 id: spider-storm-tnt
 
 display:
-  title: "&cSpider Storm TNT"
+  title: "&c&lSpider Storm TNT"
   description:
-    - "&7Spawns a swarm of spiders on detonation."
-    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
-    - "&7Fuses for &e4.0s&7, then unleashes a hostile swarm."
+    - "&r&r&7Spawns a swarm of spiders on detonation."
+    - "&r&r&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&r&r&7Fuses for &e4.0s&7, then unleashes a hostile swarm."
 
 block:
   placeable: true
@@ -30,6 +30,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: tnt
 
 model:
   type: "block_display"

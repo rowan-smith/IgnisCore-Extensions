@@ -1,11 +1,11 @@
 id: blueprint-projector
 
 display:
-  title: "&bBlueprint Projector"
+  title: "&b&lBlueprint Projector"
   description:
-    - "&7Projects a vertical &escan&7 beam upward."
-    - "&7Pulses an &bend-rod&7 &ering&7 while active."
-    - "&7Marks build zones with happy-villager particles."
+    - "&r&r&7Projects a vertical &escan&7 beam upward."
+    - "&r&r&7Pulses an &bend-rod&7 &ering&7 while active."
+    - "&r&r&7Marks build zones with happy-villager particles."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: beacon
 
 model:
   type: "block_display"

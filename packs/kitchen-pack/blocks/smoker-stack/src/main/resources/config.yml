@@ -1,11 +1,11 @@
 id: smoker-stack
 
 display:
-  title: "&6Smoker Stack"
+  title: "&6&lSmoker Stack"
   description:
-    - "&7Tall &bcampfire&7 signal smoke column."
-    - "&7Visible from a distance."
-    - "&7Decorative kitchen chimney."
+    - "&r&r&7Tall &bcampfire&7 signal smoke column."
+    - "&r&r&7Visible from a distance."
+    - "&r&r&7Decorative kitchen chimney."
 
 block:
   placeable: true
@@ -19,6 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: smoker
 
 model:
   type: "block_display"
