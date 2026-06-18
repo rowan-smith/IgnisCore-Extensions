@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.cropmri;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,8 +17,8 @@ final class CropMriSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "mriRadius", 6);
-          int crops = BlockScanSupport.countCrops(world, center, radius);
-          TheatricsSupport.scanBeam(world, center, center.add(0, 2, 0), "HAPPY_VILLAGER");
+          int crops = ExtensionShared.scan().countCrops(world, center, radius);
+          ExtensionShared.theatrics().scanBeam(world, center, center.add(0, 2, 0), "HAPPY_VILLAGER");
           if (crops > 0) {
               world.playSound(center, "BLOCK_NOTE_BLOCK_PLING", 0.5f, 1.0f + crops * 0.05f);
           }

@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.irrigationsprinkler;
 
-import dev.rono.extensions.shared.strategy.PlacedTickSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockBreakEvent;
 import dev.rono.igniscore.api.event.OnBlockBreakListener;
 import dev.rono.igniscore.block.irrigationsprinkler.IrrigationSprinklerSupport;
@@ -14,7 +14,7 @@ final class IrrigationSprinklerOnBlockBreakListener implements OnBlockBreakListe
 
     @Override
     public void onBlockBreak(BlockBreakEvent event) {
-        PlacedTickSupport.stop(event.block().location());
+        ExtensionShared.ticks().stop(event.block().location());
         runtime.registry.unregister(event.block().location());
     }
 }

@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.irrigationsprinkler;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -17,12 +17,12 @@ final class IrrigationSprinklerSupport {
 
     static void tick(IrrigationSprinklerRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        IgnisItem water = gui.inventory().getItem(WATER_SLOT);
-        if (!ProcessingGuiSupport.matches(water, "water_bucket", "bucket")) {
+        IgnisItem water = inventory.getItem(WATER_SLOT);
+        if (!ExtensionShared.processing().matches(water, "water_bucket", "bucket")) {
             return;
         }
         IgnisWorld world = worldAt(runtime, location);
@@ -40,7 +40,7 @@ final class IrrigationSprinklerSupport {
                 }
             }
         }
-        ProcessingGuiSupport.consumeOne(gui.inventory(), WATER_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, WATER_SLOT);
         world.playSound(center, "BLOCK_WATER_AMBIENT", 0.4f, 1.0f);
     
     }

@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.kegtap;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class KegTapRuntime {
@@ -9,7 +10,7 @@ final class KegTapRuntime {
 
     KegTapRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "keg-tap");
+                this.registry = ExtensionShared.gui().blockStorage(context, "keg-tap");
     }
 }
 

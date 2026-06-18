@@ -1,4 +1,4 @@
-package dev.rono.extensions.shared.config;
+package dev.rono.extensions.shared.api.config;
 
 import dev.rono.igniscore.api.IgnisApiVersion;
 import dev.rono.igniscore.api.config.DefinitionParser;
@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -67,25 +69,21 @@ class AllExtensionConfigsParsingTest {
             return Stream.empty();
         }
 
+        List<Path> paths = new ArrayList<>();
         try (Stream<Path> packs = Files.list(packsRoot)) {
-            return packs
-                    .filter(Files::isDirectory)
-                    .flatMap(pack -> {
-                        Path categoryRoot = pack.resolve(category);
-                        if (!Files.isDirectory(categoryRoot)) {
-                            return Stream.empty();
-                        }
-                        try (Stream<Path> modules = Files.list(categoryRoot)) {
-                            return modules
-                                    .map(module -> module.resolve("src/main/resources/config.yml"))
-                                    .filter(Files::exists);
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
-                        }
-                    })
-                    .toList()
-                    .stream();
+            for (Path pack : packs.filter(Files::isDirectory).toList()) {
+                Path categoryRoot = pack.resolve(category);
+                if (!Files.isDirectory(categoryRoot)) {
+                    continue;
+                }
+                try (Stream<Path> modules = Files.list(categoryRoot)) {
+                    modules.map(module -> module.resolve("src/main/resources/config.yml"))
+                            .filter(Files::exists)
+                            .forEach(paths::add);
+                }
+            }
         }
+        return paths.stream();
     }
 
     private static ExtensionManifest manifestFor(Path configPath, String fileName) throws IOException {

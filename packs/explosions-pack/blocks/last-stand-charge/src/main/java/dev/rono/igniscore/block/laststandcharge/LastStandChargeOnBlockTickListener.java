@@ -1,8 +1,6 @@
 package dev.rono.igniscore.block.laststandcharge;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTickEvent;
 import dev.rono.igniscore.api.event.OnBlockTickListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -24,16 +22,16 @@ final class LastStandChargeOnBlockTickListener implements OnBlockTickListener {
         BlockDefinition def = event.instance().getDefinition();
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = LastStandChargeSupport.worldAt(context, loc);
-        int fuse = ExplosionSupport.fuseTicks(event.instance(), 80);
-        int elapsed = ExplosionSupport.elapsedFuseTicks(event.instance(), 80);
+        int fuse = ExtensionShared.explosion().fuseTicks(event.instance(), 80);
+        int elapsed = ExtensionShared.explosion().elapsedFuseTicks(event.instance(), 80);
         int interval = StrategySupport.customInt(def, "tickInterval", 5);
         if (elapsed % interval != 0) {
             return;
         }
         double radius = StrategySupport.customDouble(def, "stasisRadius", 5.0);
         if (event.instance().getTicksLeft() < StrategySupport.customInt(def, "lastStandTicks", 30)) {
-            EntityUtilSupport.freezeInRadius(world, loc, radius);
-            TheatricsSupport.sparkle(world, loc, "TOTEM_OF_UNDYING", 6);
+            ExtensionShared.entities().freezeInRadius(world, loc, radius);
+            ExtensionShared.theatrics().sparkle(world, loc, "TOTEM_OF_UNDYING", 6);
         }
     }
 }

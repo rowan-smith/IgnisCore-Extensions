@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.irrigationsprinkler;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class IrrigationSprinklerRuntime {
@@ -9,7 +10,7 @@ final class IrrigationSprinklerRuntime {
 
     IrrigationSprinklerRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "irrigation-sprinkler");
+                this.registry = ExtensionShared.gui().blockStorage(context, "irrigation-sprinkler");
     }
 }
 

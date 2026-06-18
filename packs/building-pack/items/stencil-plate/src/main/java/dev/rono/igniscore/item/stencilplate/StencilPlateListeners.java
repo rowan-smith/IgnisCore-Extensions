@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.stencilplate;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;

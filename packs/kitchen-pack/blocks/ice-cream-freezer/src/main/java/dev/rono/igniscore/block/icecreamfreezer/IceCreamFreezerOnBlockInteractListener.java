@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.icecreamfreezer;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -18,7 +18,7 @@ final class IceCreamFreezerOnBlockInteractListener implements OnBlockInteractLis
         if (event.action() != CustomBlockAction.OPEN) {
             return;
         }
-        if (event.heldItem() != null && !event.heldItem().isAir() && ProcessingGuiSupport.matches(event.heldItem(), "bowl")) {
+        if (event.heldItem() != null && !event.heldItem().isAir() && ExtensionShared.processing().matches(event.heldItem(), "bowl")) {
             event.player().applyPotionEffect("FIRE_RESISTANCE", 200, 0);
             event.heldItem().setAmount(event.heldItem().getAmount() - 1);
             event.player().sendMessage("<aqua>Ice cream grants brief fire resistance.</aqua>");

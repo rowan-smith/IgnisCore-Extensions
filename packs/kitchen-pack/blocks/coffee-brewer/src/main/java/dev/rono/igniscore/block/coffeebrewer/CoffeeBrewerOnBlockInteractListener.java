@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.coffeebrewer;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -18,7 +18,7 @@ final class CoffeeBrewerOnBlockInteractListener implements OnBlockInteractListen
         if (event.action() != CustomBlockAction.OPEN) {
             return;
         }
-        if (event.heldItem() != null && !event.heldItem().isAir() && ProcessingGuiSupport.matches(event.heldItem(), "potion", "glass_bottle")) {
+        if (event.heldItem() != null && !event.heldItem().isAir() && ExtensionShared.processing().matches(event.heldItem(), "potion", "glass_bottle")) {
             event.player().applyPotionEffect("SPEED", 300, 0);
             event.heldItem().setAmount(event.heldItem().getAmount() - 1);
             event.player().sendMessage("<gold>Coffee boosts your speed.</gold>");

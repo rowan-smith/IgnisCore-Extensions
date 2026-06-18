@@ -1,12 +1,12 @@
 package dev.rono.igniscore.block.depthcharge;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BlockBlastSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class DepthChargeBehavior {
@@ -41,7 +41,7 @@ final class DepthChargeBehavior {
         world.spawnParticle(loc, "SPLASH", 40, radius * 0.4, 0.5, radius * 0.4, 0.1);
         world.spawnParticle(loc, "BUBBLE", 60, radius * 0.5, radius * 0.5, radius * 0.5, 0.05);
 
-        BlockBlastSupport.breakUnderwater(context.region(), world, loc, radius,
+        ExtensionShared.blasts().breakUnderwater(context.region(), world, loc, radius,
                 staggered, batchSize, batchDelayTicks, context.scheduler());
         world.createExplosion(loc, 0.5f, false, false);
     }

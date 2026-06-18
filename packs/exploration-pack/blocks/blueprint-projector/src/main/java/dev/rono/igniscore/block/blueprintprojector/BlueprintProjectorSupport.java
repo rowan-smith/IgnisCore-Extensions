@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.blueprintprojector;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -15,8 +15,8 @@ final class BlueprintProjectorSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.pulseRing(world, center, 2.0, "END_ROD");
-          TheatricsSupport.scanBeam(world, center, center.add(0, 2, 0), "VILLAGER_HAPPY");
+        ExtensionShared.theatrics().pulseRing(world, center, 2.0, "END_ROD");
+          ExtensionShared.theatrics().scanBeam(world, center, center.add(0, 2, 0), "VILLAGER_HAPPY");
     
     }
 

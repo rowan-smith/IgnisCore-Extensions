@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.lostandfoundbin;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -21,8 +21,8 @@ final class LostAndFoundBinSupport {
             return;
         }
         runtime.sweepCounter = 0;
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
         IgnisWorld world = worldAt(runtime, location);
@@ -30,14 +30,14 @@ final class LostAndFoundBinSupport {
         double radius = StrategySupport.customDouble(definition, "collectRadius", 8.0);
         int collected = 0;
         for (Object entity : world.getNearbyEntities(center, radius)) {
-            if (!EntityUtilSupport.isLootEntity(entity)) {
+            if (!ExtensionShared.entities().isLootEntity(entity)) {
                 continue;
             }
             IgnisItem dropped = world.getDroppedItem(entity);
             if (dropped == null || dropped.isAir()) {
                 continue;
             }
-            if (storeInBin(runtime, gui, dropped)) {
+            if (storeInBin(runtime, inventory, dropped)) {
                 world.removeEntity(entity);
                 collected++;
             }
@@ -48,9 +48,7 @@ final class LostAndFoundBinSupport {
     
     }
 
-    static boolean storeInBin(LostAndFoundBinRuntime runtime, dev.rono.extensions.shared.gui.BlockStorageGui gui, IgnisItem stack) {
-
-        var inventory = gui.inventory();
+    static boolean storeInBin(LostAndFoundBinRuntime runtime, dev.rono.igniscore.api.port.IgnisInventory inventory, IgnisItem stack) {
         for (int slot = 0; slot < inventory.getSize(); slot++) {
             IgnisItem existing = inventory.getItem(slot);
             if (existing == null || existing.isAir()) {

@@ -1,11 +1,11 @@
 package dev.rono.igniscore.block.silenttnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.PreviewTrickSupport;
 import dev.rono.igniscore.api.util.Locations;
 import dev.rono.igniscore.api.util.Locations;
 
@@ -29,8 +29,8 @@ final class SilentTntBehavior {
         IgnisWorld world = worldAt(loc);
         float realPower = (float) StrategySupport.customDouble(instance.getDefinition(), "realPower", 4.0);
         boolean blockDamage = StrategySupport.customBoolean(instance.getDefinition(), "blockDamage", true);
-        PreviewTrickSupport.silentDetonation(world, loc, realPower, blockDamage);
-        PreviewTrickSupport.forNearbyPlayers(world, loc, 32, player ->
+        ExtensionShared.preview().silentDetonation(world, loc, realPower, blockDamage);
+        ExtensionShared.preview().forNearbyPlayers(world, loc, 32, player ->
                 context.effects().playFakeExplosion(loc, 0f, world.getPlayersNear(loc, 32)));
     }
 

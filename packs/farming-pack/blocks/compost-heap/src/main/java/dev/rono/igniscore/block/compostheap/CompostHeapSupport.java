@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.compostheap;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -16,7 +16,7 @@ final class CompostHeapSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center, "COMPOSTER", StrategySupport.customInt(definition, "compostParticles", 5));
+        ExtensionShared.theatrics().sparkle(world, center, "COMPOSTER", StrategySupport.customInt(definition, "compostParticles", 5));
           world.playSound(center, "BLOCK_COMPOSTER_FILL", 0.5f, 1.0f);
     
     }

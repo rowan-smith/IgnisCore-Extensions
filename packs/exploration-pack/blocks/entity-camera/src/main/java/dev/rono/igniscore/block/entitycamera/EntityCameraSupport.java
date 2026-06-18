@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.entitycamera;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
@@ -14,7 +14,7 @@ final class EntityCameraSupport {
         Object nearest = null;
         double best = Double.MAX_VALUE;
         for (Object entity : world.getNearbyEntities(center, radius)) {
-            if (!EntityUtilSupport.isPassive(entity)) {
+            if (!ExtensionShared.entities().isPassive(entity)) {
                 continue;
             }
             IgnisLocation loc = world.getEntityLocation(entity);

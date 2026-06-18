@@ -1,5 +1,6 @@
 package dev.rono.igniscore.block.seismictnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -7,8 +8,6 @@ import dev.rono.igniscore.api.port.IgnisTask;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.EntityBlastSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class SeismicBehavior {
@@ -40,7 +39,7 @@ final class SeismicBehavior {
         int shakeDuration = StrategySupport.customInt(def, "screenShakeDuration", 60);
         double shakeRadius = StrategySupport.customDouble(def, "screenShakeRadius", 40.0);
 
-        EntityBlastSupport.violentScreenShake(
+        ExtensionShared.blasts().violentScreenShake(
                 context.effects(),
                 context.protocol(),
                 world,
@@ -69,8 +68,8 @@ final class SeismicBehavior {
             world.playSound(blast, "ENTITY_GENERIC_EXPLODE", 0.8f, 0.6f + (float) Math.random() * 0.3f);
             world.spawnParticle(blast, "EXPLOSION", 3, 0.4, 0.2, 0.4, 0.02);
             world.spawnParticle(blast, "CLOUD", 12, 0.6, 0.2, 0.6, 0.03);
-            ExplosionSupport.createExplosion(world, blast, microPower, false, true);
-            EntityBlastSupport.applyKnockback(world, blast, spacing * 1.5, 0.35, false);
+            ExtensionShared.explosion().create(world, blast, microPower, false, true);
+            ExtensionShared.blasts().applyKnockback(world, blast, spacing * 1.5, 0.35, false);
         }, 0L, Math.max(1, waveDelay));
     }
 

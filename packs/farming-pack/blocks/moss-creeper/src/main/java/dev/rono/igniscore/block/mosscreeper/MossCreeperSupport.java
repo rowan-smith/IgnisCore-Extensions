@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.mosscreeper;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class MossCreeperSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "mossRadius", 3);
-          BlockScanSupport.mossifyNearWater(world, center, radius);
+          ExtensionShared.scan().mossifyNearWater(world, center, radius);
     
     }
 

@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.chunkgridoverlay;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -35,7 +34,7 @@ final class ChunkGridOverlayListeners implements OnItemClickListener {
                 event.player().sendActionBar("<gray>Chunk " + chunkX + ", " + chunkZ + "</gray>");
                 double size = 8.0;
                 IgnisLocation corner = new IgnisLocation(loc.worldId(), loc.worldName(), chunkX * 16.0, loc.y(), chunkZ * 16.0, 0f, 0f);
-                TheatricsSupport.pulseRing(world, corner.add(size, 0, size), size, "FLAME");
+                ExtensionShared.theatrics().pulseRing(world, corner.add(size, 0, size), size, "FLAME");
                 world.playSound(loc, "BLOCK_BEACON_AMBIENT", 0.5f, 1.8f);
             }
     }

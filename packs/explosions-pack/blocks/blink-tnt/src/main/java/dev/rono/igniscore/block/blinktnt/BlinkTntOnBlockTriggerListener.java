@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.blinktnt;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -23,8 +22,8 @@ final class BlinkTntOnBlockTriggerListener implements OnBlockTriggerListener {
         BlockDefinition def = event.instance().getDefinition();
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = BlinkTntSupport.worldAt(context, loc);
-        EntityUtilSupport.teleportRandomHorizontal(world, loc, StrategySupport.customDouble(def, "blinkRadius", 5.0), 2.5);
-        ExplosionSupport.createExplosion(world, loc, def, 3.5, false);
+        ExtensionShared.entities().teleportRandomHorizontal(world, loc, StrategySupport.customDouble(def, "blinkRadius", 5.0), 2.5);
+        ExtensionShared.explosion().create(world, loc, def, 3.5, false);
     }
 }
 

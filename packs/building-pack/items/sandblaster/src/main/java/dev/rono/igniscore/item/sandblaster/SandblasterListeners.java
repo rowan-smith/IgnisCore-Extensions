@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.sandblaster;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -45,7 +45,7 @@ final class SandblasterListeners implements OnItemClickListener {
                     event.player().sendMessage("<gray>No smooth stone in range to etch.</gray>");
                     return;
                 }
-                TheatricsSupport.sparkle(world, center.add(0.5, 0.5, 0.5), "CLOUD", 10);
+                ExtensionShared.theatrics().sparkle(world, center.add(0.5, 0.5, 0.5), "CLOUD", 10);
                 world.playSound(center, "BLOCK_STONE_BREAK", 0.7f, 1.1f);
                 event.player().sendMessage("<gray>Etched <white>" + etched + "</white> blocks.</gray>");
                 event.item().setAmount(event.item().getAmount() - 1);

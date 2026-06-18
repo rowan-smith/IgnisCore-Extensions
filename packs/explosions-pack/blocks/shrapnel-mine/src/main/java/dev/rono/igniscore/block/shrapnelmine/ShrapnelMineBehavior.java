@@ -1,13 +1,12 @@
 package dev.rono.igniscore.block.shrapnelmine;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BuriedMineSupport;
-import dev.rono.extensions.shared.strategy.ShrapnelSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class ShrapnelMineBehavior {
@@ -24,12 +23,12 @@ final class ShrapnelMineBehavior {
 
         if (StrategySupport.customBoolean(definition, "buried", true)) {
             double triggerRadius = StrategySupport.customDouble(definition, "triggerRadius", 1.2);
-            BuriedMineSupport.arm(context, location, definition.getId(), triggerRadius);
+            ExtensionShared.buriedMines().arm(context, location, definition.getId(), triggerRadius);
         }
     }
 
     void onPlacedBreak(IgnisLocation location) {
-        BuriedMineSupport.disarm(location);
+        ExtensionShared.buriedMines().disarm(location);
     }
 
     void onTrigger(RuntimeBlockInstance instance) {
@@ -44,7 +43,7 @@ final class ShrapnelMineBehavior {
 
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 1.4f, 1.1f);
         world.playSound(loc, "BLOCK_GRAVEL_BREAK", 1.2f, 0.7f);
-        ShrapnelSupport.launchDebris(world, loc, scanRadius, projectileCount, minVelocity, maxVelocity);
+        ExtensionShared.blasts().launchDebris(world, loc, scanRadius, projectileCount, minVelocity, maxVelocity);
         world.createExplosion(loc, 1.5f, false, false);
     }
 

@@ -1,8 +1,6 @@
 package dev.rono.igniscore.item.antidoteswab;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.ConsumableSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -37,7 +35,7 @@ final class AntidoteSwabListeners implements OnItemClickListener {
                 String id = event.definition().getId();
                 String cooldownKey = "ignis:cooldown:" + id;
                 long cooldownTicks = StrategySupport.customInt(event.definition().getCustomData(), "cooldownTicks", 0);
-                if (ConsumableSupport.isOnCooldown(nbt, event.item(), cooldownKey, cooldownTicks)) {
+                if (ExtensionShared.consumable().isOnCooldown(nbt, event.item(), cooldownKey, cooldownTicks)) {
                     event.player().sendMessage("<red>Still on cooldown.</red>");
                     return;
                 }
@@ -52,7 +50,7 @@ final class AntidoteSwabListeners implements OnItemClickListener {
                         event.player().sendMessage("<gold>Miner's lunch — haste and saturation!</gold>");
                     }
                     case "farmers-tea" -> {
-                        BlockScanSupport.bonemealRadius(world, loc, StrategySupport.customInt(event.definition().getCustomData(), "cropRadius", 5));
+                        ExtensionShared.scan().bonemealRadius(world, loc, StrategySupport.customInt(event.definition().getCustomData(), "cropRadius", 5));
                         event.player().sendMessage("<green>Farmer's tea nourishes nearby crops.</green>");
                     }
                     case "divers-salt" -> {
@@ -64,7 +62,7 @@ final class AntidoteSwabListeners implements OnItemClickListener {
                         event.player().applyPotionEffect("SPEED", 600, 1);
                         nbt.setItemString(event.item(), "ignis:compass_heading", "ruins");
                         event.player().sendMessage("<gold>Espresso points you toward distant ruins.</gold>");
-                        TheatricsSupport.pulseRing(world, loc, 4.0, "END_ROD");
+                        ExtensionShared.theatrics().pulseRing(world, loc, 4.0, "END_ROD");
                     }
                     case "ghost-peppermint" -> {
                         nbt.setItemBoolean(event.item(), "ignis:phantom_ignore", true);
@@ -104,9 +102,9 @@ final class AntidoteSwabListeners implements OnItemClickListener {
                             return;
                         }
                         nbt.setItemBoolean(event.item(), "ignis:luck_dust_active", true);
-                        TheatricsSupport.sparkle(world, event.clickedBlock().getLocation(), "HAPPY_VILLAGER", 8);
+                        ExtensionShared.theatrics().sparkle(world, event.clickedBlock().getLocation(), "HAPPY_VILLAGER", 8);
                         event.player().sendMessage("<gold>Luck dust sprinkled — next chest bonus roll!</gold>");
-                        ConsumableSupport.consumeOne(event.item());
+                        ExtensionShared.consumable().consumeOne(event.item());
                         return;
                     }
                     case "antidote-swab" -> {
@@ -132,8 +130,8 @@ final class AntidoteSwabListeners implements OnItemClickListener {
                     }
                 }
 
-                ConsumableSupport.markUsed(nbt, event.item(), cooldownKey);
-                ConsumableSupport.consumeOne(event.item());
+                ExtensionShared.consumable().markUsed(nbt, event.item(), cooldownKey);
+                ExtensionShared.consumable().consumeOne(event.item());
                 world.playSound(loc, "ENTITY_GENERIC_DRINK", 0.8f, 1.0f);
             }
     }

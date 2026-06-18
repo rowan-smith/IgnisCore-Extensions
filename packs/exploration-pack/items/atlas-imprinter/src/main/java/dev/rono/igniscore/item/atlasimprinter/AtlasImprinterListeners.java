@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.atlasimprinter;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -34,7 +33,7 @@ final class AtlasImprinterListeners implements OnItemClickListener {
                 String stamp = (int) loc.x() + ":" + (int) loc.z();
                 nbtService.setItemString(event.item(), "ignis:atlas_" + maps, stamp);
                 event.player().sendMessage("<gold>Atlas imprint <white>#" + maps + "</white> at " + stamp + "</gold>");
-                TheatricsSupport.sparkle(world, loc, "COMPOSTER", 8);
+                ExtensionShared.theatrics().sparkle(world, loc, "COMPOSTER", 8);
                 world.playSound(loc, "BLOCK_CARTOGRAPHY_TABLE_USE", 0.8f, 1.1f);
             }
     }

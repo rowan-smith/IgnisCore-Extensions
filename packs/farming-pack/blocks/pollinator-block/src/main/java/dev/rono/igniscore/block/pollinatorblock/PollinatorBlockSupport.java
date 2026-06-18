@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.pollinatorblock;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,8 +17,8 @@ final class PollinatorBlockSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "pollinateRadius", 3);
-          BlockScanSupport.bonemealRadius(world, center, radius);
-          TheatricsSupport.sparkle(world, center, "HAPPY_VILLAGER", 6);
+          ExtensionShared.scan().bonemealRadius(world, center, radius);
+          ExtensionShared.theatrics().sparkle(world, center, "HAPPY_VILLAGER", 6);
           world.playSound(center, "ENTITY_BEE_POLLINATE", 0.6f, 1.0f);
     
     }

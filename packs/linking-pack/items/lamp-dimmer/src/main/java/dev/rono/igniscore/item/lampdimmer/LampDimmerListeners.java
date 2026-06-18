@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.lampdimmer;
 
-import dev.rono.extensions.shared.strategy.LinkItemSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -23,7 +23,7 @@ final class LampDimmerListeners implements OnItemClickListener {
                 String blockType = StrategySupport.customString(event.definition().getCustomData(), "linkBlockType", "");
                 String action = StrategySupport.customString(event.definition().getCustomData(), "remoteAction", "activate");
                 double range = StrategySupport.customDouble(event.definition().getCustomData(), "linkRange", 64.0);
-                LinkItemSupport.onUse(context, event.player(), event.definition(), event.item(), event.clickedBlock(), blockType, action, range);
+                ExtensionShared.link().itemOnUse(context, event.player(), event.definition(), event.item(), event.clickedBlock(), blockType, action, range);
             }
     }
 }

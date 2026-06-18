@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.gloworb;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -33,7 +33,7 @@ final class GlowOrbListeners implements OnItemClickListener {
                 }
                 int duration = StrategySupport.customInt(event.definition().getCustomData(), "glowDurationTicks", 1200);
                 IgnisLocation stick = event.clickedBlock() != null ? event.clickedBlock().getLocation() : eye;
-                TheatricsSupport.sparkle(world, stick, "END_ROD", 8);
+                ExtensionShared.theatrics().sparkle(world, stick, "END_ROD", 8);
                 int[] ticks = {0};
                 IgnisTask[] ref = {null};
                 ref[0] = context.scheduler().runRepeating(stick, () -> {

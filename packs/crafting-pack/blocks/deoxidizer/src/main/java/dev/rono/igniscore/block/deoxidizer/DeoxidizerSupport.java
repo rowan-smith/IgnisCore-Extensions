@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.deoxidizer;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class DeoxidizerSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "deoxidizeRadius", 4);
-          BlockScanSupport.deoxidizeCopper(world, center, radius);
+          ExtensionShared.scan().deoxidizeCopper(world, center, radius);
           world.playSound(center, "ITEM_AXE_WAX_ON", 0.5f, 1.0f);
     
     }

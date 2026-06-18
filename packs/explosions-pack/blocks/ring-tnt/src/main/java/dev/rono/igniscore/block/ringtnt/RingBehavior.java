@@ -1,12 +1,12 @@
 package dev.rono.igniscore.block.ringtnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BlockBlastSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class RingBehavior {
@@ -49,7 +49,7 @@ final class RingBehavior {
             world.spawnParticle(burst, "EXPLOSION", 2, 0.1, 0.3, 0.1, 0.02);
         }
 
-        BlockBlastSupport.breakTorus(context.region(), world, loc, majorRadius, minorRadius,
+        ExtensionShared.blasts().breakTorus(context.region(), world, loc, majorRadius, minorRadius,
                 staggered, batchSize, batchDelayTicks, context.scheduler());
         world.createExplosion(loc, 1.5f, false, false);
     }

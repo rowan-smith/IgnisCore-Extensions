@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.blockstethoscope;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -37,7 +36,7 @@ final class BlockStethoscopeListeners implements OnItemClickListener {
                 IgnisLocation blockLoc = target.getLocation();
                 String material = world.getBlockMaterialKey(blockLoc);
                 event.player().sendMessage("<gray>Stethoscope: <white>" + material + "</white></gray>");
-                TheatricsSupport.scanBeam(world, loc, Locations.toCenter(blockLoc), "NOTE");
+                ExtensionShared.theatrics().scanBeam(world, loc, Locations.toCenter(blockLoc), "NOTE");
                 world.playSound(loc, "BLOCK_NOTE_BLOCK_HARP", 0.7f, 1.3f);
             }
     }

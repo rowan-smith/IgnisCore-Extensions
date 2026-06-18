@@ -1,7 +1,7 @@
 package dev.rono.igniscore.item.grenade;
 
 import dev.rono.extensions.shared.ExtensionShared;
-import dev.rono.extensions.shared.config.ThrowableItemConfig;
+import dev.rono.extensions.shared.api.config.ThrowableItemConfig;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;

@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.oresniffer;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,9 +17,9 @@ final class OreSnifferSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "scanRadius", 12);
-          IgnisLocation ore = BlockScanSupport.findNearestOre(world, center, radius);
+          IgnisLocation ore = ExtensionShared.scan().findNearestOre(world, center, radius);
           if (ore != null) {
-              TheatricsSupport.scanBeam(world, center, ore.add(0.5, 0.5, 0.5), "CRIT");
+              ExtensionShared.theatrics().scanBeam(world, center, ore.add(0.5, 0.5, 0.5), "CRIT");
               world.playSound(center, "BLOCK_AMETHYST_BLOCK_CHIME", 0.6f, 1.4f);
           }
     

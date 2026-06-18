@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.paintmixer;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class PaintMixerSupport {
         IgnisLocation center = Locations.toCenter(location);
         String[] colors = {"REDSTONE", "WAX_ON", "WAX_OFF", "COMPOSTER"};
           String particle = colors[(int) (System.currentTimeMillis() / 500 % colors.length)];
-          TheatricsSupport.sparkle(world, center, particle, 6);
+          ExtensionShared.theatrics().sparkle(world, center, particle, 6);
     
     }
 

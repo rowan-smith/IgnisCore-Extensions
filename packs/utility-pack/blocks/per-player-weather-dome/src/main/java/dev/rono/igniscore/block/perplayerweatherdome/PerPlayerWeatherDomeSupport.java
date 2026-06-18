@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.perplayerweatherdome;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -16,7 +16,7 @@ final class PerPlayerWeatherDomeSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.pulseRing(world, center, StrategySupport.customDouble(definition, "domeRadius", 5.0), "CLOUD");
+        ExtensionShared.theatrics().pulseRing(world, center, StrategySupport.customDouble(definition, "domeRadius", 5.0), "CLOUD");
           world.spawnParticle(center.add(0, 3, 0), "RAIN", 8, 2, 0.1, 2, 0.01);
     
     }

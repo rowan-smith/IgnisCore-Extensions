@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.itempedestalhologram;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -15,7 +15,7 @@ final class ItemPedestalHologramSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center.add(0, 0.8, 0), "ENCHANT", 3);
+        ExtensionShared.theatrics().sparkle(world, center.add(0, 0.8, 0), "ENCHANT", 3);
           world.playSound(center, "BLOCK_AMETHYST_BLOCK_CHIME", 0.3f, 1.8f);
     
     }

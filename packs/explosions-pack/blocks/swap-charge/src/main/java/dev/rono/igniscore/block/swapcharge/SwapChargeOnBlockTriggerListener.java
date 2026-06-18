@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.swapcharge;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -24,8 +23,8 @@ final class SwapChargeOnBlockTriggerListener implements OnBlockTriggerListener {
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = SwapChargeSupport.worldAt(context, loc);
         double radius = StrategySupport.customDouble(def, "swapRadius", 8.0);
-        EntityUtilSupport.swapNearestPlayers(world, loc, radius);
-        ExplosionSupport.createExplosion(world, loc, def, 2.5, false);
+        ExtensionShared.entities().swapNearestPlayers(world, loc, radius);
+        ExtensionShared.explosion().create(world, loc, def, 2.5, false);
     }
 }
 

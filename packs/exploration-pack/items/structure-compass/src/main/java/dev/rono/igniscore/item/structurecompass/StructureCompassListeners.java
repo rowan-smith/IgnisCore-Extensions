@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.structurecompass;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -41,7 +40,7 @@ final class StructureCompassListeners implements OnItemClickListener {
                     default -> 0f;
                 };
                 event.player().sendMessage("<aqua>Structure compass bearing: <white>" + heading + "</white> (" + (int) yaw + "°)</aqua>");
-                TheatricsSupport.pulseRing(world, loc, 3.0, "END_ROD");
+                ExtensionShared.theatrics().pulseRing(world, loc, 3.0, "END_ROD");
                 world.playSound(loc, "ITEM_LODESTONE_COMPASS_LOCK", 0.8f, 1.0f);
             }
     }

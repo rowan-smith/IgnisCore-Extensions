@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.pocketdimensioncache;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -23,7 +23,7 @@ final class PocketDimensionCacheOnBlockInteractListener implements OnBlockIntera
         runtime.registry.openPerPlayer(event.player(), event.block().location(), PocketDimensionCacheSupport.title(runtime, event.block().definition()), PocketDimensionCacheSupport.rows(runtime, event.block().definition()));
         IgnisWorld world = PocketDimensionCacheSupport.worldAt(runtime, event.block().location());
         IgnisLocation center = Locations.toCenter(event.block().location());
-        TheatricsSupport.sparkle(world, center, "PORTAL", 10);
+        ExtensionShared.theatrics().sparkle(world, center, "PORTAL", 10);
         world.playSound(center, "BLOCK_ENDER_CHEST_OPEN", 0.7f, 1.1f);
         event.player().sendMessage("<light_purple>Opened your pocket dimension cache.</light_purple>");
     }

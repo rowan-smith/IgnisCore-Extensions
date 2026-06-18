@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.keyringbeacon;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -35,7 +34,7 @@ final class KeyringBeaconListeners implements OnItemClickListener {
                 nbtService.setItemString(event.item(), key, loc.x() + "," + loc.y() + "," + loc.z());
                 nbtService.setItemInt(event.item(), "ignis:beacon_index", index + 1);
                 event.player().sendMessage("<aqua>Beacon slot <white>" + index + "</white> marked.</aqua>");
-                TheatricsSupport.pulseRing(world, loc, 2.0, "END_ROD");
+                ExtensionShared.theatrics().pulseRing(world, loc, 2.0, "END_ROD");
                 world.playSound(loc, "BLOCK_BEACON_ACTIVATE", 0.7f, 1.0f);
             }
     }

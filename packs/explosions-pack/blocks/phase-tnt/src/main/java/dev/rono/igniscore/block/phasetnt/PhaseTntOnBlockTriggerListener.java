@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.phasetnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.ExplosionVariantsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -23,9 +22,9 @@ final class PhaseTntOnBlockTriggerListener implements OnBlockTriggerListener {
         BlockDefinition def = event.instance().getDefinition();
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = PhaseTntSupport.worldAt(context, loc);
-        float power = ExplosionSupport.resolvePower(def, 4.0);
+        float power = ExtensionShared.explosion().resolvePower(def, 4.0);
         double radius = StrategySupport.customDouble(def, "phaseRadius", 6.0);
-        ExplosionVariantsSupport.phaseBurst(world, loc, power, radius);
+        ExtensionShared.variants().phaseBurst(world, loc, power, radius);
     }
 }
 

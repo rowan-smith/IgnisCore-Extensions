@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.scarecrowanchor;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,7 +18,7 @@ final class ScarecrowAnchorSupport {
         IgnisLocation center = Locations.toCenter(location);
         double radius = StrategySupport.customDouble(definition, "scareRadius", 8.0);
           for (Object entity : world.getNearbyEntities(center, radius)) {
-              if (!EntityUtilSupport.isHostile(entity)) {
+              if (!ExtensionShared.entities().isHostile(entity)) {
                   continue;
               }
               IgnisLocation entityLoc = world.getEntityLocation(entity);

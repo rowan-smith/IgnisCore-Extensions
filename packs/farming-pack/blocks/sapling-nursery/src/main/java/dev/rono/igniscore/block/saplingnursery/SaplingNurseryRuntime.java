@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.saplingnursery;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class SaplingNurseryRuntime {
@@ -9,7 +10,7 @@ final class SaplingNurseryRuntime {
 
     SaplingNurseryRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "sapling-nursery");
+                this.registry = ExtensionShared.gui().blockStorage(context, "sapling-nursery");
     }
 }
 

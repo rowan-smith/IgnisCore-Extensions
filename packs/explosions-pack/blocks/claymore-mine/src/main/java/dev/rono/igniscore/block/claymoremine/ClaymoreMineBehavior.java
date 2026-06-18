@@ -1,13 +1,12 @@
 package dev.rono.igniscore.block.claymoremine;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BuriedMineSupport;
-import dev.rono.extensions.shared.strategy.DirectionalBlastSupport;
 import dev.rono.igniscore.api.util.PlacedMetaSupport;
 import dev.rono.igniscore.api.util.Locations;
 
@@ -20,11 +19,11 @@ final class ClaymoreMineBehavior {
 
     void onPlaced(BlockDefinition definition, IgnisLocation location) {
         double triggerRadius = StrategySupport.customDouble(definition, "triggerRadius", 2.0);
-        BuriedMineSupport.arm(context, location, definition.getId(), triggerRadius);
+        ExtensionShared.buriedMines().arm(context, location, definition.getId(), triggerRadius);
     }
 
     void onPlacedBreak(IgnisLocation location) {
-        BuriedMineSupport.disarm(location);
+        ExtensionShared.buriedMines().disarm(location);
         PlacedMetaSupport.clear(location);
     }
 
@@ -36,7 +35,7 @@ final class ClaymoreMineBehavior {
         double angle = StrategySupport.customDouble(instance.getDefinition(), "coneAngle", 60.0);
         double strength = StrategySupport.customDouble(instance.getDefinition(), "coneStrength", 2.2);
         world.playSound(loc, "ENTITY_PLAYER_ATTACK_STRONG", 1.5f, 0.7f);
-        DirectionalBlastSupport.coneBlast(world, loc, yaw, range, angle, strength);
+        ExtensionShared.blasts().coneBlast(world, loc, yaw, range, angle, strength);
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

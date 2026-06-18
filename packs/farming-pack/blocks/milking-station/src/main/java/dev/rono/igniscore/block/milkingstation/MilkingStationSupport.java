@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.milkingstation;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -16,8 +15,8 @@ final class MilkingStationSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        if (EntityUtilSupport.countPassives(world, center, 3.0) > 0) {
-              TheatricsSupport.sparkle(world, center, "DRIPPING_HONEY", 4);
+        if (ExtensionShared.entities().countPassives(world, center, 3.0) > 0) {
+              ExtensionShared.theatrics().sparkle(world, center, "DRIPPING_HONEY", 4);
               world.playSound(center, "ENTITY_COW_MILK", 0.5f, 1.0f);
           }
     

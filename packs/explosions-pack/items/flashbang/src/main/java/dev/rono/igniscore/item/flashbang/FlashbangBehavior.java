@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.flashbang;
 
-import dev.rono.extensions.shared.config.ThrowableItemConfig;
+import dev.rono.extensions.shared.api.config.ThrowableItemConfig;
 import dev.rono.igniscore.api.model.ItemDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;

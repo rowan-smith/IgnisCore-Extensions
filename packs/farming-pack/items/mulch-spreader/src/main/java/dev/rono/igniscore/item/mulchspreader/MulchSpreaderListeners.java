@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.mulchspreader;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -29,7 +29,7 @@ final class MulchSpreaderListeners implements OnItemClickListener {
                     world.spawnParticle(below.add(0.5, 1, 0.5), "SPORE_BLOSSOM_AIR", 4, 0.2, 0.1, 0.2, 0.01);
                     world.playSound(below, "BLOCK_MOSS_PLACE", 0.6f, 1.0f);
                 } else {
-                    BlockScanSupport.mossifyNearWater(world, below, 2);
+                    ExtensionShared.scan().mossifyNearWater(world, below, 2);
                 }
                 event.item().setAmount(Math.max(0, event.item().getAmount() - 1));
             }

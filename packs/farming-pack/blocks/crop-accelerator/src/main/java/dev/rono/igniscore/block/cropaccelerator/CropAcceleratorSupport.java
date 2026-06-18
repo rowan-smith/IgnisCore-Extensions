@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.cropaccelerator;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class CropAcceleratorSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "cropRadius", 4);
-          BlockScanSupport.bonemealRadius(world, center, radius);
+          ExtensionShared.scan().bonemealRadius(world, center, radius);
           world.playSound(center, "ITEM_BONE_MEAL_USE", 0.7f, 1.1f);
     
     }

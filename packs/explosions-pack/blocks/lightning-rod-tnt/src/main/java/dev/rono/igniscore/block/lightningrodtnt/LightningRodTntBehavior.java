@@ -1,5 +1,6 @@
 package dev.rono.igniscore.block.lightningrodtnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -7,7 +8,6 @@ import dev.rono.igniscore.api.port.IgnisPlayer;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class LightningRodTntBehavior {
@@ -47,7 +47,7 @@ final class LightningRodTntBehavior {
                 world.spawnParticle(entityLoc, "ELECTRIC_SPARK", 8, 0.2, 0.5, 0.2, 0.1);
             }
         }
-        ExplosionSupport.createExplosion(world, loc, def, 3.5, false);
+        ExtensionShared.explosion().create(world, loc, def, 3.5, false);
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

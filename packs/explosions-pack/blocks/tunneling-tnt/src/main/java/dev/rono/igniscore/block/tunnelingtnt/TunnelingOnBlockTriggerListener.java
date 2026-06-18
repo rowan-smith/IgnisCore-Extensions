@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.tunnelingtnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -58,7 +58,7 @@ final class TunnelingOnBlockTriggerListener implements OnBlockTriggerListener {
             current[0] += directionX * tunnelGap;
             current[2] += directionZ * tunnelGap;
             IgnisLocation currentLoc = new IgnisLocation(loc.worldId(), loc.worldName(), current[0], current[1], current[2], 0f, 0f);
-            ExplosionSupport.createExplosion(world, currentLoc, 4.0f, false, true);
+            ExtensionShared.explosion().create(world, currentLoc, 4.0f, false, true);
             world.spawnParticle(currentLoc, "SMOKE", 20, 0.5, 0.5, 0.5, 0.05);
         }, 0L, 4L);
     }

@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.picnicbasket;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -32,7 +32,7 @@ final class PicnicBasketOnBlockInteractListener implements OnBlockInteractListen
                 nearby.applyPotionEffect("SATURATION", 100, 0);
                 nearby.sendMessage("<gold>Shared picnic — saturation boost!</gold>");
             }
-            TheatricsSupport.sparkle(world, center, "HEART", 10);
+            ExtensionShared.theatrics().sparkle(world, center, "HEART", 10);
         }
     }
 }

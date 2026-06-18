@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.socketlamp;
 
-import dev.rono.extensions.shared.strategy.LinkedBlockRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class SocketLampSupport {
 
     static void tick(IgnisStrategyContext ctx, BlockDefinition definition, IgnisLocation location) {
 
-        int level = LIGHT_LEVEL.getOrDefault(LinkedBlockRegistry.key(location), 0);
+        int level = LIGHT_LEVEL.getOrDefault(ExtensionShared.remote().key(location), 0);
         if (level <= 0) {
             return;
         }

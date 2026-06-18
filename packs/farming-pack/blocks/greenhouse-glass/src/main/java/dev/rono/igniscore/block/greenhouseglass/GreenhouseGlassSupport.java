@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.greenhouseglass;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -21,8 +20,8 @@ final class GreenhouseGlassSupport {
         if (!hasGlassRoof(ctx, world, center, radius)) {
             return;
         }
-        BlockScanSupport.bonemealRadius(world, center, radius);
-        TheatricsSupport.sparkle(world, center.add(0, 1, 0), "HAPPY_VILLAGER",
+        ExtensionShared.scan().bonemealRadius(world, center, radius);
+        ExtensionShared.theatrics().sparkle(world, center.add(0, 1, 0), "HAPPY_VILLAGER",
                 StrategySupport.customInt(definition, "growthParticles", 4));
     
     }

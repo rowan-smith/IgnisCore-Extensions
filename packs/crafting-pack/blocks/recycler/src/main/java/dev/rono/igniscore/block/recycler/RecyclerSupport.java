@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.recycler;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -16,7 +16,7 @@ final class RecyclerSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center, "SCRAP", StrategySupport.customInt(definition, "recycleParticles", 5));
+        ExtensionShared.theatrics().sparkle(world, center, "SCRAP", StrategySupport.customInt(definition, "recycleParticles", 5));
           world.playSound(center, "BLOCK_GRINDSTONE_USE", 0.5f, 1.1f);
     
     }

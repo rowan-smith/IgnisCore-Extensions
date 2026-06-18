@@ -1,13 +1,12 @@
 package dev.rono.igniscore.block.drilltnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BlockBlastSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class DrillBehavior {
@@ -21,7 +20,7 @@ final class DrillBehavior {
         IgnisLocation center = Locations.toCenter(instance.getLocation());
         IgnisWorld world = worldAt(center);
         int ticksLeft = instance.getTicksLeft();
-        int fuse = ExplosionSupport.fuseTicks(instance, 50);
+        int fuse = ExtensionShared.explosion().fuseTicks(instance, 50);
         int elapsed = fuse - ticksLeft;
 
         if (elapsed % 4 == 0) {
@@ -48,7 +47,7 @@ final class DrillBehavior {
         world.playSound(loc, "BLOCK_ANVIL_LAND", 1.0f, 0.8f);
         world.spawnParticle(loc, "CLOUD", 40, radius * 0.4, 0.2, radius * 0.4, 0.03);
 
-        BlockBlastSupport.breakCylinderDown(context.region(), world, loc, radius, depth,
+        ExtensionShared.blasts().breakCylinderDown(context.region(), world, loc, radius, depth,
                 staggered, batchSize, batchDelayTicks, context.scheduler());
         world.createExplosion(loc, 1.0f, false, false);
     }

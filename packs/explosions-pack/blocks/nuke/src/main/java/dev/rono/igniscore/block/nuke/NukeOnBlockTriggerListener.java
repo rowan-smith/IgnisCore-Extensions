@@ -1,7 +1,7 @@
 package dev.rono.igniscore.block.nuke;
 
-import dev.rono.extensions.shared.config.ExplosionConfig;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.config.ExplosionConfig;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -29,7 +29,7 @@ final class NukeOnBlockTriggerListener implements OnBlockTriggerListener {
         NukeSupport.spawnDetonationParticles(context, world, loc, finalPower);
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 8.0f, 0.45f);
         world.playSound(loc, "ENTITY_LIGHTNING_BOLT_THUNDER", 8.0f, 0.55f);
-        ExplosionSupport.createExplosion(world, loc, event.definition(), explosion.power(), explosion.fire());
+        ExtensionShared.explosion().create(world, loc, event.definition(), explosion.power(), explosion.fire());
 
         if (explosion.screenShake()) {
             for (var player : world.getPlayersNear(loc, finalPower * 2)) {

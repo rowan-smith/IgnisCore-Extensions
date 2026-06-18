@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.vineshears;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -55,7 +55,7 @@ final class VineShearsListeners implements OnItemClickListener {
                     queue.add(loc.add(0, 0, -1));
                 }
                 event.player().sendMessage("<gray>Cut <white>" + cut + "</white> vine blocks.</gray>");
-                TheatricsSupport.sparkle(world, event.clickedBlock().getLocation(), "CLOUD", 6);
+                ExtensionShared.theatrics().sparkle(world, event.clickedBlock().getLocation(), "CLOUD", 6);
                 event.item().setAmount(event.item().getAmount() - 1);
             }
     }

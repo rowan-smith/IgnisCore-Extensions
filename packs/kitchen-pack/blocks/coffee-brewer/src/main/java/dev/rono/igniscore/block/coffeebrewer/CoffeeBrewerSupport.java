@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.coffeebrewer;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,18 +17,17 @@ final class CoffeeBrewerSupport {
 
     static void tick(CoffeeBrewerRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        var inventory = gui.inventory();
-        if (!ProcessingGuiSupport.matches(inventory.getItem(COCOA_SLOT), "cocoa")
-                || !ProcessingGuiSupport.matches(inventory.getItem(BOTTLE_SLOT), "glass_bottle", "potion")) {
+        if (!ExtensionShared.processing().matches(inventory.getItem(COCOA_SLOT), "cocoa")
+                || !ExtensionShared.processing().matches(inventory.getItem(BOTTLE_SLOT), "glass_bottle", "potion")) {
             return;
         }
-        ProcessingGuiSupport.consumeOne(inventory, COCOA_SLOT);
-        ProcessingGuiSupport.consumeOne(inventory, BOTTLE_SLOT);
-        ProcessingGuiSupport.setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "potion", 1);
+        ExtensionShared.processing().consumeOne(inventory, COCOA_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, BOTTLE_SLOT);
+        ExtensionShared.processing().setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "potion", 1);
         IgnisWorld world = worldAt(runtime, location);
         IgnisLocation center = Locations.toCenter(location);
         world.spawnParticle(center, "DRIPPING_HONEY", 5, 0.2, 0.3, 0.2, 0.01);

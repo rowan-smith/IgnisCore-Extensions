@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.wormholetnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTickEvent;
 import dev.rono.igniscore.api.event.OnBlockTickListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -32,7 +32,7 @@ final class WormholeOnBlockTickListener implements OnBlockTickListener {
             WormholeSupport.ripBlocks(context, world, loc, ripRadius, ripChance);
         }
 
-        double radius = 8.0 + (ExplosionSupport.fuse(def, 100) - ticksLeft) * 0.1;
+        double radius = 8.0 + (ExtensionShared.explosion().fuse(def, 100) - ticksLeft) * 0.1;
         Object displayEntity = event.instance().getDisplayEntity();
 
         for (Object entity : world.getNearbyEntities(loc, radius)) {
@@ -60,7 +60,7 @@ final class WormholeOnBlockTickListener implements OnBlockTickListener {
         world.spawnParticle(loc, "PORTAL", 15, 0.3, 0.3, 0.3, 0.2);
         if (ticksLeft % 5 == 0) {
             world.playSound(loc, "BLOCK_BEACON_AMBIENT", 1.0f,
-                    0.5f + (float) (ExplosionSupport.fuse(def, 100) - ticksLeft) / 80.0f);
+                    0.5f + (float) (ExtensionShared.explosion().fuse(def, 100) - ticksLeft) / 80.0f);
         }
     }
 }

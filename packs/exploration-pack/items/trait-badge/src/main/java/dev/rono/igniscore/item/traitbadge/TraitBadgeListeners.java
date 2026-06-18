@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.traitbadge;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -41,7 +40,7 @@ final class TraitBadgeListeners implements OnItemClickListener {
                         : "Artisan";
                 nbtService.setItemString(event.item(), "ignis:trait", trait);
                 event.player().sendMessage("<light_purple>Badge trait: <white>" + trait + "</white></light_purple>");
-                TheatricsSupport.sparkle(world, loc, "TOTEM_OF_UNDYING", 10);
+                ExtensionShared.theatrics().sparkle(world, loc, "TOTEM_OF_UNDYING", 10);
                 world.playSound(loc, "ENTITY_PLAYER_LEVELUP", 0.6f, 1.4f);
             }
     }
