@@ -12,6 +12,7 @@ item:
 
 textures:
   icon: icon.png
+  fallback: spyglass
 
 behavior:
   right_click_air: use

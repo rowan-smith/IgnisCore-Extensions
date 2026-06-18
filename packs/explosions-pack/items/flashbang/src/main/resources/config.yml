@@ -11,6 +11,7 @@ item:
 
 textures:
   icon: icon.png
+  fallback: grenade
 
 behavior:
   right_click_air: throw

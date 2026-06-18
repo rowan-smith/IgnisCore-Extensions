@@ -12,6 +12,7 @@ item:
 
 textures:
   icon: icon.png
+  fallback: coin
 
 behavior:
   right_click_air: use

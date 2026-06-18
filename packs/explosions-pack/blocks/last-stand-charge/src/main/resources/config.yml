@@ -18,6 +18,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
+  fallback: redstone
 
 model:
   type: "block_display"

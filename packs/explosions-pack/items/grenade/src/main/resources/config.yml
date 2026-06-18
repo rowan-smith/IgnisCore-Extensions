@@ -23,6 +23,7 @@ item:
 
 textures:
   icon: icon.png
+  fallback: grenade
 
 # Item behavior action tokens (interpreted by grenade Strategy):
 #   left_click_block / right_click_block / left_click_air / right_click_air

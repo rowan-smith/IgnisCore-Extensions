@@ -16,6 +16,7 @@ item:
 
 textures:
   icon: icon.png
+  fallback: detonator
 
 # Item behavior action tokens (interpreted by detonator Strategy):
 #   assign   — left_click_block: link clicked custom block to this detonator
