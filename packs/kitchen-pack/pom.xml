@@ -73,7 +73,7 @@
     <dependency>
       <groupId>dev.rono.extensions</groupId>
       <artifactId>shared</artifactId>
-      <scope>provided</scope>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -104,6 +104,26 @@
           <configuration>
             <finalName>${project.artifactId}</finalName>
           </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.8.1</version>
+          <executions>
+            <execution>
+              <id>embed-extension-shared</id>
+              <phase>prepare-package</phase>
+              <goals>
+                <goal>unpack-dependencies</goal>
+              </goals>
+              <configuration>
+                <includeGroupIds>dev.rono.extensions</includeGroupIds>
+                <includeArtifactIds>shared</includeArtifactIds>
+                <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
