@@ -1,9 +1,10 @@
 id: pizza-oven
 
 display:
-  title: "&bPizza Oven"
+  title: "&6Pizza Oven"
   description:
-    - "&7Bakes bread, beetroot, and milk into cake."
+    - "&7Right-click to open."
+    - "&7Interact with the pizza oven."
 
 block:
   placeable: true

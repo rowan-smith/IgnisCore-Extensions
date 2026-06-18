@@ -1,9 +1,10 @@
 id: orbit-tnt
 
 display:
-  title: "&6Orbit TNT"
+  title: "&cOrbit TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e4.0s&7, then spins victims into orbit."
 
 block:
   placeable: true

@@ -13,14 +13,10 @@
 id: quarry-cache
 
 display:
-  title: "&6Quarry Cache"
+  title: "&bQuarry Cache"
   description:
-    - "&7Collects block drops from a nearby area."
-    - "&7Radius &e5&7, depth &e5&7 blocks."
-    - ""
-    - "&eLeft-click&7 to break"
-    - "&eRight-click&7 to open storage"
-    - "&eCenter top row&7 sets item filters"
+    - "&7collects nearby block drops into internal storage."
+    - "&7See item lore for usage hints."
 
 # block.breaking.tool_ticks.<SUFFIX> — faster mining when tool material ends with suffix
 #   e.g. _PICKAXE matches wooden_pickaxe, iron_pickaxe, …

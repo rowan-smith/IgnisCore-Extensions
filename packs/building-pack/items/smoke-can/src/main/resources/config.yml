@@ -1,9 +1,10 @@
 id: smoke-can
 
 display:
-  title: "&bSmoke Can"
+  title: "&6Smoke Can"
   description:
-    - "&7Throwable; thick smoke wall, zero damage."
+    - "&7Right-click to use the smoke can."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

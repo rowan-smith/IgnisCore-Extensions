@@ -1,9 +1,10 @@
 id: glow-ink-lantern
 
 display:
-  title: "&bGlow Ink Lantern"
+  title: "&6Glow Ink Lantern"
   description:
-    - "&7Emits glow particles while placed."
+    - "&7Place to activate the glow ink lantern."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

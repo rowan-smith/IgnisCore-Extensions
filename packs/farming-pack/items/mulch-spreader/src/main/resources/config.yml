@@ -1,9 +1,10 @@
 id: mulch-spreader
 
 display:
-  title: "&bMulch Spreader"
+  title: "&aMulch Spreader"
   description:
-    - "&7Mossifies paths or spreads moss near water."
+    - "&7Right-click to use the mulch spreader."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

@@ -1,9 +1,10 @@
 id: glow-orb
 
 display:
-  title: "&bGlow Orb"
+  title: "&6Glow Orb"
   description:
-    - "&7Throwable; emits light particles ~60s."
+    - "&7Right-click to use the glow orb."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

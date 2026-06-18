@@ -1,9 +1,10 @@
 id: bridge-builder
 
 display:
-  title: "&bBridge Builder"
+  title: "&6Bridge Builder"
   description:
-    - "&7Lays a bridge while fusing, then explodes."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.0s&7, then builds structure as it counts down."
 
 block:
   placeable: true

@@ -3,7 +3,8 @@ id: player-chronicle-book
 display:
   title: "&bPlayer Chronicle Book"
   description:
-    - "&7Writes location chronicle pages."
+    - "&7Right-click to use the player chronicle book."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

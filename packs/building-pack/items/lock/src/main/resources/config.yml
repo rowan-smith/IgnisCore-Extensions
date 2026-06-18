@@ -1,9 +1,10 @@
 id: lock
 
 display:
-  title: "&bLock"
+  title: "&6Lock"
   description:
-    - "&7Toggles engaged/disengaged lock state."
+    - "&7Right-click to use the lock."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

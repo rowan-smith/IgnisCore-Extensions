@@ -1,9 +1,10 @@
 id: paint-stripper
 
 display:
-  title: "&bPaint Stripper"
+  title: "&6Paint Stripper"
   description:
-    - "&7Strips banners or dye from blocks."
+    - "&7Right-click to use the paint stripper."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

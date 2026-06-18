@@ -1,9 +1,10 @@
 id: cascade-mine
 
 display:
-  title: "&bCascade Mine"
+  title: "&cCascade Mine"
   description:
-    - "&7Main blast plus delayed ring waves."
+    - "&7Bury it to arm a proximity mine."
+    - "&7Pulls experience orbs inward."
 
 block:
   placeable: true

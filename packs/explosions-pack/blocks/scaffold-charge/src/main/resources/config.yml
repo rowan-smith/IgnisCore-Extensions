@@ -1,9 +1,10 @@
 id: scaffold-charge
 
 display:
-  title: "&bScaffold Charge"
+  title: "&cScaffold Charge"
   description:
-    - "&7Builds upward scaffolding, then detonates."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.5s&7, then builds structure as it counts down."
 
 block:
   placeable: true

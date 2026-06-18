@@ -1,9 +1,10 @@
 id: valve-wrench
 
 display:
-  title: "&bValve Wrench"
+  title: "&6Valve Wrench"
   description:
-    - "&7Link to pipe valve; toggle flow remotely."
+    - "&7Right-click a &epipe valve&7 to link."
+    - "&7Use again to control it remotely."
 
 item:
   base_material: paper

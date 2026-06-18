@@ -1,9 +1,10 @@
 id: display-case
 
 display:
-  title: "&bDisplay Case"
+  title: "&6Display Case"
   description:
-    - "&7Museum display; announces item on open."
+    - "&7Right-click to open."
+    - "&7Interact with the display case."
 
 block:
   placeable: true

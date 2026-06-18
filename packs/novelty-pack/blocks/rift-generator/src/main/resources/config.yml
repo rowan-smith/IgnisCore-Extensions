@@ -1,9 +1,11 @@
 id: rift-generator
 
 display:
-  title: "&bRift Generator"
+  title: "&dRift Generator"
   description:
-    - "&7Pulls entities inward while fusing."
+    - "&7Something on the other side is pulling."
+    - "&7The air bends inward toward the tear."
+    - "&7Best not to be standing too close."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: secure-trade-table
 
 display:
-  title: "&bSecure Trade Table"
+  title: "&6Secure Trade Table"
   description:
-    - "&7Two-player trade window; confirm with lime dye."
+    - "&7Right-click to open."
+    - "&7Interact with the secure trade table."
 
 block:
   placeable: true

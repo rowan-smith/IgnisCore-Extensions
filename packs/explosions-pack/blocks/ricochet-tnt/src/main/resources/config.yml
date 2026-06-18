@@ -1,9 +1,10 @@
 id: ricochet-tnt
 
 display:
-  title: "&bRicochet TNT"
+  title: "&cRicochet TNT"
   description:
-    - "&7Bouncing ray of explosions along facing."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.5s&7, then ricochets blasts along a path."
 
 block:
   placeable: true

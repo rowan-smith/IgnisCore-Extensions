@@ -1,9 +1,10 @@
 id: pocket-dimension-cache
 
 display:
-  title: "&bPocket Dimension Cache"
+  title: "&6Pocket Dimension Cache"
   description:
-    - "&7Per-player storage chest."
+    - "&7Right-click to open."
+    - "&7Interact with the pocket dimension cache."
 
 block:
   placeable: true

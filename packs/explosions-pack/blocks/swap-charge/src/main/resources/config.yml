@@ -1,9 +1,10 @@
 id: swap-charge
 
 display:
-  title: "&bSwap Charge"
+  title: "&cSwap Charge"
   description:
-    - "&7Swaps nearest players on detonation."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.5s&7, then swaps nearby players on detonation."
 
 block:
   placeable: true

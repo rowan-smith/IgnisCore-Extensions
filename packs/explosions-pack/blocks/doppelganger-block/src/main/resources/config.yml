@@ -1,9 +1,11 @@
 id: doppelganger-block
 
 display:
-  title: "&6Doppelgänger Block"
+  title: "&dDoppelgänger Block"
   description:
-    - "&7Flare explosive"
+    - "&7It looks like an ordinary stone block."
+    - "&7But it is most certainly not."
+    - "&7Trust nothing that wears another's face."
 
 block:
   placeable: true

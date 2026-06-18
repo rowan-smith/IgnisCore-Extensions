@@ -3,7 +3,8 @@ id: bouncing-betty
 display:
   title: "&6Bouncing Betty"
   description:
-    - "&7Flare explosive"
+    - "&7Bury it to arm a proximity mine."
+    - "&7Arms when creatures draw near."
 
 block:
   placeable: true

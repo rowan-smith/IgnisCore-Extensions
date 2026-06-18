@@ -1,9 +1,10 @@
 id: claymore-mine
 
 display:
-  title: "&6Claymore Mine"
+  title: "&cClaymore Mine"
   description:
-    - "&7Flare explosive"
+    - "&7Bury it to arm a proximity mine."
+    - "&7Arms when creatures draw near."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: splitter-charge
 
 display:
-  title: "&bSplitter Charge"
+  title: "&cSplitter Charge"
   description:
-    - "&7Four cardinal offset blasts on detonation."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.0s&7, then splits into multiple blasts."
 
 block:
   placeable: true

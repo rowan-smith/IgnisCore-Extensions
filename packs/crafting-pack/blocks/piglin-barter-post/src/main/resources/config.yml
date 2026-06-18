@@ -1,9 +1,10 @@
 id: piglin-barter-post
 
 display:
-  title: "&bPiglin Barter Post"
+  title: "&6Piglin Barter Post"
   description:
-    - "&7Trades gold ingots for nether loot."
+    - "&7Right-click to open."
+    - "&7Interact with the piglin barter post."
 
 block:
   placeable: true

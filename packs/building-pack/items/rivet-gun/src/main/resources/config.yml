@@ -1,9 +1,10 @@
 id: rivet-gun
 
 display:
-  title: "&bRivet Gun"
+  title: "&6Rivet Gun"
   description:
-    - "&7Reinforces clicked block to obsidian."
+    - "&7Right-click to use the rivet gun."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

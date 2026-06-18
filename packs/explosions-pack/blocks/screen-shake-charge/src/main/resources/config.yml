@@ -1,9 +1,10 @@
 id: screen-shake-charge
 
 display:
-  title: "&6Screen Shake Charge"
+  title: "&cScreen Shake Charge"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.0s&7, then violently rattles nearby screens."
 
 block:
   placeable: true

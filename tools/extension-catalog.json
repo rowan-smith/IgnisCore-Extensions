@@ -1,0 +1,1807 @@
+{
+  "display-case": {
+    "title": "&6Display Case",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the display case."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/building-pack/blocks/display-case"
+  },
+  "glow-ink-lantern": {
+    "title": "&6Glow Ink Lantern",
+    "description": [
+      "&7Place to activate the glow ink lantern.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/building-pack/blocks/glow-ink-lantern"
+  },
+  "item-pedestal-hologram": {
+    "title": "&6Item Pedestal Hologram",
+    "description": [
+      "&7Place to activate the item pedestal hologram.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/building-pack/blocks/item-pedestal-hologram"
+  },
+  "mood-lantern": {
+    "title": "&6Mood Lantern",
+    "description": [
+      "&7Place to activate the mood lantern.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/building-pack/blocks/mood-lantern"
+  },
+  "motion-floodlight": {
+    "title": "&6Motion Floodlight",
+    "description": [
+      "&7Place to activate the motion floodlight.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/building-pack/blocks/motion-floodlight"
+  },
+  "paint-mixer": {
+    "title": "&6Paint Mixer",
+    "description": [
+      "&7Place to activate the paint mixer.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/building-pack/blocks/paint-mixer"
+  },
+  "cable-ties": {
+    "title": "&6Cable Ties",
+    "description": [
+      "&7Right-click to use the cable ties.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/cable-ties"
+  },
+  "cookie-cutter-stamp": {
+    "title": "&6Cookie Cutter Stamp",
+    "description": [
+      "&7Right-click to use the cookie cutter stamp.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/cookie-cutter-stamp"
+  },
+  "glow-orb": {
+    "title": "&6Glow Orb",
+    "description": [
+      "&7Right-click to use the glow orb.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/glow-orb"
+  },
+  "lock": {
+    "title": "&6Lock",
+    "description": [
+      "&7Right-click to use the lock.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/lock"
+  },
+  "paint-stripper": {
+    "title": "&6Paint Stripper",
+    "description": [
+      "&7Right-click to use the paint stripper.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/paint-stripper"
+  },
+  "rivet-gun": {
+    "title": "&6Rivet Gun",
+    "description": [
+      "&7Right-click to use the rivet gun.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/rivet-gun"
+  },
+  "sandblaster": {
+    "title": "&6Sandblaster",
+    "description": [
+      "&7Right-click to use the sandblaster.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/sandblaster"
+  },
+  "smoke-can": {
+    "title": "&6Smoke Can",
+    "description": [
+      "&7Right-click to use the smoke can.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/smoke-can"
+  },
+  "stencil-plate": {
+    "title": "&6Stencil Plate",
+    "description": [
+      "&7Right-click to use the stencil plate.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/building-pack/items/stencil-plate"
+  },
+  "auto-sieve": {
+    "title": "&6Auto Sieve",
+    "description": [
+      "&7Place to activate the auto sieve.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/crafting-pack/blocks/auto-sieve"
+  },
+  "deoxidizer": {
+    "title": "&6Deoxidizer",
+    "description": [
+      "&7Place to activate the deoxidizer.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/crafting-pack/blocks/deoxidizer"
+  },
+  "lost-and-found-bin": {
+    "title": "&6Lost And Found Bin",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the lost and found bin."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/crafting-pack/blocks/lost-and-found-bin"
+  },
+  "piglin-barter-post": {
+    "title": "&6Piglin Barter Post",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the piglin barter post."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/crafting-pack/blocks/piglin-barter-post"
+  },
+  "pocket-dimension-cache": {
+    "title": "&6Pocket Dimension Cache",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the pocket dimension cache."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/crafting-pack/blocks/pocket-dimension-cache"
+  },
+  "recycler": {
+    "title": "&6Recycler",
+    "description": [
+      "&7Place to activate the recycler.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/crafting-pack/blocks/recycler"
+  },
+  "repair-station-block": {
+    "title": "&6Repair Station Block",
+    "description": [
+      "&7Right-click with a held item to repair durability.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/crafting-pack/blocks/repair-station-block"
+  },
+  "blueprint-projector": {
+    "title": "&bBlueprint Projector",
+    "description": [
+      "&7Place to activate the blueprint projector.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/exploration-pack/blocks/blueprint-projector"
+  },
+  "checkpoint-obelisk": {
+    "title": "&bCheckpoint Obelisk",
+    "description": [
+      "&7Records player checkpoint on interact.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/exploration-pack/blocks/checkpoint-obelisk"
+  },
+  "entity-camera": {
+    "title": "&bEntity Camera",
+    "description": [
+      "&7Spectate nearest passive mob on interact.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/exploration-pack/blocks/entity-camera"
+  },
+  "light-beacon": {
+    "title": "&bLight Beacon",
+    "description": [
+      "&7Place to activate the light beacon.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/exploration-pack/blocks/light-beacon"
+  },
+  "mob-radar": {
+    "title": "&bMob Radar",
+    "description": [
+      "&7Place to activate the mob radar.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/exploration-pack/blocks/mob-radar"
+  },
+  "ore-echo": {
+    "title": "&bOre Echo",
+    "description": [
+      "&7Place to activate the ore echo.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/exploration-pack/blocks/ore-echo"
+  },
+  "ore-sniffer": {
+    "title": "&bOre Sniffer",
+    "description": [
+      "&7Place to activate the ore sniffer.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/exploration-pack/blocks/ore-sniffer"
+  },
+  "quarry-cache": {
+    "title": "&bQuarry Cache",
+    "description": [
+      "&7collects nearby block drops into internal storage.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/exploration-pack/blocks/quarry-cache"
+  },
+  "waypoint-marker": {
+    "title": "&bWaypoint Marker",
+    "description": [
+      "&7Saves a named waypoint at this location.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/exploration-pack/blocks/waypoint-marker"
+  },
+  "xp-vacuum": {
+    "title": "&bXp Vacuum",
+    "description": [
+      "&7Place to activate the xp vacuum.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/exploration-pack/blocks/xp-vacuum"
+  },
+  "atlas-imprinter": {
+    "title": "&bAtlas Imprinter",
+    "description": [
+      "&7Right-click to use the atlas imprinter.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/atlas-imprinter"
+  },
+  "block-stethoscope": {
+    "title": "&bBlock Stethoscope",
+    "description": [
+      "&7Right-click to use the block stethoscope.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/block-stethoscope"
+  },
+  "chunk-grid-overlay": {
+    "title": "&bChunk Grid Overlay",
+    "description": [
+      "&7Right-click to use the chunk grid overlay.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/chunk-grid-overlay"
+  },
+  "keyring-beacon": {
+    "title": "&bKeyring Beacon",
+    "description": [
+      "&7Right-click to use the keyring beacon.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/keyring-beacon"
+  },
+  "ore-xray-goggles": {
+    "title": "&bOre Xray Goggles",
+    "description": [
+      "&7Right-click to use the ore xray goggles.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/ore-xray-goggles"
+  },
+  "player-chronicle-book": {
+    "title": "&bPlayer Chronicle Book",
+    "description": [
+      "&7Right-click to use the player chronicle book.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/player-chronicle-book"
+  },
+  "structure-compass": {
+    "title": "&bStructure Compass",
+    "description": [
+      "&7Right-click to use the structure compass.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/structure-compass"
+  },
+  "trait-badge": {
+    "title": "&bTrait Badge",
+    "description": [
+      "&7Right-click to use the trait badge.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/exploration-pack/items/trait-badge"
+  },
+  "accelerating-fuse-tnt": {
+    "title": "&cAccelerating Fuse TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then billows thick concealment smoke."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/accelerating-fuse-tnt"
+  },
+  "acid-tnt": {
+    "title": "&cAcid TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then corrodes stone and ore into air."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/acid-tnt"
+  },
+  "anti-gravity-zone": {
+    "title": "&6Anti Gravity Zone",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e0.5s&7, then lifts entities in anti-gravity."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/anti-gravity-zone"
+  },
+  "black-hole-tnt": {
+    "title": "&cBlack Hole TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e5.0s&7, then drags entities inward before collapsing."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/black-hole-tnt"
+  },
+  "blink-tnt": {
+    "title": "&dBlink TNT",
+    "description": [
+      "&7Here. There. Everywhere in between.",
+      "&7It teleports when you aren't watching.",
+      "&7Detonation is merely a suggestion."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/blink-tnt"
+  },
+  "bouncing-betty": {
+    "title": "&6Bouncing Betty",
+    "description": [
+      "&7Bury it to arm a proximity mine.",
+      "&7Arms when creatures draw near."
+    ],
+    "mysterious": false,
+    "profile": "buried_mine",
+    "path": "packs/explosions-pack/blocks/bouncing-betty"
+  },
+  "breaching-charge": {
+    "title": "&cBreaching Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.5s&7, then punches a shaped breach through walls."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/breaching-charge"
+  },
+  "bridge-builder": {
+    "title": "&6Bridge Builder",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.0s&7, then builds structure as it counts down."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/bridge-builder"
+  },
+  "cascade-mine": {
+    "title": "&cCascade Mine",
+    "description": [
+      "&7Bury it to arm a proximity mine.",
+      "&7Pulls experience orbs inward."
+    ],
+    "mysterious": false,
+    "profile": "buried_mine",
+    "path": "packs/explosions-pack/blocks/cascade-mine"
+  },
+  "cavity-tnt": {
+    "title": "&cCavity TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then pulls experience orbs inward."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/cavity-tnt"
+  },
+  "centrifuge-tnt": {
+    "title": "&cCentrifuge TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.5s&7, then hurls entities with massive knockback."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/centrifuge-tnt"
+  },
+  "claymore-mine": {
+    "title": "&cClaymore Mine",
+    "description": [
+      "&7Bury it to arm a proximity mine.",
+      "&7Arms when creatures draw near."
+    ],
+    "mysterious": false,
+    "profile": "buried_mine",
+    "path": "packs/explosions-pack/blocks/claymore-mine"
+  },
+  "concussion-tnt": {
+    "title": "&cConcussion TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then hurls entities with massive knockback."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/concussion-tnt"
+  },
+  "depth-charge": {
+    "title": "&cDepth Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.5s&7, then clears submerged blocks only."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/depth-charge"
+  },
+  "doppelganger-block": {
+    "title": "&dDoppelg\u00e4nger Block",
+    "description": [
+      "&7It looks like an ordinary stone block.",
+      "&7But it is most certainly not.",
+      "&7Trust nothing that wears another's face."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/doppelganger-block"
+  },
+  "drill-tnt": {
+    "title": "&cDrill TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.5s&7, then bores a tunnel along your aim."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/drill-tnt"
+  },
+  "echo-blast": {
+    "title": "&6Echo Blast",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then echoes with phantom aftershocks."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/echo-blast"
+  },
+  "echo-fuse-tnt": {
+    "title": "&cEcho Fuse TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then echoes with phantom aftershocks."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/echo-fuse-tnt"
+  },
+  "ember-mine": {
+    "title": "&cEmber Mine",
+    "description": [
+      "&7Bury it to arm a proximity mine.",
+      "&7Arms when creatures draw near."
+    ],
+    "mysterious": false,
+    "profile": "buried_mine",
+    "path": "packs/explosions-pack/blocks/ember-mine"
+  },
+  "erupting-tnt": {
+    "title": "&cErupting TNT",
+    "description": [
+      "&7launches primed TNT during the fuse, then explodes.",
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e5.0s&7, then pulls experience orbs inward."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/erupting-tnt"
+  },
+  "fake-bedrock": {
+    "title": "&dFake Bedrock",
+    "description": [
+      "&7Unbreakable, unmovable, the bottom of the world.",
+      "&7Or so it would have you believe.",
+      "&7Some foundations are not what they seem."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/fake-bedrock"
+  },
+  "featherfall-charge": {
+    "title": "&cFeatherfall Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.5s&7, then vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/featherfall-charge"
+  },
+  "frost-tnt": {
+    "title": "&cFrost TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then flash-freezes the area to ice."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/frost-tnt"
+  },
+  "glitch-tnt": {
+    "title": "&dGlitch TNT",
+    "description": [
+      "&7It flickers between things it cannot decide to be.",
+      "&7Reality stutters wherever it sits.",
+      "&7Best not to look too closely."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/glitch-tnt"
+  },
+  "hologram-tnt": {
+    "title": "&dHologram TNT",
+    "description": [
+      "&7Is it really there? Are any of them?",
+      "&7Copies dance while the real fuse burns.",
+      "&7Seeing is no longer believing."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/hologram-tnt"
+  },
+  "inferno-tnt": {
+    "title": "&cInferno TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then erupts into spreading flame."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/inferno-tnt"
+  },
+  "invisiwall": {
+    "title": "&6Invisiwall",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e0.5s&7, then raises then shatters a hidden barrier."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/invisiwall"
+  },
+  "last-stand-charge": {
+    "title": "&cLast Stand Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e0.5s&7, then locks entities in stasis."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/explosions-pack/blocks/last-stand-charge"
+  },
+  "lightning-rod-tnt": {
+    "title": "&cLightning Rod TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then calls chained lightning."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/lightning-rod-tnt"
+  },
+  "magnet-tnt": {
+    "title": "&cMagnet TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then drags entities inward before collapsing."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/magnet-tnt"
+  },
+  "mimic-tnt": {
+    "title": "&dMimic TNT",
+    "description": [
+      "&7One of them is real. The rest only pretend.",
+      "&7Good luck guessing which is which.",
+      "&7Deception scatters in every direction."
+    ],
+    "mysterious": true,
+    "profile": "placed_passive",
+    "path": "packs/explosions-pack/blocks/mimic-tnt"
+  },
+  "mirage-tnt": {
+    "title": "&dMirage TNT",
+    "description": [
+      "&7The blast you see is never where it lands.",
+      "&7Heat, light, and cruel misdirection.",
+      "&7Chase the illusion at your peril."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/mirage-tnt"
+  },
+  "mirror-world-tnt": {
+    "title": "&dMirror World TNT",
+    "description": [
+      "&7Whatever happens here also happens there.",
+      "&7A reflection across an unseen pane.",
+      "&7Two worlds, one fate."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/mirror-world-tnt"
+  },
+  "mudslide-tnt": {
+    "title": "&cMudslide TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.5s&7, then collapses terrain into flowing mud."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/mudslide-tnt"
+  },
+  "nuke": {
+    "title": "&6Nuke",
+    "description": [
+      "&7large-radius nuclear detonation.",
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e8.0s&7, then calls chained lightning."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/nuke"
+  },
+  "orbit-tnt": {
+    "title": "&cOrbit TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then spins victims into orbit."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/orbit-tnt"
+  },
+  "pause-tnt": {
+    "title": "&dPause TNT",
+    "description": [
+      "&7The countdown stops. And waits.",
+      "&7Just when you relax, time resumes.",
+      "&7Patience is its cruelest trick."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/pause-tnt"
+  },
+  "phantom-tnt": {
+    "title": "&dPhantom TNT",
+    "description": [
+      "&7Now you see it. Soon you won't.",
+      "&7The blast seems to come from nowhere.",
+      "&7You'll never spot where it went."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/phantom-tnt"
+  },
+  "phase-tnt": {
+    "title": "&cPhase TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then erupts into spreading flame."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/phase-tnt"
+  },
+  "poison-cloud-tnt": {
+    "title": "&cPoison Cloud TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then blankets the area in toxic haze."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/poison-cloud-tnt"
+  },
+  "powder-trail": {
+    "title": "&6Powder Trail",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e0.5s&7, then erupts into spreading flame."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/powder-trail"
+  },
+  "remote-c4": {
+    "title": "&6Remote C4",
+    "description": [
+      "&7Place it, then link a &edetonator&7.",
+      "&7Cannot be lit with flint & steel.",
+      "&7Right-click the detonator to blow it remotely."
+    ],
+    "mysterious": false,
+    "profile": "remote_charge",
+    "path": "packs/explosions-pack/blocks/remote-c4"
+  },
+  "ricochet-tnt": {
+    "title": "&cRicochet TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.5s&7, then ricochets blasts along a path."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/ricochet-tnt"
+  },
+  "ring-tnt": {
+    "title": "&cRing TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.5s&7, then carves a ring-shaped cavity."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/ring-tnt"
+  },
+  "scaffold-charge": {
+    "title": "&cScaffold Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.5s&7, then builds structure as it counts down."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/scaffold-charge"
+  },
+  "scare-charge": {
+    "title": "&cScare Charge",
+    "description": [
+      "&7Place it, then link a &edetonator&7.",
+      "&7Cannot be lit with flint & steel.",
+      "&7Right-click the detonator to blow it remotely."
+    ],
+    "mysterious": false,
+    "profile": "remote_charge",
+    "path": "packs/explosions-pack/blocks/scare-charge"
+  },
+  "screen-shake-charge": {
+    "title": "&cScreen Shake Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.0s&7, then violently rattles nearby screens."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/screen-shake-charge"
+  },
+  "seismic-tnt": {
+    "title": "&cSeismic TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.0s&7, then ripples the ground in rolling shockwaves."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/seismic-tnt"
+  },
+  "shrapnel-mine": {
+    "title": "&cShrapnel Mine",
+    "description": [
+      "&7Bury it to arm a proximity mine.",
+      "&7Sprays deadly shrapnel."
+    ],
+    "mysterious": false,
+    "profile": "buried_mine",
+    "path": "packs/explosions-pack/blocks/shrapnel-mine"
+  },
+  "signal-charge": {
+    "title": "&cSignal Charge",
+    "description": [
+      "&7Place it, then link a &edetonator&7.",
+      "&7Cannot be lit with flint & steel.",
+      "&7Right-click the detonator to blow it remotely."
+    ],
+    "mysterious": false,
+    "profile": "remote_charge",
+    "path": "packs/explosions-pack/blocks/signal-charge"
+  },
+  "silent-tnt": {
+    "title": "&cSilent TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then detonates with almost no sound."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/silent-tnt"
+  },
+  "slingshot-tnt": {
+    "title": "&cSlingshot TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then detonates in a powerful blast."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/slingshot-tnt"
+  },
+  "solar-flare-tnt": {
+    "title": "&cSolar Flare TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.5s&7, then blinds and disorients without killing."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/solar-flare-tnt"
+  },
+  "spider-storm-tnt": {
+    "title": "&cSpider Storm TNT",
+    "description": [
+      "&7spawns a swarm of spiders on detonation.",
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then unleashes a hostile swarm."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/spider-storm-tnt"
+  },
+  "splitter-charge": {
+    "title": "&cSplitter Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then splits into multiple blasts."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/splitter-charge"
+  },
+  "stasis-field": {
+    "title": "&6Stasis Field",
+    "description": [
+      "&7Place to activate the stasis field.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/explosions-pack/blocks/stasis-field"
+  },
+  "swap-charge": {
+    "title": "&cSwap Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.5s&7, then swaps nearby players on detonation."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/swap-charge"
+  },
+  "tether-tnt": {
+    "title": "&cTether TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e4.0s&7, then erupts into spreading flame."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/tether-tnt"
+  },
+  "timed-charge": {
+    "title": "&cTimed Charge",
+    "description": [
+      "&7Place it, then link a &edetonator&7.",
+      "&7Cannot be lit with flint & steel.",
+      "&7Right-click the detonator to blow it remotely."
+    ],
+    "mysterious": false,
+    "profile": "remote_charge",
+    "path": "packs/explosions-pack/blocks/timed-charge"
+  },
+  "trampoline-tnt": {
+    "title": "&cTrampoline TNT",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then launches everything skyward."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/trampoline-tnt"
+  },
+  "tripwire-charge": {
+    "title": "&cTripwire Charge",
+    "description": [
+      "&7Place two charges to string a tripwire between them.",
+      "&7Both ends detonate when something crosses the line."
+    ],
+    "mysterious": false,
+    "profile": "tripwire_charge",
+    "path": "packs/explosions-pack/blocks/tripwire-charge"
+  },
+  "tsunami-charge": {
+    "title": "&cTsunami Charge",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then summons a surging wave."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/tsunami-charge"
+  },
+  "tunneling-tnt": {
+    "title": "&cTunneling TNT",
+    "description": [
+      "&7chained explosions in a straight line.",
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e3.0s&7, then bores a tunnel along your aim."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/tunneling-tnt"
+  },
+  "wildfire-seed": {
+    "title": "&6Wildfire Seed",
+    "description": [
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e2.0s&7, then plants spreading wildfire."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/wildfire-seed"
+  },
+  "wormhole-tnt": {
+    "title": "&cWormhole TNT",
+    "description": [
+      "&7pulls entities inward, then detonates outward.",
+      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Fuses for &e5.0s&7, then pulls matter inward before erupting."
+    ],
+    "mysterious": false,
+    "profile": "combustible_explosive",
+    "path": "packs/explosions-pack/blocks/wormhole-tnt"
+  },
+  "cryo-grenade": {
+    "title": "&6Cryo Grenade",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; flash-freezes the area to ice."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/cryo-grenade"
+  },
+  "decoy-flare": {
+    "title": "&6Decoy Flare",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/decoy-flare"
+  },
+  "detonator": {
+    "title": "&6Detonator",
+    "description": [
+      "&7Left-click a signal charge to link it.",
+      "&7Right-click to detonate all linked charges.",
+      "&7Holds up to 16 paired charges."
+    ],
+    "mysterious": false,
+    "profile": "detonator",
+    "path": "packs/explosions-pack/items/detonator"
+  },
+  "flashbang": {
+    "title": "&6Flashbang",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/flashbang"
+  },
+  "fragmentation-grenade": {
+    "title": "&6Fragmentation Grenade",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/fragmentation-grenade"
+  },
+  "grenade": {
+    "title": "&6Grenade",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/grenade"
+  },
+  "phantom-grenade": {
+    "title": "&6Phantom Grenade",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/phantom-grenade"
+  },
+  "smoke-grenade": {
+    "title": "&6Smoke Grenade",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; flies on a timed fuse after thrown."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/smoke-grenade"
+  },
+  "sticky-bomb": {
+    "title": "&6Sticky Bomb",
+    "description": [
+      "&7Right-click to throw.",
+      "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    ],
+    "mysterious": false,
+    "profile": "throwable",
+    "path": "packs/explosions-pack/items/sticky-bomb"
+  },
+  "chicken-coop-cache": {
+    "title": "&aChicken Coop Cache",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the chicken coop cache."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/farming-pack/blocks/chicken-coop-cache"
+  },
+  "compost-heap": {
+    "title": "&aCompost Heap",
+    "description": [
+      "&7Place to activate the compost heap.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/compost-heap"
+  },
+  "crop-accelerator": {
+    "title": "&aCrop Accelerator",
+    "description": [
+      "&7Place to activate the crop accelerator.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/crop-accelerator"
+  },
+  "crop-mri": {
+    "title": "&aCrop Mri",
+    "description": [
+      "&7Place to activate the crop mri.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/crop-mri"
+  },
+  "greenhouse-glass": {
+    "title": "&aGreenhouse Glass",
+    "description": [
+      "&7Place to activate the greenhouse glass.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/greenhouse-glass"
+  },
+  "honey-centrifuge": {
+    "title": "&aHoney Centrifuge",
+    "description": [
+      "&7Place to activate the honey centrifuge.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/honey-centrifuge"
+  },
+  "hydroponic-tray": {
+    "title": "&aHydroponic Tray",
+    "description": [
+      "&7Place to activate the hydroponic tray.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/hydroponic-tray"
+  },
+  "irrigation-sprinkler": {
+    "title": "&aIrrigation Sprinkler",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the irrigation sprinkler."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/farming-pack/blocks/irrigation-sprinkler"
+  },
+  "kelp-compressor": {
+    "title": "&aKelp Compressor",
+    "description": [
+      "&7Place to activate the kelp compressor.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/kelp-compressor"
+  },
+  "milking-station": {
+    "title": "&aMilking Station",
+    "description": [
+      "&7Place to activate the milking station.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/milking-station"
+  },
+  "moss-creeper": {
+    "title": "&aMoss Creeper",
+    "description": [
+      "&7Place to activate the moss creeper.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/moss-creeper"
+  },
+  "pollinator-block": {
+    "title": "&aPollinator Block",
+    "description": [
+      "&7Place to activate the pollinator block.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/pollinator-block"
+  },
+  "sapling-nursery": {
+    "title": "&aSapling Nursery",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the sapling nursery."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/farming-pack/blocks/sapling-nursery"
+  },
+  "scarecrow-anchor": {
+    "title": "&aScarecrow Anchor",
+    "description": [
+      "&7Place to activate the scarecrow anchor.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/scarecrow-anchor"
+  },
+  "shepherd-bell": {
+    "title": "&aShepherd Bell",
+    "description": [
+      "&7Place to activate the shepherd bell.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/farming-pack/blocks/shepherd-bell"
+  },
+  "mulch-spreader": {
+    "title": "&aMulch Spreader",
+    "description": [
+      "&7Right-click to use the mulch spreader.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/farming-pack/items/mulch-spreader"
+  },
+  "seed-bomb": {
+    "title": "&aSeed Bomb",
+    "description": [
+      "&7Right-click to use the seed bomb.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/farming-pack/items/seed-bomb"
+  },
+  "vine-shears": {
+    "title": "&aVine Shears",
+    "description": [
+      "&7Right-click to use the vine shears.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/farming-pack/items/vine-shears"
+  },
+  "brewing-accelerator": {
+    "title": "&6Brewing Accelerator",
+    "description": [
+      "&7Place to activate the brewing accelerator.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/kitchen-pack/blocks/brewing-accelerator"
+  },
+  "coffee-brewer": {
+    "title": "&6Coffee Brewer",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the coffee brewer."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/coffee-brewer"
+  },
+  "compost-tea-brewer": {
+    "title": "&6Compost Tea Brewer",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the compost tea brewer."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/compost-tea-brewer"
+  },
+  "drying-rack": {
+    "title": "&6Drying Rack",
+    "description": [
+      "&7Place to activate the drying rack.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/kitchen-pack/blocks/drying-rack"
+  },
+  "fish-smoker-rack": {
+    "title": "&6Fish Smoker Rack",
+    "description": [
+      "&7Place to activate the fish smoker rack.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/kitchen-pack/blocks/fish-smoker-rack"
+  },
+  "fortune-cookie-maker": {
+    "title": "&6Fortune Cookie Maker",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the fortune cookie maker."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/fortune-cookie-maker"
+  },
+  "ice-cream-freezer": {
+    "title": "&6Ice Cream Freezer",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the ice cream freezer."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/ice-cream-freezer"
+  },
+  "infuser": {
+    "title": "&6Infuser",
+    "description": [
+      "&7Place to activate the infuser.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/kitchen-pack/blocks/infuser"
+  },
+  "keg-tap": {
+    "title": "&6Keg Tap",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the keg tap."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/keg-tap"
+  },
+  "picnic-basket": {
+    "title": "&6Picnic Basket",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the picnic basket."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/picnic-basket"
+  },
+  "pizza-oven": {
+    "title": "&6Pizza Oven",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the pizza oven."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/pizza-oven"
+  },
+  "prep-counter": {
+    "title": "&6Prep Counter",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the prep counter."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/prep-counter"
+  },
+  "smoker-stack": {
+    "title": "&6Smoker Stack",
+    "description": [
+      "&7Place to activate the smoker stack.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/kitchen-pack/blocks/smoker-stack"
+  },
+  "spice-rack": {
+    "title": "&6Spice Rack",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the spice rack."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/kitchen-pack/blocks/spice-rack"
+  },
+  "antidote-swab": {
+    "title": "&eAntidote Swab",
+    "description": [
+      "&7Right-click to use the antidote swab.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/antidote-swab"
+  },
+  "bricklayers-broth": {
+    "title": "&eBricklayers Broth",
+    "description": [
+      "&7Right-click to use the bricklayers broth.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/bricklayers-broth"
+  },
+  "cartographers-espresso": {
+    "title": "&eCartographers Espresso",
+    "description": [
+      "&7Right-click to use the cartographers espresso.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/cartographers-espresso"
+  },
+  "chorus-bite": {
+    "title": "&eChorus Bite",
+    "description": [
+      "&7Right-click to use the chorus bite.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/chorus-bite"
+  },
+  "divers-salt": {
+    "title": "&eDivers Salt",
+    "description": [
+      "&7Right-click to use the divers salt.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/divers-salt"
+  },
+  "farmers-tea": {
+    "title": "&eFarmers Tea",
+    "description": [
+      "&7Right-click to use the farmers tea.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/farmers-tea"
+  },
+  "ghost-peppermint": {
+    "title": "&eGhost Peppermint",
+    "description": [
+      "&7Right-click to use the ghost peppermint.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/ghost-peppermint"
+  },
+  "glow-berry-shot": {
+    "title": "&eGlow Berry Shot",
+    "description": [
+      "&7Right-click to use the glow berry shot.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/glow-berry-shot"
+  },
+  "heavy-coat-tonic": {
+    "title": "&eHeavy Coat Tonic",
+    "description": [
+      "&7Right-click to use the heavy coat tonic.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/heavy-coat-tonic"
+  },
+  "honey-throat-coat": {
+    "title": "&eHoney Throat Coat",
+    "description": [
+      "&7Right-click to use the honey throat coat.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/honey-throat-coat"
+  },
+  "luck-dust": {
+    "title": "&eLuck Dust",
+    "description": [
+      "&7Right-click to use the luck dust.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/luck-dust"
+  },
+  "miners-lunch": {
+    "title": "&eMiners Lunch",
+    "description": [
+      "&7Right-click to use the miners lunch.",
+      "&7Check the effect after use."
+    ],
+    "mysterious": false,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/miners-lunch"
+  },
+  "unlabeled-potion": {
+    "title": "&dUnlabeled Potion",
+    "description": [
+      "&7No label, no hints, no promises.",
+      "&7Drink it and find out what it does.",
+      "&7Some bottles keep their secrets till the last sip."
+    ],
+    "mysterious": true,
+    "profile": "item_use",
+    "path": "packs/kitchen-pack/items/unlabeled-potion"
+  },
+  "barn-bell": {
+    "title": "&6Barn Bell",
+    "description": [
+      "&7Remote-call herds passive livestock.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/linking-pack/blocks/barn-bell"
+  },
+  "keyed-hatch": {
+    "title": "&6Keyed Hatch",
+    "description": [
+      "&7Remote-toggle iron hatch or bars.",
+      "&7See item lore for usage hints."
+    ],
+    "mysterious": false,
+    "profile": "placed_passive",
+    "path": "packs/linking-pack/blocks/keyed-hatch"
+  },
+  "pipe-valve": {
+    "title": "&6Pipe Valve",
+    "description": [
+      "&7Place to activate the pipe valve.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/linking-pack/blocks/pipe-valve"
+  },
+  "socket-lamp": {
+    "title": "&6Socket Lamp",
+    "description": [
+      "&7Place to activate the socket lamp.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/linking-pack/blocks/socket-lamp"
+  },
+  "sprinkler-head": {
+    "title": "&6Sprinkler Head",
+    "description": [
+      "&7Place to activate the sprinkler head.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/linking-pack/blocks/sprinkler-head"
+  },
+  "farm-call": {
+    "title": "&6Farm Call",
+    "description": [
+      "&7Right-click a &ebarn bell&7 to link.",
+      "&7Use again to control it remotely."
+    ],
+    "mysterious": false,
+    "profile": "link_item",
+    "path": "packs/linking-pack/items/farm-call"
+  },
+  "gate-clicker": {
+    "title": "&6Gate Clicker",
+    "description": [
+      "&7Right-click a &ekeyed hatch&7 to link.",
+      "&7Use again to control it remotely."
+    ],
+    "mysterious": false,
+    "profile": "link_item",
+    "path": "packs/linking-pack/items/gate-clicker"
+  },
+  "lamp-dimmer": {
+    "title": "&6Lamp Dimmer",
+    "description": [
+      "&7Right-click a &esocket lamp&7 to link.",
+      "&7Use again to control it remotely."
+    ],
+    "mysterious": false,
+    "profile": "link_item",
+    "path": "packs/linking-pack/items/lamp-dimmer"
+  },
+  "sprinkler-timer": {
+    "title": "&6Sprinkler Timer",
+    "description": [
+      "&7Right-click a &esprinkler head&7 to link.",
+      "&7Use again to control it remotely."
+    ],
+    "mysterious": false,
+    "profile": "link_item",
+    "path": "packs/linking-pack/items/sprinkler-timer"
+  },
+  "valve-wrench": {
+    "title": "&6Valve Wrench",
+    "description": [
+      "&7Right-click a &epipe valve&7 to link.",
+      "&7Use again to control it remotely."
+    ],
+    "mysterious": false,
+    "profile": "link_item",
+    "path": "packs/linking-pack/items/valve-wrench"
+  },
+  "ouija-slab": {
+    "title": "&dOuija Slab",
+    "description": [
+      "&7It only speaks when others gather round.",
+      "&7Stand at its corners and listen.",
+      "&7The letters know more than they should."
+    ],
+    "mysterious": true,
+    "profile": "placed_tick",
+    "path": "packs/novelty-pack/blocks/ouija-slab"
+  },
+  "rift-generator": {
+    "title": "&dRift Generator",
+    "description": [
+      "&7Something on the other side is pulling.",
+      "&7The air bends inward toward the tear.",
+      "&7Best not to be standing too close."
+    ],
+    "mysterious": true,
+    "profile": "combustible_explosive",
+    "path": "packs/novelty-pack/blocks/rift-generator"
+  },
+  "gravity-marble": {
+    "title": "&dGravity Marble",
+    "description": [
+      "&7It rolls a little too eagerly.",
+      "&7A glittering trail follows wherever it goes.",
+      "&7Where it stops, nobody knows."
+    ],
+    "mysterious": true,
+    "profile": "item_use",
+    "path": "packs/novelty-pack/items/gravity-marble"
+  },
+  "quantum-coin": {
+    "title": "&dQuantum Coin",
+    "description": [
+      "&7Heads or tails, until you look.",
+      "&7Both faces, neither face, every flip.",
+      "&7Chance has never felt so uncertain."
+    ],
+    "mysterious": true,
+    "profile": "item_use",
+    "path": "packs/novelty-pack/items/quantum-coin"
+  },
+  "chunk-loader-lite": {
+    "title": "&6Chunk Loader Lite",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the chunk loader lite."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/utility-pack/blocks/chunk-loader-lite"
+  },
+  "mob-grinder-hub": {
+    "title": "&6Mob Grinder Hub",
+    "description": [
+      "&7Place to activate the mob grinder hub.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/utility-pack/blocks/mob-grinder-hub"
+  },
+  "per-player-weather-dome": {
+    "title": "&6Per Player Weather Dome",
+    "description": [
+      "&7Place to activate the per player weather dome.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/utility-pack/blocks/per-player-weather-dome"
+  },
+  "player-proximity-alarm": {
+    "title": "&6Player Proximity Alarm",
+    "description": [
+      "&7Place to activate the player proximity alarm.",
+      "&7Runs passively while placed nearby."
+    ],
+    "mysterious": false,
+    "profile": "placed_tick",
+    "path": "packs/utility-pack/blocks/player-proximity-alarm"
+  },
+  "secure-trade-table": {
+    "title": "&6Secure Trade Table",
+    "description": [
+      "&7Right-click to open.",
+      "&7Interact with the secure trade table."
+    ],
+    "mysterious": false,
+    "profile": "gui_block",
+    "path": "packs/utility-pack/blocks/secure-trade-table"
+  }
+}

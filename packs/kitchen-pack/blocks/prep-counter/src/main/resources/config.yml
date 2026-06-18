@@ -1,9 +1,10 @@
 id: prep-counter
 
 display:
-  title: "&bPrep Counter"
+  title: "&6Prep Counter"
   description:
-    - "&7Combines three foods into a golden carrot."
+    - "&7Right-click to open."
+    - "&7Interact with the prep counter."
 
 block:
   placeable: true

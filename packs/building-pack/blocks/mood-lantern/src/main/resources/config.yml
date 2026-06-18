@@ -1,9 +1,10 @@
 id: mood-lantern
 
 display:
-  title: "&bMood Lantern"
+  title: "&6Mood Lantern"
   description:
-    - "&7Particle mood shifts with nearby mobs."
+    - "&7Place to activate the mood lantern."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

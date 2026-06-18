@@ -1,9 +1,10 @@
 id: anti-gravity-zone
 
 display:
-  title: "&6Anti-Gravity Zone"
+  title: "&6Anti Gravity Zone"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e0.5s&7, then lifts entities in anti-gravity."
 
 block:
   placeable: true

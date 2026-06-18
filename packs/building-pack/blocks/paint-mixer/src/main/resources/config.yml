@@ -1,9 +1,10 @@
 id: paint-mixer
 
 display:
-  title: "&bPaint Mixer"
+  title: "&6Paint Mixer"
   description:
-    - "&7Colorful mixing particles while placed."
+    - "&7Place to activate the paint mixer."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

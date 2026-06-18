@@ -10,8 +10,9 @@ id: signal-charge
 display:
   title: "&cSignal Charge"
   description:
-    - "&7Pair with a detonator"
-    - "&7to detonate remotely"
+    - "&7Place it, then link a &edetonator&7."
+    - "&7Cannot be lit with flint & steel."
+    - "&7Right-click the detonator to blow it remotely."
 
 block:
   placeable: true

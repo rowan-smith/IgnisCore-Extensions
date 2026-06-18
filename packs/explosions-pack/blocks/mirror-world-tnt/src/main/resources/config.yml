@@ -1,9 +1,11 @@
 id: mirror-world-tnt
 
 display:
-  title: "&bMirror World TNT"
+  title: "&dMirror World TNT"
   description:
-    - "&7Mirrors explosion across a horizontal plane."
+    - "&7Whatever happens here also happens there."
+    - "&7A reflection across an unseen pane."
+    - "&7Two worlds, one fate."
 
 block:
   placeable: true

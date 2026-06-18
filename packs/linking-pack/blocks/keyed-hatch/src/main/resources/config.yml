@@ -1,9 +1,10 @@
 id: keyed-hatch
 
 display:
-  title: "&bKeyed Hatch"
+  title: "&6Keyed Hatch"
   description:
     - "&7Remote-toggle iron hatch or bars."
+    - "&7See item lore for usage hints."
 
 block:
   placeable: true

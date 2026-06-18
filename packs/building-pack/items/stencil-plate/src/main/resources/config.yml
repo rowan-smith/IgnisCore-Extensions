@@ -1,9 +1,10 @@
 id: stencil-plate
 
 display:
-  title: "&bStencil Plate"
+  title: "&6Stencil Plate"
   description:
-    - "&7Applies glow stencil to concrete powder."
+    - "&7Right-click to use the stencil plate."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

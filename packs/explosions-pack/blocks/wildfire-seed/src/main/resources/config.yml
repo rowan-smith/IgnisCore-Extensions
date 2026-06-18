@@ -3,7 +3,8 @@ id: wildfire-seed
 display:
   title: "&6Wildfire Seed"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.0s&7, then plants spreading wildfire."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: accelerating-fuse-tnt
 
 display:
-  title: "&bAccelerating Fuse TNT"
+  title: "&cAccelerating Fuse TNT"
   description:
-    - "&7Fuse ticks get faster and louder over time."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e4.0s&7, then billows thick concealment smoke."
 
 block:
   placeable: true

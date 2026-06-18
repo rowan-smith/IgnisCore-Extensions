@@ -3,7 +3,8 @@ id: mob-radar
 display:
   title: "&bMob Radar"
   description:
-    - "&7Alerts when hostiles enter radar range."
+    - "&7Place to activate the mob radar."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

@@ -3,7 +3,8 @@ id: chunk-grid-overlay
 display:
   title: "&bChunk Grid Overlay"
   description:
-    - "&7Highlights current chunk boundaries."
+    - "&7Right-click to use the chunk grid overlay."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

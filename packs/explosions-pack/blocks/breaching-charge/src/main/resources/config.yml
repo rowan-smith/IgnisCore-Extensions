@@ -1,9 +1,10 @@
 id: breaching-charge
 
 display:
-  title: "&6Breaching Charge"
+  title: "&cBreaching Charge"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.5s&7, then punches a shaped breach through walls."
 
 block:
   placeable: true

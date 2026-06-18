@@ -3,7 +3,8 @@ id: invisiwall
 display:
   title: "&6Invisiwall"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e0.5s&7, then raises then shatters a hidden barrier."
 
 block:
   placeable: true

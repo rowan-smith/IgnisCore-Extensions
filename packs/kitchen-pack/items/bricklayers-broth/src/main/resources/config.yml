@@ -1,9 +1,10 @@
 id: bricklayers-broth
 
 display:
-  title: "&bBricklayer's Broth"
+  title: "&eBricklayers Broth"
   description:
-    - "&7Haste II; faster block placement 90s."
+    - "&7Right-click to use the bricklayers broth."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

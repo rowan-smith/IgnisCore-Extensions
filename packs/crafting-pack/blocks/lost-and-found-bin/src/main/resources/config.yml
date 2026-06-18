@@ -1,9 +1,10 @@
 id: lost-and-found-bin
 
 display:
-  title: "&bLost & Found Bin"
+  title: "&6Lost And Found Bin"
   description:
-    - "&7Sweeps nearby item drops into storage."
+    - "&7Right-click to open."
+    - "&7Interact with the lost and found bin."
 
 block:
   placeable: true

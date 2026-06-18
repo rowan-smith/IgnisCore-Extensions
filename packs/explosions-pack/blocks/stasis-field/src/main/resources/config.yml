@@ -1,9 +1,10 @@
 id: stasis-field
 
 display:
-  title: "&bStasis Field"
+  title: "&6Stasis Field"
   description:
-    - "&7Freezes entities within radius while placed."
+    - "&7Place to activate the stasis field."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

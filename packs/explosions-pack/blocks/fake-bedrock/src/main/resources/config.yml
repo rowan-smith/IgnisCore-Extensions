@@ -1,9 +1,11 @@
 id: fake-bedrock
 
 display:
-  title: "&6Fake Bedrock"
+  title: "&dFake Bedrock"
   description:
-    - "&7Flare explosive"
+    - "&7Unbreakable, unmovable, the bottom of the world."
+    - "&7Or so it would have you believe."
+    - "&7Some foundations are not what they seem."
 
 block:
   placeable: true

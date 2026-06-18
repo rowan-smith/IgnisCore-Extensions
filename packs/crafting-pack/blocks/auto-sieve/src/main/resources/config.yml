@@ -1,9 +1,10 @@
 id: auto-sieve
 
 display:
-  title: "&bAuto Sieve"
+  title: "&6Auto Sieve"
   description:
-    - "&7Sifting particles and sounds while placed."
+    - "&7Place to activate the auto sieve."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

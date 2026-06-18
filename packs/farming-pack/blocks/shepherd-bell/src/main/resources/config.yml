@@ -1,9 +1,10 @@
 id: shepherd-bell
 
 display:
-  title: "&bShepherd Bell"
+  title: "&aShepherd Bell"
   description:
-    - "&7Herd passive animals toward the block."
+    - "&7Place to activate the shepherd bell."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

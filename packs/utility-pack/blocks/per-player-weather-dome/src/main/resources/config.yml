@@ -1,9 +1,10 @@
 id: per-player-weather-dome
 
 display:
-  title: "&bPer-Player Weather Dome"
+  title: "&6Per Player Weather Dome"
   description:
-    - "&7Local cloud and rain dome."
+    - "&7Place to activate the per player weather dome."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

@@ -3,7 +3,8 @@ id: light-beacon
 display:
   title: "&bLight Beacon"
   description:
-    - "&7Pulsing glow ring while placed."
+    - "&7Place to activate the light beacon."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

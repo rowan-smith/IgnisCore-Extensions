@@ -1,9 +1,10 @@
 id: coffee-brewer
 
 display:
-  title: "&bCoffee Brewer"
+  title: "&6Coffee Brewer"
   description:
-    - "&7Brews cocoa into speed potions."
+    - "&7Right-click to open."
+    - "&7Interact with the coffee brewer."
 
 block:
   placeable: true

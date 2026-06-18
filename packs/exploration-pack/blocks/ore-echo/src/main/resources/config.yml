@@ -3,7 +3,8 @@ id: ore-echo
 display:
   title: "&bOre Echo"
   description:
-    - "&7Beams toward the nearest ore in range."
+    - "&7Place to activate the ore echo."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

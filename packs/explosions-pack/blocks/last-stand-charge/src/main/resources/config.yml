@@ -1,9 +1,10 @@
 id: last-stand-charge
 
 display:
-  title: "&bLast Stand Charge"
+  title: "&cLast Stand Charge"
   description:
-    - "&7Freezes nearby entities, then erupts. Ignite manually."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e0.5s&7, then locks entities in stasis."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: fortune-cookie-maker
 
 display:
-  title: "&bFortune Cookie Maker"
+  title: "&6Fortune Cookie Maker"
   description:
-    - "&7Crafts fortune cookies from wheat and paper."
+    - "&7Right-click to open."
+    - "&7Interact with the fortune cookie maker."
 
 block:
   placeable: true

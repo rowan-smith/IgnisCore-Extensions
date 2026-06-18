@@ -1,9 +1,10 @@
 id: mob-grinder-hub
 
 display:
-  title: "&bMob Grinder Hub"
+  title: "&6Mob Grinder Hub"
   description:
-    - "&7Pulls and damages hostiles in range."
+    - "&7Place to activate the mob grinder hub."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

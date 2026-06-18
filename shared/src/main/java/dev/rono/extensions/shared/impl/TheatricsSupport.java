@@ -41,4 +41,33 @@ final class TheatricsSupport {
             world.spawnParticle(point, particle, 2, 0.05, 0.05, 0.05, 0.01);
         }
     }
+
+    static void igniteFlare(IgnisWorld world, IgnisLocation center) {
+        world.spawnParticle(center, "FLAME", 16, 0.35, 0.35, 0.35, 0.04);
+        world.spawnParticle(center, "SMOKE", 8, 0.2, 0.2, 0.2, 0.02);
+        world.spawnParticle(center, "LAVA", 4, 0.15, 0.15, 0.15, 0.01);
+        world.playSound(center, "ENTITY_BLAZE_SHOOT", 0.9f, 1.2f);
+    }
+
+    static void fusePulse(IgnisWorld world, IgnisLocation center, int ticksLeft, int fuseTicks) {
+        if (fuseTicks <= 0 || ticksLeft <= 0) {
+            return;
+        }
+        float urgency = 1.0f - (ticksLeft / (float) fuseTicks);
+        int smoke = 2 + (int) (urgency * 6);
+        world.spawnParticle(center, "SMOKE", smoke, 0.25, 0.15, 0.25, 0.01);
+        if (ticksLeft <= fuseTicks / 4 || ticksLeft % 10 == 0) {
+            world.spawnParticle(center, "FLAME", 2 + (int) (urgency * 4), 0.2, 0.1, 0.2, 0.02);
+        }
+        if (ticksLeft <= 20 && ticksLeft % 5 == 0) {
+            world.playSound(center, "BLOCK_NOTE_BLOCK_PLING", 0.5f, 0.8f + urgency);
+        }
+    }
+
+    static void detonationFlash(IgnisWorld world, IgnisLocation center, float power) {
+        int particles = Math.min(40, 8 + (int) (power * 2));
+        world.spawnParticle(center, "EXPLOSION", particles, 0.6, 0.4, 0.6, 0.02);
+        world.spawnParticle(center, "CLOUD", particles / 2, 0.8, 0.5, 0.8, 0.01);
+        world.playSound(center, "ENTITY_GENERIC_EXPLODE", Math.min(2.0f, 0.6f + power / 10f), 0.9f);
+    }
 }

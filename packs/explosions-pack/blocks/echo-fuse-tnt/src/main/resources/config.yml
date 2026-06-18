@@ -1,9 +1,10 @@
 id: echo-fuse-tnt
 
 display:
-  title: "&bEcho Fuse TNT"
+  title: "&cEcho Fuse TNT"
   description:
-    - "&7Main blast followed by weaker echo bursts."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e4.0s&7, then echoes with phantom aftershocks."
 
 block:
   placeable: true

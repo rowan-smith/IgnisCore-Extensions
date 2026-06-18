@@ -1,9 +1,11 @@
 id: blink-tnt
 
 display:
-  title: "&bBlink TNT"
+  title: "&dBlink TNT"
   description:
-    - "&7Random teleports during fuse, then explodes."
+    - "&7Here. There. Everywhere in between."
+    - "&7It teleports when you aren't watching."
+    - "&7Detonation is merely a suggestion."
 
 block:
   placeable: true

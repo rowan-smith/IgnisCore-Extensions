@@ -3,7 +3,8 @@ id: smoke-grenade
 display:
   title: "&6Smoke Grenade"
   description:
-    - "&7Throwable flare explosive"
+    - "&7Right-click to throw."
+    - "&7Detonates after &e4.0s&7; flies on a timed fuse after thrown."
 
 item:
   base_material: snowball

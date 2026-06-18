@@ -1,10 +1,10 @@
 id: shrapnel-mine
 
 display:
-  title: "&8Shrapnel Mine"
+  title: "&cShrapnel Mine"
   description:
-    - "&7Buried proximity mine"
-    - "&7Launches deadly debris"
+    - "&7Bury it to arm a proximity mine."
+    - "&7Sprays deadly shrapnel."
 
 block:
   placeable: true

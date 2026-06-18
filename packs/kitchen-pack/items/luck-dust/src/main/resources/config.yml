@@ -1,9 +1,10 @@
 id: luck-dust
 
 display:
-  title: "&bLuck Dust"
+  title: "&eLuck Dust"
   description:
-    - "&7Sprinkle near chest for bonus loot roll."
+    - "&7Right-click to use the luck dust."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

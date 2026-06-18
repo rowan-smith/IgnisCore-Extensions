@@ -1,9 +1,10 @@
 id: item-pedestal-hologram
 
 display:
-  title: "&bItem Pedestal Hologram"
+  title: "&6Item Pedestal Hologram"
   description:
-    - "&7Enchant sparkle hologram on pedestal."
+    - "&7Place to activate the item pedestal hologram."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

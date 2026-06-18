@@ -1,9 +1,10 @@
 id: ore-xray-goggles
 
 display:
-  title: "&bOre X-Ray Goggles"
+  title: "&bOre Xray Goggles"
   description:
-    - "&7Pings nearest ore in range."
+    - "&7Right-click to use the ore xray goggles."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

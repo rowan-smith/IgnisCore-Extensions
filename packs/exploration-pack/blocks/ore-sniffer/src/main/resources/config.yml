@@ -3,7 +3,8 @@ id: ore-sniffer
 display:
   title: "&bOre Sniffer"
   description:
-    - "&7Beams toward the nearest ore in range."
+    - "&7Place to activate the ore sniffer."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

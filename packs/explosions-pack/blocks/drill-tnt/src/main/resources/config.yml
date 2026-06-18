@@ -1,10 +1,10 @@
 id: drill-tnt
 
 display:
-  title: "&7Drill TNT"
+  title: "&cDrill TNT"
   description:
-    - "&7Vertical borehole"
-    - "&7Mines straight down"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e2.5s&7, then bores a tunnel along your aim."
 
 block:
   placeable: true

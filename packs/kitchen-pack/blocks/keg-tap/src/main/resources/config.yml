@@ -1,9 +1,10 @@
 id: keg-tap
 
 display:
-  title: "&bKeg Tap"
+  title: "&6Keg Tap"
   description:
-    - "&7Refills drink items from bucket input."
+    - "&7Right-click to open."
+    - "&7Interact with the keg tap."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: chunk-loader-lite
 
 display:
-  title: "&bChunk Loader Lite"
+  title: "&6Chunk Loader Lite"
   description:
-    - "&7Force-loads chunk while fueled."
+    - "&7Right-click to open."
+    - "&7Interact with the chunk loader lite."
 
 block:
   placeable: true

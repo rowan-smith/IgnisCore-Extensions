@@ -1,9 +1,10 @@
 id: cartographers-espresso
 
 display:
-  title: "&bCartographer's Espresso"
+  title: "&eCartographers Espresso"
   description:
-    - "&7Speed + compass heading toward ruins."
+    - "&7Right-click to use the cartographers espresso."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

@@ -1,9 +1,10 @@
 id: motion-floodlight
 
 display:
-  title: "&bMotion Floodlight"
+  title: "&6Motion Floodlight"
   description:
-    - "&7Beams light toward nearby players."
+    - "&7Place to activate the motion floodlight."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

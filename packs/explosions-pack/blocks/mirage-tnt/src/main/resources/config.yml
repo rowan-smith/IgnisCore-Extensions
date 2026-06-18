@@ -1,9 +1,11 @@
 id: mirage-tnt
 
 display:
-  title: "&6Mirage TNT"
+  title: "&dMirage TNT"
   description:
-    - "&7Flare explosive"
+    - "&7The blast you see is never where it lands."
+    - "&7Heat, light, and cruel misdirection."
+    - "&7Chase the illusion at your peril."
 
 block:
   placeable: true

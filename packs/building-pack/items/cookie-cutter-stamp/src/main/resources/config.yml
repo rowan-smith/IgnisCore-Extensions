@@ -1,9 +1,10 @@
 id: cookie-cutter-stamp
 
 display:
-  title: "&bCookie Cutter Stamp"
+  title: "&6Cookie Cutter Stamp"
   description:
-    - "&7Cycles cookie stamp shapes."
+    - "&7Right-click to use the cookie cutter stamp."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

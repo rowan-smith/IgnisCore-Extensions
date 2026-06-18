@@ -1,9 +1,10 @@
 id: pipe-valve
 
 display:
-  title: "&bPipe Valve"
+  title: "&6Pipe Valve"
   description:
-    - "&7Remote-toggle cosmetic water flow."
+    - "&7Place to activate the pipe valve."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

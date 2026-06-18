@@ -1,9 +1,10 @@
 id: glow-berry-shot
 
 display:
-  title: "&bGlow Berry Shot"
+  title: "&eGlow Berry Shot"
   description:
-    - "&7Night vision + player glow 120s."
+    - "&7Right-click to use the glow berry shot."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

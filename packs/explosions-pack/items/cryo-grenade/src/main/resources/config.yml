@@ -3,7 +3,8 @@ id: cryo-grenade
 display:
   title: "&6Cryo Grenade"
   description:
-    - "&7Throwable flare explosive"
+    - "&7Right-click to throw."
+    - "&7Detonates after &e4.0s&7; flash-freezes the area to ice."
 
 item:
   base_material: snowball

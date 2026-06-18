@@ -1,9 +1,10 @@
 id: moss-creeper
 
 display:
-  title: "&bMoss Creeper"
+  title: "&aMoss Creeper"
   description:
-    - "&7Spreads moss on blocks near water."
+    - "&7Place to activate the moss creeper."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

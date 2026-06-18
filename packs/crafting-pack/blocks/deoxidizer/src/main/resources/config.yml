@@ -1,9 +1,10 @@
 id: deoxidizer
 
 display:
-  title: "&bDeoxidizer"
+  title: "&6Deoxidizer"
   description:
-    - "&7Cleans oxidized copper in radius."
+    - "&7Place to activate the deoxidizer."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

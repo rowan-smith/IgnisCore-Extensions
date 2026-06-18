@@ -1,10 +1,10 @@
 id: ring-tnt
 
 display:
-  title: "&dRing TNT"
+  title: "&cRing TNT"
   description:
-    - "&7Torus-shaped blast"
-    - "&7Destroys a donut, spares the core"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.5s&7, then carves a ring-shaped cavity."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: sandblaster
 
 display:
-  title: "&bSandblaster"
+  title: "&6Sandblaster"
   description:
-    - "&7Etches smooth stone into chiseled bricks."
+    - "&7Right-click to use the sandblaster."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

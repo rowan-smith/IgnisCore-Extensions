@@ -4,6 +4,7 @@ display:
   title: "&bWaypoint Marker"
   description:
     - "&7Saves a named waypoint at this location."
+    - "&7See item lore for usage hints."
 
 block:
   placeable: true

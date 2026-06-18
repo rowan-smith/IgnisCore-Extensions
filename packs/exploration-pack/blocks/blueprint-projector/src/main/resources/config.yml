@@ -3,7 +3,8 @@ id: blueprint-projector
 display:
   title: "&bBlueprint Projector"
   description:
-    - "&7Scanning beams as a build guide."
+    - "&7Place to activate the blueprint projector."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

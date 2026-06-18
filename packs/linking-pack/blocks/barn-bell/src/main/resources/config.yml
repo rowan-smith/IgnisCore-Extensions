@@ -1,9 +1,10 @@
 id: barn-bell
 
 display:
-  title: "&bBarn Bell"
+  title: "&6Barn Bell"
   description:
     - "&7Remote-call herds passive livestock."
+    - "&7See item lore for usage hints."
 
 block:
   placeable: true

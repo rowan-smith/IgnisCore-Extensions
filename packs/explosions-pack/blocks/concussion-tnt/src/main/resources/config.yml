@@ -1,10 +1,10 @@
 id: concussion-tnt
 
 display:
-  title: "&eConcussion TNT"
+  title: "&cConcussion TNT"
   description:
-    - "&7Massive knockback"
-    - "&7Minimal terrain damage"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.0s&7, then hurls entities with massive knockback."
 
 block:
   placeable: true

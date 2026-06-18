@@ -1,9 +1,10 @@
 id: drying-rack
 
 display:
-  title: "&bDrying Rack"
+  title: "&6Drying Rack"
   description:
-    - "&7Drying smoke while placed."
+    - "&7Place to activate the drying rack."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

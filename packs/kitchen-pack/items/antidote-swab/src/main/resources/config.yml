@@ -1,9 +1,10 @@
 id: antidote-swab
 
 display:
-  title: "&bAntidote Swab"
+  title: "&eAntidote Swab"
   description:
-    - "&7Clears one negative effect."
+    - "&7Right-click to use the antidote swab."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

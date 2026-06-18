@@ -4,6 +4,7 @@ display:
   title: "&bCheckpoint Obelisk"
   description:
     - "&7Records player checkpoint on interact."
+    - "&7See item lore for usage hints."
 
 block:
   placeable: true

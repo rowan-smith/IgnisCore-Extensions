@@ -1,9 +1,10 @@
 id: player-proximity-alarm
 
 display:
-  title: "&bPlayer Proximity Alarm"
+  title: "&6Player Proximity Alarm"
   description:
-    - "&7Rings when players enter alarm range."
+    - "&7Place to activate the player proximity alarm."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

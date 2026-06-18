@@ -1,9 +1,10 @@
 id: miners-lunch
 
 display:
-  title: "&bMiner's Lunch"
+  title: "&eMiners Lunch"
   description:
-    - "&7Haste + saturation; 10-minute cooldown."
+    - "&7Right-click to use the miners lunch."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

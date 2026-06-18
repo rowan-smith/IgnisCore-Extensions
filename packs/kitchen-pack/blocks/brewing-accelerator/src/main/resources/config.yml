@@ -1,9 +1,10 @@
 id: brewing-accelerator
 
 display:
-  title: "&bBrewing Accelerator"
+  title: "&6Brewing Accelerator"
   description:
-    - "&7Brewing stand theatrics while placed."
+    - "&7Place to activate the brewing accelerator."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

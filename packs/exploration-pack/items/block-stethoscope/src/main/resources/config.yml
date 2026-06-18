@@ -3,7 +3,8 @@ id: block-stethoscope
 display:
   title: "&bBlock Stethoscope"
   description:
-    - "&7Reveals targeted block material."
+    - "&7Right-click to use the block stethoscope."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

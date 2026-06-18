@@ -1,9 +1,10 @@
 id: vine-shears
 
 display:
-  title: "&bVine Shears"
+  title: "&aVine Shears"
   description:
-    - "&7Cuts connected vine clusters from one click."
+    - "&7Right-click to use the vine shears."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

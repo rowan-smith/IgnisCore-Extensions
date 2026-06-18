@@ -1,9 +1,10 @@
 id: irrigation-sprinkler
 
 display:
-  title: "&bIrrigation Sprinkler"
+  title: "&aIrrigation Sprinkler"
   description:
-    - "&7Consumes water to irrigate farmland."
+    - "&7Right-click to open."
+    - "&7Interact with the irrigation sprinkler."
 
 block:
   placeable: true

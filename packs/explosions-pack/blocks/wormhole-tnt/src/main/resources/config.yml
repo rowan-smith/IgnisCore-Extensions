@@ -8,10 +8,11 @@
 id: wormhole-tnt
 
 display:
-  title: "Wormhole TNT"
+  title: "&cWormhole TNT"
   description:
-    - "&4Complete"
-    - "&4Destruction"
+    - "&7pulls entities inward, then detonates outward."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e5.0s&7, then pulls matter inward before erupting."
 
 block:
   placeable: true

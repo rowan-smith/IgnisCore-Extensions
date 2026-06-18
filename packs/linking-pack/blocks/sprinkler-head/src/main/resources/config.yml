@@ -1,9 +1,10 @@
 id: sprinkler-head
 
 display:
-  title: "&bSprinkler Head"
+  title: "&6Sprinkler Head"
   description:
-    - "&7Armed sprinkler irrigates farmland."
+    - "&7Place to activate the sprinkler head."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: compost-tea-brewer
 
 display:
-  title: "&bCompost Tea Brewer"
+  title: "&6Compost Tea Brewer"
   description:
-    - "&7Splash compost tea bonemeals nearby crops."
+    - "&7Right-click to open."
+    - "&7Interact with the compost tea brewer."
 
 block:
   placeable: true

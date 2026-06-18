@@ -1,10 +1,10 @@
 id: flashbang
 
 display:
-  title: "&fFlashbang"
+  title: "&6Flashbang"
   description:
-    - "&7Non-lethal stun grenade"
-    - "&7Blinds and deafens nearby players"
+    - "&7Right-click to throw."
+    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:
   base_material: snowball

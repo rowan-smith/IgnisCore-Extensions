@@ -1,9 +1,10 @@
 id: farmers-tea
 
 display:
-  title: "&bFarmer's Tea"
+  title: "&eFarmers Tea"
   description:
-    - "&7Instant bonemeal on nearby crops."
+    - "&7Right-click to use the farmers tea."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

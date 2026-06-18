@@ -1,9 +1,10 @@
 id: sapling-nursery
 
 display:
-  title: "&bSapling Nursery"
+  title: "&aSapling Nursery"
   description:
-    - "&7Auto-plants saplings from storage."
+    - "&7Right-click to open."
+    - "&7Interact with the sapling nursery."
 
 block:
   placeable: true

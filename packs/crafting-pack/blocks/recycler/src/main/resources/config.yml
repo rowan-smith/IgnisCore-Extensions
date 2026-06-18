@@ -1,9 +1,10 @@
 id: recycler
 
 display:
-  title: "&bRecycler"
+  title: "&6Recycler"
   description:
-    - "&7Scrap grinding particles while placed."
+    - "&7Place to activate the recycler."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

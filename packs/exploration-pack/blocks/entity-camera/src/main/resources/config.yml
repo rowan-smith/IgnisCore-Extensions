@@ -4,6 +4,7 @@ display:
   title: "&bEntity Camera"
   description:
     - "&7Spectate nearest passive mob on interact."
+    - "&7See item lore for usage hints."
 
 block:
   placeable: true

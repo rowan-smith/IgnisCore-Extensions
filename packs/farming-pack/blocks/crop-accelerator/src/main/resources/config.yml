@@ -1,9 +1,10 @@
 id: crop-accelerator
 
 display:
-  title: "&bCrop Accelerator"
+  title: "&aCrop Accelerator"
   description:
-    - "&7Bonemeals crops in a radius."
+    - "&7Place to activate the crop accelerator."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

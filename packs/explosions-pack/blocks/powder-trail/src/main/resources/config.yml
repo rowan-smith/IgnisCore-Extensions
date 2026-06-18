@@ -1,9 +1,10 @@
 id: powder-trail
 
 display:
-  title: "&bPowder Trail"
+  title: "&6Powder Trail"
   description:
-    - "&7Smoke trail while fusing, then detonates."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e0.5s&7, then erupts into spreading flame."
 
 block:
   placeable: true

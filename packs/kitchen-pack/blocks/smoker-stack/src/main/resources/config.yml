@@ -1,9 +1,10 @@
 id: smoker-stack
 
 display:
-  title: "&bSmoker Stack"
+  title: "&6Smoker Stack"
   description:
-    - "&7Rising smoke stack while placed."
+    - "&7Place to activate the smoker stack."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: seed-bomb
 
 display:
-  title: "&bSeed Bomb"
+  title: "&aSeed Bomb"
   description:
-    - "&7Throwable; scatters grass and flowers."
+    - "&7Right-click to use the seed bomb."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

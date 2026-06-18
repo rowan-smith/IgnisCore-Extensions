@@ -1,9 +1,10 @@
 id: kelp-compressor
 
 display:
-  title: "&bKelp Compressor"
+  title: "&aKelp Compressor"
   description:
-    - "&7Bubble effects while placed."
+    - "&7Place to activate the kelp compressor."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

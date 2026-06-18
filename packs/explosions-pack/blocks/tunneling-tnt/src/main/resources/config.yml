@@ -8,10 +8,11 @@
 id: tunneling-tnt
 
 display:
-  title: "Tunneling TNT"
+  title: "&cTunneling TNT"
   description:
-    - "&4Complete"
-    - "&4Destruction"
+    - "&7chained explosions in a straight line."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.0s&7, then bores a tunnel along your aim."
 
 block:
   placeable: true

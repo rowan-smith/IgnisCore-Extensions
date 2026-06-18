@@ -1,9 +1,10 @@
 id: spice-rack
 
 display:
-  title: "&bSpice Rack"
+  title: "&6Spice Rack"
   description:
-    - "&7Spice + food grants haste on open."
+    - "&7Right-click to open."
+    - "&7Interact with the spice rack."
 
 block:
   placeable: true

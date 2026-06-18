@@ -1,9 +1,10 @@
 id: pollinator-block
 
 display:
-  title: "&bPollinator Block"
+  title: "&aPollinator Block"
   description:
-    - "&7Bonemeals crops in a small radius."
+    - "&7Place to activate the pollinator block."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

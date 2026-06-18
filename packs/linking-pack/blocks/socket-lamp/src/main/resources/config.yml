@@ -1,9 +1,10 @@
 id: socket-lamp
 
 display:
-  title: "&bSocket Lamp"
+  title: "&6Socket Lamp"
   description:
-    - "&7Remote-cyclable lamp; light level 0–15."
+    - "&7Place to activate the socket lamp."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

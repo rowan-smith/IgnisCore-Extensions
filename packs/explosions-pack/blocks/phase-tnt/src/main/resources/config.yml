@@ -1,9 +1,10 @@
 id: phase-tnt
 
 display:
-  title: "&bPhase TNT"
+  title: "&cPhase TNT"
   description:
-    - "&7Phase burst passes through blocks in radius."
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.0s&7, then erupts into spreading flame."
 
 block:
   placeable: true

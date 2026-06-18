@@ -8,10 +8,11 @@
 id: phantom-tnt
 
 display:
-  title: "Phantom TNT"
+  title: "&dPhantom TNT"
   description:
-    - "&4Complete"
-    - "&4Destruction"
+    - "&7Now you see it. Soon you won't."
+    - "&7The blast seems to come from nowhere."
+    - "&7You'll never spot where it went."
 
 block:
   placeable: true

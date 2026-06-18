@@ -1,9 +1,10 @@
 id: lightning-rod-tnt
 
 display:
-  title: "&6Lightning Rod TNT"
+  title: "&cLightning Rod TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.0s&7, then calls chained lightning."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: repair-station-block
 
 display:
-  title: "&bRepair Station"
+  title: "&6Repair Station Block"
   description:
     - "&7Right-click with a held item to repair durability."
+    - "&7See item lore for usage hints."
 
 block:
   placeable: true

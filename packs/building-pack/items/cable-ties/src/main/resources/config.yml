@@ -1,9 +1,10 @@
 id: cable-ties
 
 display:
-  title: "&bCable Ties"
+  title: "&6Cable Ties"
   description:
-    - "&7Decorative particle cable between fence posts."
+    - "&7Right-click to use the cable ties."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

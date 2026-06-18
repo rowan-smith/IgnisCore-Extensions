@@ -1,9 +1,10 @@
 id: heavy-coat-tonic
 
 display:
-  title: "&bHeavy Coat Tonic"
+  title: "&eHeavy Coat Tonic"
   description:
-    - "&7Slowness I + Resistance II for 45s."
+    - "&7Right-click to use the heavy coat tonic."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

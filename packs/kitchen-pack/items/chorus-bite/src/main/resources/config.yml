@@ -1,9 +1,10 @@
 id: chorus-bite
 
 display:
-  title: "&bChorus Bite"
+  title: "&eChorus Bite"
   description:
-    - "&7Random 8-block sideways warp."
+    - "&7Right-click to use the chorus bite."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

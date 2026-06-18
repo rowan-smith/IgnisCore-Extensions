@@ -1,9 +1,10 @@
 id: acid-tnt
 
 display:
-  title: "&6Acid TNT"
+  title: "&cAcid TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Fuses for &e3.0s&7, then corrodes stone and ore into air."
 
 block:
   placeable: true

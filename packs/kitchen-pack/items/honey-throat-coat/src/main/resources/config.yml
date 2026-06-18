@@ -1,9 +1,10 @@
 id: honey-throat-coat
 
 display:
-  title: "&bHoney Throat Coat"
+  title: "&eHoney Throat Coat"
   description:
-    - "&7Clears poison; sweet scent mark on mobs."
+    - "&7Right-click to use the honey throat coat."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper

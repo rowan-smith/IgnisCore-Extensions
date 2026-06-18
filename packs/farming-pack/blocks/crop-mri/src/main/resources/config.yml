@@ -1,9 +1,10 @@
 id: crop-mri
 
 display:
-  title: "&bCrop MRI"
+  title: "&aCrop Mri"
   description:
-    - "&7Scans crop density and chimes results."
+    - "&7Place to activate the crop mri."
+    - "&7Runs passively while placed nearby."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: ghost-peppermint
 
 display:
-  title: "&bGhost Peppermint"
+  title: "&eGhost Peppermint"
   description:
-    - "&7Phantoms ignore you until next sleep."
+    - "&7Right-click to use the ghost peppermint."
+    - "&7Check the effect after use."
 
 item:
   base_material: paper
