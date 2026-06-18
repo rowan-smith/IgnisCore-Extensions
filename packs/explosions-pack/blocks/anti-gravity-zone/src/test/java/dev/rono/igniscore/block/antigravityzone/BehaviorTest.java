@@ -12,8 +12,9 @@ import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.testsupport.BehaviorTestSupport;
 import dev.rono.igniscore.testsupport.ExtensionTestSupport;
 import dev.rono.igniscore.testsupport.TestEventBus;
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -53,13 +54,30 @@ class BehaviorTest {
     @Test
     void fuseCountdownPulses() {
         TestEventBus.TestContext ctx = TestEventBus.createContext();
-        BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(
+        BlockDefinition loaded = ExtensionTestSupport.loadBlockDefinition(
                 BehaviorTest.class, EXTENSION_ID, 10001);
+        HashMap<String, Object> customData = new HashMap<>(loaded.getCustomData());
+        customData.put("fuse", 80);
+        BlockDefinition definition = BlockDefinition.builder(loaded.getId())
+                .baseMaterial(loaded.getBaseMaterial())
+                .renderMaterial(loaded.getRenderMaterial())
+                .title(loaded.getTitle())
+                .description(loaded.getDescription())
+                .placeable(loaded.isPlaceable())
+                .breakable(loaded.isBreakable())
+                .textures(loaded.getTopTexture(), loaded.getSideTexture(), loaded.getBottomTexture())
+                .customData(customData)
+                .breakSettings(loaded.getBreakSettings())
+                .behaviorSettings(loaded.getBehaviorSettings())
+                .interactionSettings(loaded.getInteractionSettings())
+                .displaySettings(loaded.getDisplaySettings())
+                .customModelData(loaded.getCustomModelData())
+                .extensionId(loaded.getExtensionId())
+                .animations(loaded.isRotate(), loaded.isFloatBob(), loaded.isPulse())
+                .build();
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
         RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
-        int fuseTicks = dev.rono.igniscore.api.strategy.StrategySupport.customInt(definition, "fuse", 80);
-        Assumptions.assumeTrue(fuseTicks > 1, "instant fuse has no countdown pulse");
-        instance.setTicksLeft(Math.max(1, fuseTicks / 2));
+        instance.setTicksLeft(40);
 
         new CombustibleFuseTheatricsListener(ctx.context())
                 .onBlockTick(new BlockTickEvent(instance));
