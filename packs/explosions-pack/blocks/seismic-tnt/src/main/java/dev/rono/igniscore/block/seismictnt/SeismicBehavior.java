@@ -49,8 +49,10 @@ final class SeismicBehavior {
                 context.scheduler());
 
         int half = gridSize / 2;
-        int[] index = {0};
+        int[] index = {1};
         int total = gridSize * gridSize;
+        detonateGridCell(world, def, epicenter, half, microPower, spacing, 0);
+
         IgnisTask[] taskRef = {null};
         taskRef[0] = context.scheduler().runRepeating(epicenter, () -> {
             if (index[0] >= total) {
@@ -60,17 +62,22 @@ final class SeismicBehavior {
                 return;
             }
 
-            int gx = index[0] % gridSize - half;
-            int gz = index[0] / gridSize - half;
-            index[0]++;
-
-            IgnisLocation blast = epicenter.add(gx * spacing, 0, gz * spacing);
-            world.playSound(blast, "ENTITY_GENERIC_EXPLODE", 0.8f, 0.6f + (float) Math.random() * 0.3f);
-            world.spawnParticle(blast, "EXPLOSION", 3, 0.4, 0.2, 0.4, 0.02);
-            world.spawnParticle(blast, "CLOUD", 12, 0.6, 0.2, 0.6, 0.03);
-            ExtensionShared.explosion().create(world, blast, microPower, false, true);
-            ExtensionShared.blasts().applyKnockback(world, blast, spacing * 1.5, 0.35, false);
+            int cell = index[0]++;
+            detonateGridCell(world, def, epicenter, half, microPower, spacing, cell);
         }, 0L, Math.max(1, waveDelay));
+    }
+
+    private void detonateGridCell(IgnisWorld world, BlockDefinition def, IgnisLocation epicenter, int half,
+            float microPower, double spacing, int cell) {
+        int gridSize = StrategySupport.customInt(def, "gridSize", 5);
+        int gx = cell % gridSize - half;
+        int gz = cell / gridSize - half;
+        IgnisLocation blast = epicenter.add(gx * spacing, 0, gz * spacing);
+        world.playSound(blast, "ENTITY_GENERIC_EXPLODE", 0.8f, 0.6f + (float) Math.random() * 0.3f);
+        world.spawnParticle(blast, "EXPLOSION", 3, 0.4, 0.2, 0.4, 0.02);
+        world.spawnParticle(blast, "CLOUD", 12, 0.6, 0.2, 0.6, 0.03);
+        ExtensionShared.explosion().create(world, blast, microPower, false, true);
+        ExtensionShared.blasts().applyKnockback(world, blast, spacing * 1.5, 0.35, false);
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

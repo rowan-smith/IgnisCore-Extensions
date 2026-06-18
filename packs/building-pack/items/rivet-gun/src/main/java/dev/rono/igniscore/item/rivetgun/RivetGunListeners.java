@@ -22,11 +22,15 @@ final class RivetGunListeners implements OnItemClickListener {
     @Override
     public void onItemClick(ItemClickEvent event) {
         if ("use".equals(event.actionToken())) {
+                IgnisWorld world = event.player().getWorld();
                 if (event.clickedBlock() == null) {
+                    IgnisLocation eye = event.player().getEyeLocation();
+                    event.player().sendMessage("<gray>Click a block to rivet it.</gray>");
+                    ExtensionShared.theatrics().sparkle(world, eye, "CRIT", 4);
+                    world.playSound(eye, "BLOCK_ANVIL_LAND", 0.5f, 1.4f);
                     return;
                 }
                 IgnisLocation loc = event.clickedBlock().getLocation();
-                IgnisWorld world = event.player().getWorld();
                 String material = world.getBlockMaterialKey(loc).toLowerCase();
                 if (material.contains("reinforced") || material.contains("obsidian")) {
                     event.player().sendMessage("<gray>Block is already reinforced.</gray>");

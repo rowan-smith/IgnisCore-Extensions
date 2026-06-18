@@ -29,6 +29,7 @@ final class SpiderStormOnBlockTriggerListener implements OnBlockTriggerListener 
             ExtensionShared.explosion().create(world, loc, def, 4.0, false);
         } else {
             SpiderStormSupport.spawnBurst(runtime, world, loc, finalPower);
+            ExtensionShared.explosion().create(world, loc, def, 4.0, false);
         }
 
         SpiderStormSupport.spawnEntityPayload(runtime, world, def, loc, finalPower);

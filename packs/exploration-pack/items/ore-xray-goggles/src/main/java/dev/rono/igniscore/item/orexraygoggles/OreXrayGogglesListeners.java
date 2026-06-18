@@ -32,6 +32,8 @@ final class OreXrayGogglesListeners implements OnItemClickListener {
                 IgnisLocation ore = ExtensionShared.scan().findNearestOre(world, loc, radius);
                 if (ore == null) {
                     event.player().sendMessage("<gray>No ore signature detected.</gray>");
+                    ExtensionShared.theatrics().sparkle(world, loc, "CRIT", 4);
+                    world.playSound(loc, "BLOCK_AMETHYST_BLOCK_RESONATE", 0.5f, 1.2f);
                     return;
                 }
                 event.player().sendMessage("<green>Ore ping toward <white>" + (int) ore.x() + " " + (int) ore.y() + " " + (int) ore.z() + "</white></green>");

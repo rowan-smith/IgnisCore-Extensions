@@ -56,6 +56,7 @@ final class DiversSaltListeners implements OnItemClickListener {
                     case "divers-salt" -> {
                         event.player().applyPotionEffect("WATER_BREATHING", 1800, 0);
                         event.player().sendMessage("<aqua>Diver's salt — water breathing!</aqua>");
+                        ExtensionShared.theatrics().sparkle(world, loc, "BUBBLE", 4);
                         world.playSound(loc, "BLOCK_SAND_PLACE", 0.7f, 1.0f);
                     }
                     case "cartographers-espresso" -> {

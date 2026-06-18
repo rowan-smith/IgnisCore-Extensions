@@ -21,11 +21,15 @@ final class StencilPlateListeners implements OnItemClickListener {
     @Override
     public void onItemClick(ItemClickEvent event) {
         if ("use".equals(event.actionToken())) {
+                IgnisWorld world = event.player().getWorld();
                 if (event.clickedBlock() == null) {
+                    IgnisLocation eye = event.player().getEyeLocation();
+                    event.player().sendMessage("<gray>Click concrete powder to apply a stencil.</gray>");
+                    ExtensionShared.theatrics().sparkle(world, eye, "GLOW", 4);
+                    world.playSound(eye, "BLOCK_SAND_PLACE", 0.6f, 1.1f);
                     return;
                 }
                 IgnisLocation loc = event.clickedBlock().getLocation();
-                IgnisWorld world = event.player().getWorld();
                 String material = world.getBlockMaterialKey(loc).toLowerCase();
                 if (!material.contains("concrete_powder")) {
                     event.player().sendMessage("<gray>Stencil only works on concrete powder.</gray>");

@@ -15,6 +15,7 @@
   <modules>
     <module>shared</module>
     <module>packs</module>
+    <module>verification</module>
   </modules>
 
   <properties>

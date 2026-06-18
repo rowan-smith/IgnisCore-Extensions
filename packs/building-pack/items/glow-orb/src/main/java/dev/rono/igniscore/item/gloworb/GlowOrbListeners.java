@@ -34,6 +34,7 @@ final class GlowOrbListeners implements OnItemClickListener {
                 int duration = StrategySupport.customInt(event.definition().getCustomData(), "glowDurationTicks", 1200);
                 IgnisLocation stick = event.clickedBlock() != null ? event.clickedBlock().getLocation() : eye;
                 ExtensionShared.theatrics().sparkle(world, stick, "END_ROD", 8);
+                world.playSound(eye, "ENTITY_SNOWBALL_THROW", 0.8f, 1.0f);
                 int[] ticks = {0};
                 IgnisTask[] ref = {null};
                 ref[0] = context.scheduler().runRepeating(stick, () -> {

@@ -31,6 +31,8 @@ final class BlockStethoscopeListeners implements OnItemClickListener {
                 IgnisBlock target = event.clickedBlock();
                 if (target == null) {
                     event.player().sendMessage("<yellow>Aim at a block to listen.</yellow>");
+                    ExtensionShared.theatrics().sparkle(world, loc, "NOTE", 4);
+                    world.playSound(loc, "BLOCK_NOTE_BLOCK_HARP", 0.5f, 1.4f);
                     return;
                 }
                 IgnisLocation blockLoc = target.getLocation();
