@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: lamp
+  fallback: igniscore:lamp
 
 model:
   type: "block_display"

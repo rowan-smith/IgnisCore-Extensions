@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: dispenser
+  fallback: minecraft:dispenser
 
 model:
   type: "block_display"

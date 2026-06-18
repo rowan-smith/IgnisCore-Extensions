@@ -18,7 +18,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: tripwire
+  fallback: minecraft:tripwire_hook
 
 model:
   type: "block_display"

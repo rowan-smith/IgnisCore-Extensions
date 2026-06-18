@@ -38,7 +38,7 @@ textures:
   top: top.jpg
   side: side.jpg
   bottom: bottom.jpg
-  fallback: ender_chest
+  fallback: minecraft:ender_chest
 
 model:
   type: "block_display"

@@ -122,6 +122,64 @@ def load_texture_fallback_overrides() -> dict[str, str]:
 DISPLAY_OVERRIDES = load_display_overrides()
 TEXTURE_FALLBACK_OVERRIDES = load_texture_fallback_overrides()
 
+# Bare ids that resolve to another loaded extension before the igniscore catalog.
+EXTENSION_TEXTURE_FALLBACK_IDS = frozenset({"grenade", "detonator"})
+
+# Logical names that map to a different vanilla block id.
+MINECRAFT_BLOCK_FALLBACK_ALIASES = {
+    "grass": "grass_block",
+    "hay": "hay_block",
+    "redstone": "redstone_block",
+    "tripwire": "tripwire_hook",
+    "trapdoor": "oak_trapdoor",
+}
+
+MINECRAFT_BLOCK_FALLBACK_IDS = frozenset(
+    {
+        "anvil",
+        "barrel",
+        "beacon",
+        "bedrock",
+        "bell",
+        "brewing_stand",
+        "chest",
+        "composter",
+        "dispenser",
+        "ender_chest",
+        "farmland",
+        "glass",
+        "grindstone",
+        "lantern",
+        "lever",
+        "lodestone",
+        "obsidian",
+        "smoker",
+        "stone",
+        "tnt",
+    }
+    | set(MINECRAFT_BLOCK_FALLBACK_ALIASES)
+    | set(MINECRAFT_BLOCK_FALLBACK_ALIASES.values())
+)
+
+MINECRAFT_ITEM_FALLBACK_IDS = frozenset(
+    {"book", "compass", "map", "potion", "shears", "spyglass"}
+)
+
+
+def format_texture_fallback(logical: str, *, kind: str) -> str:
+    """Map inferred fallback keys to IgnisCore namespaces (minecraft / igniscore / extension id)."""
+    if not logical or ":" in logical:
+        return logical
+    if logical in EXTENSION_TEXTURE_FALLBACK_IDS:
+        return logical
+    if logical in MINECRAFT_BLOCK_FALLBACK_ALIASES:
+        return f"minecraft:{MINECRAFT_BLOCK_FALLBACK_ALIASES[logical]}"
+    if kind == "blocks" and logical in MINECRAFT_BLOCK_FALLBACK_IDS:
+        return f"minecraft:{logical}"
+    if kind == "items" and logical in MINECRAFT_ITEM_FALLBACK_IDS:
+        return f"minecraft:{logical}"
+    return f"igniscore:{logical}"
+
 
 def humanize(ext_id: str) -> str:
     name = ext_id.replace("-", " ").title()
@@ -456,12 +514,14 @@ def infer_item_texture_fallback(ext_id: str, pack: str, profile: str) -> str:
 
 def infer_texture_fallback(ext_id: str, rel: str, kind: str, config: dict, java: str) -> str:
     if ext_id in TEXTURE_FALLBACK_OVERRIDES:
-        return TEXTURE_FALLBACK_OVERRIDES[ext_id]
+        return format_texture_fallback(TEXTURE_FALLBACK_OVERRIDES[ext_id], kind=kind)
     pack = rel.split("/")[1] if rel.startswith("packs/") else ""
     profile = detect_profile(ext_id, kind, config, java)
     if kind == "items":
-        return infer_item_texture_fallback(ext_id, pack, profile)
-    return infer_block_texture_fallback(ext_id, pack, profile)
+        logical = infer_item_texture_fallback(ext_id, pack, profile)
+    else:
+        logical = infer_block_texture_fallback(ext_id, pack, profile)
+    return format_texture_fallback(logical, kind=kind)
 
 
 def apply_texture_fallback(config: dict, fallback: str) -> None:

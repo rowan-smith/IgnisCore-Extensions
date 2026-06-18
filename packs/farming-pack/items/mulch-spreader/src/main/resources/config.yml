@@ -12,7 +12,7 @@ item:
 
 textures:
   icon: icon.png
-  fallback: fertilizer
+  fallback: igniscore:fertilizer
 
 behavior:
   right_click_air: use

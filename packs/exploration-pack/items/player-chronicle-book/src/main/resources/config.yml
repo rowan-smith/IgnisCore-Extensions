@@ -12,7 +12,7 @@ item:
 
 textures:
   icon: icon.png
-  fallback: book
+  fallback: minecraft:book
 
 behavior:
   right_click_air: use

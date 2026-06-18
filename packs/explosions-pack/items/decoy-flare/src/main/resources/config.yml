@@ -11,7 +11,7 @@ item:
 
 textures:
   icon: icon.png
-  fallback: flare
+  fallback: igniscore:flare
 
 behavior:
   right_click_air: throw

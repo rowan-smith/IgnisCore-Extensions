@@ -19,7 +19,7 @@ textures:
   top: top.png
   side: side.png
   bottom: bottom.png
-  fallback: bedrock
+  fallback: minecraft:bedrock
 
 model:
   type: "block_display"

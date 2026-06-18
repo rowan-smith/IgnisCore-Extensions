@@ -12,7 +12,7 @@ item:
 
 textures:
   icon: icon.png
-  fallback: potion
+  fallback: minecraft:potion
 
 behavior:
   right_click_air: use
