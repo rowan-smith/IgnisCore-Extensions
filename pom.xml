@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>dev.rono</groupId>
-  <artifactId>igniscore-extensions</artifactId>
+  <artifactId>igniscore-extensions-parent</artifactId>
   <version>${revision}</version>
   <packaging>pom</packaging>
 
@@ -20,7 +20,9 @@
 
   <properties>
     <revision>1.0.0</revision>
-    <ignis.api.version>${revision}</ignis.api.version>
+    <ignis.api.groupId>com.github.rowan-smith.IgnisCore</ignis.api.groupId>
+    <ignis.api.artifactId>api</ignis.api.artifactId>
+    <ignis.api.version>main</ignis.api.version>
     <java.version>25</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.jupiter.version>6.1.0</junit.jupiter.version>
@@ -81,6 +83,13 @@
     </plugins>
   </build>
 
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -89,13 +98,13 @@
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>dev.rono</groupId>
-        <artifactId>api</artifactId>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
         <version>${ignis.api.version}</version>
       </dependency>
       <dependency>
-        <groupId>dev.rono</groupId>
-        <artifactId>api</artifactId>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
         <version>${ignis.api.version}</version>
         <type>test-jar</type>
         <scope>test</scope>

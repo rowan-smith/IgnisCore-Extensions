@@ -14,15 +14,7 @@ items/    # Item extension modules
 
 ## Build
 
-Install the matching [IgnisCore](https://github.com/rowan-smith/IgnisCore) API into your local Maven repository first:
-
-```bash
-git clone https://github.com/rowan-smith/IgnisCore.git
-cd IgnisCore
-mvn install -pl api -am
-```
-
-Then build extensions:
+The IgnisCore API is resolved from [JitPack](https://jitpack.io/#rowan-smith/IgnisCore) (`com.github.rowan-smith.IgnisCore:api:main`). Build extensions with:
 
 ```bash
 mvn clean package
