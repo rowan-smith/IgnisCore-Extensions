@@ -157,14 +157,14 @@
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>dev.rono</groupId>
-        <artifactId>api</artifactId>
-        <version>${project.version}</version>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
+        <version>${ignis.api.version}</version>
       </dependency>
       <dependency>
-        <groupId>dev.rono</groupId>
-        <artifactId>api</artifactId>
-        <version>${project.version}</version>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
+        <version>${ignis.api.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
@@ -183,7 +183,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>dev.rono</groupId>
+      <groupId>${ignis.api.groupId}</groupId>
       <artifactId>api</artifactId>
       <type>test-jar</type>
       <scope>test</scope>

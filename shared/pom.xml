@@ -20,7 +20,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>dev.rono</groupId>
+      <groupId>${ignis.api.groupId}</groupId>
       <artifactId>api</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -30,7 +30,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>dev.rono</groupId>
+      <groupId>${ignis.api.groupId}</groupId>
       <artifactId>api</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
