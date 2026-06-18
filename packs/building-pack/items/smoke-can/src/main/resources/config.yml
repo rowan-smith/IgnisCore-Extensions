@@ -3,7 +3,7 @@ id: smoke-can
 display:
   title: "&6Smoke Can"
   description:
-    - "&7Throw a smoke grenade (snowball projectile)."
+    - "&7&eThrow&7 a smoke grenade (snowball projectile)."
     - "&7Billows &8campfire smoke&7 and cloud particles."
     - "&7Lasts ~20 seconds of concealment."
 

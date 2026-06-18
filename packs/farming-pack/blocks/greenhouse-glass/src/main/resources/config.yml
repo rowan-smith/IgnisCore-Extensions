@@ -4,7 +4,7 @@ display:
   title: "&aGreenhouse Glass"
   description:
     - "&7Bonemeals crops below when a &fglass roof&7 is overhead."
-    - "&72-block radius under glass canopy."
+    - "&7&e2&7-block radius under glass canopy."
     - "&7Happy-villager growth particles."
 
 block:

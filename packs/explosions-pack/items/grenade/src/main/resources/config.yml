@@ -12,9 +12,9 @@
 id: grenade
 
 display:
-  title: "&6Grenade"
+  title: "&cGrenade"
   description:
-    - "&7Right-click to throw."
+    - "&7Right-click to &ethrow&7."
     - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 # item.base_material — vanilla material id (e.g. snowball, paper)

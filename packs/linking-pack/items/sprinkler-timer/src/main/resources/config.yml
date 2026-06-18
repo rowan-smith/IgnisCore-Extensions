@@ -1,7 +1,7 @@
 id: sprinkler-timer
 
 display:
-  title: "&6Sprinkler Timer"
+  title: "&9Sprinkler Timer"
   description:
     - "&7Right-click a &esprinkler head&7 to link."
     - "&7Use again to control it remotely."

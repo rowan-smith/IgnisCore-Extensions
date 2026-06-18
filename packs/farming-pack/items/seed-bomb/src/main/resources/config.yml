@@ -5,7 +5,7 @@ display:
   description:
     - "&7Throw an egg that scatters &agrass and flowers&7."
     - "&7Plants in a radius on dirt/grass after a short fuse."
-    - "&7Consumes one bomb per throw."
+    - "&7Consumes one bomb per &ethrow&7."
 
 item:
   base_material: paper

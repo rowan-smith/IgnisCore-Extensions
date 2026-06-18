@@ -9,8 +9,8 @@ id: spider-storm-tnt
 display:
   title: "&cSpider Storm TNT"
   description:
-    - "&7spawns a swarm of spiders on detonation."
-    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Spawns a swarm of spiders on detonation."
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
     - "&7Fuses for &e4.0s&7, then unleashes a hostile swarm."
 
 block:

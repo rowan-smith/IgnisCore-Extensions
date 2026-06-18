@@ -2,8 +2,8 @@
   "display-case": {
     "title": "&6Display Case",
     "description": [
-      "&7Open to place one item on display.",
-      "&7Showcases a single item in slot 13.",
+      "&7&eOpen&7 to place one item on display.",
+      "&7Showcases a single item in &eslot &e13&7.",
       "&7Decorative trophy case."
     ],
     "mysterious": false,
@@ -13,9 +13,9 @@
   "glow-ink-lantern": {
     "title": "&6Glow Ink Lantern",
     "description": [
-      "&7Glow-squid particles and amethyst chime.",
-      "&7Ambient light decoration.",
-      "&7Passive glow while placed."
+      "&7&bGlow-squid&7 particles and amethyst chime.",
+      "&7Ambient &elight&7 decoration.",
+      "&7&bPassive&7 glow while placed."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -24,8 +24,8 @@
   "item-pedestal-hologram": {
     "title": "&6Item Pedestal Hologram",
     "description": [
-      "&7Enchant particles float above the pedestal.",
-      "&7Amethyst chime ambient sound.",
+      "&7&bEnchant&7 particles float above the pedestal.",
+      "&7&bAmethyst&7 chime ambient sound.",
       "&7Decorative item showcase base."
     ],
     "mysterious": false,
@@ -37,7 +37,7 @@
     "description": [
       "&7Reads nearby mob and player mood in &f10-block&7 radius.",
       "&7Angry particles if hostiles dominate.",
-      "&7Note or end-rod particles when calm."
+      "&7Note or &bend-rod&7 particles when calm."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -46,7 +46,7 @@
   "motion-floodlight": {
     "title": "&6Motion Floodlight",
     "description": [
-      "&7Scans end-rod beams at nearby players.",
+      "&7Scans &bend-rod&7 beams at nearby players.",
       "&f8-block&7 motion-detection radius.",
       "&7Lights up when players are near."
     ],
@@ -57,9 +57,9 @@
   "paint-mixer": {
     "title": "&6Paint Mixer",
     "description": [
-      "&7Cycles redstone, wax, and compost particles.",
+      "&7Cycles &bredstone&7, wax, and compost particles.",
       "&7Ambient color-mixing decoration.",
-      "&7Passive while placed."
+      "&7&bPassive&7 while placed."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -70,7 +70,7 @@
     "description": [
       "&7Click two &ffence posts&7 to tie them.",
       "&7Draws a particle cable between posts.",
-      "&7Consumes one tie per link."
+      "&7Consumes one tie per &elink&7."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -90,7 +90,7 @@
   "glow-orb": {
     "title": "&6Glow Orb",
     "description": [
-      "&7Throw a glowing snowball projectile.",
+      "&7&eThrow&7 a glowing snowball projectile.",
       "&7Leaves a trail of &fend-rod&7 particles.",
       "&7Lasts about a minute before despawning."
     ],
@@ -102,8 +102,8 @@
     "title": "&6Lock",
     "description": [
       "&7Toggle &cengaged&7 / &adisengaged&7 on the item.",
-      "&7Wax-on/wax-off particles on toggle.",
-      "&7Iron trapdoor sound feedback."
+      "&7Wax-on/wax-off particles on &etoggle&7.",
+      "&7Iron &btrapdoor&7 sound feedback."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -145,7 +145,7 @@
   "smoke-can": {
     "title": "&6Smoke Can",
     "description": [
-      "&7Throw a smoke grenade (snowball projectile).",
+      "&7&eThrow&7 a smoke grenade (snowball projectile).",
       "&7Billows &8campfire smoke&7 and cloud particles.",
       "&7Lasts ~20 seconds of concealment."
     ],
@@ -165,9 +165,9 @@
     "path": "packs/building-pack/items/stencil-plate"
   },
   "auto-sieve": {
-    "title": "&6Auto Sieve",
+    "title": "&eAuto Sieve",
     "description": [
-      "&7Passive sifting particles while placed.",
+      "&7&bPassive&7 sifting particles while placed.",
       "&7Sand-break sound each tick cycle.",
       "&7Decorative sifting station."
     ],
@@ -176,7 +176,7 @@
     "path": "packs/crafting-pack/blocks/auto-sieve"
   },
   "deoxidizer": {
-    "title": "&6Deoxidizer",
+    "title": "&eDeoxidizer",
     "description": [
       "&7Reverts oxidized copper in a &f4-block&7 radius.",
       "&7Wax-on sound each cycle.",
@@ -187,10 +187,10 @@
     "path": "packs/crafting-pack/blocks/deoxidizer"
   },
   "lost-and-found-bin": {
-    "title": "&6Lost & Found Bin",
+    "title": "&eLost & Found Bin",
     "description": [
-      "&7Open to retrieve swept-up items.",
-      "&7Periodically vacuums nearby item drops into storage.",
+      "&7&eOpen&7 to retrieve swept-up items.",
+      "&7Periodically &evacuums&7 nearby item drops into storage.",
       "&7Collects loot within ~8 blocks."
     ],
     "mysterious": false,
@@ -198,10 +198,10 @@
     "path": "packs/crafting-pack/blocks/lost-and-found-bin"
   },
   "piglin-barter-post": {
-    "title": "&6Piglin Barter Post",
+    "title": "&ePiglin Barter Post",
     "description": [
       "&7Open GUI: insert a &6gold ingot&7.",
-      "&7Trades for random nether loot (pearls, crying obsidian, etc.).",
+      "&7Trades for random nether loot (pearls, crying &bobsidian&7, etc.).",
       "&7Piglin admiring sound on barter."
     ],
     "mysterious": false,
@@ -209,9 +209,9 @@
     "path": "packs/crafting-pack/blocks/piglin-barter-post"
   },
   "pocket-dimension-cache": {
-    "title": "&6Pocket Dimension Cache",
+    "title": "&ePocket Dimension Cache",
     "description": [
-      "&7Open for extra-dimensional storage.",
+      "&7&eOpen&7 for extra-dimensional storage.",
       "&7Up to &f3 rows&7 of inventory (configurable).",
       "&7Personal stash independent of chunk."
     ],
@@ -220,9 +220,9 @@
     "path": "packs/crafting-pack/blocks/pocket-dimension-cache"
   },
   "recycler": {
-    "title": "&6Recycler",
+    "title": "&eRecycler",
     "description": [
-      "&7Scrap particles and grindstone sound.",
+      "&7Scrap particles and &bgrindstone&7 sound.",
       "&7Ambient recycling station.",
       "&7Decorative scrap-processing block."
     ],
@@ -231,10 +231,11 @@
     "path": "packs/crafting-pack/blocks/recycler"
   },
   "repair-station-block": {
-    "title": "&6Repair Station Block",
+    "title": "&eRepair Station",
     "description": [
-      "&7Right-click with a held item to repair durability.",
-      "&7See item lore for usage hints."
+      "&7&eRight-click&7 while holding a damaged item.",
+      "&7Restores &e25&7 durability per use.",
+      "&7&bEnchant&7 sparkles and anvil sound."
     ],
     "mysterious": false,
     "profile": "placed_passive",
@@ -243,8 +244,8 @@
   "blueprint-projector": {
     "title": "&bBlueprint Projector",
     "description": [
-      "&7Projects a vertical scan beam upward.",
-      "&7Pulses an end-rod ring while active.",
+      "&7Projects a vertical &escan&7 beam upward.",
+      "&7Pulses an &bend-rod&7 &ering&7 while active.",
       "&7Marks build zones with happy-villager particles."
     ],
     "mysterious": false,
@@ -254,8 +255,9 @@
   "checkpoint-obelisk": {
     "title": "&bCheckpoint Obelisk",
     "description": [
-      "&7Records player checkpoint on interact.",
-      "&7See item lore for usage hints."
+      "&7&eRight-click&7 to record your coordinates.",
+      "&7Shows coords on the action bar.",
+      "&7Totem pulse &ering&7 marks the save."
     ],
     "mysterious": false,
     "profile": "placed_passive",
@@ -264,8 +266,9 @@
   "entity-camera": {
     "title": "&bEntity Camera",
     "description": [
-      "&7Spectate nearest passive mob on interact.",
-      "&7See item lore for usage hints."
+      "&7&eRight-click&7 to &bspectate&7 a nearby passive mob.",
+      "&e12-block&7 scan radius, &e5s&7 camera link.",
+      "&7&bEnd-rod&7 beam points at the target."
     ],
     "mysterious": false,
     "profile": "placed_passive",
@@ -274,9 +277,9 @@
   "light-beacon": {
     "title": "&bLight Beacon",
     "description": [
-      "&7End-rod sparkles and glow pulse ring.",
-      "&7Amethyst chime each cycle.",
-      "&33-block&7 radius light marker."
+      "&7&bEnd-rod&7 sparkles and glow pulse &ering&7.",
+      "&7&bAmethyst&7 chime each cycle.",
+      "&e3-block&7 radius light marker."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -286,7 +289,7 @@
     "title": "&bMob Radar",
     "description": [
       "&7Detects hostiles within &f16 blocks&7.",
-      "&7Crimson pulse ring scales with mob count.",
+      "&7Crimson pulse &ering&7 scales with mob count.",
       "&7Bass note alarm pitch rises with threats."
     ],
     "mysterious": false,
@@ -298,7 +301,7 @@
     "description": [
       "&7Scans for nearest ore within &f12 blocks&7.",
       "&7Crit beam points toward detected ore.",
-      "&7Amethyst chime on ore ping."
+      "&7&bAmethyst&7 chime on ore ping."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -308,8 +311,8 @@
     "title": "&bOre Sniffer",
     "description": [
       "&7Finds nearest ore in a &f12-block&7 radius.",
-      "&7Crit scan beam to ore location.",
-      "&7Passive underground ore detector."
+      "&7Crit &escan&7 beam to ore location.",
+      "&7&bPassive&7 underground ore detector."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -318,8 +321,9 @@
   "quarry-cache": {
     "title": "&bQuarry Cache",
     "description": [
-      "&7collects nearby block drops into internal storage.",
-      "&7See item lore for usage hints."
+      "&7&eVacuums&7 nearby block drops into storage.",
+      "&7Right-click to &eopen&7 the collection GUI.",
+      "&e8-block&7 pickup radius while placed."
     ],
     "mysterious": false,
     "profile": "placed_passive",
@@ -328,8 +332,9 @@
   "waypoint-marker": {
     "title": "&bWaypoint Marker",
     "description": [
-      "&7Saves a named waypoint at this location.",
-      "&7See item lore for usage hints."
+      "&7&eRight-click&7 to save a named &bwaypoint&7.",
+      "&7Stores player name and coordinates.",
+      "&7&bEnd-rod&7 sparkles on each mark."
     ],
     "mysterious": false,
     "profile": "placed_passive",
@@ -339,8 +344,8 @@
     "title": "&bXP Vacuum",
     "description": [
       "&7Pulls experience orbs toward it.",
-      "&f6-block&7 radius, configurable pull strength.",
-      "&7Enchant particles while vacuuming."
+      "&e6-block&7 radius, configurable pull strength.",
+      "&7&bEnchant&7 particles while vacuuming."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -361,7 +366,7 @@
     "title": "&bBlock Stethoscope",
     "description": [
       "&7Aim at a block and use to hear its material.",
-      "&7Draws a scan beam to the target.",
+      "&7Draws a &escan&7 beam to the target.",
       "&7Reports the block type in chat."
     ],
     "mysterious": false,
@@ -373,7 +378,7 @@
     "description": [
       "&7Use to show your current &fchunk coords&7.",
       "&7Displays chunk X/Z on the action bar.",
-      "&7Pulses a flame ring at the chunk corner."
+      "&7Pulses a flame &ering&7 at the chunk corner."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -384,7 +389,7 @@
     "description": [
       "&7Save up to &f3 beacon slots&7 with your coords.",
       "&7Cycles through numbered slots on each use.",
-      "&7Pulses an end-rod ring when marking."
+      "&7Pulses an &bend-rod&7 &ering&7 when marking."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -404,7 +409,7 @@
   "player-chronicle-book": {
     "title": "&bPlayer Chronicle Book",
     "description": [
-      "&7Write a chronicle page with your name and coords.",
+      "&7Write a &bchronicle&7 page with your name and coords.",
       "&7Pages stored in item NBT.",
       "&7Book page-turn sound on each entry."
     ],
@@ -417,7 +422,7 @@
     "description": [
       "&7Read compass bearing: &fnorth&7, &feast&7, &fsouth&7, or &fwest&7.",
       "&7Defaults to north if unset.",
-      "&7Pulses an end-rod ring on use."
+      "&7Pulses an &bend-rod&7 &ering&7 on use."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -437,7 +442,7 @@
   "accelerating-fuse-tnt": {
     "title": "&cAccelerating Fuse TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then billows thick concealment smoke."
     ],
     "mysterious": false,
@@ -447,7 +452,7 @@
   "acid-tnt": {
     "title": "&cAcid TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then corrodes stone and ore into air."
     ],
     "mysterious": false,
@@ -455,9 +460,9 @@
     "path": "packs/explosions-pack/blocks/acid-tnt"
   },
   "anti-gravity-zone": {
-    "title": "&6Anti Gravity Zone",
+    "title": "&cAnti Gravity Zone",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e0.5s&7, then lifts entities in anti-gravity."
     ],
     "mysterious": false,
@@ -467,7 +472,7 @@
   "black-hole-tnt": {
     "title": "&cBlack Hole TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e5.0s&7, then drags entities inward before collapsing."
     ],
     "mysterious": false,
@@ -477,18 +482,18 @@
   "blink-tnt": {
     "title": "&dBlink TNT",
     "description": [
-      "&7Here. There. Everywhere in between.",
-      "&7It teleports when you aren't watching.",
-      "&7Detonation is merely a suggestion."
+      "&7Here. There. &dEverywhere&7 in between.",
+      "&7It teleports when you aren't &dwatching&7.",
+      "&7Detonation is merely a &dsuggestion&7."
     ],
     "mysterious": true,
     "profile": "combustible_explosive",
     "path": "packs/explosions-pack/blocks/blink-tnt"
   },
   "bouncing-betty": {
-    "title": "&6Bouncing Betty",
+    "title": "&cBouncing Betty",
     "description": [
-      "&7Bury it to arm a proximity mine.",
+      "&7Bury it to arm a &8proximity mine&7.",
       "&7Arms when creatures draw near."
     ],
     "mysterious": false,
@@ -498,7 +503,7 @@
   "breaching-charge": {
     "title": "&cBreaching Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.5s&7, then punches a shaped breach through walls."
     ],
     "mysterious": false,
@@ -506,9 +511,9 @@
     "path": "packs/explosions-pack/blocks/breaching-charge"
   },
   "bridge-builder": {
-    "title": "&6Bridge Builder",
+    "title": "&cBridge Builder",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.0s&7, then builds structure as it counts down."
     ],
     "mysterious": false,
@@ -516,9 +521,9 @@
     "path": "packs/explosions-pack/blocks/bridge-builder"
   },
   "cascade-mine": {
-    "title": "&cCascade Mine",
+    "title": "&8Cascade Mine",
     "description": [
-      "&7Bury it to arm a proximity mine.",
+      "&7Bury it to arm a &8proximity mine&7.",
       "&7Pulls experience orbs inward."
     ],
     "mysterious": false,
@@ -528,7 +533,7 @@
   "cavity-tnt": {
     "title": "&cCavity TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then pulls experience orbs inward."
     ],
     "mysterious": false,
@@ -538,7 +543,7 @@
   "centrifuge-tnt": {
     "title": "&cCentrifuge TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.5s&7, then hurls entities with massive knockback."
     ],
     "mysterious": false,
@@ -546,9 +551,9 @@
     "path": "packs/explosions-pack/blocks/centrifuge-tnt"
   },
   "claymore-mine": {
-    "title": "&cClaymore Mine",
+    "title": "&8Claymore Mine",
     "description": [
-      "&7Bury it to arm a proximity mine.",
+      "&7Bury it to arm a &8proximity mine&7.",
       "&7Arms when creatures draw near."
     ],
     "mysterious": false,
@@ -558,7 +563,7 @@
   "concussion-tnt": {
     "title": "&cConcussion TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then hurls entities with massive knockback."
     ],
     "mysterious": false,
@@ -568,7 +573,7 @@
   "depth-charge": {
     "title": "&cDepth Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.5s&7, then clears submerged blocks only."
     ],
     "mysterious": false,
@@ -578,8 +583,8 @@
   "doppelganger-block": {
     "title": "&dDoppelg\u00e4nger Block",
     "description": [
-      "&7It looks like an ordinary stone block.",
-      "&7But it is most certainly not.",
+      "&7It looks like an ordinary &fstone block&7.",
+      "&7But it is most certainly &dnot&7.",
       "&7Trust nothing that wears another's face."
     ],
     "mysterious": true,
@@ -589,7 +594,7 @@
   "drill-tnt": {
     "title": "&cDrill TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.5s&7, then bores a tunnel along your aim."
     ],
     "mysterious": false,
@@ -597,9 +602,9 @@
     "path": "packs/explosions-pack/blocks/drill-tnt"
   },
   "echo-blast": {
-    "title": "&6Echo Blast",
+    "title": "&cEcho Blast",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then echoes with phantom aftershocks."
     ],
     "mysterious": false,
@@ -609,7 +614,7 @@
   "echo-fuse-tnt": {
     "title": "&cEcho Fuse TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then echoes with phantom aftershocks."
     ],
     "mysterious": false,
@@ -617,9 +622,9 @@
     "path": "packs/explosions-pack/blocks/echo-fuse-tnt"
   },
   "ember-mine": {
-    "title": "&cEmber Mine",
+    "title": "&8Ember Mine",
     "description": [
-      "&7Bury it to arm a proximity mine.",
+      "&7Bury it to arm a &8proximity mine&7.",
       "&7Arms when creatures draw near."
     ],
     "mysterious": false,
@@ -629,8 +634,8 @@
   "erupting-tnt": {
     "title": "&cErupting TNT",
     "description": [
-      "&7launches primed TNT during the fuse, then explodes.",
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Launches primed TNT during the fuse, then explodes.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e5.0s&7, then pulls experience orbs inward."
     ],
     "mysterious": false,
@@ -641,7 +646,7 @@
     "title": "&dFake Bedrock",
     "description": [
       "&7Unbreakable, unmovable, the bottom of the world.",
-      "&7Or so it would have you believe.",
+      "&7Or so it would have you &dbelieve&7.",
       "&7Some foundations are not what they seem."
     ],
     "mysterious": true,
@@ -651,7 +656,7 @@
   "featherfall-charge": {
     "title": "&cFeatherfall Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.5s&7, then vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -661,7 +666,7 @@
   "frost-tnt": {
     "title": "&cFrost TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then flash-freezes the area to ice."
     ],
     "mysterious": false,
@@ -671,8 +676,8 @@
   "glitch-tnt": {
     "title": "&dGlitch TNT",
     "description": [
-      "&7It flickers between things it cannot decide to be.",
-      "&7Reality stutters wherever it sits.",
+      "&7It &dflickers&7 between things it cannot decide to be.",
+      "&7Reality &dstutters&7 wherever it sits.",
       "&7Best not to look too closely."
     ],
     "mysterious": true,
@@ -682,7 +687,7 @@
   "hologram-tnt": {
     "title": "&dHologram TNT",
     "description": [
-      "&7Is it really there? Are any of them?",
+      "&7Is it really there? Are &dany&7 of them?",
       "&7Copies dance while the real fuse burns.",
       "&7Seeing is no longer believing."
     ],
@@ -693,7 +698,7 @@
   "inferno-tnt": {
     "title": "&cInferno TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then erupts into spreading flame."
     ],
     "mysterious": false,
@@ -701,9 +706,9 @@
     "path": "packs/explosions-pack/blocks/inferno-tnt"
   },
   "invisiwall": {
-    "title": "&6Invisiwall",
+    "title": "&cInvisiwall",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e0.5s&7, then raises then shatters a hidden barrier."
     ],
     "mysterious": false,
@@ -713,7 +718,7 @@
   "last-stand-charge": {
     "title": "&cLast Stand Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or fire charge.",
       "&7Fuses for &e0.5s&7, then locks entities in stasis."
     ],
     "mysterious": false,
@@ -723,7 +728,7 @@
   "lightning-rod-tnt": {
     "title": "&cLightning Rod TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then calls chained lightning."
     ],
     "mysterious": false,
@@ -733,7 +738,7 @@
   "magnet-tnt": {
     "title": "&cMagnet TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then drags entities inward before collapsing."
     ],
     "mysterious": false,
@@ -743,7 +748,7 @@
   "mimic-tnt": {
     "title": "&dMimic TNT",
     "description": [
-      "&7One of them is real. The rest only pretend.",
+      "&7One of them is real. The rest only &dpretend&7.",
       "&7Good luck guessing which is which.",
       "&7Deception scatters in every direction."
     ],
@@ -754,7 +759,7 @@
   "mirage-tnt": {
     "title": "&dMirage TNT",
     "description": [
-      "&7The blast you see is never where it lands.",
+      "&7The blast you see is &dnever&7 where it lands.",
       "&7Heat, light, and cruel misdirection.",
       "&7Chase the illusion at your peril."
     ],
@@ -765,7 +770,7 @@
   "mirror-world-tnt": {
     "title": "&dMirror World TNT",
     "description": [
-      "&7Whatever happens here also happens there.",
+      "&7Whatever happens here also happens &dthere&7.",
       "&7A reflection across an unseen pane.",
       "&7Two worlds, one fate."
     ],
@@ -776,7 +781,7 @@
   "mudslide-tnt": {
     "title": "&cMudslide TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.5s&7, then collapses terrain into flowing mud."
     ],
     "mysterious": false,
@@ -784,10 +789,10 @@
     "path": "packs/explosions-pack/blocks/mudslide-tnt"
   },
   "nuke": {
-    "title": "&6Nuke",
+    "title": "&aNuke",
     "description": [
-      "&7large-radius nuclear detonation.",
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Large-radius nuclear detonation.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e8.0s&7, then calls chained lightning."
     ],
     "mysterious": false,
@@ -797,7 +802,7 @@
   "orbit-tnt": {
     "title": "&cOrbit TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then spins victims into orbit."
     ],
     "mysterious": false,
@@ -807,7 +812,7 @@
   "pause-tnt": {
     "title": "&dPause TNT",
     "description": [
-      "&7The countdown stops. And waits.",
+      "&7The countdown &dstops&7. And waits.",
       "&7Just when you relax, time resumes.",
       "&7Patience is its cruelest trick."
     ],
@@ -818,7 +823,7 @@
   "phantom-tnt": {
     "title": "&dPhantom TNT",
     "description": [
-      "&7Now you see it. Soon you won't.",
+      "&7Now you see it. &dSoon&7 you won't.",
       "&7The blast seems to come from nowhere.",
       "&7You'll never spot where it went."
     ],
@@ -829,7 +834,7 @@
   "phase-tnt": {
     "title": "&cPhase TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then erupts into spreading flame."
     ],
     "mysterious": false,
@@ -839,7 +844,7 @@
   "poison-cloud-tnt": {
     "title": "&cPoison Cloud TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then blankets the area in toxic haze."
     ],
     "mysterious": false,
@@ -847,9 +852,9 @@
     "path": "packs/explosions-pack/blocks/poison-cloud-tnt"
   },
   "powder-trail": {
-    "title": "&6Powder Trail",
+    "title": "&cPowder Trail",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e0.5s&7, then erupts into spreading flame."
     ],
     "mysterious": false,
@@ -860,8 +865,8 @@
     "title": "&6Remote C4",
     "description": [
       "&7Place it, then link a &edetonator&7.",
-      "&7Cannot be lit with flint & steel.",
-      "&7Right-click the detonator to blow it remotely."
+      "&7Cannot be lit with &fflint and steel&7.",
+      "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
     ],
     "mysterious": false,
     "profile": "remote_charge",
@@ -870,7 +875,7 @@
   "ricochet-tnt": {
     "title": "&cRicochet TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.5s&7, then ricochets blasts along a path."
     ],
     "mysterious": false,
@@ -880,7 +885,7 @@
   "ring-tnt": {
     "title": "&cRing TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.5s&7, then carves a ring-shaped cavity."
     ],
     "mysterious": false,
@@ -890,7 +895,7 @@
   "scaffold-charge": {
     "title": "&cScaffold Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.5s&7, then builds structure as it counts down."
     ],
     "mysterious": false,
@@ -898,11 +903,11 @@
     "path": "packs/explosions-pack/blocks/scaffold-charge"
   },
   "scare-charge": {
-    "title": "&cScare Charge",
+    "title": "&6Scare Charge",
     "description": [
       "&7Place it, then link a &edetonator&7.",
-      "&7Cannot be lit with flint & steel.",
-      "&7Right-click the detonator to blow it remotely."
+      "&7Cannot be lit with &fflint and steel&7.",
+      "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
     ],
     "mysterious": false,
     "profile": "remote_charge",
@@ -911,7 +916,7 @@
   "screen-shake-charge": {
     "title": "&cScreen Shake Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.0s&7, then violently rattles nearby screens."
     ],
     "mysterious": false,
@@ -921,7 +926,7 @@
   "seismic-tnt": {
     "title": "&cSeismic TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.0s&7, then ripples the ground in rolling shockwaves."
     ],
     "mysterious": false,
@@ -929,9 +934,9 @@
     "path": "packs/explosions-pack/blocks/seismic-tnt"
   },
   "shrapnel-mine": {
-    "title": "&cShrapnel Mine",
+    "title": "&8Shrapnel Mine",
     "description": [
-      "&7Bury it to arm a proximity mine.",
+      "&7Bury it to arm a &8proximity mine&7.",
       "&7Sprays deadly shrapnel."
     ],
     "mysterious": false,
@@ -939,11 +944,11 @@
     "path": "packs/explosions-pack/blocks/shrapnel-mine"
   },
   "signal-charge": {
-    "title": "&cSignal Charge",
+    "title": "&6Signal Charge",
     "description": [
       "&7Place it, then link a &edetonator&7.",
-      "&7Cannot be lit with flint & steel.",
-      "&7Right-click the detonator to blow it remotely."
+      "&7Cannot be lit with &fflint and steel&7.",
+      "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
     ],
     "mysterious": false,
     "profile": "remote_charge",
@@ -952,7 +957,7 @@
   "silent-tnt": {
     "title": "&cSilent TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then detonates with almost no sound."
     ],
     "mysterious": false,
@@ -962,7 +967,7 @@
   "slingshot-tnt": {
     "title": "&cSlingshot TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then detonates in a powerful blast."
     ],
     "mysterious": false,
@@ -972,7 +977,7 @@
   "solar-flare-tnt": {
     "title": "&cSolar Flare TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.5s&7, then blinds and disorients without killing."
     ],
     "mysterious": false,
@@ -982,8 +987,8 @@
   "spider-storm-tnt": {
     "title": "&cSpider Storm TNT",
     "description": [
-      "&7spawns a swarm of spiders on detonation.",
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Spawns a swarm of spiders on detonation.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then unleashes a hostile swarm."
     ],
     "mysterious": false,
@@ -993,7 +998,7 @@
   "splitter-charge": {
     "title": "&cSplitter Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then splits into multiple blasts."
     ],
     "mysterious": false,
@@ -1001,11 +1006,11 @@
     "path": "packs/explosions-pack/blocks/splitter-charge"
   },
   "stasis-field": {
-    "title": "&6Stasis Field",
+    "title": "&cStasis Field",
     "description": [
       "&7Freezes all entities within &f4.5 blocks&7.",
-      "&7Cloud pulse ring marks the field edge.",
-      "&7Stops mobs and items in place."
+      "&7Cloud pulse &ering&7 marks the field edge.",
+      "&7Stops mobs and items in &eplace&7."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1014,7 +1019,7 @@
   "swap-charge": {
     "title": "&cSwap Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.5s&7, then swaps nearby players on detonation."
     ],
     "mysterious": false,
@@ -1024,7 +1029,7 @@
   "tether-tnt": {
     "title": "&cTether TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e4.0s&7, then erupts into spreading flame."
     ],
     "mysterious": false,
@@ -1032,11 +1037,11 @@
     "path": "packs/explosions-pack/blocks/tether-tnt"
   },
   "timed-charge": {
-    "title": "&cTimed Charge",
+    "title": "&6Timed Charge",
     "description": [
       "&7Place it, then link a &edetonator&7.",
-      "&7Cannot be lit with flint & steel.",
-      "&7Right-click the detonator to blow it remotely."
+      "&7Cannot be lit with &fflint and steel&7.",
+      "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
     ],
     "mysterious": false,
     "profile": "remote_charge",
@@ -1045,7 +1050,7 @@
   "trampoline-tnt": {
     "title": "&cTrampoline TNT",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then launches everything skyward."
     ],
     "mysterious": false,
@@ -1055,8 +1060,8 @@
   "tripwire-charge": {
     "title": "&cTripwire Charge",
     "description": [
-      "&7Place two charges to string a tripwire between them.",
-      "&7Both ends detonate when something crosses the line."
+      "&7Place two charges to string a &etripwire&7 between them.",
+      "&7Both ends &cdetonate&7 when something crosses the line."
     ],
     "mysterious": false,
     "profile": "tripwire_charge",
@@ -1065,7 +1070,7 @@
   "tsunami-charge": {
     "title": "&cTsunami Charge",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then summons a surging wave."
     ],
     "mysterious": false,
@@ -1075,8 +1080,8 @@
   "tunneling-tnt": {
     "title": "&cTunneling TNT",
     "description": [
-      "&7chained explosions in a straight line.",
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Chained explosions in a straight line.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e3.0s&7, then bores a tunnel along your aim."
     ],
     "mysterious": false,
@@ -1084,9 +1089,9 @@
     "path": "packs/explosions-pack/blocks/tunneling-tnt"
   },
   "wildfire-seed": {
-    "title": "&6Wildfire Seed",
+    "title": "&cWildfire Seed",
     "description": [
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e2.0s&7, then plants spreading wildfire."
     ],
     "mysterious": false,
@@ -1096,8 +1101,8 @@
   "wormhole-tnt": {
     "title": "&cWormhole TNT",
     "description": [
-      "&7pulls entities inward, then detonates outward.",
-      "&7Place and ignite with flint & steel or fire charge.",
+      "&7Pulls entities inward, then detonates outward.",
+      "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
       "&7Fuses for &e5.0s&7, then pulls matter inward before erupting."
     ],
     "mysterious": false,
@@ -1105,9 +1110,9 @@
     "path": "packs/explosions-pack/blocks/wormhole-tnt"
   },
   "cryo-grenade": {
-    "title": "&6Cryo Grenade",
+    "title": "&cCryo Grenade",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; flash-freezes the area to ice."
     ],
     "mysterious": false,
@@ -1115,9 +1120,9 @@
     "path": "packs/explosions-pack/items/cryo-grenade"
   },
   "decoy-flare": {
-    "title": "&6Decoy Flare",
+    "title": "&cDecoy Flare",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -1125,20 +1130,20 @@
     "path": "packs/explosions-pack/items/decoy-flare"
   },
   "detonator": {
-    "title": "&6Detonator",
+    "title": "&eDetonator",
     "description": [
-      "&7Left-click a signal charge to link it.",
-      "&7Right-click to detonate all linked charges.",
-      "&7Holds up to 16 paired charges."
+      "&7Left-click a &esignal charge&7 to link it.",
+      "&7&eRight-click&7 to detonate all linked charges.",
+      "&7Holds up to &e16&7 paired charges."
     ],
     "mysterious": false,
     "profile": "detonator",
     "path": "packs/explosions-pack/items/detonator"
   },
   "flashbang": {
-    "title": "&6Flashbang",
+    "title": "&cFlashbang",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -1146,9 +1151,9 @@
     "path": "packs/explosions-pack/items/flashbang"
   },
   "fragmentation-grenade": {
-    "title": "&6Fragmentation Grenade",
+    "title": "&cFragmentation Grenade",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -1156,9 +1161,9 @@
     "path": "packs/explosions-pack/items/fragmentation-grenade"
   },
   "grenade": {
-    "title": "&6Grenade",
+    "title": "&cGrenade",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -1166,9 +1171,9 @@
     "path": "packs/explosions-pack/items/grenade"
   },
   "phantom-grenade": {
-    "title": "&6Phantom Grenade",
+    "title": "&cPhantom Grenade",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -1176,9 +1181,9 @@
     "path": "packs/explosions-pack/items/phantom-grenade"
   },
   "smoke-grenade": {
-    "title": "&6Smoke Grenade",
+    "title": "&cSmoke Grenade",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; flies on a timed fuse after thrown."
     ],
     "mysterious": false,
@@ -1186,9 +1191,9 @@
     "path": "packs/explosions-pack/items/smoke-grenade"
   },
   "sticky-bomb": {
-    "title": "&6Sticky Bomb",
+    "title": "&cSticky Bomb",
     "description": [
-      "&7Right-click to throw.",
+      "&7Right-click to &ethrow&7.",
       "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
     ],
     "mysterious": false,
@@ -1198,7 +1203,7 @@
   "chicken-coop-cache": {
     "title": "&aChicken Coop Cache",
     "description": [
-      "&7Open to access egg storage.",
+      "&7&eOpen&7 to access egg storage.",
       "&7Auto-collects eggs from nearby chickens.",
       "&7Also scoops dropped eggs into inventory."
     ],
@@ -1209,7 +1214,7 @@
   "compost-heap": {
     "title": "&aCompost Heap",
     "description": [
-      "&7Composter particles and fill sound.",
+      "&7&bComposter&7 particles and fill sound.",
       "&7Ambient composting activity while placed.",
       "&7Pairs with farming setups."
     ],
@@ -1222,7 +1227,7 @@
     "description": [
       "&7Bonemeals crops in a &a4-block&7 radius each tick.",
       "&7Bone-meal sound on growth pulse.",
-      "&7Passive crop growth booster."
+      "&7&bPassive&7 crop growth booster."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1233,7 +1238,7 @@
     "description": [
       "&7Scans crops in a &a6-block&7 radius.",
       "&7Ping pitch scales with crop count found.",
-      "&7Vertical scan beam while crops detected."
+      "&7Vertical &escan&7 beam while crops detected."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1243,7 +1248,7 @@
     "title": "&aGreenhouse Glass",
     "description": [
       "&7Bonemeals crops below when a &fglass roof&7 is overhead.",
-      "&72-block radius under glass canopy.",
+      "&7&e2&7-block radius under glass canopy.",
       "&7Happy-villager growth particles."
     ],
     "mysterious": false,
@@ -1253,8 +1258,8 @@
   "honey-centrifuge": {
     "title": "&aHoney Centrifuge",
     "description": [
-      "&7Dripping-honey particles and slide sound.",
-      "&7Ambient honey processing station.",
+      "&7Dripping-&bhoney&7 particles and slide sound.",
+      "&7Ambient &bhoney&7 processing station.",
       "&7Decorative beekeeping equipment."
     ],
     "mysterious": false,
@@ -1266,7 +1271,7 @@
     "description": [
       "&7Bonemeals crops in a &a2-block&7 radius.",
       "&7Dripping-water particles each cycle.",
-      "&7Soil-free passive grow tray."
+      "&7Soil-free &bpassive&7 grow tray."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1286,7 +1291,7 @@
   "kelp-compressor": {
     "title": "&aKelp Compressor",
     "description": [
-      "&7Bubble particles and wet-grass sound.",
+      "&7&bBubble&7 particles and wet-grass sound.",
       "&7Ambient kelp processing station.",
       "&7Decorative underwater-farm equipment."
     ],
@@ -1298,7 +1303,7 @@
     "title": "&aMilking Station",
     "description": [
       "&7Detects passive mobs within &f3 blocks&7.",
-      "&7Honey-drip particles and cow-milk sound.",
+      "&7&bHoney&7-drip particles and cow-milk sound.",
       "&7Ambient auto-milking station."
     ],
     "mysterious": false,
@@ -1310,7 +1315,7 @@
     "description": [
       "&7Spreads moss on blocks near water.",
       "&f3-block&7 radius mossification each tick.",
-      "&7Passive biome-greening block."
+      "&7&bPassive&7 biome-greening block."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1321,7 +1326,7 @@
     "description": [
       "&7Bonemeals crops in a &a3-block&7 radius.",
       "&7Bee pollinate sound and happy-villager particles.",
-      "&7Passive crop pollinator."
+      "&7&bPassive&7 crop pollinator."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1330,7 +1335,7 @@
   "sapling-nursery": {
     "title": "&aSapling Nursery",
     "description": [
-      "&7Open to store saplings and propagules.",
+      "&7&eOpen&7 to store saplings and propagules.",
       "&7Auto-plants saplings on adjacent grass/dirt.",
       "&7Consumes one sapling per planting."
     ],
@@ -1376,7 +1381,7 @@
     "description": [
       "&7Throw an egg that scatters &agrass and flowers&7.",
       "&7Plants in a radius on dirt/grass after a short fuse.",
-      "&7Consumes one bomb per throw."
+      "&7Consumes one bomb per &ethrow&7."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1396,7 +1401,7 @@
   "brewing-accelerator": {
     "title": "&6Brewing Accelerator",
     "description": [
-      "&7Witch particles and brewing-stand sound.",
+      "&7&bWitch&7 particles and brewing-stand sound.",
       "&7Ambient accelerator near brewing setups.",
       "&7Decorative brewing boost indicator."
     ],
@@ -1429,7 +1434,7 @@
   "drying-rack": {
     "title": "&6Drying Rack",
     "description": [
-      "&7Emits campfire smoke particles.",
+      "&7Emits &bcampfire&7 smoke particles.",
       "&7Wool-break ambient sound.",
       "&7Decorative food and herb drying station."
     ],
@@ -1440,7 +1445,7 @@
   "fish-smoker-rack": {
     "title": "&6Fish Smoker Rack",
     "description": [
-      "&7Smoking particles and fish swim sounds.",
+      "&7&bSmoking&7 particles and fish swim sounds.",
       "&7Ambient fish-smoking station.",
       "&7Pairs with kitchen setups."
     ],
@@ -1473,7 +1478,7 @@
   "infuser": {
     "title": "&6Infuser",
     "description": [
-      "&7Enchant particles and high-pitch chime.",
+      "&7&bEnchant&7 particles and high-pitch chime.",
       "&7Ambient infusion station.",
       "&7Decorative potion and flavor infuser."
     ],
@@ -1497,7 +1502,7 @@
     "description": [
       "&7Open for &f6 slots&7 of portable food storage.",
       "&7Carry snacks on the go.",
-      "&7Tracks last-open time per block."
+      "&7Tracks last-&eopen&7 time per block."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1528,7 +1533,7 @@
   "smoker-stack": {
     "title": "&6Smoker Stack",
     "description": [
-      "&7Tall campfire signal smoke column.",
+      "&7Tall &bcampfire&7 signal smoke column.",
       "&7Visible from a distance.",
       "&7Decorative kitchen chimney."
     ],
@@ -1539,7 +1544,7 @@
   "spice-rack": {
     "title": "&6Spice Rack",
     "description": [
-      "&7Open to season food with spices.",
+      "&7&eOpen&7 to season food with spices.",
       "&7Food + spice grants &eHaste&7 and brief &6Saturation&7.",
       "&7Seasoning station for kitchen builds."
     ],
@@ -1574,7 +1579,7 @@
     "description": [
       "&7Drink for &bSpeed II&7 for 30 seconds.",
       "&7Sets compass heading toward &fruins&7.",
-      "&7Pulses an end-rod ring at your feet."
+      "&7Pulses an &bend-rod&7 &ering&7 at your feet."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1583,7 +1588,7 @@
   "chorus-bite": {
     "title": "&eChorus Bite",
     "description": [
-      "&7Drink for a chaotic sideways warp.",
+      "&7&eDrink&7 for a chaotic sideways warp.",
       "&7Spawns portal particles at origin and destination.",
       "&7Consumable with cooldown."
     ],
@@ -1595,7 +1600,7 @@
     "title": "&eDiver's Salt",
     "description": [
       "&7Eat for &3Water Breathing&7 for 90 seconds.",
-      "&7Plays sand-place sound on use.",
+      "&7Plays sand-&eplace&7 sound on use.",
       "&7Consumable with cooldown."
     ],
     "mysterious": false,
@@ -1660,7 +1665,7 @@
   "luck-dust": {
     "title": "&eLuck Dust",
     "description": [
-      "&7Sprinkle on a block near a chest.",
+      "&7&eSprinkle&7 on a block near a chest.",
       "&7Activates a &6bonus loot roll&7 on next chest open.",
       "&7Must click a block; consumes one dust."
     ],
@@ -1683,7 +1688,7 @@
     "title": "&dUnlabeled Potion",
     "description": [
       "&7No label, no hints, no promises.",
-      "&7Drink it and find out what it does.",
+      "&7Drink it and find out what it &ddoes&7.",
       "&7Some bottles keep their secrets till the last sip."
     ],
     "mysterious": true,
@@ -1691,29 +1696,31 @@
     "path": "packs/kitchen-pack/items/unlabeled-potion"
   },
   "barn-bell": {
-    "title": "&6Barn Bell",
+    "title": "&9Barn Bell",
     "description": [
-      "&7Remote-call herds passive livestock.",
-      "&7See item lore for usage hints."
+      "&7&eRing&7 to call livestock with a &bbell&7 toll.",
+      "&7Pairs with the &9barn bell&7 linking network.",
+      "&7Short cooldown between rings."
     ],
     "mysterious": false,
     "profile": "placed_passive",
     "path": "packs/linking-pack/blocks/barn-bell"
   },
   "keyed-hatch": {
-    "title": "&6Keyed Hatch",
+    "title": "&9Keyed Hatch",
     "description": [
-      "&7Remote-toggle iron hatch or bars.",
-      "&7See item lore for usage hints."
+      "&7&bRemote&7-controlled hatch linked to a key.",
+      "&7Opens and closes with &btrapdoor&7 feedback.",
+      "&7Part of the &9keyed hatch&7 network."
     ],
     "mysterious": false,
     "profile": "placed_passive",
     "path": "packs/linking-pack/blocks/keyed-hatch"
   },
   "pipe-valve": {
-    "title": "&6Pipe Valve",
+    "title": "&9Pipe Valve",
     "description": [
-      "&7When opened remotely, drips water particles.",
+      "&7When opened remotely, drips &9water&7 particles.",
       "&7Pairs with valve wrench for toggling.",
       "&7Part of a linked pipe network."
     ],
@@ -1722,9 +1729,9 @@
     "path": "packs/linking-pack/blocks/pipe-valve"
   },
   "socket-lamp": {
-    "title": "&6Socket Lamp",
+    "title": "&9Socket Lamp",
     "description": [
-      "&7When lit remotely, emits end-rod particles.",
+      "&7When lit remotely, emits &bend-rod&7 particles.",
       "&7Brightness scales with configured light level.",
       "&7Pairs with lamp dimmer item."
     ],
@@ -1733,7 +1740,7 @@
     "path": "packs/linking-pack/blocks/socket-lamp"
   },
   "sprinkler-head": {
-    "title": "&6Sprinkler Head",
+    "title": "&9Sprinkler Head",
     "description": [
       "&7When armed, waters farmland in a &f4-block&7 radius.",
       "&7Falling-water particles on hydrated soil.",
@@ -1744,7 +1751,7 @@
     "path": "packs/linking-pack/blocks/sprinkler-head"
   },
   "farm-call": {
-    "title": "&6Farm Call",
+    "title": "&9Farm Call",
     "description": [
       "&7Right-click a &ebarn bell&7 to link.",
       "&7Use again to control it remotely."
@@ -1754,7 +1761,7 @@
     "path": "packs/linking-pack/items/farm-call"
   },
   "gate-clicker": {
-    "title": "&6Gate Clicker",
+    "title": "&9Gate Clicker",
     "description": [
       "&7Right-click a &ekeyed hatch&7 to link.",
       "&7Use again to control it remotely."
@@ -1764,7 +1771,7 @@
     "path": "packs/linking-pack/items/gate-clicker"
   },
   "lamp-dimmer": {
-    "title": "&6Lamp Dimmer",
+    "title": "&9Lamp Dimmer",
     "description": [
       "&7Right-click a &esocket lamp&7 to link.",
       "&7Use again to control it remotely."
@@ -1774,7 +1781,7 @@
     "path": "packs/linking-pack/items/lamp-dimmer"
   },
   "sprinkler-timer": {
-    "title": "&6Sprinkler Timer",
+    "title": "&9Sprinkler Timer",
     "description": [
       "&7Right-click a &esprinkler head&7 to link.",
       "&7Use again to control it remotely."
@@ -1784,7 +1791,7 @@
     "path": "packs/linking-pack/items/sprinkler-timer"
   },
   "valve-wrench": {
-    "title": "&6Valve Wrench",
+    "title": "&9Valve Wrench",
     "description": [
       "&7Right-click a &epipe valve&7 to link.",
       "&7Use again to control it remotely."
@@ -1796,7 +1803,7 @@
   "ouija-slab": {
     "title": "&dOuija Slab",
     "description": [
-      "&7It only speaks when others gather round.",
+      "&7It only speaks when others &dgather&7 round.",
       "&7Stand at its corners and listen.",
       "&7The letters know more than they should."
     ],
@@ -1807,7 +1814,7 @@
   "rift-generator": {
     "title": "&dRift Generator",
     "description": [
-      "&7Something on the other side is pulling.",
+      "&7Something on the other side is &dpulling&7.",
       "&7The air bends inward toward the tear.",
       "&7Best not to be standing too close."
     ],
@@ -1818,7 +1825,7 @@
   "gravity-marble": {
     "title": "&dGravity Marble",
     "description": [
-      "&7It rolls a little too eagerly.",
+      "&7It rolls a little too &deagerly&7.",
       "&7A glittering trail follows wherever it goes.",
       "&7Where it stops, nobody knows."
     ],
@@ -1829,7 +1836,7 @@
   "quantum-coin": {
     "title": "&dQuantum Coin",
     "description": [
-      "&7Heads or tails, until you look.",
+      "&7Heads or tails, until you &dlook&7.",
       "&7Both faces, neither face, every flip.",
       "&7Chance has never felt so uncertain."
     ],
@@ -1863,7 +1870,7 @@
     "title": "&6Per-Player Weather Dome",
     "description": [
       "&7Rain and cloud particles in a &f5-block&7 dome.",
-      "&7Cloud pulse ring at base.",
+      "&7Cloud pulse &ering&7 at base.",
       "&7Localized weather visual effect."
     ],
     "mysterious": false,
@@ -1884,9 +1891,9 @@
   "secure-trade-table": {
     "title": "&6Secure Trade Table",
     "description": [
-      "&7Open a two-player secure trade GUI.",
+      "&7&eOpen&7 a two-player secure trade GUI.",
       "&7Place offers and confirm with &alime dye&7.",
-      "&7Villager trade sound on open."
+      "&7Villager trade sound on &eopen&7."
     ],
     "mysterious": false,
     "profile": "gui_block",

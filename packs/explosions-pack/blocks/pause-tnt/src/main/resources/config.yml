@@ -3,7 +3,7 @@ id: pause-tnt
 display:
   title: "&dPause TNT"
   description:
-    - "&7The countdown stops. And waits."
+    - "&7The countdown &dstops&7. And waits."
     - "&7Just when you relax, time resumes."
     - "&7Patience is its cruelest trick."
 

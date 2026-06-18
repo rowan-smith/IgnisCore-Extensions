@@ -3,8 +3,9 @@ id: waypoint-marker
 display:
   title: "&bWaypoint Marker"
   description:
-    - "&7Saves a named waypoint at this location."
-    - "&7See item lore for usage hints."
+    - "&7&eRight-click&7 to save a named &bwaypoint&7."
+    - "&7Stores player name and coordinates."
+    - "&7&bEnd-rod&7 sparkles on each mark."
 
 block:
   placeable: true

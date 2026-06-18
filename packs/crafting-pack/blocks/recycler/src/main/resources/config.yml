@@ -1,9 +1,9 @@
 id: recycler
 
 display:
-  title: "&6Recycler"
+  title: "&eRecycler"
   description:
-    - "&7Scrap particles and grindstone sound."
+    - "&7Scrap particles and &bgrindstone&7 sound."
     - "&7Ambient recycling station."
     - "&7Decorative scrap-processing block."
 

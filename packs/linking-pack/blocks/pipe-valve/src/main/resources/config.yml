@@ -1,9 +1,9 @@
 id: pipe-valve
 
 display:
-  title: "&6Pipe Valve"
+  title: "&9Pipe Valve"
   description:
-    - "&7When opened remotely, drips water particles."
+    - "&7When opened remotely, drips &9water&7 particles."
     - "&7Pairs with valve wrench for toggling."
     - "&7Part of a linked pipe network."
 

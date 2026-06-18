@@ -1,9 +1,9 @@
 id: ember-mine
 
 display:
-  title: "&cEmber Mine"
+  title: "&8Ember Mine"
   description:
-    - "&7Bury it to arm a proximity mine."
+    - "&7Bury it to arm a &8proximity mine&7."
     - "&7Arms when creatures draw near."
 
 block:

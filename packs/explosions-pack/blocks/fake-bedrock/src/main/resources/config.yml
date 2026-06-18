@@ -4,7 +4,7 @@ display:
   title: "&dFake Bedrock"
   description:
     - "&7Unbreakable, unmovable, the bottom of the world."
-    - "&7Or so it would have you believe."
+    - "&7Or so it would have you &dbelieve&7."
     - "&7Some foundations are not what they seem."
 
 block:

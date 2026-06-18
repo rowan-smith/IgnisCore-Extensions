@@ -3,8 +3,8 @@ id: honey-centrifuge
 display:
   title: "&aHoney Centrifuge"
   description:
-    - "&7Dripping-honey particles and slide sound."
-    - "&7Ambient honey processing station."
+    - "&7Dripping-&bhoney&7 particles and slide sound."
+    - "&7Ambient &bhoney&7 processing station."
     - "&7Decorative beekeeping equipment."
 
 block:

@@ -1,9 +1,9 @@
 id: cryo-grenade
 
 display:
-  title: "&6Cryo Grenade"
+  title: "&cCryo Grenade"
   description:
-    - "&7Right-click to throw."
+    - "&7Right-click to &ethrow&7."
     - "&7Detonates after &e4.0s&7; flash-freezes the area to ice."
 
 item:

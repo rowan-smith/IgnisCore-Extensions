@@ -3,8 +3,8 @@ id: doppelganger-block
 display:
   title: "&dDoppelgänger Block"
   description:
-    - "&7It looks like an ordinary stone block."
-    - "&7But it is most certainly not."
+    - "&7It looks like an ordinary &fstone block&7."
+    - "&7But it is most certainly &dnot&7."
     - "&7Trust nothing that wears another's face."
 
 block:

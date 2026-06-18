@@ -4,7 +4,7 @@ display:
   title: "&aMilking Station"
   description:
     - "&7Detects passive mobs within &f3 blocks&7."
-    - "&7Honey-drip particles and cow-milk sound."
+    - "&7&bHoney&7-drip particles and cow-milk sound."
     - "&7Ambient auto-milking station."
 
 block:

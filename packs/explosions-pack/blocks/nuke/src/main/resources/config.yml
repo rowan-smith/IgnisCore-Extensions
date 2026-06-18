@@ -16,10 +16,10 @@ id: nuke
 # display.title       — Adventure legacy color codes (&a, &c, …)
 # display.description — lore lines on the item
 display:
-  title: "&6Nuke"
+  title: "&aNuke"
   description:
-    - "&7large-radius nuclear detonation."
-    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Large-radius nuclear detonation."
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
     - "&7Fuses for &e8.0s&7, then calls chained lightning."
 
 # block.placeable — allow placing this custom block

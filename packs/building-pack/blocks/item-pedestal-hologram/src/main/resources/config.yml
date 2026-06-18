@@ -3,8 +3,8 @@ id: item-pedestal-hologram
 display:
   title: "&6Item Pedestal Hologram"
   description:
-    - "&7Enchant particles float above the pedestal."
-    - "&7Amethyst chime ambient sound."
+    - "&7&bEnchant&7 particles float above the pedestal."
+    - "&7&bAmethyst&7 chime ambient sound."
     - "&7Decorative item showcase base."
 
 block:

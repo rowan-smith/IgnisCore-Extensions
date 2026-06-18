@@ -3,7 +3,7 @@ id: fish-smoker-rack
 display:
   title: "&6Fish Smoker Rack"
   description:
-    - "&7Smoking particles and fish swim sounds."
+    - "&7&bSmoking&7 particles and fish swim sounds."
     - "&7Ambient fish-smoking station."
     - "&7Pairs with kitchen setups."
 

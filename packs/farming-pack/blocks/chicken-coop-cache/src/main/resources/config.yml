@@ -3,7 +3,7 @@ id: chicken-coop-cache
 display:
   title: "&aChicken Coop Cache"
   description:
-    - "&7Open to access egg storage."
+    - "&7&eOpen&7 to access egg storage."
     - "&7Auto-collects eggs from nearby chickens."
     - "&7Also scoops dropped eggs into inventory."
 

@@ -1,11 +1,11 @@
 id: scare-charge
 
 display:
-  title: "&cScare Charge"
+  title: "&6Scare Charge"
   description:
     - "&7Place it, then link a &edetonator&7."
-    - "&7Cannot be lit with flint & steel."
-    - "&7Right-click the detonator to blow it remotely."
+    - "&7Cannot be lit with &fflint and steel&7."
+    - "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
 
 block:
   placeable: true

@@ -3,7 +3,7 @@ id: chorus-bite
 display:
   title: "&eChorus Bite"
   description:
-    - "&7Drink for a chaotic sideways warp."
+    - "&7&eDrink&7 for a chaotic sideways warp."
     - "&7Spawns portal particles at origin and destination."
     - "&7Consumable with cooldown."
 

@@ -4,7 +4,7 @@ display:
   title: "&eDiver's Salt"
   description:
     - "&7Eat for &3Water Breathing&7 for 90 seconds."
-    - "&7Plays sand-place sound on use."
+    - "&7Plays sand-&eplace&7 sound on use."
     - "&7Consumable with cooldown."
 
 item:

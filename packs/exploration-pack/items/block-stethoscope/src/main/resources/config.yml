@@ -4,7 +4,7 @@ display:
   title: "&bBlock Stethoscope"
   description:
     - "&7Aim at a block and use to hear its material."
-    - "&7Draws a scan beam to the target."
+    - "&7Draws a &escan&7 beam to the target."
     - "&7Reports the block type in chat."
 
 item:

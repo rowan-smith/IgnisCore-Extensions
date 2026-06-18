@@ -7,8 +7,8 @@ id: erupting-tnt
 display:
   title: "&cErupting TNT"
   description:
-    - "&7launches primed TNT during the fuse, then explodes."
-    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Launches primed TNT during the fuse, then explodes."
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
     - "&7Fuses for &e5.0s&7, then pulls experience orbs inward."
 
 block:

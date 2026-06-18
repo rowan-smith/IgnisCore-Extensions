@@ -1,7 +1,7 @@
 id: gate-clicker
 
 display:
-  title: "&6Gate Clicker"
+  title: "&9Gate Clicker"
   description:
     - "&7Right-click a &ekeyed hatch&7 to link."
     - "&7Use again to control it remotely."

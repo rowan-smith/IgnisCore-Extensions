@@ -3,8 +3,8 @@ id: blueprint-projector
 display:
   title: "&bBlueprint Projector"
   description:
-    - "&7Projects a vertical scan beam upward."
-    - "&7Pulses an end-rod ring while active."
+    - "&7Projects a vertical &escan&7 beam upward."
+    - "&7Pulses an &bend-rod&7 &ering&7 while active."
     - "&7Marks build zones with happy-villager particles."
 
 block:

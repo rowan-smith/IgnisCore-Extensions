@@ -3,7 +3,7 @@ id: quantum-coin
 display:
   title: "&dQuantum Coin"
   description:
-    - "&7Heads or tails, until you look."
+    - "&7Heads or tails, until you &dlook&7."
     - "&7Both faces, neither face, every flip."
     - "&7Chance has never felt so uncertain."
 

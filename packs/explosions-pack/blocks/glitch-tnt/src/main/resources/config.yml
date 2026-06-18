@@ -3,8 +3,8 @@ id: glitch-tnt
 display:
   title: "&dGlitch TNT"
   description:
-    - "&7It flickers between things it cannot decide to be."
-    - "&7Reality stutters wherever it sits."
+    - "&7It &dflickers&7 between things it cannot decide to be."
+    - "&7Reality &dstutters&7 wherever it sits."
     - "&7Best not to look too closely."
 
 block:

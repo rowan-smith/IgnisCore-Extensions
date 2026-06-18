@@ -1,7 +1,7 @@
 id: deoxidizer
 
 display:
-  title: "&6Deoxidizer"
+  title: "&eDeoxidizer"
   description:
     - "&7Reverts oxidized copper in a &f4-block&7 radius."
     - "&7Wax-on sound each cycle."

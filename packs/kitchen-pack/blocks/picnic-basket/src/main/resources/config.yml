@@ -5,7 +5,7 @@ display:
   description:
     - "&7Open for &f6 slots&7 of portable food storage."
     - "&7Carry snacks on the go."
-    - "&7Tracks last-open time per block."
+    - "&7Tracks last-&eopen&7 time per block."
 
 block:
   placeable: true

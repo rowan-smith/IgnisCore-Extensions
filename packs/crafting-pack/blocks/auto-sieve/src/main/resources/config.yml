@@ -1,9 +1,9 @@
 id: auto-sieve
 
 display:
-  title: "&6Auto Sieve"
+  title: "&eAuto Sieve"
   description:
-    - "&7Passive sifting particles while placed."
+    - "&7&bPassive&7 sifting particles while placed."
     - "&7Sand-break sound each tick cycle."
     - "&7Decorative sifting station."
 

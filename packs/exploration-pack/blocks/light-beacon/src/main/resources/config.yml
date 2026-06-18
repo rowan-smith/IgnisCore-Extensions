@@ -3,9 +3,9 @@ id: light-beacon
 display:
   title: "&bLight Beacon"
   description:
-    - "&7End-rod sparkles and glow pulse ring."
-    - "&7Amethyst chime each cycle."
-    - "&33-block&7 radius light marker."
+    - "&7&bEnd-rod&7 sparkles and glow pulse &ering&7."
+    - "&7&bAmethyst&7 chime each cycle."
+    - "&e3-block&7 radius light marker."
 
 block:
   placeable: true

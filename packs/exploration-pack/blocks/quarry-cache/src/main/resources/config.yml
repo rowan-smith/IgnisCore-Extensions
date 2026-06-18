@@ -15,8 +15,9 @@ id: quarry-cache
 display:
   title: "&bQuarry Cache"
   description:
-    - "&7collects nearby block drops into internal storage."
-    - "&7See item lore for usage hints."
+    - "&7&eVacuums&7 nearby block drops into storage."
+    - "&7Right-click to &eopen&7 the collection GUI."
+    - "&e8-block&7 pickup radius while placed."
 
 # block.breaking.tool_ticks.<SUFFIX> — faster mining when tool material ends with suffix
 #   e.g. _PICKAXE matches wooden_pickaxe, iron_pickaxe, …

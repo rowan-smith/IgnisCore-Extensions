@@ -3,7 +3,7 @@ id: mirror-world-tnt
 display:
   title: "&dMirror World TNT"
   description:
-    - "&7Whatever happens here also happens there."
+    - "&7Whatever happens here also happens &dthere&7."
     - "&7A reflection across an unseen pane."
     - "&7Two worlds, one fate."
 

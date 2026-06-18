@@ -3,8 +3,9 @@ id: checkpoint-obelisk
 display:
   title: "&bCheckpoint Obelisk"
   description:
-    - "&7Records player checkpoint on interact."
-    - "&7See item lore for usage hints."
+    - "&7&eRight-click&7 to record your coordinates."
+    - "&7Shows coords on the action bar."
+    - "&7Totem pulse &ering&7 marks the save."
 
 block:
   placeable: true

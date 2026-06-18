@@ -3,8 +3,9 @@ id: entity-camera
 display:
   title: "&bEntity Camera"
   description:
-    - "&7Spectate nearest passive mob on interact."
-    - "&7See item lore for usage hints."
+    - "&7&eRight-click&7 to &bspectate&7 a nearby passive mob."
+    - "&e12-block&7 scan radius, &e5s&7 camera link."
+    - "&7&bEnd-rod&7 beam points at the target."
 
 block:
   placeable: true

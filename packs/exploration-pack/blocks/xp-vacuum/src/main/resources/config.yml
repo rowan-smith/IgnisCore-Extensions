@@ -4,8 +4,8 @@ display:
   title: "&bXP Vacuum"
   description:
     - "&7Pulls experience orbs toward it."
-    - "&f6-block&7 radius, configurable pull strength."
-    - "&7Enchant particles while vacuuming."
+    - "&e6-block&7 radius, configurable pull strength."
+    - "&7&bEnchant&7 particles while vacuuming."
 
 block:
   placeable: true

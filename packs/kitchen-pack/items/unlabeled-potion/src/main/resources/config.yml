@@ -4,7 +4,7 @@ display:
   title: "&dUnlabeled Potion"
   description:
     - "&7No label, no hints, no promises."
-    - "&7Drink it and find out what it does."
+    - "&7Drink it and find out what it &ddoes&7."
     - "&7Some bottles keep their secrets till the last sip."
 
 item:

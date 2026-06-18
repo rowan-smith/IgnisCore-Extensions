@@ -1,7 +1,7 @@
 id: valve-wrench
 
 display:
-  title: "&6Valve Wrench"
+  title: "&9Valve Wrench"
   description:
     - "&7Right-click a &epipe valve&7 to link."
     - "&7Use again to control it remotely."

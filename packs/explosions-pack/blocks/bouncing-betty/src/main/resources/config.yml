@@ -1,9 +1,9 @@
 id: bouncing-betty
 
 display:
-  title: "&6Bouncing Betty"
+  title: "&cBouncing Betty"
   description:
-    - "&7Bury it to arm a proximity mine."
+    - "&7Bury it to arm a &8proximity mine&7."
     - "&7Arms when creatures draw near."
 
 block:

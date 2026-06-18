@@ -1,9 +1,9 @@
 id: flashbang
 
 display:
-  title: "&6Flashbang"
+  title: "&cFlashbang"
   description:
-    - "&7Right-click to throw."
+    - "&7Right-click to &ethrow&7."
     - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:

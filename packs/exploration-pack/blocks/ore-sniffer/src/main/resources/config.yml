@@ -4,8 +4,8 @@ display:
   title: "&bOre Sniffer"
   description:
     - "&7Finds nearest ore in a &f12-block&7 radius."
-    - "&7Crit scan beam to ore location."
-    - "&7Passive underground ore detector."
+    - "&7Crit &escan&7 beam to ore location."
+    - "&7&bPassive&7 underground ore detector."
 
 block:
   placeable: true

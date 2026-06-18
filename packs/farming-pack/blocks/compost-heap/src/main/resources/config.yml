@@ -3,7 +3,7 @@ id: compost-heap
 display:
   title: "&aCompost Heap"
   description:
-    - "&7Composter particles and fill sound."
+    - "&7&bComposter&7 particles and fill sound."
     - "&7Ambient composting activity while placed."
     - "&7Pairs with farming setups."
 

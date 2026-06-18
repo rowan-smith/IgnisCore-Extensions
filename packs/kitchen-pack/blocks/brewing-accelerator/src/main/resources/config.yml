@@ -3,7 +3,7 @@ id: brewing-accelerator
 display:
   title: "&6Brewing Accelerator"
   description:
-    - "&7Witch particles and brewing-stand sound."
+    - "&7&bWitch&7 particles and brewing-stand sound."
     - "&7Ambient accelerator near brewing setups."
     - "&7Decorative brewing boost indicator."
 

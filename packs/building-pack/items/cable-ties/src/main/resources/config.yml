@@ -5,7 +5,7 @@ display:
   description:
     - "&7Click two &ffence posts&7 to tie them."
     - "&7Draws a particle cable between posts."
-    - "&7Consumes one tie per link."
+    - "&7Consumes one tie per &elink&7."
 
 item:
   base_material: paper

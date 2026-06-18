@@ -10,12 +10,17 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ExtensionDisplayQualityTest {
+    private static final Pattern TITLE_COLOR = Pattern.compile("^&[0-9a-fk-or].+");
+    private static final Pattern ACCENT_COLOR = Pattern.compile("&(?!7)[0-9a-fk-or]");
+    private static final Pattern BROKEN_COLOR = Pattern.compile("&(?![0-9a-fk-orx#])");
+
     @ParameterizedTest
     @MethodSource("extensionConfigs")
     void displayHasTitleAndMeaningfulLore(Path configPath) throws IOException {
@@ -26,6 +31,7 @@ class ExtensionDisplayQualityTest {
 
         String title = String.valueOf(display.get("title"));
         assertFalse(title.isBlank(), () -> configPath + " missing display.title");
+        assertTrue(TITLE_COLOR.matcher(title).matches(), () -> configPath + " title needs a color code prefix");
 
         @SuppressWarnings("unchecked")
         List<String> description = (List<String>) display.get("description");
@@ -33,6 +39,19 @@ class ExtensionDisplayQualityTest {
         assertTrue(description.size() >= 2, () -> configPath + " should have at least two lore lines");
         assertFalse(description.stream().anyMatch(line -> line.contains("Flare explosive")),
                 () -> configPath + " still uses placeholder lore");
+        assertFalse(description.stream().anyMatch(line -> line.contains("See item lore for usage hints")),
+                () -> configPath + " still uses filler lore");
+        assertTrue(description.stream().allMatch(line -> line.startsWith("&")),
+                () -> configPath + " lore lines should start with a color code");
+        assertTrue(description.stream().anyMatch(ExtensionDisplayQualityTest::hasAccentColor),
+                () -> configPath + " lore should highlight at least one detail with an accent color");
+        assertFalse(description.stream().anyMatch(line -> BROKEN_COLOR.matcher(line).find()
+                        && !line.contains("flint and steel")),
+                () -> configPath + " lore contains a broken color code");
+    }
+
+    private static boolean hasAccentColor(String line) {
+        return ACCENT_COLOR.matcher(line).find();
     }
 
     private static Stream<Path> extensionConfigs() throws IOException {

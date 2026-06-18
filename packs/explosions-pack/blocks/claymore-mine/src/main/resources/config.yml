@@ -1,9 +1,9 @@
 id: claymore-mine
 
 display:
-  title: "&cClaymore Mine"
+  title: "&8Claymore Mine"
   description:
-    - "&7Bury it to arm a proximity mine."
+    - "&7Bury it to arm a &8proximity mine&7."
     - "&7Arms when creatures draw near."
 
 block:

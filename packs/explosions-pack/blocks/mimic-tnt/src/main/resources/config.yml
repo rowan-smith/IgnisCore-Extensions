@@ -10,7 +10,7 @@ id: mimic-tnt
 display:
   title: "&dMimic TNT"
   description:
-    - "&7One of them is real. The rest only pretend."
+    - "&7One of them is real. The rest only &dpretend&7."
     - "&7Good luck guessing which is which."
     - "&7Deception scatters in every direction."
 

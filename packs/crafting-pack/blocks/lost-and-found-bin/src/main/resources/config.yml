@@ -1,10 +1,10 @@
 id: lost-and-found-bin
 
 display:
-  title: "&6Lost & Found Bin"
+  title: "&eLost & Found Bin"
   description:
-    - "&7Open to retrieve swept-up items."
-    - "&7Periodically vacuums nearby item drops into storage."
+    - "&7&eOpen&7 to retrieve swept-up items."
+    - "&7Periodically &evacuums&7 nearby item drops into storage."
     - "&7Collects loot within ~8 blocks."
 
 block:

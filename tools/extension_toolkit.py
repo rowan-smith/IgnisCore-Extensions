@@ -88,21 +88,21 @@ JAVA_EFFECT_HINTS = [
 ]
 
 MYSTERIOUS_LORE = {
-    "glitch-tnt": ("&dGlitch TNT", ["&7It flickers between things it cannot decide to be.", "&7Reality stutters wherever it sits.", "&7Best not to look too closely."]),
-    "mirage-tnt": ("&dMirage TNT", ["&7The blast you see is never where it lands.", "&7Heat, light, and cruel misdirection.", "&7Chase the illusion at your peril."]),
-    "hologram-tnt": ("&dHologram TNT", ["&7Is it really there? Are any of them?", "&7Copies dance while the real fuse burns.", "&7Seeing is no longer believing."]),
-    "phantom-tnt": ("&dPhantom TNT", ["&7Now you see it. Soon you won't.", "&7The blast seems to come from nowhere.", "&7You'll never spot where it went."]),
-    "mirror-world-tnt": ("&dMirror World TNT", ["&7Whatever happens here also happens there.", "&7A reflection across an unseen pane.", "&7Two worlds, one fate."]),
-    "mimic-tnt": ("&dMimic TNT", ["&7One of them is real. The rest only pretend.", "&7Good luck guessing which is which.", "&7Deception scatters in every direction."]),
-    "rift-generator": ("&dRift Generator", ["&7Something on the other side is pulling.", "&7The air bends inward toward the tear.", "&7Best not to be standing too close."]),
-    "ouija-slab": ("&dOuija Slab", ["&7It only speaks when others gather round.", "&7Stand at its corners and listen.", "&7The letters know more than they should."]),
-    "quantum-coin": ("&dQuantum Coin", ["&7Heads or tails, until you look.", "&7Both faces, neither face, every flip.", "&7Chance has never felt so uncertain."]),
-    "gravity-marble": ("&dGravity Marble", ["&7It rolls a little too eagerly.", "&7A glittering trail follows wherever it goes.", "&7Where it stops, nobody knows."]),
-    "unlabeled-potion": ("&dUnlabeled Potion", ["&7No label, no hints, no promises.", "&7Drink it and find out what it does.", "&7Some bottles keep their secrets till the last sip."]),
-    "doppelganger-block": ("&dDoppelgänger Block", ["&7It looks like an ordinary stone block.", "&7But it is most certainly not.", "&7Trust nothing that wears another's face."]),
-    "fake-bedrock": ("&dFake Bedrock", ["&7Unbreakable, unmovable, the bottom of the world.", "&7Or so it would have you believe.", "&7Some foundations are not what they seem."]),
-    "pause-tnt": ("&dPause TNT", ["&7The countdown stops. And waits.", "&7Just when you relax, time resumes.", "&7Patience is its cruelest trick."]),
-    "blink-tnt": ("&dBlink TNT", ["&7Here. There. Everywhere in between.", "&7It teleports when you aren't watching.", "&7Detonation is merely a suggestion."]),
+    "glitch-tnt": ("&dGlitch TNT", ["&7It &dflickers&7 between things it cannot decide to be.", "&7Reality &dstutters&7 wherever it sits.", "&7Best not to look too closely."]),
+    "mirage-tnt": ("&dMirage TNT", ["&7The blast you see is &dnever&7 where it lands.", "&7Heat, light, and cruel misdirection.", "&7Chase the illusion at your peril."]),
+    "hologram-tnt": ("&dHologram TNT", ["&7Is it really there? Are &dany&7 of them?", "&7Copies dance while the real fuse burns.", "&7Seeing is no longer believing."]),
+    "phantom-tnt": ("&dPhantom TNT", ["&7Now you see it. &dSoon&7 you won't.", "&7The blast seems to come from nowhere.", "&7You'll never spot where it went."]),
+    "mirror-world-tnt": ("&dMirror World TNT", ["&7Whatever happens here also happens &dthere&7.", "&7A reflection across an unseen pane.", "&7Two worlds, one fate."]),
+    "mimic-tnt": ("&dMimic TNT", ["&7One of them is real. The rest only &dpretend&7.", "&7Good luck guessing which is which.", "&7Deception scatters in every direction."]),
+    "rift-generator": ("&dRift Generator", ["&7Something on the other side is &dpulling&7.", "&7The air bends inward toward the tear.", "&7Best not to be standing too close."]),
+    "ouija-slab": ("&dOuija Slab", ["&7It only speaks when others &dgather&7 round.", "&7Stand at its corners and listen.", "&7The letters know more than they should."]),
+    "quantum-coin": ("&dQuantum Coin", ["&7Heads or tails, until you &dlook&7.", "&7Both faces, neither face, every flip.", "&7Chance has never felt so uncertain."]),
+    "gravity-marble": ("&dGravity Marble", ["&7It rolls a little too &deagerly&7.", "&7A glittering trail follows wherever it goes.", "&7Where it stops, nobody knows."]),
+    "unlabeled-potion": ("&dUnlabeled Potion", ["&7No label, no hints, no promises.", "&7Drink it and find out what it &ddoes&7.", "&7Some bottles keep their secrets till the last sip."]),
+    "doppelganger-block": ("&dDoppelgänger Block", ["&7It looks like an ordinary &fstone block&7.", "&7But it is most certainly &dnot&7.", "&7Trust nothing that wears another's face."]),
+    "fake-bedrock": ("&dFake Bedrock", ["&7Unbreakable, unmovable, the bottom of the world.", "&7Or so it would have you &dbelieve&7.", "&7Some foundations are not what they seem."]),
+    "pause-tnt": ("&dPause TNT", ["&7The countdown &dstops&7. And waits.", "&7Just when you relax, time resumes.", "&7Patience is its cruelest trick."]),
+    "blink-tnt": ("&dBlink TNT", ["&7Here. There. &dEverywhere&7 in between.", "&7It teleports when you aren't &dwatching&7.", "&7Detonation is merely a &dsuggestion&7."]),
 }
 
 
@@ -117,21 +117,124 @@ DISPLAY_OVERRIDES = load_display_overrides()
 
 def humanize(ext_id: str) -> str:
     name = ext_id.replace("-", " ").title()
-    return name.replace("Tnt", "TNT").replace("C4", "C4")
+    return name.replace("Tnt", "TNT").replace("C4", "C4").replace("Mri", "MRI").replace("Xp", "XP")
 
 
-def title_color(ext_id: str, pack: str) -> str:
+def strip_title_color(title: str) -> str:
+    return re.sub(r"^&[0-9a-fk-or]", "", title, flags=re.I)
+
+
+def has_accent_color(line: str) -> bool:
+    return any(m.lower() != "&7" for m in re.findall(r"&[0-9a-fk-or]", line, re.I))
+
+
+def title_color(ext_id: str, rel: str) -> str:
     if ext_id in MYSTERIOUS_IDS:
         return "&d"
-    if "explosions-pack" in pack and ("tnt" in ext_id or "charge" in ext_id or "mine" in ext_id):
-        return "&c" if "nuke" not in ext_id else "&a"
-    if "kitchen-pack" in pack and "/items/" in pack:
-        return "&e"
-    if "farming-pack" in pack:
+    pack = rel.split("/")[1] if rel.startswith("packs/") else ""
+    kind = "items" if "/items/" in rel else "blocks"
+    if pack == "explosions-pack":
+        if ext_id == "nuke":
+            return "&a"
+        if ext_id == "detonator":
+            return "&e"
+        if ext_id in REMOTE_CHARGE_IDS:
+            return "&6"
+        if "mine" in ext_id:
+            return "&8"
+        if kind == "items" or "grenade" in ext_id:
+            return "&c"
+        return "&c"
+    if pack == "kitchen-pack":
+        return "&e" if kind == "items" else "&6"
+    if pack == "farming-pack":
         return "&a"
-    if "exploration-pack" in pack:
+    if pack == "exploration-pack":
         return "&b"
+    if pack == "building-pack":
+        return "&6"
+    if pack == "crafting-pack":
+        return "&e"
+    if pack == "linking-pack":
+        return "&9"
+    if pack == "novelty-pack":
+        return "&d"
+    if pack == "utility-pack":
+        return "&6"
     return "&6"
+
+
+def themed_title(ext_id: str, rel: str, title: str | None = None) -> str:
+    name = strip_title_color(title) if title else humanize(ext_id)
+    return f"{title_color(ext_id, rel)}{name}"
+
+
+def polish_lore_lines(lines: list[str]) -> list[str]:
+    skip = {"&7See item lore for usage hints."}
+    polished: list[str] = []
+    for raw in lines:
+        if raw in skip:
+            continue
+        line = raw.replace("flint & steel", "flint and steel").replace("&33-block", "&e3-block")
+        if not line.startswith("&"):
+            line = "&7" + line
+        prefix = ""
+        body = line
+        color_prefix = re.match(r"^((?:&[0-9a-fk-or])*)", line, re.I)
+        if color_prefix and color_prefix.group(1):
+            prefix = color_prefix.group(1)
+            body = line[len(prefix) :]
+        if body and body[0].islower():
+            body = body[0].upper() + body[1:]
+        if not has_accent_color(prefix + body):
+            body = re.sub(
+                r"\b(Right-click|Left-click|Place|Open|Throw|Drink|Eat|Bury|Link|Toggle|Scan|Sprinkle|Ring|Vacuums)\b",
+                r"&e\1&7",
+                body,
+                count=1,
+                flags=re.I,
+            )
+            body = re.sub(
+                r"\b(\d+(?:\.\d+)?)\s*(-block|-slot|-row|-radius|s\b)",
+                r"&e\1&7\2",
+                body,
+            )
+            body = re.sub(
+                r"\bslot\s+(\d+)\b",
+                r"&eslot &e\1&7",
+                body,
+                flags=re.I,
+            )
+            body = re.sub(
+                r"\b(flint and steel|fire charge|detonator|gold ingot|glass bottle|water bucket|bone meal)\b",
+                r"&f\1&7",
+                body,
+                count=1,
+                flags=re.I,
+            )
+            body = re.sub(
+                r"\b(Enchant|Amethyst|End-rod|Campfire|Witch|Composter|Honey|Grindstone|Glow-squid|"
+                r"Redstone|Obsidian|Chronicle|Bell|Trapdoor|Passive|Remote|Spectate|Waypoint)\b",
+                r"&b\1&7",
+                body,
+                count=1,
+                flags=re.I,
+            )
+            line = prefix + body
+        polished.append(line)
+    if len(polished) < 2:
+        polished.append("&7Place or interact to use.")
+    return polished[:5]
+
+
+def normalize_display_meta(ext_id: str, rel: str, meta: dict) -> dict:
+    title = themed_title(ext_id, rel, meta.get("title"))
+    description = polish_lore_lines(list(meta.get("description") or []))
+    return {
+        "title": title,
+        "description": description,
+        "mysterious": bool(meta.get("mysterious")),
+    }
 
 
 def parse_header_summary(config_text: str) -> str | None:
@@ -221,27 +324,21 @@ def detect_profile(ext_id: str, kind: str, config: dict, java: str) -> str:
 def build_display(ext_id: str, rel: str, config: dict, config_text: str, java: str) -> dict:
     if ext_id in MYSTERIOUS_LORE:
         title, lines = MYSTERIOUS_LORE[ext_id]
-        return {"title": title, "description": lines, "mysterious": True}
+        return normalize_display_meta(ext_id, rel, {"title": title, "description": lines, "mysterious": True})
 
     if ext_id in DISPLAY_OVERRIDES:
-        override = DISPLAY_OVERRIDES[ext_id]
-        return {
-            "title": override["title"],
-            "description": override["description"],
-            "mysterious": False,
-        }
+        return normalize_display_meta(ext_id, rel, DISPLAY_OVERRIDES[ext_id])
 
     profile = detect_profile(ext_id, "blocks" if "/blocks/" in rel else "items", config, java)
     header = parse_header_summary(config_text)
     name = humanize(ext_id)
-    color = title_color(ext_id, rel)
     lines: list[str] = []
 
     if profile == "combustible_explosive":
         fuse = fuse_seconds(config)
         effect = infer_effect(java, ext_id, config)
         lines = [
-            "&7Place and ignite with flint & steel or fire charge.",
+            "&7Place and ignite with &fflint and steel&7 or &6fire charge&7.",
             f"&7Fuses for &e{fuse:.1f}s&7, then {effect}.",
         ]
         if header:
@@ -249,34 +346,34 @@ def build_display(ext_id: str, rel: str, config: dict, config_text: str, java: s
     elif profile == "buried_mine":
         effect = infer_effect(java, ext_id, config)
         lines = [
-            "&7Bury it to arm a proximity mine.",
+            "&7Bury it to arm a &8proximity mine&7.",
             f"&7{effect.capitalize()}.",
         ]
         if header:
             lines[0] = f"&7{header.rstrip('.')}."
     elif profile == "tripwire_charge":
         lines = [
-            "&7Place two charges to string a tripwire between them.",
-            "&7Both ends detonate when something crosses the line.",
+            "&7Place two charges to string a &etripwire&7 between them.",
+            "&7Both ends &cdetonate&7 when something crosses the line.",
         ]
     elif profile == "remote_charge":
         lines = [
             "&7Place it, then link a &edetonator&7.",
-            "&7Cannot be lit with flint & steel.",
+            "&7Cannot be lit with flint and steel.",
             "&7Right-click the detonator to blow it remotely.",
         ]
     elif profile == "throwable":
         fuse = fuse_seconds(config)
         effect = infer_effect(java, ext_id, config)
         lines = [
-            "&7Right-click to throw.",
+            "&7Right-click to &ethrow&7.",
             f"&7Detonates after &e{fuse:.1f}s&7; {effect}.",
         ]
     elif profile == "detonator":
         lines = [
-            "&7Left-click a signal charge to link it.",
+            "&7Left-click a &esignal charge&7 to link it.",
             "&7Right-click to detonate all linked charges.",
-            "&7Holds up to 16 paired charges.",
+            "&7Holds up to &e16&7 paired charges.",
         ]
     elif profile == "link_item":
         target = (config.get("custom_data") or {}).get("linkBlockType", "a linked block")
@@ -286,7 +383,7 @@ def build_display(ext_id: str, rel: str, config: dict, config_text: str, java: s
         ]
     elif profile == "gui_block":
         lines = [
-            "&7Right-click to open.",
+            "&7Right-click to &eopen&7.",
         ]
         if header:
             lines.insert(0, f"&7{header.rstrip('.')}.")
@@ -297,7 +394,7 @@ def build_display(ext_id: str, rel: str, config: dict, config_text: str, java: s
             lines = [f"&7{header.rstrip('.')}."]
         else:
             lines = [f"&7Right-click to use the {name.lower()}."]
-        lines.append("&7Check the effect after use.")
+        lines.append("&7Consumable or tool — check effects after use.")
     elif profile == "placed_tick":
         if header:
             lines = [f"&7{header.rstrip('.')}."]
@@ -314,10 +411,11 @@ def build_display(ext_id: str, rel: str, config: dict, config_text: str, java: s
             else:
                 lines = [f"&7Place or use the {name.lower()}."]
 
-    if len(lines) < 2:
-        lines.append("&7See item lore for usage hints.")
-
-    return {"title": f"{color}{name}", "description": lines[:5], "mysterious": False}
+    return normalize_display_meta(
+        ext_id,
+        rel,
+        {"title": themed_title(ext_id, rel), "description": lines[:5], "mysterious": False},
+    )
 
 
 def format_display_yaml(meta: dict) -> str:
@@ -968,6 +1066,8 @@ def iter_modules():
 
 
 def cmd_catalog(_args):
+    global DISPLAY_OVERRIDES
+    DISPLAY_OVERRIDES = load_display_overrides()
     catalog = {}
     for module, kind, config_path in iter_modules():
         ext_id = module.name
@@ -999,6 +1099,8 @@ def patch_config_dict(config_path: Path, merged: dict, meta: dict) -> None:
 
 
 def cmd_apply(args):
+    global DISPLAY_OVERRIDES
+    DISPLAY_OVERRIDES = load_display_overrides()
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8")) if CATALOG_PATH.exists() else {}
     updated_displays = 0
     updated_behavior = 0
@@ -1016,11 +1118,11 @@ def cmd_apply(args):
         profile = (catalog.get(ext_id) or {}).get("profile") or detect_profile(ext_id, kind, config, java)
 
         if args.displays:
+            meta = normalize_display_meta(ext_id, rel, meta)
             new_text = replace_display_section(config_text, meta)
-            if new_text != config_text:
-                config_path.write_text(new_text, encoding="utf-8")
-                updated_displays += 1
-                config, config_text = load_config(config_path)
+            config_path.write_text(new_text, encoding="utf-8")
+            updated_displays += 1
+            config, config_text = load_config(config_path)
 
         if args.behavior:
             remove_wrong_ignite_theatrics(module, config)

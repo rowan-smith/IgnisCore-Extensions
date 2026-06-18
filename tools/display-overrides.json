@@ -194,7 +194,7 @@
   "fish-smoker-rack": {
     "title": "&6Fish Smoker Rack",
     "description": [
-      "&7Smoking particles and fish swim sounds.",
+      "&7&bSmoking&7 particles and fish swim sounds.",
       "&7Ambient fish-smoking station.",
       "&7Pairs with kitchen setups."
     ]
@@ -226,8 +226,8 @@
   "glow-ink-lantern": {
     "title": "&6Glow Ink Lantern",
     "description": [
-      "&7Glow-squid particles and amethyst chime.",
-      "&7Ambient light decoration.",
+      "&7&bGlow-squid&7 particles and amethyst chime.",
+      "&7Ambient &elight&7 decoration.",
       "&7Passive glow while placed."
     ]
   },
@@ -322,7 +322,7 @@
   "kelp-compressor": {
     "title": "&aKelp Compressor",
     "description": [
-      "&7Bubble particles and wet-grass sound.",
+      "&7&bBubble&7 particles and wet-grass sound.",
       "&7Ambient kelp processing station.",
       "&7Decorative underwater-farm equipment."
     ]
@@ -340,7 +340,7 @@
     "description": [
       "&7End-rod sparkles and glow pulse ring.",
       "&7Amethyst chime each cycle.",
-      "&33-block&7 radius light marker."
+      "&e3-block&7 radius light marker."
     ]
   },
   "lock": {
@@ -496,9 +496,9 @@
     ]
   },
   "pipe-valve": {
-    "title": "&6Pipe Valve",
+    "title": "&9Pipe Valve",
     "description": [
-      "&7When opened remotely, drips water particles.",
+      "&7When opened remotely, drips &9water&7 particles.",
       "&7Pairs with valve wrench for toggling.",
       "&7Part of a linked pipe network."
     ]
@@ -699,8 +699,64 @@
     "title": "&bXP Vacuum",
     "description": [
       "&7Pulls experience orbs toward it.",
-      "&f6-block&7 radius, configurable pull strength.",
+      "&e6-block&7 radius, configurable pull strength.",
       "&7Enchant particles while vacuuming."
+    ]
+  },
+  "repair-station-block": {
+    "title": "&eRepair Station",
+    "description": [
+      "&7Right-click while holding a damaged item.",
+      "&7Restores &e25&7 durability per use.",
+      "&7Enchant sparkles and anvil sound."
+    ]
+  },
+  "checkpoint-obelisk": {
+    "title": "&bCheckpoint Obelisk",
+    "description": [
+      "&7Right-click to record your coordinates.",
+      "&7Shows coords on the action bar.",
+      "&7Totem pulse ring marks the save."
+    ]
+  },
+  "entity-camera": {
+    "title": "&bEntity Camera",
+    "description": [
+      "&7Right-click to spectate a nearby passive mob.",
+      "&e12-block&7 scan radius, &e5s&7 camera link.",
+      "&7End-rod beam points at the target."
+    ]
+  },
+  "quarry-cache": {
+    "title": "&bQuarry Cache",
+    "description": [
+      "&7Vacuums nearby block drops into storage.",
+      "&7Right-click to &eopen&7 the collection GUI.",
+      "&e8-block&7 pickup radius while placed."
+    ]
+  },
+  "waypoint-marker": {
+    "title": "&bWaypoint Marker",
+    "description": [
+      "&7Right-click to save a named waypoint.",
+      "&7Stores player name and coordinates.",
+      "&7End-rod sparkles on each mark."
+    ]
+  },
+  "barn-bell": {
+    "title": "&9Barn Bell",
+    "description": [
+      "&7Ring to call livestock with a bell toll.",
+      "&7Pairs with the &9barn bell&7 linking network.",
+      "&7Short cooldown between rings."
+    ]
+  },
+  "keyed-hatch": {
+    "title": "&9Keyed Hatch",
+    "description": [
+      "&7Remote-controlled hatch linked to a key.",
+      "&7Opens and closes with trapdoor feedback.",
+      "&7Part of the &9keyed hatch&7 network."
     ]
   }
 }

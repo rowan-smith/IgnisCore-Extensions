@@ -1,9 +1,9 @@
 id: smoke-grenade
 
 display:
-  title: "&6Smoke Grenade"
+  title: "&cSmoke Grenade"
   description:
-    - "&7Right-click to throw."
+    - "&7Right-click to &ethrow&7."
     - "&7Detonates after &e4.0s&7; flies on a timed fuse after thrown."
 
 item:

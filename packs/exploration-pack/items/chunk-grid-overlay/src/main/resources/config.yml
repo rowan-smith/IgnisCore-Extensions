@@ -5,7 +5,7 @@ display:
   description:
     - "&7Use to show your current &fchunk coords&7."
     - "&7Displays chunk X/Z on the action bar."
-    - "&7Pulses a flame ring at the chunk corner."
+    - "&7Pulses a flame &ering&7 at the chunk corner."
 
 item:
   base_material: paper

@@ -1,11 +1,11 @@
 id: stasis-field
 
 display:
-  title: "&6Stasis Field"
+  title: "&cStasis Field"
   description:
     - "&7Freezes all entities within &f4.5 blocks&7."
-    - "&7Cloud pulse ring marks the field edge."
-    - "&7Stops mobs and items in place."
+    - "&7Cloud pulse &ering&7 marks the field edge."
+    - "&7Stops mobs and items in &eplace&7."
 
 block:
   placeable: true

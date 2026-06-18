@@ -1,7 +1,7 @@
 id: lamp-dimmer
 
 display:
-  title: "&6Lamp Dimmer"
+  title: "&9Lamp Dimmer"
   description:
     - "&7Right-click a &esocket lamp&7 to link."
     - "&7Use again to control it remotely."

@@ -3,7 +3,7 @@ id: last-stand-charge
 display:
   title: "&cLast Stand Charge"
   description:
-    - "&7Place and ignite with flint & steel or fire charge."
+    - "&7Place and ignite with &fflint and steel&7 or fire charge."
     - "&7Fuses for &e0.5s&7, then locks entities in stasis."
 
 block:

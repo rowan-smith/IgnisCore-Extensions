@@ -1,7 +1,7 @@
 id: sprinkler-head
 
 display:
-  title: "&6Sprinkler Head"
+  title: "&9Sprinkler Head"
   description:
     - "&7When armed, waters farmland in a &f4-block&7 radius."
     - "&7Falling-water particles on hydrated soil."

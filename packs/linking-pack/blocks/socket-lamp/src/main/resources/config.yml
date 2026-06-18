@@ -1,9 +1,9 @@
 id: socket-lamp
 
 display:
-  title: "&6Socket Lamp"
+  title: "&9Socket Lamp"
   description:
-    - "&7When lit remotely, emits end-rod particles."
+    - "&7When lit remotely, emits &bend-rod&7 particles."
     - "&7Brightness scales with configured light level."
     - "&7Pairs with lamp dimmer item."
 

@@ -1,10 +1,11 @@
 id: barn-bell
 
 display:
-  title: "&6Barn Bell"
+  title: "&9Barn Bell"
   description:
-    - "&7Remote-call herds passive livestock."
-    - "&7See item lore for usage hints."
+    - "&7&eRing&7 to call livestock with a &bbell&7 toll."
+    - "&7Pairs with the &9barn bell&7 linking network."
+    - "&7Short cooldown between rings."
 
 block:
   placeable: true
