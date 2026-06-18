@@ -6,7 +6,7 @@
 
   <parent>
     <groupId>dev.rono</groupId>
-    <artifactId>igniscore-extensions-parent</artifactId>
+    <artifactId>igniscore-extensions</artifactId>
     <version>${revision}</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
