@@ -1,9 +1,11 @@
 id: crop-mri
 
 display:
-  title: "&bCrop MRI"
+  title: "&aCrop MRI"
   description:
-    - "&7Scans crop density and chimes results."
+    - "&7Scans crops in a &a6-block&7 radius."
+    - "&7Ping pitch scales with crop count found."
+    - "&7Vertical &escan&7 beam while crops detected."
 
 block:
   placeable: true

@@ -1,9 +1,11 @@
 id: shepherd-bell
 
 display:
-  title: "&bShepherd Bell"
+  title: "&aShepherd Bell"
   description:
-    - "&7Herd passive animals toward the block."
+    - "&7Herds passive animals within &f10 blocks&7."
+    - "&7Sheep ambient sound each cycle."
+    - "&7Keeps livestock grouped."
 
 block:
   placeable: true

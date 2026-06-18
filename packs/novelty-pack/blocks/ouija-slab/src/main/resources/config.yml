@@ -1,9 +1,11 @@
 id: ouija-slab
 
 display:
-  title: "&bOuija Slab"
+  title: "&dOuija Slab"
   description:
-    - "&7Spells letters when players stand on corners."
+    - "&7It only speaks when others &dgather&7 round."
+    - "&7Stand at its corners and listen."
+    - "&7The letters know more than they should."
 
 block:
   placeable: true

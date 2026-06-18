@@ -1,9 +1,11 @@
 id: heavy-coat-tonic
 
 display:
-  title: "&bHeavy Coat Tonic"
+  title: "&eHeavy Coat Tonic"
   description:
-    - "&7Slowness I + Resistance II for 45s."
+    - "&7Drink for &8Slowness&7 and &9Resistance II&7."
+    - "&7Trade speed for toughness for 45 seconds."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

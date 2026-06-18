@@ -1,9 +1,11 @@
 id: hydroponic-tray
 
 display:
-  title: "&bHydroponic Tray"
+  title: "&aHydroponic Tray"
   description:
-    - "&7Waters and bonemeals nearby crops."
+    - "&7Bonemeals crops in a &a2-block&7 radius."
+    - "&7Dripping-water particles each cycle."
+    - "&7Soil-free &bpassive&7 grow tray."
 
 block:
   placeable: true

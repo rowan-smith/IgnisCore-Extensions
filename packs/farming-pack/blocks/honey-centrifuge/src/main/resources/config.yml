@@ -1,9 +1,11 @@
 id: honey-centrifuge
 
 display:
-  title: "&bHoney Centrifuge"
+  title: "&aHoney Centrifuge"
   description:
-    - "&7Honey drip theatrics while placed."
+    - "&7Dripping-&bhoney&7 particles and slide sound."
+    - "&7Ambient &bhoney&7 processing station."
+    - "&7Decorative beekeeping equipment."
 
 block:
   placeable: true

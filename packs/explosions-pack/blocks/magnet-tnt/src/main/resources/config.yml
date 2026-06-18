@@ -1,9 +1,10 @@
 id: magnet-tnt
 
 display:
-  title: "&6Magnet TNT"
+  title: "&cMagnet TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e4.0s&7, then drags entities inward before collapsing."
 
 block:
   placeable: true

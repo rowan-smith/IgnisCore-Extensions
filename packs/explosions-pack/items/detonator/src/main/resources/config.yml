@@ -5,10 +5,11 @@
 id: detonator
 
 display:
-  title: "&6Detonator"
+  title: "&eDetonator"
   description:
-    - "&7Left-click a signal charge to link"
-    - "&7Right-click to detonate linked charges"
+    - "&7Left-click a &esignal charge&7 to link it."
+    - "&7&eRight-click&7 to detonate all linked charges."
+    - "&7Holds up to &e16&7 paired charges."
 
 item:
   base_material: blaze_rod

@@ -1,9 +1,11 @@
 id: ore-xray-goggles
 
 display:
-  title: "&bOre X-Ray Goggles"
+  title: "&bOre Xray Goggles"
   description:
-    - "&7Pings nearest ore in range."
+    - "&7Scan for the nearest ore within &f14 blocks&7."
+    - "&7Draws a crit beam to the ore location."
+    - "&7Reports ore coordinates in chat."
 
 item:
   base_material: paper

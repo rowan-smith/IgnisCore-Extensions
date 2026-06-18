@@ -1,9 +1,11 @@
 id: repair-station-block
 
 display:
-  title: "&bRepair Station"
+  title: "&eRepair Station"
   description:
-    - "&7Right-click with a held item to repair durability."
+    - "&7&eRight-click&7 while holding a damaged item."
+    - "&7Restores &e25&7 durability per use."
+    - "&7&bEnchant&7 sparkles and anvil sound."
 
 block:
   placeable: true

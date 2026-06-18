@@ -1,9 +1,11 @@
 id: prep-counter
 
 display:
-  title: "&bPrep Counter"
+  title: "&6Prep Counter"
   description:
-    - "&7Combines three foods into a golden carrot."
+    - "&7Open GUI: load &f3 food items&7 in input slots."
+    - "&7Combines them into a &6golden carrot&7."
+    - "&7Happy-villager sparkle on prep."
 
 block:
   placeable: true

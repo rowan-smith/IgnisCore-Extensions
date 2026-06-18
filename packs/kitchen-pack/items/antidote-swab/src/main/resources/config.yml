@@ -1,9 +1,11 @@
 id: antidote-swab
 
 display:
-  title: "&bAntidote Swab"
+  title: "&eAntidote Swab"
   description:
-    - "&7Clears one negative effect."
+    - "&7Drink to gain brief &aRegeneration&7."
+    - "&7Clears ailments on use."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

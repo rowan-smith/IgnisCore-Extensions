@@ -1,10 +1,10 @@
 id: fragmentation-grenade
 
 display:
-  title: "&8Fragmentation Grenade"
+  title: "&cFragmentation Grenade"
   description:
-    - "&7Compact shrapnel burst"
-    - "&7High debris count"
+    - "&7Right-click to &ethrow&7."
+    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:
   base_material: snowball

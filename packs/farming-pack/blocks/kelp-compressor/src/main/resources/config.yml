@@ -1,9 +1,11 @@
 id: kelp-compressor
 
 display:
-  title: "&bKelp Compressor"
+  title: "&aKelp Compressor"
   description:
-    - "&7Bubble effects while placed."
+    - "&7&bBubble&7 particles and wet-grass sound."
+    - "&7Ambient kelp processing station."
+    - "&7Decorative underwater-farm equipment."
 
 block:
   placeable: true

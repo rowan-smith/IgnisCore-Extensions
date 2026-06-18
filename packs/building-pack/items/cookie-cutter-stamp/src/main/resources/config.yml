@@ -1,9 +1,11 @@
 id: cookie-cutter-stamp
 
 display:
-  title: "&bCookie Cutter Stamp"
+  title: "&6Cookie Cutter Stamp"
   description:
-    - "&7Cycles cookie stamp shapes."
+    - "&7Cycle through &dheart&7, &estar&7, &atree&7, &bmoon&7 shapes."
+    - "&7Stores the shape in item NBT."
+    - "&7For themed cookie crafting."
 
 item:
   base_material: paper

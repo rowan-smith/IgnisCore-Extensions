@@ -1,9 +1,11 @@
 id: mood-lantern
 
 display:
-  title: "&bMood Lantern"
+  title: "&6Mood Lantern"
   description:
-    - "&7Particle mood shifts with nearby mobs."
+    - "&7Reads nearby mob and player mood in &f10-block&7 radius."
+    - "&7Angry particles if hostiles dominate."
+    - "&7Note or &bend-rod&7 particles when calm."
 
 block:
   placeable: true

@@ -1,9 +1,10 @@
 id: slingshot-tnt
 
 display:
-  title: "&6Slingshot TNT"
+  title: "&cSlingshot TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e3.0s&7, then detonates in a powerful blast."
 
 block:
   placeable: true

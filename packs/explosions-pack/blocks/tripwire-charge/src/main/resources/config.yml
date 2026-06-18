@@ -1,9 +1,10 @@
 id: tripwire-charge
 
 display:
-  title: "&6Tripwire Charge"
+  title: "&cTripwire Charge"
   description:
-    - "&7Flare explosive"
+    - "&7Place two charges to string a &etripwire&7 between them."
+    - "&7Both ends &cdetonate&7 when something crosses the line."
 
 block:
   placeable: true

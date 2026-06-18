@@ -1,9 +1,11 @@
 id: display-case
 
 display:
-  title: "&bDisplay Case"
+  title: "&6Display Case"
   description:
-    - "&7Museum display; announces item on open."
+    - "&7&eOpen&7 to place one item on display."
+    - "&7Showcases a single item in &eslot &e13&7."
+    - "&7Decorative trophy case."
 
 block:
   placeable: true

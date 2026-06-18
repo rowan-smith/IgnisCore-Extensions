@@ -1,9 +1,10 @@
 id: echo-blast
 
 display:
-  title: "&6Echo Blast"
+  title: "&cEcho Blast"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e3.0s&7, then echoes with phantom aftershocks."
 
 block:
   placeable: true

@@ -3,7 +3,9 @@ id: player-chronicle-book
 display:
   title: "&bPlayer Chronicle Book"
   description:
-    - "&7Writes location chronicle pages."
+    - "&7Write a &bchronicle&7 page with your name and coords."
+    - "&7Pages stored in item NBT."
+    - "&7Book page-turn sound on each entry."
 
 item:
   base_material: paper

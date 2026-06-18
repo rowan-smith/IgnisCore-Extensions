@@ -1,9 +1,11 @@
 id: glitch-tnt
 
 display:
-  title: "&6Glitch TNT"
+  title: "&dGlitch TNT"
   description:
-    - "&7Flare explosive"
+    - "&7It &dflickers&7 between things it cannot decide to be."
+    - "&7Reality &dstutters&7 wherever it sits."
+    - "&7Best not to look too closely."
 
 block:
   placeable: true

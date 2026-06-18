@@ -1,9 +1,11 @@
 id: ghost-peppermint
 
 display:
-  title: "&bGhost Peppermint"
+  title: "&eGhost Peppermint"
   description:
-    - "&7Phantoms ignore you until next sleep."
+    - "&7Eat so &fphantoms ignore you&7 until you sleep."
+    - "&7Sets a phantom-ignore flag on the item."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

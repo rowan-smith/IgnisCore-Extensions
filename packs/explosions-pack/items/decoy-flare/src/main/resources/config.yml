@@ -1,9 +1,10 @@
 id: decoy-flare
 
 display:
-  title: "&6Decoy Flare"
+  title: "&cDecoy Flare"
   description:
-    - "&7Throwable flare explosive"
+    - "&7Right-click to &ethrow&7."
+    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:
   base_material: snowball

@@ -39,6 +39,12 @@ final class ThrowableSupport {
         IgnisTask[] taskRef = {null};
         taskRef[0] = context.scheduler().runRepeating(spawn, () -> {
             ticks[0]++;
+            if (world.isEntityValid(projectile)) {
+                int ticksLeft = throwable.fuseTicks() - ticks[0];
+                if (ticksLeft > 0) {
+                    TheatricsSupport.fusePulse(world, world.getEntityLocation(projectile), ticksLeft, throwable.fuseTicks());
+                }
+            }
             if (!world.isEntityValid(projectile) || ticks[0] >= throwable.fuseTicks()) {
                 IgnisLocation impact = world.isEntityValid(projectile)
                         ? world.getEntityLocation(projectile)

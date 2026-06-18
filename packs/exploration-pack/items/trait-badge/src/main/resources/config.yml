@@ -3,7 +3,9 @@ id: trait-badge
 display:
   title: "&bTrait Badge"
   description:
-    - "&7Rolls and stores a random trait."
+    - "&7Roll a random role: &dArtisan&7, &bScout&7, &5Alchemist&7, &7Engineer&7, &cDuelist&7."
+    - "&7Trait stored in item NBT."
+    - "&7Level-up sound and totem particles."
 
 item:
   base_material: paper

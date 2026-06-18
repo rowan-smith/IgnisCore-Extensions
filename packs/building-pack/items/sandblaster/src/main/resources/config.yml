@@ -1,9 +1,11 @@
 id: sandblaster
 
 display:
-  title: "&bSandblaster"
+  title: "&6Sandblaster"
   description:
-    - "&7Etches smooth stone into chiseled bricks."
+    - "&7Etch &fstone&7 into &7chiseled stone bricks&7."
+    - "&7Affects blocks in a small radius around target."
+    - "&7Consumes one charge per blast."
 
 item:
   base_material: paper

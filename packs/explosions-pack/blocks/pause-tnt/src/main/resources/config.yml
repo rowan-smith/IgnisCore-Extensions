@@ -1,9 +1,11 @@
 id: pause-tnt
 
 display:
-  title: "&bPause TNT"
+  title: "&dPause TNT"
   description:
-    - "&7Fuse pauses mid-countdown before detonating."
+    - "&7The countdown &dstops&7. And waits."
+    - "&7Just when you relax, time resumes."
+    - "&7Patience is its cruelest trick."
 
 block:
   placeable: true

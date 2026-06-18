@@ -1,9 +1,11 @@
 id: paint-mixer
 
 display:
-  title: "&bPaint Mixer"
+  title: "&6Paint Mixer"
   description:
-    - "&7Colorful mixing particles while placed."
+    - "&7Cycles &bredstone&7, wax, and compost particles."
+    - "&7Ambient color-mixing decoration."
+    - "&7&bPassive&7 while placed."
 
 block:
   placeable: true

@@ -1,9 +1,11 @@
 id: sapling-nursery
 
 display:
-  title: "&bSapling Nursery"
+  title: "&aSapling Nursery"
   description:
-    - "&7Auto-plants saplings from storage."
+    - "&7&eOpen&7 to store saplings and propagules."
+    - "&7Auto-plants saplings on adjacent grass/dirt."
+    - "&7Consumes one sapling per planting."
 
 block:
   placeable: true

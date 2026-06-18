@@ -3,7 +3,9 @@ id: ore-echo
 display:
   title: "&bOre Echo"
   description:
-    - "&7Beams toward the nearest ore in range."
+    - "&7Scans for nearest ore within &f12 blocks&7."
+    - "&7Crit beam points toward detected ore."
+    - "&7&bAmethyst&7 chime on ore ping."
 
 block:
   placeable: true

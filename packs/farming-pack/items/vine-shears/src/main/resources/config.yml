@@ -1,9 +1,11 @@
 id: vine-shears
 
 display:
-  title: "&bVine Shears"
+  title: "&aVine Shears"
   description:
-    - "&7Cuts connected vine clusters from one click."
+    - "&7Click vines to flood-fill cut up to &f32 blocks&7."
+    - "&7Removes vine, weeping, and twisting variants."
+    - "&7Reports cut count in chat."
 
 item:
   base_material: paper

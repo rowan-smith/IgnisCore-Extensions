@@ -1,9 +1,11 @@
 id: crop-accelerator
 
 display:
-  title: "&bCrop Accelerator"
+  title: "&aCrop Accelerator"
   description:
-    - "&7Bonemeals crops in a radius."
+    - "&7Bonemeals crops in a &a4-block&7 radius each tick."
+    - "&7Bone-meal sound on growth pulse."
+    - "&7&bPassive&7 crop growth booster."
 
 block:
   placeable: true

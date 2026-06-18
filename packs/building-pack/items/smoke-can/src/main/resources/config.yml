@@ -1,9 +1,11 @@
 id: smoke-can
 
 display:
-  title: "&bSmoke Can"
+  title: "&6Smoke Can"
   description:
-    - "&7Throwable; thick smoke wall, zero damage."
+    - "&7&eThrow&7 a smoke grenade (snowball projectile)."
+    - "&7Billows &8campfire smoke&7 and cloud particles."
+    - "&7Lasts ~20 seconds of concealment."
 
 item:
   base_material: paper

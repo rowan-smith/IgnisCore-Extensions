@@ -1,9 +1,11 @@
 id: keyed-hatch
 
 display:
-  title: "&bKeyed Hatch"
+  title: "&9Keyed Hatch"
   description:
-    - "&7Remote-toggle iron hatch or bars."
+    - "&7&bRemote&7-controlled hatch linked to a key."
+    - "&7Opens and closes with &btrapdoor&7 feedback."
+    - "&7Part of the &9keyed hatch&7 network."
 
 block:
   placeable: true

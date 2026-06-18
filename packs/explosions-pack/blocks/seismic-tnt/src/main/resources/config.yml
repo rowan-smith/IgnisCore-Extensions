@@ -1,10 +1,10 @@
 id: seismic-tnt
 
 display:
-  title: "&6Seismic TNT"
+  title: "&cSeismic TNT"
   description:
-    - "&7Grid of delayed micro-blasts"
-    - "&7Feels like an earthquake"
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e2.0s&7, then ripples the ground in rolling shockwaves."
 
 block:
   placeable: true

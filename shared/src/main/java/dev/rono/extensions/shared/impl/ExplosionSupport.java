@@ -53,9 +53,11 @@ final class ExplosionSupport {
 
     static void createExplosion(IgnisWorld world, IgnisLocation location, Map<String, Object> customData,
                                        double defaultPower, boolean defaultFire) {
+        float power = resolvePower(customData, defaultPower);
+        TheatricsSupport.detonationFlash(world, location, power);
         world.createExplosion(
                 location,
-                resolvePower(customData, defaultPower),
+                power,
                 StrategySupport.customBoolean(customData, "fire", defaultFire),
                 StrategySupport.customBoolean(customData, "blockDamage", true)
         );

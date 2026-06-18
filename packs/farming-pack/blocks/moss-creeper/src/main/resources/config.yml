@@ -1,9 +1,11 @@
 id: moss-creeper
 
 display:
-  title: "&bMoss Creeper"
+  title: "&aMoss Creeper"
   description:
     - "&7Spreads moss on blocks near water."
+    - "&f3-block&7 radius mossification each tick."
+    - "&7&bPassive&7 biome-greening block."
 
 block:
   placeable: true

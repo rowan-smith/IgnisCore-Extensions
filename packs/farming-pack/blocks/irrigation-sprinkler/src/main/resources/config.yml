@@ -1,9 +1,11 @@
 id: irrigation-sprinkler
 
 display:
-  title: "&bIrrigation Sprinkler"
+  title: "&aIrrigation Sprinkler"
   description:
-    - "&7Consumes water to irrigate farmland."
+    - "&7Open to load a &9water bucket&7 in the tank slot."
+    - "&7Sprays falling-water particles over nearby &efarmland&7."
+    - "&7Consumes one bucket per watering cycle."
 
 block:
   placeable: true

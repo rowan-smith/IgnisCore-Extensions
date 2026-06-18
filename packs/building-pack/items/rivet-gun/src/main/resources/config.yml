@@ -1,9 +1,11 @@
 id: rivet-gun
 
 display:
-  title: "&bRivet Gun"
+  title: "&6Rivet Gun"
   description:
-    - "&7Reinforces clicked block to obsidian."
+    - "&7Reinforce a block into &8obsidian&7 (or configured material)."
+    - "&7Cannot rivet already-reinforced blocks."
+    - "&7Consumes one rivet per use."
 
 item:
   base_material: paper

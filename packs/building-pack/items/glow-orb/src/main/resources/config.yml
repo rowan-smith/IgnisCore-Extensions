@@ -1,9 +1,11 @@
 id: glow-orb
 
 display:
-  title: "&bGlow Orb"
+  title: "&6Glow Orb"
   description:
-    - "&7Throwable; emits light particles ~60s."
+    - "&7&eThrow&7 a glowing snowball projectile."
+    - "&7Leaves a trail of &fend-rod&7 particles."
+    - "&7Lasts about a minute before despawning."
 
 item:
   base_material: paper

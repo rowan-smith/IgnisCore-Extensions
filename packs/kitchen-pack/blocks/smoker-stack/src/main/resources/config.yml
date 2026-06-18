@@ -1,9 +1,11 @@
 id: smoker-stack
 
 display:
-  title: "&bSmoker Stack"
+  title: "&6Smoker Stack"
   description:
-    - "&7Rising smoke stack while placed."
+    - "&7Tall &bcampfire&7 signal smoke column."
+    - "&7Visible from a distance."
+    - "&7Decorative kitchen chimney."
 
 block:
   placeable: true

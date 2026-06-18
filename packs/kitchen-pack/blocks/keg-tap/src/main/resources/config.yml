@@ -1,9 +1,11 @@
 id: keg-tap
 
 display:
-  title: "&bKeg Tap"
+  title: "&6Keg Tap"
   description:
-    - "&7Refills drink items from bucket input."
+    - "&7Open GUI: insert a &9water&7 or &fmilk bucket&7."
+    - "&7Taps into a &dpotion&7 in the output slot."
+    - "&7Bottle-fill sound on each pour."
 
 block:
   placeable: true

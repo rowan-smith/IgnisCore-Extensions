@@ -3,7 +3,9 @@ id: mob-radar
 display:
   title: "&bMob Radar"
   description:
-    - "&7Alerts when hostiles enter radar range."
+    - "&7Detects hostiles within &f16 blocks&7."
+    - "&7Crimson pulse &ering&7 scales with mob count."
+    - "&7Bass note alarm pitch rises with threats."
 
 block:
   placeable: true

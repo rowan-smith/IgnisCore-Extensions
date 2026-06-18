@@ -1,9 +1,10 @@
 id: black-hole-tnt
 
 display:
-  title: "&6Black Hole TNT"
+  title: "&cBlack Hole TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e5.0s&7, then drags entities inward before collapsing."
 
 block:
   placeable: true

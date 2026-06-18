@@ -1,9 +1,10 @@
 id: phantom-grenade
 
 display:
-  title: "&6Phantom Grenade"
+  title: "&cPhantom Grenade"
   description:
-    - "&7Throwable flare explosive"
+    - "&7Right-click to &ethrow&7."
+    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:
   base_material: snowball

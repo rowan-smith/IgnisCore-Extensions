@@ -1,9 +1,11 @@
 id: cartographers-espresso
 
 display:
-  title: "&bCartographer's Espresso"
+  title: "&eCartographer's Espresso"
   description:
-    - "&7Speed + compass heading toward ruins."
+    - "&7Drink for &bSpeed II&7 for 30 seconds."
+    - "&7Sets compass heading toward &fruins&7."
+    - "&7Pulses an &bend-rod&7 &ering&7 at your feet."
 
 item:
   base_material: paper

@@ -1,9 +1,11 @@
 id: compost-tea-brewer
 
 display:
-  title: "&bCompost Tea Brewer"
+  title: "&6Compost Tea Brewer"
   description:
-    - "&7Splash compost tea bonemeals nearby crops."
+    - "&7Open GUI: insert &fbone meal&7 + &fglass bottle&7."
+    - "&7Brews a &dsplash potion&7 (compost tea)."
+    - "&7Happy-villager sparkle on completion."
 
 block:
   placeable: true

@@ -1,9 +1,11 @@
 id: pollinator-block
 
 display:
-  title: "&bPollinator Block"
+  title: "&aPollinator Block"
   description:
-    - "&7Bonemeals crops in a small radius."
+    - "&7Bonemeals crops in a &a3-block&7 radius."
+    - "&7Bee pollinate sound and happy-villager particles."
+    - "&7&bPassive&7 crop pollinator."
 
 block:
   placeable: true

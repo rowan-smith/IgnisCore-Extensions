@@ -1,9 +1,11 @@
 id: socket-lamp
 
 display:
-  title: "&bSocket Lamp"
+  title: "&9Socket Lamp"
   description:
-    - "&7Remote-cyclable lamp; light level 0–15."
+    - "&7When lit remotely, emits &bend-rod&7 particles."
+    - "&7Brightness scales with configured light level."
+    - "&7Pairs with lamp dimmer item."
 
 block:
   placeable: true

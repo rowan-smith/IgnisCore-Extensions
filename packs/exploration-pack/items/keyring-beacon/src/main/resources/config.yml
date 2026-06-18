@@ -3,7 +3,9 @@ id: keyring-beacon
 display:
   title: "&bKeyring Beacon"
   description:
-    - "&7Cycles beacon slots saving coordinates."
+    - "&7Save up to &f3 beacon slots&7 with your coords."
+    - "&7Cycles through numbered slots on each use."
+    - "&7Pulses an &bend-rod&7 &ering&7 when marking."
 
 item:
   base_material: paper

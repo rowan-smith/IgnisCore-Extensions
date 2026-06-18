@@ -5,10 +5,11 @@
 id: erupting-tnt
 
 display:
-  title: "Erupting TNT"
+  title: "&cErupting TNT"
   description:
-    - "&4Complete"
-    - "&4Destruction"
+    - "&7Launches primed TNT during the fuse, then explodes."
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e5.0s&7, then pulls experience orbs inward."
 
 block:
   placeable: true

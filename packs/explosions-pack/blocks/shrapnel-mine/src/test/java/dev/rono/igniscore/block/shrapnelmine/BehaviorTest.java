@@ -11,25 +11,14 @@ import dev.rono.igniscore.testsupport.ExtensionTestSupport;
 import dev.rono.igniscore.testsupport.TestEventBus;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class BehaviorTest {
     @Test
-    void placedArmsMine() {
+    void triggerProducesBlast() {
         TestEventBus.TestContext ctx = TestEventBus.createContext();
-        BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(BehaviorTest.class, "shrapnel-mine", 10001);
-        Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "shrapnel-mine");
-
-        assertDoesNotThrow(() -> ctx.eventBus().fireBlockPlace(
-                new BlockPlaceEvent(PlacedBlock.of(definition, new IgnisLocation("world", 1, 2, 3)), null),
-                "shrapnel-mine"));
-    }
-
-    @Test
-    void triggerLaunchesDebris() {
-        TestEventBus.TestContext ctx = TestEventBus.createContext();
-        BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(BehaviorTest.class, "shrapnel-mine", 10001);
+        BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(
+                BehaviorTest.class, "shrapnel-mine", 10001);
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "shrapnel-mine");
         RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
 

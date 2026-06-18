@@ -1,9 +1,11 @@
 id: chorus-bite
 
 display:
-  title: "&bChorus Bite"
+  title: "&eChorus Bite"
   description:
-    - "&7Random 8-block sideways warp."
+    - "&7&eDrink&7 for a chaotic sideways warp."
+    - "&7Spawns portal particles at origin and destination."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

@@ -1,9 +1,11 @@
 id: ice-cream-freezer
 
 display:
-  title: "&bIce Cream Freezer"
+  title: "&6Ice Cream Freezer"
   description:
-    - "&7Crafts ice cream; eating grants fire resistance."
+    - "&7Open GUI: insert &fsnow&7, &csweet berries&7, and &fmilk bucket&7."
+    - "&7Outputs a &fbowl&7 of ice cream each tick."
+    - "&7Cloud particles and powder-snow sound."
 
 block:
   placeable: true

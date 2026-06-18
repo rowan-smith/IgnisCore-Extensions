@@ -1,9 +1,11 @@
 id: sprinkler-head
 
 display:
-  title: "&bSprinkler Head"
+  title: "&9Sprinkler Head"
   description:
-    - "&7Armed sprinkler irrigates farmland."
+    - "&7When armed, waters farmland in a &f4-block&7 radius."
+    - "&7Falling-water particles on hydrated soil."
+    - "&7Pairs with sprinkler timer for automation."
 
 block:
   placeable: true

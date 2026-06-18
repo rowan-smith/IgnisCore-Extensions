@@ -1,9 +1,11 @@
 id: mulch-spreader
 
 display:
-  title: "&bMulch Spreader"
+  title: "&aMulch Spreader"
   description:
-    - "&7Mossifies paths or spreads moss near water."
+    - "&7Spread mulch on the block below you."
+    - "&7Turns paths into &amosm blocks&7."
+    - "&7Otherwise mossifies blocks near water."
 
 item:
   base_material: paper

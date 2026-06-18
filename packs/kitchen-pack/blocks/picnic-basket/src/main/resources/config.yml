@@ -1,9 +1,11 @@
 id: picnic-basket
 
 display:
-  title: "&bPicnic Basket"
+  title: "&6Picnic Basket"
   description:
-    - "&7Shared consumable storage; duo open grants saturation."
+    - "&7Open for &f6 slots&7 of portable food storage."
+    - "&7Carry snacks on the go."
+    - "&7Tracks last-&eopen&7 time per block."
 
 block:
   placeable: true

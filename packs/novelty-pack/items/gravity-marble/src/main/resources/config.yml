@@ -1,9 +1,11 @@
 id: gravity-marble
 
 display:
-  title: "&bGravity Marble"
+  title: "&dGravity Marble"
   description:
-    - "&7Fast throwable marble with sparkle trail."
+    - "&7It rolls a little too &deagerly&7."
+    - "&7A glittering trail follows wherever it goes."
+    - "&7Where it stops, nobody knows."
 
 item:
   base_material: paper

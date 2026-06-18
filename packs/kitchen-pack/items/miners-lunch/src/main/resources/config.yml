@@ -1,9 +1,11 @@
 id: miners-lunch
 
 display:
-  title: "&bMiner's Lunch"
+  title: "&eMiner's Lunch"
   description:
-    - "&7Haste + saturation; 10-minute cooldown."
+    - "&7Eat for &eHaste&7 and &6Saturation II&7."
+    - "&760 seconds of mining speed and food fill."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

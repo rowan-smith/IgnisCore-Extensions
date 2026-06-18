@@ -1,9 +1,10 @@
 id: solar-flare-tnt
 
 display:
-  title: "&6Solar Flare TNT"
+  title: "&cSolar Flare TNT"
   description:
-    - "&7Flare explosive"
+    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&7Fuses for &e3.5s&7, then blinds and disorients without killing."
 
 block:
   placeable: true

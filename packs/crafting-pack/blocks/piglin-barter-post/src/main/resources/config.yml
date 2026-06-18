@@ -1,9 +1,11 @@
 id: piglin-barter-post
 
 display:
-  title: "&bPiglin Barter Post"
+  title: "&ePiglin Barter Post"
   description:
-    - "&7Trades gold ingots for nether loot."
+    - "&7Open GUI: insert a &6gold ingot&7."
+    - "&7Trades for random nether loot (pearls, crying &bobsidian&7, etc.)."
+    - "&7Piglin admiring sound on barter."
 
 block:
   placeable: true
