@@ -27,6 +27,8 @@ final class SeedBombListeners implements OnItemClickListener {
                 double speed = StrategySupport.customDouble(event.definition().getCustomData(), "throwSpeed", 1.1);
                 Object bomb = world.spawnProjectile("egg", eye, event.player(), 0, 0, speed);
                 event.item().setAmount(event.item().getAmount() - 1);
+                ExtensionShared.theatrics().sparkle(world, eye, "HAPPY_VILLAGER", 8);
+                world.playSound(eye, "ENTITY_EGG_THROW", 0.8f, 1.0f);
                 if (bomb == null) {
                     return;
                 }

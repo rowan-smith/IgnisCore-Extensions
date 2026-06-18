@@ -22,7 +22,8 @@ final class MulchSpreaderListeners implements OnItemClickListener {
     public void onItemClick(ItemClickEvent event) {
         if ("use".equals(event.actionToken())) {
                 IgnisWorld world = event.player().getWorld();
-                IgnisLocation below = event.player().getLocation().add(0, -1, 0);
+                IgnisLocation loc = event.player().getLocation();
+                IgnisLocation below = loc.add(0, -1, 0);
                 String material = world.getBlockMaterialKey(below).toLowerCase();
                 if (material.contains("dirt_path") || material.contains("path")) {
                     world.setBlockMaterialKey(below, "moss_block");
@@ -30,6 +31,8 @@ final class MulchSpreaderListeners implements OnItemClickListener {
                     world.playSound(below, "BLOCK_MOSS_PLACE", 0.6f, 1.0f);
                 } else {
                     ExtensionShared.scan().mossifyNearWater(world, below, 2);
+                    ExtensionShared.theatrics().sparkle(world, loc, "SPORE_BLOSSOM_AIR", 4);
+                    world.playSound(loc, "BLOCK_MOSS_PLACE", 0.6f, 1.0f);
                 }
                 event.item().setAmount(Math.max(0, event.item().getAmount() - 1));
             }

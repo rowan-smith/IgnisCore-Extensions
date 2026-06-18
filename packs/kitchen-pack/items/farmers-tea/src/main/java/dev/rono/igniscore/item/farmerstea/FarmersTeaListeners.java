@@ -52,6 +52,7 @@ final class FarmersTeaListeners implements OnItemClickListener {
                     case "farmers-tea" -> {
                         ExtensionShared.scan().bonemealRadius(world, loc, StrategySupport.customInt(event.definition().getCustomData(), "cropRadius", 5));
                         event.player().sendMessage("<green>Farmer's tea nourishes nearby crops.</green>");
+                        ExtensionShared.theatrics().sparkle(world, loc, "HAPPY_VILLAGER", 4);
                     }
                     case "divers-salt" -> {
                         event.player().applyPotionEffect("WATER_BREATHING", 1800, 0);

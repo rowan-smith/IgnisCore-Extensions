@@ -98,7 +98,12 @@ final class LuckDustListeners implements OnItemClickListener {
                     }
                     case "luck-dust" -> {
                         if (event.clickedBlock() == null) {
+                            IgnisLocation eye = event.player().getEyeLocation();
                             event.player().sendMessage("<gray>Sprinkle luck dust on the ground near a chest.</gray>");
+                            ExtensionShared.theatrics().sparkle(world, eye, "HAPPY_VILLAGER", 4);
+                            world.playSound(eye, "ENTITY_EXPERIENCE_ORB_PICKUP", 0.6f, 1.4f);
+                            ExtensionShared.consumable().markUsed(nbt, event.item(), cooldownKey);
+                            ExtensionShared.consumable().consumeOne(event.item());
                             return;
                         }
                         nbt.setItemBoolean(event.item(), "ignis:luck_dust_active", true);

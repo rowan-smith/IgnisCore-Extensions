@@ -26,10 +26,14 @@ final class VineShearsListeners implements OnItemClickListener {
     @Override
     public void onItemClick(ItemClickEvent event) {
         if ("use".equals(event.actionToken())) {
+                IgnisWorld world = event.player().getWorld();
                 if (event.clickedBlock() == null) {
+                    IgnisLocation eye = event.player().getEyeLocation();
+                    event.player().sendMessage("<gray>Click vines to shear them.</gray>");
+                    ExtensionShared.theatrics().sparkle(world, eye, "CLOUD", 4);
+                    world.playSound(eye, "BLOCK_GRASS_BREAK", 0.6f, 1.2f);
                     return;
                 }
-                IgnisWorld world = event.player().getWorld();
                 int max = StrategySupport.customInt(event.definition().getCustomData(), "maxVines", 32);
                 Set<String> visited = new HashSet<>();
                 Queue<IgnisLocation> queue = new ArrayDeque<>();
