@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>dev.rono</groupId>
+    <artifactId>igniscore-extensions</artifactId>
+    <version>${revision}</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+
+  <groupId>dev.rono.packs.exploration</groupId>
+  <artifactId>exploration-pack</artifactId>
+  <packaging>pom</packaging>
+
+  <name>exploration-pack</name>
+
+  <modules>
+    <module>blocks/blueprint-projector</module>
+    <module>blocks/checkpoint-obelisk</module>
+    <module>blocks/entity-camera</module>
+    <module>blocks/light-beacon</module>
+    <module>blocks/mob-radar</module>
+    <module>blocks/ore-echo</module>
+    <module>blocks/ore-sniffer</module>
+    <module>blocks/quarry-cache</module>
+    <module>blocks/waypoint-marker</module>
+    <module>blocks/xp-vacuum</module>
+    <module>items/atlas-imprinter</module>
+    <module>items/block-stethoscope</module>
+    <module>items/chunk-grid-overlay</module>
+    <module>items/keyring-beacon</module>
+    <module>items/ore-xray-goggles</module>
+    <module>items/player-chronicle-book</module>
+    <module>items/structure-compass</module>
+    <module>items/trait-badge</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>dev.rono.extensions</groupId>
+        <artifactId>shared</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
+        <version>${ignis.api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${ignis.api.groupId}</groupId>
+        <artifactId>${ignis.api.artifactId}</artifactId>
+        <version>${ignis.api.version}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>dev.rono.extensions</groupId>
+      <artifactId>shared</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>${ignis.api.groupId}</groupId>
+      <artifactId>api</artifactId>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
+          <configuration>
+            <finalName>${project.artifactId}</finalName>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
