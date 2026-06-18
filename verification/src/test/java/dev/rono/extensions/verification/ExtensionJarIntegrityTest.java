@@ -1,4 +1,4 @@
-package dev.rono.extensions.shared.config;
+package dev.rono.extensions.verification;
 
 import dev.rono.igniscore.api.extension.ExtensionManifest;
 import org.junit.jupiter.params.ParameterizedTest;
