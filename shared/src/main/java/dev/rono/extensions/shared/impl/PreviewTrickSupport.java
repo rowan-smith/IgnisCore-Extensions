@@ -29,7 +29,7 @@ final class PreviewTrickSupport {
         for (int i = 0; i < decoyCount; i++) {
             double angle = (Math.PI * 2 * i) / decoyCount;
             IgnisLocation decoy = realCenter.add(Math.cos(angle) * spread, 0, Math.sin(angle) * spread);
-            effects.playFakeExplosion(decoy, power, world.getPlayersNear(decoy, 48));
+            VisualEffectSupport.safeFakeExplosion(effects, world, decoy, power, world.getPlayersNear(decoy, 48));
             world.spawnParticle(decoy, "EXPLOSION", 2, 0.2, 0.2, 0.2, 0.01);
         }
     }
@@ -41,10 +41,8 @@ final class PreviewTrickSupport {
                                        double radius,
                                        float fakePower) {
         var players = world.getPlayersNear(center, radius);
-        effects.playFakeExplosion(center, fakePower, players);
-        if (protocol != null && protocol.isEnabled()) {
-            protocol.sendFakeExplosion(center, fakePower, players);
-        }
+        VisualEffectSupport.safeFakeExplosion(effects, world, center, fakePower, players);
+        VisualEffectSupport.safeProtocolExplosion(protocol, world, center, fakePower, players);
         for (IgnisPlayer player : players) {
             player.getWorld().playSound(player.getLocation(), "ENTITY_GENERIC_EXPLODE", 4.0f, 0.4f);
             player.getWorld().playSound(player.getLocation(), "ENTITY_LIGHTNING_BOLT_THUNDER", 3.0f, 0.3f);
@@ -132,7 +130,7 @@ final class PreviewTrickSupport {
                 }
                 return;
             }
-            effects.playFakeExplosion(center, 5.0f, world.getPlayersNear(center, 32));
+            VisualEffectSupport.safeFakeExplosion(effects, world, center, 5.0f, world.getPlayersNear(center, 32));
             world.spawnParticle(center, "EXPLOSION", 2, 0.5, 0.5, 0.5, 0.01);
         }, delayTicks, delayTicks);
     }

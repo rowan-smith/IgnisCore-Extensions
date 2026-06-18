@@ -39,7 +39,7 @@ final class ConcussionBehavior {
         world.spawnParticle(loc, "EXPLOSION_EMITTER", 4, 1.5, 0.8, 1.5, 0.0);
         world.spawnParticle(loc, "CLOUD", 120, knockbackRadius * 0.35, 1.2, knockbackRadius * 0.35, 0.06);
 
-        context.effects().playFakeExplosion(loc, 8.0f, world.getPlayersNear(loc, knockbackRadius));
+        ExtensionShared.preview().fakeExplosion(context.effects(), world, loc, 8.0f, world.getPlayersNear(loc, knockbackRadius));
         ExtensionShared.blasts().applyKnockback(world, loc, knockbackRadius, knockbackStrength, true);
         ExtensionShared.explosion().create(world, loc, terrainPower, false, false);
     }
