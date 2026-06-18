@@ -1,10 +1,10 @@
 id: featherfall-charge
 
 display:
-  title: "&cFeatherfall Charge"
+  title: "&c&lFeatherfall Charge"
   description:
-    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
-    - "&7Fuses for &e2.5s&7, then vanishes before the hidden blast."
+    - "&r&r&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&r&r&7Fuses for &e2.5s&7, then vanishes before the hidden blast."
 
 block:
   placeable: true

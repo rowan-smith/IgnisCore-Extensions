@@ -1,11 +1,11 @@
 id: timed-charge
 
 display:
-  title: "&6Timed Charge"
+  title: "&6&lTimed Charge"
   description:
-    - "&7Place it, then link a &edetonator&7."
-    - "&7Cannot be lit with &fflint and steel&7."
-    - "&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
+    - "&r&r&7Place it, then link a &edetonator&7."
+    - "&r&r&7Cannot be lit with &fflint and steel&7."
+    - "&r&r&7&eRight-click&7 the &fdetonator&7 to blow it remotely."
 
 block:
   placeable: true

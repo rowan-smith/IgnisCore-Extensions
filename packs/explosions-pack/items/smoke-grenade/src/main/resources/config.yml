@@ -1,10 +1,10 @@
 id: smoke-grenade
 
 display:
-  title: "&cSmoke Grenade"
+  title: "&c&lSmoke Grenade"
   description:
-    - "&7Right-click to &ethrow&7."
-    - "&7Billows a thick &8smoke screen&7 for &e6s&7; no explosion."
+    - "&r&r&7Right-click to &ethrow&7."
+    - "&r&r&7Detonates after &e4.0s&7; flies on a timed fuse after thrown."
 
 item:
   base_material: snowball

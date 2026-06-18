@@ -1,10 +1,10 @@
 id: bouncing-betty
 
 display:
-  title: "&cBouncing Betty"
+  title: "&c&lBouncing Betty"
   description:
-    - "&7Bury it to arm a &8proximity mine&7."
-    - "&7Arms when creatures draw near."
+    - "&r&r&7Bury it to arm a &8proximity mine&7."
+    - "&r&r&7Arms when creatures draw near."
 
 block:
   placeable: true

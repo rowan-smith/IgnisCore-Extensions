@@ -129,7 +129,30 @@ def humanize(ext_id: str) -> str:
 
 
 def strip_title_color(title: str) -> str:
-    return re.sub(r"^&[0-9a-fk-or]", "", title, flags=re.I)
+    _, name = strip_title_decorations(title)
+    return name
+
+
+def strip_title_decorations(title: str) -> tuple[str, str]:
+    color_match = re.match(r"^(&[0-9a-fk-or])", title, re.I)
+    color = color_match.group(1) if color_match else ""
+    name = title[len(color):] if color else title
+    name = re.sub(r"^&l", "", name, flags=re.I)
+    return color, name
+
+
+def format_display_title(title: str, default_color: str = "&6") -> str:
+    color, name = strip_title_decorations(title)
+    if not name:
+        name = title
+    if not color:
+        color = default_color
+    return f"{color}&l{name}"
+
+
+def ensure_non_italic_lore(line: str) -> str:
+    line = re.sub(r"^(&r&r)+", "", line)
+    return f"&r&r{line}"
 
 
 def has_accent_color(line: str) -> bool:
@@ -173,8 +196,14 @@ def title_color(ext_id: str, rel: str) -> str:
 
 
 def themed_title(ext_id: str, rel: str, title: str | None = None) -> str:
-    name = strip_title_color(title) if title else humanize(ext_id)
-    return f"{title_color(ext_id, rel)}{name}"
+    if title:
+        color, name = strip_title_decorations(title)
+        if not name:
+            name = humanize(ext_id)
+        if not color:
+            color = title_color(ext_id, rel)
+        return f"{color}&l{name}"
+    return f"{title_color(ext_id, rel)}&l{humanize(ext_id)}"
 
 
 def polish_lore_lines(lines: list[str]) -> list[str]:
@@ -229,9 +258,9 @@ def polish_lore_lines(lines: list[str]) -> list[str]:
                 flags=re.I,
             )
             line = prefix + body
-        polished.append(line)
+        polished.append(ensure_non_italic_lore(line))
     if len(polished) < 2:
-        polished.append("&7Place or interact to use.")
+        polished.append(ensure_non_italic_lore("&7Place or interact to use."))
     return polished[:5]
 
 

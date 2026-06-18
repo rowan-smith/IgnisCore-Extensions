@@ -1,11 +1,11 @@
 id: bricklayers-broth
 
 display:
-  title: "&eBricklayer's Broth"
+  title: "&e&lBricklayer's Broth"
   description:
-    - "&7Drink for &eHaste II&7 for 90 seconds."
-    - "&7Grants &ffast-place&7 flag on the item."
-    - "&7Speeds up block placement."
+    - "&r&r&7Drink for &eHaste II&7 for 90 seconds."
+    - "&r&r&7Grants &ffast-place&7 flag on the item."
+    - "&r&r&7Speeds up block placement."
 
 item:
   base_material: paper

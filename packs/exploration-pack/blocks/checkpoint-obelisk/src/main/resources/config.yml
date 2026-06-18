@@ -1,11 +1,11 @@
 id: checkpoint-obelisk
 
 display:
-  title: "&bCheckpoint Obelisk"
+  title: "&b&lCheckpoint Obelisk"
   description:
-    - "&7&eRight-click&7 to record your coordinates."
-    - "&7Shows coords on the action bar."
-    - "&7Totem pulse &ering&7 marks the save."
+    - "&r&r&7&eRight-click&7 to record your coordinates."
+    - "&r&r&7Shows coords on the action bar."
+    - "&r&r&7Totem pulse &ering&7 marks the save."
 
 block:
   placeable: true

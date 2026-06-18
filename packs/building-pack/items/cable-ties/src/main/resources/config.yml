@@ -1,11 +1,11 @@
 id: cable-ties
 
 display:
-  title: "&6Cable Ties"
+  title: "&6&lCable Ties"
   description:
-    - "&7Click two &ffence posts&7 to tie them."
-    - "&7Draws a particle cable between posts."
-    - "&7Consumes one tie per &elink&7."
+    - "&r&r&7Click two &ffence posts&7 to tie them."
+    - "&r&r&7Draws a particle cable between posts."
+    - "&r&r&7Consumes one tie per &elink&7."
 
 item:
   base_material: paper

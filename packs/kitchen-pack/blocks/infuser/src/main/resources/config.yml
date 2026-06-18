@@ -1,11 +1,11 @@
 id: infuser
 
 display:
-  title: "&6Infuser"
+  title: "&6&lInfuser"
   description:
-    - "&7&bEnchant&7 particles and high-pitch chime."
-    - "&7Ambient infusion station."
-    - "&7Decorative potion and flavor infuser."
+    - "&r&r&7&bEnchant&7 particles and high-pitch chime."
+    - "&r&r&7Ambient infusion station."
+    - "&r&r&7Decorative potion and flavor infuser."
 
 block:
   placeable: true

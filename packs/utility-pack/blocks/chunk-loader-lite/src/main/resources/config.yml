@@ -1,11 +1,11 @@
 id: chunk-loader-lite
 
 display:
-  title: "&6Chunk Loader Lite"
+  title: "&6&lChunk Loader Lite"
   description:
-    - "&7Open to insert &8coal&7, &8charcoal&7, or &6blaze rods&7."
-    - "&7Keeps the chunk force-loaded while fueled."
-    - "&7Consumes fuel each tick cycle."
+    - "&r&r&7Open to insert &8coal&7, &8charcoal&7, or &6blaze rods&7."
+    - "&r&r&7Keeps the chunk force-loaded while fueled."
+    - "&r&r&7Consumes fuel each tick cycle."
 
 block:
   placeable: true

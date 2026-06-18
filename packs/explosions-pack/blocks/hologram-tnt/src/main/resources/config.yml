@@ -1,11 +1,11 @@
 id: hologram-tnt
 
 display:
-  title: "&dHologram TNT"
+  title: "&d&lHologram TNT"
   description:
-    - "&7Is it really there? Are &dany&7 of them?"
-    - "&7Copies dance while the real fuse burns."
-    - "&7Seeing is no longer believing."
+    - "&r&r&7Is it really there? Are &dany&7 of them?"
+    - "&r&r&7Copies dance while the real fuse burns."
+    - "&r&r&7Seeing is no longer believing."
 
 block:
   placeable: true

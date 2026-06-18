@@ -1,11 +1,11 @@
 id: keyed-hatch
 
 display:
-  title: "&9Keyed Hatch"
+  title: "&9&lKeyed Hatch"
   description:
-    - "&7&bRemote&7-controlled hatch linked to a key."
-    - "&7Opens and closes with &btrapdoor&7 feedback."
-    - "&7Part of the &9keyed hatch&7 network."
+    - "&r&r&7&bRemote&7-controlled hatch linked to a key."
+    - "&r&r&7Opens and closes with &btrapdoor&7 feedback."
+    - "&r&r&7Part of the &9keyed hatch&7 network."
 
 block:
   placeable: true

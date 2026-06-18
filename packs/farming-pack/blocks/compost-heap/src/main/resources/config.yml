@@ -1,11 +1,11 @@
 id: compost-heap
 
 display:
-  title: "&aCompost Heap"
+  title: "&a&lCompost Heap"
   description:
-    - "&7&bComposter&7 particles and fill sound."
-    - "&7Ambient composting activity while placed."
-    - "&7Pairs with farming setups."
+    - "&r&r&7&bComposter&7 particles and fill sound."
+    - "&r&r&7Ambient composting activity while placed."
+    - "&r&r&7Pairs with farming setups."
 
 block:
   placeable: true

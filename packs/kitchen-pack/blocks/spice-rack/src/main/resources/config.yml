@@ -1,11 +1,11 @@
 id: spice-rack
 
 display:
-  title: "&6Spice Rack"
+  title: "&6&lSpice Rack"
   description:
-    - "&7&eOpen&7 to season food with spices."
-    - "&7Food + spice grants &eHaste&7 and brief &6Saturation&7."
-    - "&7Seasoning station for kitchen builds."
+    - "&r&r&7&eOpen&7 to season food with spices."
+    - "&r&r&7Food + spice grants &eHaste&7 and brief &6Saturation&7."
+    - "&r&r&7Seasoning station for kitchen builds."
 
 block:
   placeable: true

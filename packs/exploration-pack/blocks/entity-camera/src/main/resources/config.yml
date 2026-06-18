@@ -1,11 +1,11 @@
 id: entity-camera
 
 display:
-  title: "&bEntity Camera"
+  title: "&b&lEntity Camera"
   description:
-    - "&7&eRight-click&7 to &bspectate&7 a nearby passive mob."
-    - "&e12-block&7 scan radius, &e5s&7 camera link."
-    - "&7&bEnd-rod&7 beam points at the target."
+    - "&r&r&7&eRight-click&7 to &bspectate&7 a nearby passive mob."
+    - "&r&r&e12-block&7 scan radius, &e5s&7 camera link."
+    - "&r&r&7&bEnd-rod&7 beam points at the target."
 
 block:
   placeable: true

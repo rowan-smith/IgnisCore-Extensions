@@ -1,11 +1,11 @@
 id: atlas-imprinter
 
 display:
-  title: "&bAtlas Imprinter"
+  title: "&b&lAtlas Imprinter"
   description:
-    - "&7Right-click to stamp your &fX/Z&7 coords on the item."
-    - "&7Stores numbered atlas imprints in NBT."
-    - "&7Useful for mapping waypoints."
+    - "&r&r&7Right-click to stamp your &fX/Z&7 coords on the item."
+    - "&r&r&7Stores numbered atlas imprints in NBT."
+    - "&r&r&7Useful for mapping waypoints."
 
 item:
   base_material: paper

@@ -1,11 +1,11 @@
 id: divers-salt
 
 display:
-  title: "&eDiver's Salt"
+  title: "&e&lDiver's Salt"
   description:
-    - "&7Eat for &3Water Breathing&7 for 90 seconds."
-    - "&7Plays sand-&eplace&7 sound on use."
-    - "&7Consumable with cooldown."
+    - "&r&r&7Eat for &3Water Breathing&7 for 90 seconds."
+    - "&r&r&7Plays sand-&eplace&7 sound on use."
+    - "&r&r&7Consumable with cooldown."
 
 item:
   base_material: paper

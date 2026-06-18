@@ -1,10 +1,10 @@
 id: gate-clicker
 
 display:
-  title: "&9Gate Clicker"
+  title: "&9&lGate Clicker"
   description:
-    - "&7Right-click a &ekeyed hatch&7 to link."
-    - "&7Use again to control it remotely."
+    - "&r&r&7Right-click a &ekeyed hatch&7 to link."
+    - "&r&r&7Use again to control it remotely."
 
 item:
   base_material: paper

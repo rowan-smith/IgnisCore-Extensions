@@ -1,10 +1,10 @@
 id: lightning-rod-tnt
 
 display:
-  title: "&cLightning Rod TNT"
+  title: "&c&lLightning Rod TNT"
   description:
-    - "&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
-    - "&7Fuses for &e3.0s&7, then calls chained lightning."
+    - "&r&r&7Place and ignite with &fflint and steel&7 or &6fire charge&7."
+    - "&r&r&7Fuses for &e3.0s&7, then calls chained lightning."
 
 block:
   placeable: true

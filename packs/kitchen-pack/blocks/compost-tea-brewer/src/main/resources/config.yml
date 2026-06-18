@@ -1,11 +1,11 @@
 id: compost-tea-brewer
 
 display:
-  title: "&6Compost Tea Brewer"
+  title: "&6&lCompost Tea Brewer"
   description:
-    - "&7Open GUI: insert &fbone meal&7 + &fglass bottle&7."
-    - "&7Brews a &dsplash potion&7 (compost tea)."
-    - "&7Happy-villager sparkle on completion."
+    - "&r&r&7Open GUI: insert &fbone meal&7 + &fglass bottle&7."
+    - "&r&r&7Brews a &dsplash potion&7 (compost tea)."
+    - "&r&r&7Happy-villager sparkle on completion."
 
 block:
   placeable: true

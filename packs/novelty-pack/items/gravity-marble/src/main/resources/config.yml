@@ -1,11 +1,11 @@
 id: gravity-marble
 
 display:
-  title: "&dGravity Marble"
+  title: "&d&lGravity Marble"
   description:
-    - "&7It rolls a little too &deagerly&7."
-    - "&7A glittering trail follows wherever it goes."
-    - "&7Where it stops, nobody knows."
+    - "&r&r&7It rolls a little too &deagerly&7."
+    - "&r&r&7A glittering trail follows wherever it goes."
+    - "&r&r&7Where it stops, nobody knows."
 
 item:
   base_material: paper

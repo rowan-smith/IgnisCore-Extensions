@@ -8,11 +8,11 @@
 id: phantom-tnt
 
 display:
-  title: "&dPhantom TNT"
+  title: "&d&lPhantom TNT"
   description:
-    - "&7Now you see it. &dSoon&7 you won't."
-    - "&7The blast seems to come from nowhere."
-    - "&7You'll never spot where it went."
+    - "&r&r&7Now you see it. &dSoon&7 you won't."
+    - "&r&r&7The blast seems to come from nowhere."
+    - "&r&r&7You'll never spot where it went."
 
 block:
   placeable: true

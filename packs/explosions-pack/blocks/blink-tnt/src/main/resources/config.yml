@@ -1,11 +1,11 @@
 id: blink-tnt
 
 display:
-  title: "&dBlink TNT"
+  title: "&d&lBlink TNT"
   description:
-    - "&7Here. There. &dEverywhere&7 in between."
-    - "&7It teleports when you aren't &dwatching&7."
-    - "&7Detonation is merely a &dsuggestion&7."
+    - "&r&r&7Here. There. &dEverywhere&7 in between."
+    - "&r&r&7It teleports when you aren't &dwatching&7."
+    - "&r&r&7Detonation is merely a &dsuggestion&7."
 
 block:
   placeable: true

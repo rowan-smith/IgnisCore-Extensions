@@ -1,10 +1,10 @@
 id: cascade-mine
 
 display:
-  title: "&8Cascade Mine"
+  title: "&8&lCascade Mine"
   description:
-    - "&7Bury it to arm a &8proximity mine&7."
-    - "&7Pulls experience orbs inward."
+    - "&r&r&7Bury it to arm a &8proximity mine&7."
+    - "&r&r&7Pulls experience orbs inward."
 
 block:
   placeable: true

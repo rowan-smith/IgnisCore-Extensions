@@ -1,11 +1,11 @@
 id: recycler
 
 display:
-  title: "&eRecycler"
+  title: "&e&lRecycler"
   description:
-    - "&7Scrap particles and &bgrindstone&7 sound."
-    - "&7Ambient recycling station."
-    - "&7Decorative scrap-processing block."
+    - "&r&r&7Scrap particles and &bgrindstone&7 sound."
+    - "&r&r&7Ambient recycling station."
+    - "&r&r&7Decorative scrap-processing block."
 
 block:
   placeable: true

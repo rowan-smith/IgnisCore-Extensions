@@ -1,11 +1,11 @@
 id: farmers-tea
 
 display:
-  title: "&eFarmer's Tea"
+  title: "&e&lFarmer's Tea"
   description:
-    - "&7Drink to bonemeal crops in a &a5-block&7 radius."
-    - "&7Instantly grows nearby plants."
-    - "&7Consumable with cooldown."
+    - "&r&r&7Drink to bonemeal crops in a &a5-block&7 radius."
+    - "&r&r&7Instantly grows nearby plants."
+    - "&r&r&7Consumable with cooldown."
 
 item:
   base_material: paper

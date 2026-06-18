@@ -1,11 +1,11 @@
 id: pause-tnt
 
 display:
-  title: "&dPause TNT"
+  title: "&d&lPause TNT"
   description:
-    - "&7The countdown &dstops&7. And waits."
-    - "&7Just when you relax, time resumes."
-    - "&7Patience is its cruelest trick."
+    - "&r&r&7The countdown &dstops&7. And waits."
+    - "&r&r&7Just when you relax, time resumes."
+    - "&r&r&7Patience is its cruelest trick."
 
 block:
   placeable: true

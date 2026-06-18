@@ -1,11 +1,11 @@
 id: coffee-brewer
 
 display:
-  title: "&6Coffee Brewer"
+  title: "&6&lCoffee Brewer"
   description:
-    - "&7Open GUI: insert &ecocoa beans&7 + &fglass bottle&7."
-    - "&7Auto-brews a &dpotion&7 (coffee) each tick."
-    - "&7Brewing-stand particles and sound."
+    - "&r&r&7Open GUI: insert &ecocoa beans&7 + &fglass bottle&7."
+    - "&r&r&7Auto-brews a &dpotion&7 (coffee) each tick."
+    - "&r&r&7Brewing-stand particles and sound."
 
 block:
   placeable: true

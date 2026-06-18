@@ -1,11 +1,11 @@
 id: chicken-coop-cache
 
 display:
-  title: "&aChicken Coop Cache"
+  title: "&a&lChicken Coop Cache"
   description:
-    - "&7&eOpen&7 to access egg storage."
-    - "&7Auto-collects eggs from nearby chickens."
-    - "&7Also scoops dropped eggs into inventory."
+    - "&r&r&7&eOpen&7 to access egg storage."
+    - "&r&r&7Auto-collects eggs from nearby chickens."
+    - "&r&r&7Also scoops dropped eggs into inventory."
 
 block:
   placeable: true

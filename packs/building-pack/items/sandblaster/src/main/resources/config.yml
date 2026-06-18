@@ -1,11 +1,11 @@
 id: sandblaster
 
 display:
-  title: "&6Sandblaster"
+  title: "&6&lSandblaster"
   description:
-    - "&7Etch &fstone&7 into &7chiseled stone bricks&7."
-    - "&7Affects blocks in a small radius around target."
-    - "&7Consumes one charge per blast."
+    - "&r&r&7Etch &fstone&7 into &7chiseled stone bricks&7."
+    - "&r&r&7Affects blocks in a small radius around target."
+    - "&r&r&7Consumes one charge per blast."
 
 item:
   base_material: paper

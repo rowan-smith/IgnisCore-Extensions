@@ -1,10 +1,10 @@
 id: sticky-bomb
 
 display:
-  title: "&cSticky Bomb"
+  title: "&c&lSticky Bomb"
   description:
-    - "&7Right-click to &ethrow&7."
-    - "&7Detonates after &e4.0s&7; vanishes before the hidden blast."
+    - "&r&r&7Right-click to &ethrow&7."
+    - "&r&r&7Detonates after &e4.0s&7; vanishes before the hidden blast."
 
 item:
   base_material: snowball

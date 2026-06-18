@@ -1,11 +1,11 @@
 id: trait-badge
 
 display:
-  title: "&bTrait Badge"
+  title: "&b&lTrait Badge"
   description:
-    - "&7Roll a random role: &dArtisan&7, &bScout&7, &5Alchemist&7, &7Engineer&7, &cDuelist&7."
-    - "&7Trait stored in item NBT."
-    - "&7Level-up sound and totem particles."
+    - "&r&r&7Roll a random role: &dArtisan&7, &bScout&7, &5Alchemist&7, &7Engineer&7, &cDuelist&7."
+    - "&r&r&7Trait stored in item NBT."
+    - "&r&r&7Level-up sound and totem particles."
 
 item:
   base_material: paper

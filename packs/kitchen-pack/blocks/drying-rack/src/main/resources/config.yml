@@ -1,11 +1,11 @@
 id: drying-rack
 
 display:
-  title: "&6Drying Rack"
+  title: "&6&lDrying Rack"
   description:
-    - "&7Emits &bcampfire&7 smoke particles."
-    - "&7Wool-break ambient sound."
-    - "&7Decorative food and herb drying station."
+    - "&r&r&7Emits &bcampfire&7 smoke particles."
+    - "&r&r&7Wool-break ambient sound."
+    - "&r&r&7Decorative food and herb drying station."
 
 block:
   placeable: true

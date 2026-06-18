@@ -1,11 +1,11 @@
 id: lock
 
 display:
-  title: "&6Lock"
+  title: "&6&lLock"
   description:
-    - "&7Toggle &cengaged&7 / &adisengaged&7 on the item."
-    - "&7Wax-on/wax-off particles on &etoggle&7."
-    - "&7Iron &btrapdoor&7 sound feedback."
+    - "&r&r&7Toggle &cengaged&7 / &adisengaged&7 on the item."
+    - "&r&r&7Wax-on/wax-off particles on &etoggle&7."
+    - "&r&r&7Iron &btrapdoor&7 sound feedback."
 
 item:
   base_material: paper

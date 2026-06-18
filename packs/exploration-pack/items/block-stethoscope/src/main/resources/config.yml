@@ -1,11 +1,11 @@
 id: block-stethoscope
 
 display:
-  title: "&bBlock Stethoscope"
+  title: "&b&lBlock Stethoscope"
   description:
-    - "&7Aim at a block and use to hear its material."
-    - "&7Draws a &escan&7 beam to the target."
-    - "&7Reports the block type in chat."
+    - "&r&r&7Aim at a block and use to hear its material."
+    - "&r&r&7Draws a &escan&7 beam to the target."
+    - "&r&r&7Reports the block type in chat."
 
 item:
   base_material: paper

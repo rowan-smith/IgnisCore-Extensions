@@ -1,10 +1,10 @@
 id: tripwire-charge
 
 display:
-  title: "&cTripwire Charge"
+  title: "&c&lTripwire Charge"
   description:
-    - "&7Place two charges to string a &etripwire&7 between them."
-    - "&7Both ends &cdetonate&7 when something crosses the line."
+    - "&r&r&7Place two charges to string a &etripwire&7 between them."
+    - "&r&r&7Both ends &cdetonate&7 when something crosses the line."
 
 block:
   placeable: true

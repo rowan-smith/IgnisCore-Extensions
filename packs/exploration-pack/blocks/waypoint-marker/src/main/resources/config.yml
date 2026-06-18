@@ -1,11 +1,11 @@
 id: waypoint-marker
 
 display:
-  title: "&bWaypoint Marker"
+  title: "&b&lWaypoint Marker"
   description:
-    - "&7&eRight-click&7 to save a named &bwaypoint&7."
-    - "&7Stores player name and coordinates."
-    - "&7&bEnd-rod&7 sparkles on each mark."
+    - "&r&r&7&eRight-click&7 to save a named &bwaypoint&7."
+    - "&r&r&7Stores player name and coordinates."
+    - "&r&r&7&bEnd-rod&7 sparkles on each mark."
 
 block:
   placeable: true

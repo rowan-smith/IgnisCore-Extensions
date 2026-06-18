@@ -1,11 +1,11 @@
 id: milking-station
 
 display:
-  title: "&aMilking Station"
+  title: "&a&lMilking Station"
   description:
-    - "&7Detects passive mobs within &f3 blocks&7."
-    - "&7&bHoney&7-drip particles and cow-milk sound."
-    - "&7Ambient auto-milking station."
+    - "&r&r&7Detects passive mobs within &f3 blocks&7."
+    - "&r&r&7&bHoney&7-drip particles and cow-milk sound."
+    - "&r&r&7Ambient auto-milking station."
 
 block:
   placeable: true

@@ -1,10 +1,10 @@
 id: farm-call
 
 display:
-  title: "&9Farm Call"
+  title: "&9&lFarm Call"
   description:
-    - "&7Right-click a &ebarn bell&7 to link."
-    - "&7Use again to control it remotely."
+    - "&r&r&7Right-click a &ebarn bell&7 to link."
+    - "&r&r&7Use again to control it remotely."
 
 item:
   base_material: paper

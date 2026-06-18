@@ -1,11 +1,11 @@
 id: pizza-oven
 
 display:
-  title: "&6Pizza Oven"
+  title: "&6&lPizza Oven"
   description:
-    - "&7Open GUI: insert &fbread&7, &ebeetroot&7, &fmilk bucket&7."
-    - "&7Bakes a &dcake&7 (pizza) with flame particles."
-    - "&7Smoker smoke and lava sparkle."
+    - "&r&r&7Open GUI: insert &fbread&7, &ebeetroot&7, &fmilk bucket&7."
+    - "&r&r&7Bakes a &dcake&7 (pizza) with flame particles."
+    - "&r&r&7Smoker smoke and lava sparkle."
 
 block:
   placeable: true
