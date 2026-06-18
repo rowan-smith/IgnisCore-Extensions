@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>dev.rono</groupId>
-  <artifactId>igniscore-extensions-parent</artifactId>
+  <artifactId>igniscore-extensions</artifactId>
   <version>${revision}</version>
   <packaging>pom</packaging>
 
