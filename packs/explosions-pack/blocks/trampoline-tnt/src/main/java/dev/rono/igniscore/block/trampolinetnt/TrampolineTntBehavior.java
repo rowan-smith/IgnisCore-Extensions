@@ -35,6 +35,7 @@ final class TrampolineTntBehavior {
         double velocity = StrategySupport.customDouble(def, "launchVelocity", 2.4);
         world.playSound(loc, "ENTITY_SLIME_JUMP", 2.0f, 0.6f);
         world.spawnParticle(loc, "CLOUD", 20, radius * 0.3, 0.2, radius * 0.3, 0.05);
+        ExtensionShared.explosion().create(world, loc, def, 4.0, false);
         ExtensionShared.physics().launchUpward(world, loc, radius, velocity);
     }
 

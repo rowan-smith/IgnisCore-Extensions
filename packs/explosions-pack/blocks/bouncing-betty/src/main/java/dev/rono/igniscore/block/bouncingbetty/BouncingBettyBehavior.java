@@ -32,12 +32,10 @@ final class BouncingBettyBehavior {
         double popHeight = StrategySupport.customDouble(instance.getDefinition(), "popHeight", 1.2);
         world.playSound(loc, "ENTITY_SLIME_JUMP", 1.5f, 0.4f);
         world.spawnParticle(loc, "CLOUD", 8, 0.2, 0.1, 0.2, 0.05);
-        context.scheduler().runLater(loc, () -> {
-            IgnisLocation air = loc.add(0, popHeight, 0);
-            world.spawnParticle(air, "SMOKE", 6, 0.2, 0.2, 0.2, 0.02);
-            world.playSound(air, "ENTITY_GENERIC_EXPLODE", 1.2f, 1.1f);
-            ExtensionShared.explosion().create(world, air, instance.getDefinition(), 3.0, false);
-        }, 8L);
+        IgnisLocation air = loc.add(0, popHeight, 0);
+        world.spawnParticle(air, "SMOKE", 6, 0.2, 0.2, 0.2, 0.02);
+        world.playSound(air, "ENTITY_GENERIC_EXPLODE", 1.2f, 1.1f);
+        ExtensionShared.explosion().create(world, air, instance.getDefinition(), 3.0, false);
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

@@ -45,8 +45,12 @@ final class TunnelingOnBlockTriggerListener implements OnBlockTriggerListener {
         int tunnelLength = StrategySupport.customInt(def, "tunnelLength", 16);
         double tunnelGap = StrategySupport.customDouble(def, "tunnelGap", 2.0);
 
+        boolean blockDamage = StrategySupport.customBoolean(def, "blockDamage", true);
+        ExtensionShared.explosion().create(world, loc, 4.0f, false, blockDamage);
+        world.spawnParticle(loc, "SMOKE", 20, 0.5, 0.5, 0.5, 0.05);
+
         double[] current = {loc.x(), loc.y(), loc.z()};
-        int[] count = {0};
+        int[] count = {1};
         IgnisTask[] taskRef = {null};
         taskRef[0] = context.scheduler().runRepeating(loc, () -> {
             if (count[0]++ >= tunnelLength) {
@@ -58,7 +62,7 @@ final class TunnelingOnBlockTriggerListener implements OnBlockTriggerListener {
             current[0] += directionX * tunnelGap;
             current[2] += directionZ * tunnelGap;
             IgnisLocation currentLoc = new IgnisLocation(loc.worldId(), loc.worldName(), current[0], current[1], current[2], 0f, 0f);
-            ExtensionShared.explosion().create(world, currentLoc, 4.0f, false, true);
+            ExtensionShared.explosion().create(world, currentLoc, 4.0f, false, blockDamage);
             world.spawnParticle(currentLoc, "SMOKE", 20, 0.5, 0.5, 0.5, 0.05);
         }, 0L, 4L);
     }
