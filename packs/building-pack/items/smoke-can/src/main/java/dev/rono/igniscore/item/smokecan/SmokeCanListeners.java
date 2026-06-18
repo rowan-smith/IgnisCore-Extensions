@@ -30,6 +30,8 @@ final class SmokeCanListeners implements OnItemClickListener {
                 if (can == null) {
                     return;
                 }
+                world.spawnParticle(eye, "CLOUD", 8, 0.2, 0.2, 0.2, 0.02);
+                world.playSound(eye, "ENTITY_SNOWBALL_THROW", 0.8f, 0.9f);
                 int duration = StrategySupport.customInt(event.definition().getCustomData(), "smokeDurationTicks", 400);
                 int[] ticks = {0};
                 IgnisTask[] ref = {null};

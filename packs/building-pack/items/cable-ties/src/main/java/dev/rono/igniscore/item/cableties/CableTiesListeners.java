@@ -39,9 +39,12 @@ final class CableTiesListeners implements OnItemClickListener {
         if ("use".equals(event.actionToken())) {
                 IgnisWorld world = event.player().getWorld();
                 if (event.clickedBlock() == null) {
+                    IgnisLocation eye = event.player().getEyeLocation();
                     IgnisLocation a = ExtensionShared.link().readLocation(nbt, event.item());
                     if (a == null) {
                         event.player().sendMessage("<gray>Click a fence post to start a cable.</gray>");
+                        ExtensionShared.theatrics().sparkle(world, eye, "CRIT", 4);
+                        world.playSound(eye, "ENTITY_LEASH_KNOT_PLACE", 0.5f, 1.4f);
                         return;
                     }
                     event.player().sendMessage("<gray>Cable anchored — click second post.</gray>");

@@ -21,11 +21,15 @@ final class PaintStripperListeners implements OnItemClickListener {
     @Override
     public void onItemClick(ItemClickEvent event) {
         if ("use".equals(event.actionToken())) {
+                IgnisWorld world = event.player().getWorld();
                 if (event.clickedBlock() == null) {
+                    IgnisLocation eye = event.player().getEyeLocation();
+                    event.player().sendMessage("<gray>Click a painted block to strip it.</gray>");
+                    ExtensionShared.theatrics().sparkle(world, eye, "CLOUD", 4);
+                    world.playSound(eye, "ITEM_BRUSH_BRUSHING_GENERIC", 0.7f, 1.0f);
                     return;
                 }
                 IgnisLocation loc = event.clickedBlock().getLocation();
-                IgnisWorld world = event.player().getWorld();
                 String material = world.getBlockMaterialKey(loc).toLowerCase();
                 if (material.contains("banner")) {
                     world.setBlockMaterialKey(loc, "white_banner");

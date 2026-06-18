@@ -22,10 +22,14 @@ final class SandblasterListeners implements OnItemClickListener {
     @Override
     public void onItemClick(ItemClickEvent event) {
         if ("use".equals(event.actionToken())) {
+                IgnisWorld world = event.player().getWorld();
                 if (event.clickedBlock() == null) {
+                    IgnisLocation eye = event.player().getEyeLocation();
+                    event.player().sendMessage("<gray>Click stone to etch a pattern.</gray>");
+                    ExtensionShared.theatrics().sparkle(world, eye, "CLOUD", 4);
+                    world.playSound(eye, "BLOCK_SAND_BREAK", 0.6f, 1.2f);
                     return;
                 }
-                IgnisWorld world = event.player().getWorld();
                 IgnisLocation center = event.clickedBlock().getLocation();
                 int radius = StrategySupport.customInt(event.definition().getCustomData(), "etchRadius", 1);
                 int etched = 0;
