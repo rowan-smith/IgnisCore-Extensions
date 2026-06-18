@@ -3,8 +3,9 @@ id: glow-orb
 display:
   title: "&6Glow Orb"
   description:
-    - "&7Right-click to use the glow orb."
-    - "&7Check the effect after use."
+    - "&7Throw a glowing snowball projectile."
+    - "&7Leaves a trail of &fend-rod&7 particles."
+    - "&7Lasts about a minute before despawning."
 
 item:
   base_material: paper

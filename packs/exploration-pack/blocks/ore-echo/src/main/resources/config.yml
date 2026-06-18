@@ -3,8 +3,9 @@ id: ore-echo
 display:
   title: "&bOre Echo"
   description:
-    - "&7Place to activate the ore echo."
-    - "&7Runs passively while placed nearby."
+    - "&7Scans for nearest ore within &f12 blocks&7."
+    - "&7Crit beam points toward detected ore."
+    - "&7Amethyst chime on ore ping."
 
 block:
   placeable: true

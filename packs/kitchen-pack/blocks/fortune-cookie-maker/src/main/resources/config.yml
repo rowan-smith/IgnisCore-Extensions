@@ -3,8 +3,9 @@ id: fortune-cookie-maker
 display:
   title: "&6Fortune Cookie Maker"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the fortune cookie maker."
+    - "&7Open GUI: insert &ewheat&7 + &fpaper&7 to craft cookies."
+    - "&7Hold a cookie and open for a random &6fortune&7 message."
+    - "&7Fortunes warn of creepers, luck, and cruel irony."
 
 block:
   placeable: true

@@ -3,8 +3,9 @@ id: kelp-compressor
 display:
   title: "&aKelp Compressor"
   description:
-    - "&7Place to activate the kelp compressor."
-    - "&7Runs passively while placed nearby."
+    - "&7Bubble particles and wet-grass sound."
+    - "&7Ambient kelp processing station."
+    - "&7Decorative underwater-farm equipment."
 
 block:
   placeable: true

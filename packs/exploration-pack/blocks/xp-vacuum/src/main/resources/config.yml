@@ -1,10 +1,11 @@
 id: xp-vacuum
 
 display:
-  title: "&bXp Vacuum"
+  title: "&bXP Vacuum"
   description:
-    - "&7Place to activate the xp vacuum."
-    - "&7Runs passively while placed nearby."
+    - "&7Pulls experience orbs toward it."
+    - "&f6-block&7 radius, configurable pull strength."
+    - "&7Enchant particles while vacuuming."
 
 block:
   placeable: true

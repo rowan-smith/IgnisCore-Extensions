@@ -3,8 +3,9 @@ id: display-case
 display:
   title: "&6Display Case"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the display case."
+    - "&7Open to place one item on display."
+    - "&7Showcases a single item in slot 13."
+    - "&7Decorative trophy case."
 
 block:
   placeable: true

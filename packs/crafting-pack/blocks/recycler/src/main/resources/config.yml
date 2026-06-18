@@ -3,8 +3,9 @@ id: recycler
 display:
   title: "&6Recycler"
   description:
-    - "&7Place to activate the recycler."
-    - "&7Runs passively while placed nearby."
+    - "&7Scrap particles and grindstone sound."
+    - "&7Ambient recycling station."
+    - "&7Decorative scrap-processing block."
 
 block:
   placeable: true

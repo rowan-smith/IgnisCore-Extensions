@@ -3,8 +3,9 @@ id: player-proximity-alarm
 display:
   title: "&6Player Proximity Alarm"
   description:
-    - "&7Place to activate the player proximity alarm."
-    - "&7Runs passively while placed nearby."
+    - "&7Rings a bell when players enter &f12 blocks&7."
+    - "&7Firework sparkles on detection."
+    - "&7Base perimeter alarm."
 
 block:
   placeable: true

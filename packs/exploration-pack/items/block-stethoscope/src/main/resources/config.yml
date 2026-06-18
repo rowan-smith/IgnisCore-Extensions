@@ -3,8 +3,9 @@ id: block-stethoscope
 display:
   title: "&bBlock Stethoscope"
   description:
-    - "&7Right-click to use the block stethoscope."
-    - "&7Check the effect after use."
+    - "&7Aim at a block and use to hear its material."
+    - "&7Draws a scan beam to the target."
+    - "&7Reports the block type in chat."
 
 item:
   base_material: paper

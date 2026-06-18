@@ -3,8 +3,9 @@ id: item-pedestal-hologram
 display:
   title: "&6Item Pedestal Hologram"
   description:
-    - "&7Place to activate the item pedestal hologram."
-    - "&7Runs passively while placed nearby."
+    - "&7Enchant particles float above the pedestal."
+    - "&7Amethyst chime ambient sound."
+    - "&7Decorative item showcase base."
 
 block:
   placeable: true

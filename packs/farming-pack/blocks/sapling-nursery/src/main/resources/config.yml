@@ -3,8 +3,9 @@ id: sapling-nursery
 display:
   title: "&aSapling Nursery"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the sapling nursery."
+    - "&7Open to store saplings and propagules."
+    - "&7Auto-plants saplings on adjacent grass/dirt."
+    - "&7Consumes one sapling per planting."
 
 block:
   placeable: true

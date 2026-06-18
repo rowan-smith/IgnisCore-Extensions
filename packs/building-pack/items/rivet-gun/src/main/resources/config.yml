@@ -3,8 +3,9 @@ id: rivet-gun
 display:
   title: "&6Rivet Gun"
   description:
-    - "&7Right-click to use the rivet gun."
-    - "&7Check the effect after use."
+    - "&7Reinforce a block into &8obsidian&7 (or configured material)."
+    - "&7Cannot rivet already-reinforced blocks."
+    - "&7Consumes one rivet per use."
 
 item:
   base_material: paper

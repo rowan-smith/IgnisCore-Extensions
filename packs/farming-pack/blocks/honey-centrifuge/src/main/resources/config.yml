@@ -3,8 +3,9 @@ id: honey-centrifuge
 display:
   title: "&aHoney Centrifuge"
   description:
-    - "&7Place to activate the honey centrifuge."
-    - "&7Runs passively while placed nearby."
+    - "&7Dripping-honey particles and slide sound."
+    - "&7Ambient honey processing station."
+    - "&7Decorative beekeeping equipment."
 
 block:
   placeable: true

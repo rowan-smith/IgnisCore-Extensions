@@ -13,95 +13,46 @@ import org.junit.jupiter.api.Test;
 
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BehaviorTest {
     @Test
-    void throwSchedulesShrapnelBurst() {
+    void throwConsumesStack() {
         TestEventBus.TestContext ctx = TestEventBus.createContext();
-        ItemDefinition definition = ExtensionTestSupport.loadItemDefinition(BehaviorTest.class, "fragmentation-grenade", 10001);
+        ItemDefinition definition = ExtensionTestSupport.loadItemDefinition(
+                BehaviorTest.class, "fragmentation-grenade", 20001);
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "fragmentation-grenade");
-        IgnisWorld world = ctx.world();
-        IgnisPlayer player = new TestPlayer(world);
-        IgnisItem item = new TestItem();
+        TestPlayer player = new TestPlayer(ctx.world());
+        TestItem item = new TestItem(1);
 
-        assertDoesNotThrow(() -> ctx.eventBus().fireItemClick(
+        ctx.eventBus().fireItemClick(
                 new ItemClickEvent(player, definition, item, IgnisInteraction.RIGHT_CLICK_AIR, null, "throw"),
-                "fragmentation-grenade"));
+                "fragmentation-grenade");
+
+        assertEquals(0, item.getAmount());
     }
 
     private static final class TestItem implements IgnisItem {
-        private int amount = 1;
-
-        @Override
-        public int getAmount() {
-            return amount;
-        }
-
-        @Override
-        public void setAmount(int amount) {
-            this.amount = amount;
-        }
-
-        @Override
-        public String getMaterialKey() {
-            return "snowball";
-        }
-
-        @Override
-        public boolean isAir() {
-            return amount <= 0;
-        }
-
-        @Override
-        public Object nativeItem() {
-            return this;
-        }
+        private int amount;
+        private TestItem(int amount) { this.amount = amount; }
+        @Override public int getAmount() { return amount; }
+        @Override public void setAmount(int amount) { this.amount = amount; }
+        @Override public String getMaterialKey() { return "snowball"; }
+        @Override public boolean isAir() { return amount <= 0; }
+        @Override public Object nativeItem() { return this; }
     }
 
     private static final class TestPlayer implements IgnisPlayer {
         private final IgnisWorld world;
         private final IgnisLocation eye = new IgnisLocation("world", 0, 1.6, 0);
-
-        private TestPlayer(IgnisWorld world) {
-            this.world = world;
-        }
-
-        @Override
-        public UUID getUniqueId() {
-            return UUID.randomUUID();
-        }
-
-        @Override
-        public String getName() {
-            return "tester";
-        }
-
-        @Override
-        public IgnisLocation getLocation() {
-            return eye;
-        }
-
-        @Override
-        public IgnisLocation getEyeLocation() {
-            return eye.withYawPitch(0f, 0f);
-        }
-
-        @Override
-        public IgnisWorld getWorld() {
-            return world;
-        }
-
-        @Override
-        public void sendMessage(String miniMessage) {
-        }
-
-        @Override
-        public void openInventory(Object nativeInventory) {
-        }
-
-        @Override
-        public void applyPotionEffect(String effectKey, int durationTicks, int amplifier) {
-        }
+        private TestPlayer(IgnisWorld world) { this.world = world; }
+        @Override public UUID getUniqueId() { return UUID.randomUUID(); }
+        @Override public String getName() { return "tester"; }
+        @Override public IgnisLocation getLocation() { return eye; }
+        @Override public IgnisLocation getEyeLocation() { return eye.withYawPitch(0f, 0f); }
+        @Override public IgnisWorld getWorld() { return world; }
+        @Override public void sendMessage(String miniMessage) {}
+        @Override public void openInventory(Object nativeInventory) {}
+        @Override public void applyPotionEffect(String effectKey, int durationTicks, int amplifier) {}
     }
 }

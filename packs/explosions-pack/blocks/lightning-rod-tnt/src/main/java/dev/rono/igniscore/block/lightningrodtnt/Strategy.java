@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.lightningrodtnt;
 
 import dev.rono.igniscore.api.strategy.AbstractIgnisBlockStrategy;
+import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;
 import dev.rono.extensions.shared.api.theatrics.CombustibleIgniteTheatricsListener;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
@@ -10,6 +11,7 @@ public class Strategy extends AbstractIgnisBlockStrategy {
         super(context);
         LightningRodTntRuntime runtime = new LightningRodTntRuntime(context);
         context.eventBus().subscribe(new CombustibleIgniteTheatricsListener(context));
+        context.eventBus().subscribe(new CombustibleFuseTheatricsListener(context));
         context.eventBus().subscribe(new LightningRodTntOnBlockClickListener());
         context.eventBus().subscribe(new LightningRodTntOnBlockTickListener(runtime));
         context.eventBus().subscribe(new LightningRodTntOnBlockTriggerListener(runtime));

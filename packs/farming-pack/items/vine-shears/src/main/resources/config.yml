@@ -3,8 +3,9 @@ id: vine-shears
 display:
   title: "&aVine Shears"
   description:
-    - "&7Right-click to use the vine shears."
-    - "&7Check the effect after use."
+    - "&7Click vines to flood-fill cut up to &f32 blocks&7."
+    - "&7Removes vine, weeping, and twisting variants."
+    - "&7Reports cut count in chat."
 
 item:
   base_material: paper

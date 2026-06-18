@@ -3,8 +3,9 @@ id: pocket-dimension-cache
 display:
   title: "&6Pocket Dimension Cache"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the pocket dimension cache."
+    - "&7Open for extra-dimensional storage."
+    - "&7Up to &f3 rows&7 of inventory (configurable)."
+    - "&7Personal stash independent of chunk."
 
 block:
   placeable: true

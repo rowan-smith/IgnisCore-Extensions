@@ -3,8 +3,9 @@ id: scarecrow-anchor
 display:
   title: "&aScarecrow Anchor"
   description:
-    - "&7Place to activate the scarecrow anchor."
-    - "&7Runs passively while placed nearby."
+    - "&7Pushes hostiles away within &f8 blocks&7."
+    - "&7Knockback velocity away from anchor."
+    - "&7Protects crop fields from mobs."
 
 block:
   placeable: true

@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.cavitytnt;
 
 import dev.rono.igniscore.api.strategy.AbstractIgnisBlockStrategy;
+import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;
 import dev.rono.extensions.shared.api.theatrics.CombustibleIgniteTheatricsListener;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
@@ -10,6 +11,7 @@ public class Strategy extends AbstractIgnisBlockStrategy {
         super(context);
         CavityRuntime runtime = new CavityRuntime(context);
         context.eventBus().subscribe(new CombustibleIgniteTheatricsListener(context));
+        context.eventBus().subscribe(new CombustibleFuseTheatricsListener(context));
         context.eventBus().subscribe(new CavityOnBlockClickListener());
         context.eventBus().subscribe(new CavityOnBlockTickListener(runtime));
         context.eventBus().subscribe(new CavityOnBlockTriggerListener(runtime));

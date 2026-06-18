@@ -3,8 +3,9 @@ id: moss-creeper
 display:
   title: "&aMoss Creeper"
   description:
-    - "&7Place to activate the moss creeper."
-    - "&7Runs passively while placed nearby."
+    - "&7Spreads moss on blocks near water."
+    - "&f3-block&7 radius mossification each tick."
+    - "&7Passive biome-greening block."
 
 block:
   placeable: true

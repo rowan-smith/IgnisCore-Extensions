@@ -3,8 +3,9 @@ id: socket-lamp
 display:
   title: "&6Socket Lamp"
   description:
-    - "&7Place to activate the socket lamp."
-    - "&7Runs passively while placed nearby."
+    - "&7When lit remotely, emits end-rod particles."
+    - "&7Brightness scales with configured light level."
+    - "&7Pairs with lamp dimmer item."
 
 block:
   placeable: true

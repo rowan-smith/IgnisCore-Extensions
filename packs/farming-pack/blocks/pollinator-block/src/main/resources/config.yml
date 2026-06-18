@@ -3,8 +3,9 @@ id: pollinator-block
 display:
   title: "&aPollinator Block"
   description:
-    - "&7Place to activate the pollinator block."
-    - "&7Runs passively while placed nearby."
+    - "&7Bonemeals crops in a &a3-block&7 radius."
+    - "&7Bee pollinate sound and happy-villager particles."
+    - "&7Passive crop pollinator."
 
 block:
   placeable: true

@@ -3,8 +3,9 @@ id: cable-ties
 display:
   title: "&6Cable Ties"
   description:
-    - "&7Right-click to use the cable ties."
-    - "&7Check the effect after use."
+    - "&7Click two &ffence posts&7 to tie them."
+    - "&7Draws a particle cable between posts."
+    - "&7Consumes one tie per link."
 
 item:
   base_material: paper

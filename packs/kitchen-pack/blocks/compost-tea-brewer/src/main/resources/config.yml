@@ -3,8 +3,9 @@ id: compost-tea-brewer
 display:
   title: "&6Compost Tea Brewer"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the compost tea brewer."
+    - "&7Open GUI: insert &fbone meal&7 + &fglass bottle&7."
+    - "&7Brews a &dsplash potion&7 (compost tea)."
+    - "&7Happy-villager sparkle on completion."
 
 block:
   placeable: true

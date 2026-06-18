@@ -1,10 +1,11 @@
 id: lost-and-found-bin
 
 display:
-  title: "&6Lost And Found Bin"
+  title: "&6Lost & Found Bin"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the lost and found bin."
+    - "&7Open to retrieve swept-up items."
+    - "&7Periodically vacuums nearby item drops into storage."
+    - "&7Collects loot within ~8 blocks."
 
 block:
   placeable: true

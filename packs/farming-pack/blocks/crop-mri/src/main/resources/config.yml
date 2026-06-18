@@ -1,10 +1,11 @@
 id: crop-mri
 
 display:
-  title: "&aCrop Mri"
+  title: "&aCrop MRI"
   description:
-    - "&7Place to activate the crop mri."
-    - "&7Runs passively while placed nearby."
+    - "&7Scans crops in a &a6-block&7 radius."
+    - "&7Ping pitch scales with crop count found."
+    - "&7Vertical scan beam while crops detected."
 
 block:
   placeable: true

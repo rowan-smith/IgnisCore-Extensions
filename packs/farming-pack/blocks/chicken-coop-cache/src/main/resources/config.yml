@@ -3,8 +3,9 @@ id: chicken-coop-cache
 display:
   title: "&aChicken Coop Cache"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the chicken coop cache."
+    - "&7Open to access egg storage."
+    - "&7Auto-collects eggs from nearby chickens."
+    - "&7Also scoops dropped eggs into inventory."
 
 block:
   placeable: true

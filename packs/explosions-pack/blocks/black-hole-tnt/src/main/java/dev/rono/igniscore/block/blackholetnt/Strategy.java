@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.blackholetnt;
 
 import dev.rono.igniscore.api.strategy.AbstractIgnisBlockStrategy;
+import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;
 import dev.rono.extensions.shared.api.theatrics.CombustibleIgniteTheatricsListener;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
@@ -10,6 +11,7 @@ public class Strategy extends AbstractIgnisBlockStrategy {
         super(context);
         BlackHoleTntRuntime runtime = new BlackHoleTntRuntime(context);
         context.eventBus().subscribe(new CombustibleIgniteTheatricsListener(context));
+        context.eventBus().subscribe(new CombustibleFuseTheatricsListener(context));
         context.eventBus().subscribe(new BlackHoleTntOnBlockClickListener());
         context.eventBus().subscribe(new BlackHoleTntOnBlockTickListener(runtime));
         context.eventBus().subscribe(new BlackHoleTntOnBlockTriggerListener(runtime));

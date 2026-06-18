@@ -3,8 +3,9 @@ id: keyring-beacon
 display:
   title: "&bKeyring Beacon"
   description:
-    - "&7Right-click to use the keyring beacon."
-    - "&7Check the effect after use."
+    - "&7Save up to &f3 beacon slots&7 with your coords."
+    - "&7Cycles through numbered slots on each use."
+    - "&7Pulses an end-rod ring when marking."
 
 item:
   base_material: paper

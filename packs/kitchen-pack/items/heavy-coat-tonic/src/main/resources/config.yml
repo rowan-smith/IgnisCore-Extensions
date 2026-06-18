@@ -3,8 +3,9 @@ id: heavy-coat-tonic
 display:
   title: "&eHeavy Coat Tonic"
   description:
-    - "&7Right-click to use the heavy coat tonic."
-    - "&7Check the effect after use."
+    - "&7Drink for &8Slowness&7 and &9Resistance II&7."
+    - "&7Trade speed for toughness for 45 seconds."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

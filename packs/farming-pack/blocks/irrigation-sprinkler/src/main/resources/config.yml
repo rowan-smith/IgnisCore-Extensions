@@ -3,8 +3,9 @@ id: irrigation-sprinkler
 display:
   title: "&aIrrigation Sprinkler"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the irrigation sprinkler."
+    - "&7Open to load a &9water bucket&7 in the tank slot."
+    - "&7Sprays falling-water particles over nearby &efarmland&7."
+    - "&7Consumes one bucket per watering cycle."
 
 block:
   placeable: true

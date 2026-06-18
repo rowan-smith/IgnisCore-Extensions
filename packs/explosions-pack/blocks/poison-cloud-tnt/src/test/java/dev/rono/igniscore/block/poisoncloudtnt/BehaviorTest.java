@@ -1,6 +1,9 @@
 package dev.rono.igniscore.block.poisoncloudtnt;
 
+import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;
+import dev.rono.igniscore.api.event.BlockActivateEvent;
 import dev.rono.igniscore.api.event.BlockPlaceEvent;
+import dev.rono.igniscore.api.event.BlockTickEvent;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.PlacedBlock;
@@ -31,6 +34,34 @@ class BehaviorTest {
                 EXTENSION_ID);
 
         assertFalse(ctx.world().sounds().isEmpty() && ctx.world().particles().isEmpty());
+    }
+
+    @Test
+    void igniteFlaresOnActivation() {
+        TestEventBus.TestContext ctx = TestEventBus.createContext();
+        BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(
+                BehaviorTest.class, EXTENSION_ID, 10001);
+        Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
+        RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
+
+        ctx.eventBus().fireBlockActivate(new BlockActivateEvent(instance), EXTENSION_ID);
+
+        assertFalse(ctx.world().particles().isEmpty());
+    }
+
+    @Test
+    void fuseCountdownPulses() {
+        TestEventBus.TestContext ctx = TestEventBus.createContext();
+        BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(
+                BehaviorTest.class, EXTENSION_ID, 10001);
+        Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
+        RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
+        instance.setTicksLeft(40);
+
+        new CombustibleFuseTheatricsListener(ctx.context())
+                .onBlockTick(new BlockTickEvent(instance));
+
+        assertFalse(ctx.world().particles().isEmpty());
     }
 
     @Test

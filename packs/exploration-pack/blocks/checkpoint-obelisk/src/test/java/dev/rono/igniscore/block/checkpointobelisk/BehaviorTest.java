@@ -8,7 +8,7 @@ import dev.rono.igniscore.testsupport.ExtensionTestSupport;
 import dev.rono.igniscore.testsupport.TestEventBus;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class BehaviorTest {
     @Test
@@ -18,10 +18,12 @@ class BehaviorTest {
                 BehaviorTest.class, "checkpoint-obelisk", 10001);
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "checkpoint-obelisk");
 
-        assertDoesNotThrow(() -> ctx.eventBus().fireBlockPlace(
+        ctx.eventBus().fireBlockPlace(
                 new BlockPlaceEvent(
                         PlacedBlock.of(definition, new IgnisLocation("world", 1, 2, 3)),
                         null),
-                "checkpoint-obelisk"));
+                "checkpoint-obelisk");
+
+        assertFalse(ctx.world().sounds().isEmpty());
     }
 }

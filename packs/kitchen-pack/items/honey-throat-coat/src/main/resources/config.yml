@@ -3,8 +3,9 @@ id: honey-throat-coat
 display:
   title: "&eHoney Throat Coat"
   description:
-    - "&7Right-click to use the honey throat coat."
-    - "&7Check the effect after use."
+    - "&7Drink for brief &aRegeneration II&7."
+    - "&7Marks you with a &esweet scent&7 flag."
+    - "&7Soothes poison-themed debuffs."
 
 item:
   base_material: paper

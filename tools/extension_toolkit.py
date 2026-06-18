@@ -14,6 +14,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 PACKS = ROOT / "packs"
 CATALOG_PATH = Path(__file__).with_name("extension-catalog.json")
+DISPLAY_OVERRIDES_PATH = Path(__file__).with_name("display-overrides.json")
 
 MYSTERIOUS_IDS = {
     "glitch-tnt", "mirage-tnt", "hologram-tnt", "phantom-tnt", "mirror-world-tnt",
@@ -103,6 +104,15 @@ MYSTERIOUS_LORE = {
     "pause-tnt": ("&dPause TNT", ["&7The countdown stops. And waits.", "&7Just when you relax, time resumes.", "&7Patience is its cruelest trick."]),
     "blink-tnt": ("&dBlink TNT", ["&7Here. There. Everywhere in between.", "&7It teleports when you aren't watching.", "&7Detonation is merely a suggestion."]),
 }
+
+
+def load_display_overrides() -> dict[str, dict]:
+    if not DISPLAY_OVERRIDES_PATH.exists():
+        return {}
+    return json.loads(DISPLAY_OVERRIDES_PATH.read_text(encoding="utf-8"))
+
+
+DISPLAY_OVERRIDES = load_display_overrides()
 
 
 def humanize(ext_id: str) -> str:
@@ -212,6 +222,14 @@ def build_display(ext_id: str, rel: str, config: dict, config_text: str, java: s
     if ext_id in MYSTERIOUS_LORE:
         title, lines = MYSTERIOUS_LORE[ext_id]
         return {"title": title, "description": lines, "mysterious": True}
+
+    if ext_id in DISPLAY_OVERRIDES:
+        override = DISPLAY_OVERRIDES[ext_id]
+        return {
+            "title": override["title"],
+            "description": override["description"],
+            "mysterious": False,
+        }
 
     profile = detect_profile(ext_id, "blocks" if "/blocks/" in rel else "items", config, java)
     header = parse_header_summary(config_text)
@@ -378,6 +396,96 @@ def strategy_class(ext_id: str, kind: str) -> str:
     return f"{java_package(ext_id, kind)}.Strategy"
 
 
+TRACKING_ITEM_CLASS = textwrap.dedent("""\
+    private static final class TrackingItem implements IgnisItem {
+        private int amount;
+        private TrackingItem(int amount) { this.amount = amount; }
+        @Override public int getAmount() { return amount; }
+        @Override public void setAmount(int amount) { this.amount = amount; }
+        @Override public String getMaterialKey() { return "paper"; }
+        @Override public boolean isAir() { return amount <= 0; }
+        @Override public Object nativeItem() { return this; }
+    }
+""")
+
+
+def tracking_player_class() -> str:
+    return textwrap.dedent("""\
+        private static final class TrackingPlayer implements IgnisPlayer {
+            private final IgnisWorld world;
+            private final IgnisLocation eye = new IgnisLocation("world", 0, 1.6, 0);
+            private final java.util.List<String> messages = new java.util.ArrayList<>();
+            private final java.util.List<String> effects = new java.util.ArrayList<>();
+            private boolean openedInventory;
+            private TrackingPlayer(IgnisWorld world) { this.world = world; }
+            java.util.List<String> messages() { return messages; }
+            java.util.List<String> effects() { return effects; }
+            boolean openedInventory() { return openedInventory; }
+            @Override public UUID getUniqueId() { return UUID.randomUUID(); }
+            @Override public String getName() { return "tester"; }
+            @Override public IgnisLocation getLocation() { return eye; }
+            @Override public IgnisLocation getEyeLocation() { return eye.withYawPitch(0f, 0f); }
+            @Override public IgnisWorld getWorld() { return world; }
+            @Override public void sendMessage(String miniMessage) { messages.add(miniMessage); }
+            @Override public void openInventory(Object nativeInventory) { openedInventory = true; }
+            @Override public void applyPotionEffect(String effectKey, int durationTicks, int amplifier) {
+                effects.add(effectKey);
+            }
+        }
+    """)
+
+
+def case_block_for_item(java: str, ext_id: str) -> str:
+    match = re.search(rf'case\s+"{re.escape(ext_id)}"\s*->\s*\{{([^}}]*)\}}', java, re.S)
+    return match.group(1) if match else java
+
+
+def item_use_assertion_lines(ext_id: str, java: str) -> list[str]:
+    block = case_block_for_item(java, ext_id)
+    lines: list[str] = []
+    if re.search(r"consumeOne|setAmount\([^)]*-\s*1\)", block):
+        lines.append("assertEquals(0, item.getAmount());")
+    elif re.search(r"consumeOne|setAmount\([^)]*-\s*1\)", java):
+        lines.append("assertEquals(0, item.getAmount());")
+    if "applyPotionEffect" in block:
+        lines.append("assertFalse(player.effects().isEmpty());")
+    if "sendMessage" in block or "sendMessage" in java:
+        lines.append("assertFalse(player.messages().isEmpty());")
+    if "openInventory" in block:
+        lines.append("assertTrue(player.openedInventory());")
+    if re.search(r"spawnProjectile", block):
+        lines.append("assertEquals(0, item.getAmount());")
+    if re.search(r"spawnParticle|playSound|pulseRing|sparkle|bonemeal", block):
+        lines.append("assertFalse(ctx.world().particles().isEmpty() || ctx.world().sounds().isEmpty());")
+    if not lines:
+        lines.append(
+            "assertFalse(player.messages().isEmpty() && player.effects().isEmpty() "
+            "&& ctx.world().sounds().isEmpty() && ctx.world().particles().isEmpty());"
+        )
+    return lines
+
+
+def placed_block_assertion_lines(java: str, config: dict) -> list[str]:
+    if re.search(r"OnBlockPlaceListener[\s\S]{0,800}(chime|sparkle|playSound|spawnParticle)", java):
+        return ["assertFalse(ctx.world().particles().isEmpty() && ctx.world().sounds().isEmpty());"]
+    if (config.get("behavior") or {}).get("sounds", {}).get("place"):
+        return ["assertFalse(ctx.world().sounds().isEmpty());"]
+    return ["assertFalse(ctx.world().sounds().isEmpty() && ctx.world().particles().isEmpty());"]
+
+
+def is_weak_test(path: Path) -> bool:
+    if not path.exists():
+        return True
+    text = path.read_text(encoding="utf-8")
+    if "assertDoesNotThrow" in text:
+        return True
+    if "definitionLoads" in text:
+        return True
+    if "useDoesNotThrow" in text:
+        return True
+    return False
+
+
 def behavior_test_path(module: Path, kind: str) -> Path:
     ext_id, _, _ = package_parts(module)
     singular = "block" if kind == "blocks" else "item"
@@ -385,7 +493,8 @@ def behavior_test_path(module: Path, kind: str) -> Path:
     return module / f"src/test/java/dev/rono/igniscore/{singular}/{pkg}/BehaviorTest.java"
 
 
-def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
+def render_behavior_test(ext_id: str, kind: str, profile: str, java: str = "", config: dict | None = None) -> str:
+    config = config or {}
     pkg = java_package(ext_id, kind)
     manifest = "block-extension.yml" if kind == "blocks" else "item-extension.yml"
     cmd = 10001 if kind == "blocks" else 20001
@@ -395,7 +504,10 @@ def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
         return textwrap.dedent(f"""\
             package {pkg};
 
+            import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;
+            import dev.rono.igniscore.api.event.BlockActivateEvent;
             import dev.rono.igniscore.api.event.BlockPlaceEvent;
+            import dev.rono.igniscore.api.event.BlockTickEvent;
             import dev.rono.igniscore.api.event.BlockTriggerEvent;
             import dev.rono.igniscore.api.model.BlockDefinition;
             import dev.rono.igniscore.api.model.PlacedBlock;
@@ -426,6 +538,34 @@ def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
                             EXTENSION_ID);
 
                     assertFalse(ctx.world().sounds().isEmpty() && ctx.world().particles().isEmpty());
+                }}
+
+                @Test
+                void igniteFlaresOnActivation() {{
+                    TestEventBus.TestContext ctx = TestEventBus.createContext();
+                    BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(
+                            BehaviorTest.class, EXTENSION_ID, {cmd});
+                    Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
+                    RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
+
+                    ctx.eventBus().fireBlockActivate(new BlockActivateEvent(instance), EXTENSION_ID);
+
+                    assertFalse(ctx.world().particles().isEmpty());
+                }}
+
+                @Test
+                void fuseCountdownPulses() {{
+                    TestEventBus.TestContext ctx = TestEventBus.createContext();
+                    BlockDefinition definition = ExtensionTestSupport.loadBlockDefinition(
+                            BehaviorTest.class, EXTENSION_ID, {cmd});
+                    Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
+                    RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
+                    instance.setTicksLeft(40);
+
+                    new CombustibleFuseTheatricsListener(ctx.context())
+                            .onBlockTick(new BlockTickEvent(instance));
+
+                    assertFalse(ctx.world().particles().isEmpty());
                 }}
 
                 @Test
@@ -615,6 +755,9 @@ def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
             """)
 
     if profile == "item_use":
+        assertions = "\n                    ".join(item_use_assertion_lines(ext_id, java))
+        player_class = textwrap.indent(tracking_player_class(), "    ")
+        item_class = textwrap.indent(TRACKING_ITEM_CLASS, "    ")
         return textwrap.dedent(f"""\
             package {pkg};
 
@@ -631,51 +774,35 @@ def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
 
             import java.util.UUID;
 
-            import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+            import static org.junit.jupiter.api.Assertions.assertEquals;
+            import static org.junit.jupiter.api.Assertions.assertFalse;
+            import static org.junit.jupiter.api.Assertions.assertTrue;
 
             class BehaviorTest {{
                 @Test
-                void useDoesNotThrow() {{
+                void useProducesExpectedEffect() {{
                     TestEventBus.TestContext ctx = TestEventBus.createContext();
                     ItemDefinition definition = ExtensionTestSupport.{loader}(
                             BehaviorTest.class, "{ext_id}", {cmd});
                     Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "{ext_id}");
-                    TestPlayer player = new TestPlayer(ctx.world());
-                    TestItem item = new TestItem(1);
+                    TrackingPlayer player = new TrackingPlayer(ctx.world());
+                    TrackingItem item = new TrackingItem(1);
 
-                    assertDoesNotThrow(() -> ctx.eventBus().fireItemClick(
+                    ctx.eventBus().fireItemClick(
                             new ItemClickEvent(player, definition, item, IgnisInteraction.RIGHT_CLICK_AIR, null, "use"),
-                            "{ext_id}"));
+                            "{ext_id}");
+
+                    {assertions}
                 }}
 
-                private static final class TestItem implements IgnisItem {{
-                    private int amount;
-                    private TestItem(int amount) {{ this.amount = amount; }}
-                    @Override public int getAmount() {{ return amount; }}
-                    @Override public void setAmount(int amount) {{ this.amount = amount; }}
-                    @Override public String getMaterialKey() {{ return "paper"; }}
-                    @Override public boolean isAir() {{ return amount <= 0; }}
-                    @Override public Object nativeItem() {{ return this; }}
-                }}
-
-                private static final class TestPlayer implements IgnisPlayer {{
-                    private final IgnisWorld world;
-                    private final IgnisLocation eye = new IgnisLocation("world", 0, 1.6, 0);
-                    private TestPlayer(IgnisWorld world) {{ this.world = world; }}
-                    @Override public UUID getUniqueId() {{ return UUID.randomUUID(); }}
-                    @Override public String getName() {{ return "tester"; }}
-                    @Override public IgnisLocation getLocation() {{ return eye; }}
-                    @Override public IgnisLocation getEyeLocation() {{ return eye.withYawPitch(0f, 0f); }}
-                    @Override public IgnisWorld getWorld() {{ return world; }}
-                    @Override public void sendMessage(String miniMessage) {{}}
-                    @Override public void openInventory(Object nativeInventory) {{}}
-                    @Override public void applyPotionEffect(String effectKey, int durationTicks, int amplifier) {{}}
-                }}
+            {item_class}
+            {player_class}
             }}
             """)
 
     # placed_tick / placed_passive / mysterious / detonator / link_item
     if kind == "blocks":
+        place_assertions = "\n                ".join(placed_block_assertion_lines(java, config))
         return textwrap.dedent(f"""\
             package {pkg};
 
@@ -687,7 +814,7 @@ def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
             import dev.rono.igniscore.testsupport.TestEventBus;
             import org.junit.jupiter.api.Test;
 
-            import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+            import static org.junit.jupiter.api.Assertions.assertFalse;
 
             class BehaviorTest {{
                 @Test
@@ -697,11 +824,13 @@ def render_behavior_test(ext_id: str, kind: str, profile: str) -> str:
                             BehaviorTest.class, "{ext_id}", {cmd});
                     Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "{ext_id}");
 
-                    assertDoesNotThrow(() -> ctx.eventBus().fireBlockPlace(
+                    ctx.eventBus().fireBlockPlace(
                             new BlockPlaceEvent(
                                     PlacedBlock.of(definition, new IgnisLocation("world", 1, 2, 3)),
                                     null),
-                            "{ext_id}"));
+                            "{ext_id}");
+
+                    {place_assertions}
                 }}
             }}
             """)
@@ -746,6 +875,46 @@ def remove_wrong_ignite_theatrics(module: Path, config: dict) -> str | None:
         "\n",
         text,
     )
+    path.write_text(text, encoding="utf-8")
+    return str(path)
+
+
+def add_fuse_theatrics(module: Path, java: str, config: dict) -> str | None:
+    behavior = config.get("behavior") or {}
+    if behavior.get("combustible") is not True:
+        return None
+    if "CombustibleFuseTheatricsListener" in java:
+        return None
+    strategies = list((module / "src/main/java").rglob("Strategy.java"))
+    if not strategies:
+        return None
+    path = strategies[0]
+    text = path.read_text(encoding="utf-8")
+    if "CombustibleFuseTheatricsListener" in text:
+        return None
+    if "OnBlockActivateListener" in text and "CombustibleIgniteTheatricsListener" not in text:
+        return None
+    if "context.eventBus().subscribe" not in text:
+        return None
+    if "import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;" not in text:
+        text = text.replace(
+            "import dev.rono.extensions.shared.api.theatrics.CombustibleIgniteTheatricsListener;",
+            "import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;\n"
+            "import dev.rono.extensions.shared.api.theatrics.CombustibleIgniteTheatricsListener;",
+        )
+        if "CombustibleFuseTheatricsListener" not in text:
+            text = text.replace(
+                "import dev.rono.igniscore.api.strategy.IgnisStrategyContext;",
+                "import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;\n"
+                "import dev.rono.igniscore.api.strategy.IgnisStrategyContext;",
+            )
+    insert = '        context.eventBus().subscribe(new CombustibleFuseTheatricsListener(context));\n'
+    ignite = '        context.eventBus().subscribe(new CombustibleIgniteTheatricsListener(context));\n'
+    if ignite in text and insert not in text:
+        text = text.replace(ignite, ignite + insert, 1)
+    elif insert.strip() not in text:
+        needle = "context.eventBus().subscribe("
+        text = text.replace(needle, insert + needle, 1)
     path.write_text(text, encoding="utf-8")
     return str(path)
 
@@ -835,6 +1004,7 @@ def cmd_apply(args):
     updated_behavior = 0
     updated_tests = 0
     wired_theatrics = 0
+    wired_fuse = 0
 
     for module, kind, config_path in iter_modules():
         ext_id = module.name
@@ -860,22 +1030,29 @@ def cmd_apply(args):
                 updated_behavior += 1
                 config = fixed
 
-            if args.theatrics and kind == "blocks":
-                refreshed_java = java_sources(module)
-                if add_ignite_theatrics(module, refreshed_java, config):
-                    wired_theatrics += 1
+        if args.theatrics and kind == "blocks":
+            remove_wrong_ignite_theatrics(module, config)
+            refreshed_java = java_sources(module)
+            if add_ignite_theatrics(module, refreshed_java, config):
+                wired_theatrics += 1
+            refreshed_java = java_sources(module)
+            if add_fuse_theatrics(module, refreshed_java, config):
+                wired_fuse += 1
 
-        if args.tests:
+        if args.tests or getattr(args, "upgrade_tests", False):
             test_path = behavior_test_path(module, kind)
             test_path.parent.mkdir(parents=True, exist_ok=True)
-            content = render_behavior_test(ext_id, kind, profile)
-            if not test_path.exists() or args.force_tests:
+            content = render_behavior_test(ext_id, kind, profile, java, config)
+            should_write = not test_path.exists() or args.force_tests or (
+                getattr(args, "upgrade_tests", False) and is_weak_test(test_path)
+            )
+            if should_write:
                 test_path.write_text(content, encoding="utf-8")
                 updated_tests += 1
 
     print(
         f"Updated displays: {updated_displays}, behavior configs: {updated_behavior}, "
-        f"tests: {updated_tests}, ignite theatrics: {wired_theatrics}"
+        f"tests: {updated_tests}, ignite theatrics: {wired_theatrics}, fuse theatrics: {wired_fuse}"
     )
 
 
@@ -892,10 +1069,13 @@ def main():
     p_apply.add_argument("--tests", action="store_true")
     p_apply.add_argument("--theatrics", action="store_true")
     p_apply.add_argument("--force-tests", action="store_true")
+    p_apply.add_argument("--upgrade-tests", action="store_true", help="Overwrite weak assertDoesNotThrow tests")
     p_apply.set_defaults(func=cmd_apply)
 
     args = parser.parse_args()
-    if args.command == "apply" and not any([args.displays, args.behavior, args.tests, args.theatrics]):
+    if args.command == "apply" and not any([
+        args.displays, args.behavior, args.tests, args.theatrics, getattr(args, "upgrade_tests", False)
+    ]):
         args.displays = args.behavior = args.tests = args.theatrics = True
     args.func(args)
 

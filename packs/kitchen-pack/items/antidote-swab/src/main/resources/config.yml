@@ -3,8 +3,9 @@ id: antidote-swab
 display:
   title: "&eAntidote Swab"
   description:
-    - "&7Right-click to use the antidote swab."
-    - "&7Check the effect after use."
+    - "&7Drink to gain brief &aRegeneration&7."
+    - "&7Clears ailments on use."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

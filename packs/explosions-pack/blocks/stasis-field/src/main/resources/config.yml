@@ -3,8 +3,9 @@ id: stasis-field
 display:
   title: "&6Stasis Field"
   description:
-    - "&7Place to activate the stasis field."
-    - "&7Runs passively while placed nearby."
+    - "&7Freezes all entities within &f4.5 blocks&7."
+    - "&7Cloud pulse ring marks the field edge."
+    - "&7Stops mobs and items in place."
 
 block:
   placeable: true

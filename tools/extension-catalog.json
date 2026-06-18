@@ -2,8 +2,9 @@
   "display-case": {
     "title": "&6Display Case",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the display case."
+      "&7Open to place one item on display.",
+      "&7Showcases a single item in slot 13.",
+      "&7Decorative trophy case."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -12,8 +13,9 @@
   "glow-ink-lantern": {
     "title": "&6Glow Ink Lantern",
     "description": [
-      "&7Place to activate the glow ink lantern.",
-      "&7Runs passively while placed nearby."
+      "&7Glow-squid particles and amethyst chime.",
+      "&7Ambient light decoration.",
+      "&7Passive glow while placed."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -22,8 +24,9 @@
   "item-pedestal-hologram": {
     "title": "&6Item Pedestal Hologram",
     "description": [
-      "&7Place to activate the item pedestal hologram.",
-      "&7Runs passively while placed nearby."
+      "&7Enchant particles float above the pedestal.",
+      "&7Amethyst chime ambient sound.",
+      "&7Decorative item showcase base."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -32,8 +35,9 @@
   "mood-lantern": {
     "title": "&6Mood Lantern",
     "description": [
-      "&7Place to activate the mood lantern.",
-      "&7Runs passively while placed nearby."
+      "&7Reads nearby mob and player mood in &f10-block&7 radius.",
+      "&7Angry particles if hostiles dominate.",
+      "&7Note or end-rod particles when calm."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -42,8 +46,9 @@
   "motion-floodlight": {
     "title": "&6Motion Floodlight",
     "description": [
-      "&7Place to activate the motion floodlight.",
-      "&7Runs passively while placed nearby."
+      "&7Scans end-rod beams at nearby players.",
+      "&f8-block&7 motion-detection radius.",
+      "&7Lights up when players are near."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -52,8 +57,9 @@
   "paint-mixer": {
     "title": "&6Paint Mixer",
     "description": [
-      "&7Place to activate the paint mixer.",
-      "&7Runs passively while placed nearby."
+      "&7Cycles redstone, wax, and compost particles.",
+      "&7Ambient color-mixing decoration.",
+      "&7Passive while placed."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -62,8 +68,9 @@
   "cable-ties": {
     "title": "&6Cable Ties",
     "description": [
-      "&7Right-click to use the cable ties.",
-      "&7Check the effect after use."
+      "&7Click two &ffence posts&7 to tie them.",
+      "&7Draws a particle cable between posts.",
+      "&7Consumes one tie per link."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -72,8 +79,9 @@
   "cookie-cutter-stamp": {
     "title": "&6Cookie Cutter Stamp",
     "description": [
-      "&7Right-click to use the cookie cutter stamp.",
-      "&7Check the effect after use."
+      "&7Cycle through &dheart&7, &estar&7, &atree&7, &bmoon&7 shapes.",
+      "&7Stores the shape in item NBT.",
+      "&7For themed cookie crafting."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -82,8 +90,9 @@
   "glow-orb": {
     "title": "&6Glow Orb",
     "description": [
-      "&7Right-click to use the glow orb.",
-      "&7Check the effect after use."
+      "&7Throw a glowing snowball projectile.",
+      "&7Leaves a trail of &fend-rod&7 particles.",
+      "&7Lasts about a minute before despawning."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -92,8 +101,9 @@
   "lock": {
     "title": "&6Lock",
     "description": [
-      "&7Right-click to use the lock.",
-      "&7Check the effect after use."
+      "&7Toggle &cengaged&7 / &adisengaged&7 on the item.",
+      "&7Wax-on/wax-off particles on toggle.",
+      "&7Iron trapdoor sound feedback."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -102,8 +112,9 @@
   "paint-stripper": {
     "title": "&6Paint Stripper",
     "description": [
-      "&7Right-click to use the paint stripper.",
-      "&7Check the effect after use."
+      "&7Strip dye from &fbanners&7, &fwool&7, or leather blocks.",
+      "&7Resets banners to white; removes color suffixes.",
+      "&7Consumes one use per strip."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -112,8 +123,9 @@
   "rivet-gun": {
     "title": "&6Rivet Gun",
     "description": [
-      "&7Right-click to use the rivet gun.",
-      "&7Check the effect after use."
+      "&7Reinforce a block into &8obsidian&7 (or configured material).",
+      "&7Cannot rivet already-reinforced blocks.",
+      "&7Consumes one rivet per use."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -122,8 +134,9 @@
   "sandblaster": {
     "title": "&6Sandblaster",
     "description": [
-      "&7Right-click to use the sandblaster.",
-      "&7Check the effect after use."
+      "&7Etch &fstone&7 into &7chiseled stone bricks&7.",
+      "&7Affects blocks in a small radius around target.",
+      "&7Consumes one charge per blast."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -132,8 +145,9 @@
   "smoke-can": {
     "title": "&6Smoke Can",
     "description": [
-      "&7Right-click to use the smoke can.",
-      "&7Check the effect after use."
+      "&7Throw a smoke grenade (snowball projectile).",
+      "&7Billows &8campfire smoke&7 and cloud particles.",
+      "&7Lasts ~20 seconds of concealment."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -142,8 +156,9 @@
   "stencil-plate": {
     "title": "&6Stencil Plate",
     "description": [
-      "&7Right-click to use the stencil plate.",
-      "&7Check the effect after use."
+      "&7Apply a glow pattern to &fconcrete powder&7.",
+      "&7Decorates powder before it hardens.",
+      "&7Consumes one plate per use."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -152,8 +167,9 @@
   "auto-sieve": {
     "title": "&6Auto Sieve",
     "description": [
-      "&7Place to activate the auto sieve.",
-      "&7Runs passively while placed nearby."
+      "&7Passive sifting particles while placed.",
+      "&7Sand-break sound each tick cycle.",
+      "&7Decorative sifting station."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -162,18 +178,20 @@
   "deoxidizer": {
     "title": "&6Deoxidizer",
     "description": [
-      "&7Place to activate the deoxidizer.",
-      "&7Runs passively while placed nearby."
+      "&7Reverts oxidized copper in a &f4-block&7 radius.",
+      "&7Wax-on sound each cycle.",
+      "&7Keeps copper builds pristine."
     ],
     "mysterious": false,
     "profile": "placed_tick",
     "path": "packs/crafting-pack/blocks/deoxidizer"
   },
   "lost-and-found-bin": {
-    "title": "&6Lost And Found Bin",
+    "title": "&6Lost & Found Bin",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the lost and found bin."
+      "&7Open to retrieve swept-up items.",
+      "&7Periodically vacuums nearby item drops into storage.",
+      "&7Collects loot within ~8 blocks."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -182,8 +200,9 @@
   "piglin-barter-post": {
     "title": "&6Piglin Barter Post",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the piglin barter post."
+      "&7Open GUI: insert a &6gold ingot&7.",
+      "&7Trades for random nether loot (pearls, crying obsidian, etc.).",
+      "&7Piglin admiring sound on barter."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -192,8 +211,9 @@
   "pocket-dimension-cache": {
     "title": "&6Pocket Dimension Cache",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the pocket dimension cache."
+      "&7Open for extra-dimensional storage.",
+      "&7Up to &f3 rows&7 of inventory (configurable).",
+      "&7Personal stash independent of chunk."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -202,8 +222,9 @@
   "recycler": {
     "title": "&6Recycler",
     "description": [
-      "&7Place to activate the recycler.",
-      "&7Runs passively while placed nearby."
+      "&7Scrap particles and grindstone sound.",
+      "&7Ambient recycling station.",
+      "&7Decorative scrap-processing block."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -222,8 +243,9 @@
   "blueprint-projector": {
     "title": "&bBlueprint Projector",
     "description": [
-      "&7Place to activate the blueprint projector.",
-      "&7Runs passively while placed nearby."
+      "&7Projects a vertical scan beam upward.",
+      "&7Pulses an end-rod ring while active.",
+      "&7Marks build zones with happy-villager particles."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -252,8 +274,9 @@
   "light-beacon": {
     "title": "&bLight Beacon",
     "description": [
-      "&7Place to activate the light beacon.",
-      "&7Runs passively while placed nearby."
+      "&7End-rod sparkles and glow pulse ring.",
+      "&7Amethyst chime each cycle.",
+      "&33-block&7 radius light marker."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -262,8 +285,9 @@
   "mob-radar": {
     "title": "&bMob Radar",
     "description": [
-      "&7Place to activate the mob radar.",
-      "&7Runs passively while placed nearby."
+      "&7Detects hostiles within &f16 blocks&7.",
+      "&7Crimson pulse ring scales with mob count.",
+      "&7Bass note alarm pitch rises with threats."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -272,8 +296,9 @@
   "ore-echo": {
     "title": "&bOre Echo",
     "description": [
-      "&7Place to activate the ore echo.",
-      "&7Runs passively while placed nearby."
+      "&7Scans for nearest ore within &f12 blocks&7.",
+      "&7Crit beam points toward detected ore.",
+      "&7Amethyst chime on ore ping."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -282,8 +307,9 @@
   "ore-sniffer": {
     "title": "&bOre Sniffer",
     "description": [
-      "&7Place to activate the ore sniffer.",
-      "&7Runs passively while placed nearby."
+      "&7Finds nearest ore in a &f12-block&7 radius.",
+      "&7Crit scan beam to ore location.",
+      "&7Passive underground ore detector."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -310,10 +336,11 @@
     "path": "packs/exploration-pack/blocks/waypoint-marker"
   },
   "xp-vacuum": {
-    "title": "&bXp Vacuum",
+    "title": "&bXP Vacuum",
     "description": [
-      "&7Place to activate the xp vacuum.",
-      "&7Runs passively while placed nearby."
+      "&7Pulls experience orbs toward it.",
+      "&f6-block&7 radius, configurable pull strength.",
+      "&7Enchant particles while vacuuming."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -322,8 +349,9 @@
   "atlas-imprinter": {
     "title": "&bAtlas Imprinter",
     "description": [
-      "&7Right-click to use the atlas imprinter.",
-      "&7Check the effect after use."
+      "&7Right-click to stamp your &fX/Z&7 coords on the item.",
+      "&7Stores numbered atlas imprints in NBT.",
+      "&7Useful for mapping waypoints."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -332,8 +360,9 @@
   "block-stethoscope": {
     "title": "&bBlock Stethoscope",
     "description": [
-      "&7Right-click to use the block stethoscope.",
-      "&7Check the effect after use."
+      "&7Aim at a block and use to hear its material.",
+      "&7Draws a scan beam to the target.",
+      "&7Reports the block type in chat."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -342,8 +371,9 @@
   "chunk-grid-overlay": {
     "title": "&bChunk Grid Overlay",
     "description": [
-      "&7Right-click to use the chunk grid overlay.",
-      "&7Check the effect after use."
+      "&7Use to show your current &fchunk coords&7.",
+      "&7Displays chunk X/Z on the action bar.",
+      "&7Pulses a flame ring at the chunk corner."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -352,8 +382,9 @@
   "keyring-beacon": {
     "title": "&bKeyring Beacon",
     "description": [
-      "&7Right-click to use the keyring beacon.",
-      "&7Check the effect after use."
+      "&7Save up to &f3 beacon slots&7 with your coords.",
+      "&7Cycles through numbered slots on each use.",
+      "&7Pulses an end-rod ring when marking."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -362,8 +393,9 @@
   "ore-xray-goggles": {
     "title": "&bOre Xray Goggles",
     "description": [
-      "&7Right-click to use the ore xray goggles.",
-      "&7Check the effect after use."
+      "&7Scan for the nearest ore within &f14 blocks&7.",
+      "&7Draws a crit beam to the ore location.",
+      "&7Reports ore coordinates in chat."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -372,8 +404,9 @@
   "player-chronicle-book": {
     "title": "&bPlayer Chronicle Book",
     "description": [
-      "&7Right-click to use the player chronicle book.",
-      "&7Check the effect after use."
+      "&7Write a chronicle page with your name and coords.",
+      "&7Pages stored in item NBT.",
+      "&7Book page-turn sound on each entry."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -382,8 +415,9 @@
   "structure-compass": {
     "title": "&bStructure Compass",
     "description": [
-      "&7Right-click to use the structure compass.",
-      "&7Check the effect after use."
+      "&7Read compass bearing: &fnorth&7, &feast&7, &fsouth&7, or &fwest&7.",
+      "&7Defaults to north if unset.",
+      "&7Pulses an end-rod ring on use."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -392,8 +426,9 @@
   "trait-badge": {
     "title": "&bTrait Badge",
     "description": [
-      "&7Right-click to use the trait badge.",
-      "&7Check the effect after use."
+      "&7Roll a random role: &dArtisan&7, &bScout&7, &5Alchemist&7, &7Engineer&7, &cDuelist&7.",
+      "&7Trait stored in item NBT.",
+      "&7Level-up sound and totem particles."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -968,8 +1003,9 @@
   "stasis-field": {
     "title": "&6Stasis Field",
     "description": [
-      "&7Place to activate the stasis field.",
-      "&7Runs passively while placed nearby."
+      "&7Freezes all entities within &f4.5 blocks&7.",
+      "&7Cloud pulse ring marks the field edge.",
+      "&7Stops mobs and items in place."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1162,8 +1198,9 @@
   "chicken-coop-cache": {
     "title": "&aChicken Coop Cache",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the chicken coop cache."
+      "&7Open to access egg storage.",
+      "&7Auto-collects eggs from nearby chickens.",
+      "&7Also scoops dropped eggs into inventory."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1172,8 +1209,9 @@
   "compost-heap": {
     "title": "&aCompost Heap",
     "description": [
-      "&7Place to activate the compost heap.",
-      "&7Runs passively while placed nearby."
+      "&7Composter particles and fill sound.",
+      "&7Ambient composting activity while placed.",
+      "&7Pairs with farming setups."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1182,18 +1220,20 @@
   "crop-accelerator": {
     "title": "&aCrop Accelerator",
     "description": [
-      "&7Place to activate the crop accelerator.",
-      "&7Runs passively while placed nearby."
+      "&7Bonemeals crops in a &a4-block&7 radius each tick.",
+      "&7Bone-meal sound on growth pulse.",
+      "&7Passive crop growth booster."
     ],
     "mysterious": false,
     "profile": "placed_tick",
     "path": "packs/farming-pack/blocks/crop-accelerator"
   },
   "crop-mri": {
-    "title": "&aCrop Mri",
+    "title": "&aCrop MRI",
     "description": [
-      "&7Place to activate the crop mri.",
-      "&7Runs passively while placed nearby."
+      "&7Scans crops in a &a6-block&7 radius.",
+      "&7Ping pitch scales with crop count found.",
+      "&7Vertical scan beam while crops detected."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1202,8 +1242,9 @@
   "greenhouse-glass": {
     "title": "&aGreenhouse Glass",
     "description": [
-      "&7Place to activate the greenhouse glass.",
-      "&7Runs passively while placed nearby."
+      "&7Bonemeals crops below when a &fglass roof&7 is overhead.",
+      "&72-block radius under glass canopy.",
+      "&7Happy-villager growth particles."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1212,8 +1253,9 @@
   "honey-centrifuge": {
     "title": "&aHoney Centrifuge",
     "description": [
-      "&7Place to activate the honey centrifuge.",
-      "&7Runs passively while placed nearby."
+      "&7Dripping-honey particles and slide sound.",
+      "&7Ambient honey processing station.",
+      "&7Decorative beekeeping equipment."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1222,8 +1264,9 @@
   "hydroponic-tray": {
     "title": "&aHydroponic Tray",
     "description": [
-      "&7Place to activate the hydroponic tray.",
-      "&7Runs passively while placed nearby."
+      "&7Bonemeals crops in a &a2-block&7 radius.",
+      "&7Dripping-water particles each cycle.",
+      "&7Soil-free passive grow tray."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1232,8 +1275,9 @@
   "irrigation-sprinkler": {
     "title": "&aIrrigation Sprinkler",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the irrigation sprinkler."
+      "&7Open to load a &9water bucket&7 in the tank slot.",
+      "&7Sprays falling-water particles over nearby &efarmland&7.",
+      "&7Consumes one bucket per watering cycle."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1242,8 +1286,9 @@
   "kelp-compressor": {
     "title": "&aKelp Compressor",
     "description": [
-      "&7Place to activate the kelp compressor.",
-      "&7Runs passively while placed nearby."
+      "&7Bubble particles and wet-grass sound.",
+      "&7Ambient kelp processing station.",
+      "&7Decorative underwater-farm equipment."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1252,8 +1297,9 @@
   "milking-station": {
     "title": "&aMilking Station",
     "description": [
-      "&7Place to activate the milking station.",
-      "&7Runs passively while placed nearby."
+      "&7Detects passive mobs within &f3 blocks&7.",
+      "&7Honey-drip particles and cow-milk sound.",
+      "&7Ambient auto-milking station."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1262,8 +1308,9 @@
   "moss-creeper": {
     "title": "&aMoss Creeper",
     "description": [
-      "&7Place to activate the moss creeper.",
-      "&7Runs passively while placed nearby."
+      "&7Spreads moss on blocks near water.",
+      "&f3-block&7 radius mossification each tick.",
+      "&7Passive biome-greening block."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1272,8 +1319,9 @@
   "pollinator-block": {
     "title": "&aPollinator Block",
     "description": [
-      "&7Place to activate the pollinator block.",
-      "&7Runs passively while placed nearby."
+      "&7Bonemeals crops in a &a3-block&7 radius.",
+      "&7Bee pollinate sound and happy-villager particles.",
+      "&7Passive crop pollinator."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1282,8 +1330,9 @@
   "sapling-nursery": {
     "title": "&aSapling Nursery",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the sapling nursery."
+      "&7Open to store saplings and propagules.",
+      "&7Auto-plants saplings on adjacent grass/dirt.",
+      "&7Consumes one sapling per planting."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1292,8 +1341,9 @@
   "scarecrow-anchor": {
     "title": "&aScarecrow Anchor",
     "description": [
-      "&7Place to activate the scarecrow anchor.",
-      "&7Runs passively while placed nearby."
+      "&7Pushes hostiles away within &f8 blocks&7.",
+      "&7Knockback velocity away from anchor.",
+      "&7Protects crop fields from mobs."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1302,8 +1352,9 @@
   "shepherd-bell": {
     "title": "&aShepherd Bell",
     "description": [
-      "&7Place to activate the shepherd bell.",
-      "&7Runs passively while placed nearby."
+      "&7Herds passive animals within &f10 blocks&7.",
+      "&7Sheep ambient sound each cycle.",
+      "&7Keeps livestock grouped."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1312,8 +1363,9 @@
   "mulch-spreader": {
     "title": "&aMulch Spreader",
     "description": [
-      "&7Right-click to use the mulch spreader.",
-      "&7Check the effect after use."
+      "&7Spread mulch on the block below you.",
+      "&7Turns paths into &amosm blocks&7.",
+      "&7Otherwise mossifies blocks near water."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1322,8 +1374,9 @@
   "seed-bomb": {
     "title": "&aSeed Bomb",
     "description": [
-      "&7Right-click to use the seed bomb.",
-      "&7Check the effect after use."
+      "&7Throw an egg that scatters &agrass and flowers&7.",
+      "&7Plants in a radius on dirt/grass after a short fuse.",
+      "&7Consumes one bomb per throw."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1332,8 +1385,9 @@
   "vine-shears": {
     "title": "&aVine Shears",
     "description": [
-      "&7Right-click to use the vine shears.",
-      "&7Check the effect after use."
+      "&7Click vines to flood-fill cut up to &f32 blocks&7.",
+      "&7Removes vine, weeping, and twisting variants.",
+      "&7Reports cut count in chat."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1342,8 +1396,9 @@
   "brewing-accelerator": {
     "title": "&6Brewing Accelerator",
     "description": [
-      "&7Place to activate the brewing accelerator.",
-      "&7Runs passively while placed nearby."
+      "&7Witch particles and brewing-stand sound.",
+      "&7Ambient accelerator near brewing setups.",
+      "&7Decorative brewing boost indicator."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1352,8 +1407,9 @@
   "coffee-brewer": {
     "title": "&6Coffee Brewer",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the coffee brewer."
+      "&7Open GUI: insert &ecocoa beans&7 + &fglass bottle&7.",
+      "&7Auto-brews a &dpotion&7 (coffee) each tick.",
+      "&7Brewing-stand particles and sound."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1362,8 +1418,9 @@
   "compost-tea-brewer": {
     "title": "&6Compost Tea Brewer",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the compost tea brewer."
+      "&7Open GUI: insert &fbone meal&7 + &fglass bottle&7.",
+      "&7Brews a &dsplash potion&7 (compost tea).",
+      "&7Happy-villager sparkle on completion."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1372,8 +1429,9 @@
   "drying-rack": {
     "title": "&6Drying Rack",
     "description": [
-      "&7Place to activate the drying rack.",
-      "&7Runs passively while placed nearby."
+      "&7Emits campfire smoke particles.",
+      "&7Wool-break ambient sound.",
+      "&7Decorative food and herb drying station."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1382,8 +1440,9 @@
   "fish-smoker-rack": {
     "title": "&6Fish Smoker Rack",
     "description": [
-      "&7Place to activate the fish smoker rack.",
-      "&7Runs passively while placed nearby."
+      "&7Smoking particles and fish swim sounds.",
+      "&7Ambient fish-smoking station.",
+      "&7Pairs with kitchen setups."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1392,8 +1451,9 @@
   "fortune-cookie-maker": {
     "title": "&6Fortune Cookie Maker",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the fortune cookie maker."
+      "&7Open GUI: insert &ewheat&7 + &fpaper&7 to craft cookies.",
+      "&7Hold a cookie and open for a random &6fortune&7 message.",
+      "&7Fortunes warn of creepers, luck, and cruel irony."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1402,8 +1462,9 @@
   "ice-cream-freezer": {
     "title": "&6Ice Cream Freezer",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the ice cream freezer."
+      "&7Open GUI: insert &fsnow&7, &csweet berries&7, and &fmilk bucket&7.",
+      "&7Outputs a &fbowl&7 of ice cream each tick.",
+      "&7Cloud particles and powder-snow sound."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1412,8 +1473,9 @@
   "infuser": {
     "title": "&6Infuser",
     "description": [
-      "&7Place to activate the infuser.",
-      "&7Runs passively while placed nearby."
+      "&7Enchant particles and high-pitch chime.",
+      "&7Ambient infusion station.",
+      "&7Decorative potion and flavor infuser."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1422,8 +1484,9 @@
   "keg-tap": {
     "title": "&6Keg Tap",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the keg tap."
+      "&7Open GUI: insert a &9water&7 or &fmilk bucket&7.",
+      "&7Taps into a &dpotion&7 in the output slot.",
+      "&7Bottle-fill sound on each pour."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1432,8 +1495,9 @@
   "picnic-basket": {
     "title": "&6Picnic Basket",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the picnic basket."
+      "&7Open for &f6 slots&7 of portable food storage.",
+      "&7Carry snacks on the go.",
+      "&7Tracks last-open time per block."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1442,8 +1506,9 @@
   "pizza-oven": {
     "title": "&6Pizza Oven",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the pizza oven."
+      "&7Open GUI: insert &fbread&7, &ebeetroot&7, &fmilk bucket&7.",
+      "&7Bakes a &dcake&7 (pizza) with flame particles.",
+      "&7Smoker smoke and lava sparkle."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1452,8 +1517,9 @@
   "prep-counter": {
     "title": "&6Prep Counter",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the prep counter."
+      "&7Open GUI: load &f3 food items&7 in input slots.",
+      "&7Combines them into a &6golden carrot&7.",
+      "&7Happy-villager sparkle on prep."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1462,8 +1528,9 @@
   "smoker-stack": {
     "title": "&6Smoker Stack",
     "description": [
-      "&7Place to activate the smoker stack.",
-      "&7Runs passively while placed nearby."
+      "&7Tall campfire signal smoke column.",
+      "&7Visible from a distance.",
+      "&7Decorative kitchen chimney."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1472,8 +1539,9 @@
   "spice-rack": {
     "title": "&6Spice Rack",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the spice rack."
+      "&7Open to season food with spices.",
+      "&7Food + spice grants &eHaste&7 and brief &6Saturation&7.",
+      "&7Seasoning station for kitchen builds."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1482,28 +1550,31 @@
   "antidote-swab": {
     "title": "&eAntidote Swab",
     "description": [
-      "&7Right-click to use the antidote swab.",
-      "&7Check the effect after use."
+      "&7Drink to gain brief &aRegeneration&7.",
+      "&7Clears ailments on use.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
     "path": "packs/kitchen-pack/items/antidote-swab"
   },
   "bricklayers-broth": {
-    "title": "&eBricklayers Broth",
+    "title": "&eBricklayer's Broth",
     "description": [
-      "&7Right-click to use the bricklayers broth.",
-      "&7Check the effect after use."
+      "&7Drink for &eHaste II&7 for 90 seconds.",
+      "&7Grants &ffast-place&7 flag on the item.",
+      "&7Speeds up block placement."
     ],
     "mysterious": false,
     "profile": "item_use",
     "path": "packs/kitchen-pack/items/bricklayers-broth"
   },
   "cartographers-espresso": {
-    "title": "&eCartographers Espresso",
+    "title": "&eCartographer's Espresso",
     "description": [
-      "&7Right-click to use the cartographers espresso.",
-      "&7Check the effect after use."
+      "&7Drink for &bSpeed II&7 for 30 seconds.",
+      "&7Sets compass heading toward &fruins&7.",
+      "&7Pulses an end-rod ring at your feet."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1512,28 +1583,31 @@
   "chorus-bite": {
     "title": "&eChorus Bite",
     "description": [
-      "&7Right-click to use the chorus bite.",
-      "&7Check the effect after use."
+      "&7Drink for a chaotic sideways warp.",
+      "&7Spawns portal particles at origin and destination.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
     "path": "packs/kitchen-pack/items/chorus-bite"
   },
   "divers-salt": {
-    "title": "&eDivers Salt",
+    "title": "&eDiver's Salt",
     "description": [
-      "&7Right-click to use the divers salt.",
-      "&7Check the effect after use."
+      "&7Eat for &3Water Breathing&7 for 90 seconds.",
+      "&7Plays sand-place sound on use.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
     "path": "packs/kitchen-pack/items/divers-salt"
   },
   "farmers-tea": {
-    "title": "&eFarmers Tea",
+    "title": "&eFarmer's Tea",
     "description": [
-      "&7Right-click to use the farmers tea.",
-      "&7Check the effect after use."
+      "&7Drink to bonemeal crops in a &a5-block&7 radius.",
+      "&7Instantly grows nearby plants.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1542,8 +1616,9 @@
   "ghost-peppermint": {
     "title": "&eGhost Peppermint",
     "description": [
-      "&7Right-click to use the ghost peppermint.",
-      "&7Check the effect after use."
+      "&7Eat so &fphantoms ignore you&7 until you sleep.",
+      "&7Sets a phantom-ignore flag on the item.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1552,8 +1627,9 @@
   "glow-berry-shot": {
     "title": "&eGlow Berry Shot",
     "description": [
-      "&7Right-click to use the glow berry shot.",
-      "&7Check the effect after use."
+      "&7Drink for &fNight Vision&7 and &eGlowing&7 for 2 minutes.",
+      "&7Lights up your surroundings and marks you.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1562,8 +1638,9 @@
   "heavy-coat-tonic": {
     "title": "&eHeavy Coat Tonic",
     "description": [
-      "&7Right-click to use the heavy coat tonic.",
-      "&7Check the effect after use."
+      "&7Drink for &8Slowness&7 and &9Resistance II&7.",
+      "&7Trade speed for toughness for 45 seconds.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1572,8 +1649,9 @@
   "honey-throat-coat": {
     "title": "&eHoney Throat Coat",
     "description": [
-      "&7Right-click to use the honey throat coat.",
-      "&7Check the effect after use."
+      "&7Drink for brief &aRegeneration II&7.",
+      "&7Marks you with a &esweet scent&7 flag.",
+      "&7Soothes poison-themed debuffs."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1582,18 +1660,20 @@
   "luck-dust": {
     "title": "&eLuck Dust",
     "description": [
-      "&7Right-click to use the luck dust.",
-      "&7Check the effect after use."
+      "&7Sprinkle on a block near a chest.",
+      "&7Activates a &6bonus loot roll&7 on next chest open.",
+      "&7Must click a block; consumes one dust."
     ],
     "mysterious": false,
     "profile": "item_use",
     "path": "packs/kitchen-pack/items/luck-dust"
   },
   "miners-lunch": {
-    "title": "&eMiners Lunch",
+    "title": "&eMiner's Lunch",
     "description": [
-      "&7Right-click to use the miners lunch.",
-      "&7Check the effect after use."
+      "&7Eat for &eHaste&7 and &6Saturation II&7.",
+      "&760 seconds of mining speed and food fill.",
+      "&7Consumable with cooldown."
     ],
     "mysterious": false,
     "profile": "item_use",
@@ -1633,8 +1713,9 @@
   "pipe-valve": {
     "title": "&6Pipe Valve",
     "description": [
-      "&7Place to activate the pipe valve.",
-      "&7Runs passively while placed nearby."
+      "&7When opened remotely, drips water particles.",
+      "&7Pairs with valve wrench for toggling.",
+      "&7Part of a linked pipe network."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1643,8 +1724,9 @@
   "socket-lamp": {
     "title": "&6Socket Lamp",
     "description": [
-      "&7Place to activate the socket lamp.",
-      "&7Runs passively while placed nearby."
+      "&7When lit remotely, emits end-rod particles.",
+      "&7Brightness scales with configured light level.",
+      "&7Pairs with lamp dimmer item."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1653,8 +1735,9 @@
   "sprinkler-head": {
     "title": "&6Sprinkler Head",
     "description": [
-      "&7Place to activate the sprinkler head.",
-      "&7Runs passively while placed nearby."
+      "&7When armed, waters farmland in a &f4-block&7 radius.",
+      "&7Falling-water particles on hydrated soil.",
+      "&7Pairs with sprinkler timer for automation."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1757,8 +1840,9 @@
   "chunk-loader-lite": {
     "title": "&6Chunk Loader Lite",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the chunk loader lite."
+      "&7Open to insert &8coal&7, &8charcoal&7, or &6blaze rods&7.",
+      "&7Keeps the chunk force-loaded while fueled.",
+      "&7Consumes fuel each tick cycle."
     ],
     "mysterious": false,
     "profile": "gui_block",
@@ -1767,18 +1851,20 @@
   "mob-grinder-hub": {
     "title": "&6Mob Grinder Hub",
     "description": [
-      "&7Place to activate the mob grinder hub.",
-      "&7Runs passively while placed nearby."
+      "&7Pulls hostiles downward in a &f5-block&7 radius.",
+      "&7Damage-indicator particles on trapped mobs.",
+      "&7Iron golem attack sound when grinding."
     ],
     "mysterious": false,
     "profile": "placed_tick",
     "path": "packs/utility-pack/blocks/mob-grinder-hub"
   },
   "per-player-weather-dome": {
-    "title": "&6Per Player Weather Dome",
+    "title": "&6Per-Player Weather Dome",
     "description": [
-      "&7Place to activate the per player weather dome.",
-      "&7Runs passively while placed nearby."
+      "&7Rain and cloud particles in a &f5-block&7 dome.",
+      "&7Cloud pulse ring at base.",
+      "&7Localized weather visual effect."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1787,8 +1873,9 @@
   "player-proximity-alarm": {
     "title": "&6Player Proximity Alarm",
     "description": [
-      "&7Place to activate the player proximity alarm.",
-      "&7Runs passively while placed nearby."
+      "&7Rings a bell when players enter &f12 blocks&7.",
+      "&7Firework sparkles on detection.",
+      "&7Base perimeter alarm."
     ],
     "mysterious": false,
     "profile": "placed_tick",
@@ -1797,8 +1884,9 @@
   "secure-trade-table": {
     "title": "&6Secure Trade Table",
     "description": [
-      "&7Right-click to open.",
-      "&7Interact with the secure trade table."
+      "&7Open a two-player secure trade GUI.",
+      "&7Place offers and confirm with &alime dye&7.",
+      "&7Villager trade sound on open."
     ],
     "mysterious": false,
     "profile": "gui_block",

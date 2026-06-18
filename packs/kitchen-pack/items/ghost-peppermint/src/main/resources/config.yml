@@ -3,8 +3,9 @@ id: ghost-peppermint
 display:
   title: "&eGhost Peppermint"
   description:
-    - "&7Right-click to use the ghost peppermint."
-    - "&7Check the effect after use."
+    - "&7Eat so &fphantoms ignore you&7 until you sleep."
+    - "&7Sets a phantom-ignore flag on the item."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

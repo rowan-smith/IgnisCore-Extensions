@@ -3,8 +3,9 @@ id: fish-smoker-rack
 display:
   title: "&6Fish Smoker Rack"
   description:
-    - "&7Place to activate the fish smoker rack."
-    - "&7Runs passively while placed nearby."
+    - "&7Smoking particles and fish swim sounds."
+    - "&7Ambient fish-smoking station."
+    - "&7Pairs with kitchen setups."
 
 block:
   placeable: true

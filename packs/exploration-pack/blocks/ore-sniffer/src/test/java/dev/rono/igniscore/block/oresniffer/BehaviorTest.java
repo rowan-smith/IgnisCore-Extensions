@@ -8,7 +8,7 @@ import dev.rono.igniscore.testsupport.ExtensionTestSupport;
 import dev.rono.igniscore.testsupport.TestEventBus;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class BehaviorTest {
     @Test
@@ -18,10 +18,12 @@ class BehaviorTest {
                 BehaviorTest.class, "ore-sniffer", 10001);
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), "ore-sniffer");
 
-        assertDoesNotThrow(() -> ctx.eventBus().fireBlockPlace(
+        ctx.eventBus().fireBlockPlace(
                 new BlockPlaceEvent(
                         PlacedBlock.of(definition, new IgnisLocation("world", 1, 2, 3)),
                         null),
-                "ore-sniffer"));
+                "ore-sniffer");
+
+        assertFalse(ctx.world().particles().isEmpty() && ctx.world().sounds().isEmpty());
     }
 }

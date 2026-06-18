@@ -3,8 +3,9 @@ id: sandblaster
 display:
   title: "&6Sandblaster"
   description:
-    - "&7Right-click to use the sandblaster."
-    - "&7Check the effect after use."
+    - "&7Etch &fstone&7 into &7chiseled stone bricks&7."
+    - "&7Affects blocks in a small radius around target."
+    - "&7Consumes one charge per blast."
 
 item:
   base_material: paper

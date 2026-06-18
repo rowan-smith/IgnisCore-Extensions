@@ -3,8 +3,9 @@ id: paint-stripper
 display:
   title: "&6Paint Stripper"
   description:
-    - "&7Right-click to use the paint stripper."
-    - "&7Check the effect after use."
+    - "&7Strip dye from &fbanners&7, &fwool&7, or leather blocks."
+    - "&7Resets banners to white; removes color suffixes."
+    - "&7Consumes one use per strip."
 
 item:
   base_material: paper

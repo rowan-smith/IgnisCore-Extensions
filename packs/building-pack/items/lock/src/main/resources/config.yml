@@ -3,8 +3,9 @@ id: lock
 display:
   title: "&6Lock"
   description:
-    - "&7Right-click to use the lock."
-    - "&7Check the effect after use."
+    - "&7Toggle &cengaged&7 / &adisengaged&7 on the item."
+    - "&7Wax-on/wax-off particles on toggle."
+    - "&7Iron trapdoor sound feedback."
 
 item:
   base_material: paper

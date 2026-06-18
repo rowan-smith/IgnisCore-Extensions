@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.seismictnt;
 
 import dev.rono.igniscore.api.strategy.AbstractIgnisBlockStrategy;
+import dev.rono.extensions.shared.api.theatrics.CombustibleFuseTheatricsListener;
 import dev.rono.extensions.shared.api.theatrics.CombustibleIgniteTheatricsListener;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
@@ -10,6 +11,7 @@ public class Strategy extends AbstractIgnisBlockStrategy {
         super(context);
         SeismicRuntime runtime = new SeismicRuntime(context);
         context.eventBus().subscribe(new CombustibleIgniteTheatricsListener(context));
+        context.eventBus().subscribe(new CombustibleFuseTheatricsListener(context));
         context.eventBus().subscribe(new SeismicOnBlockClickListener());
         context.eventBus().subscribe(new SeismicOnBlockTickListener(runtime));
         context.eventBus().subscribe(new SeismicOnBlockTriggerListener(runtime));

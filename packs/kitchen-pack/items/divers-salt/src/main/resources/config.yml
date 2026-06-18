@@ -1,10 +1,11 @@
 id: divers-salt
 
 display:
-  title: "&eDivers Salt"
+  title: "&eDiver's Salt"
   description:
-    - "&7Right-click to use the divers salt."
-    - "&7Check the effect after use."
+    - "&7Eat for &3Water Breathing&7 for 90 seconds."
+    - "&7Plays sand-place sound on use."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

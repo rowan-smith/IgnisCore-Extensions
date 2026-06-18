@@ -3,8 +3,9 @@ id: hydroponic-tray
 display:
   title: "&aHydroponic Tray"
   description:
-    - "&7Place to activate the hydroponic tray."
-    - "&7Runs passively while placed nearby."
+    - "&7Bonemeals crops in a &a2-block&7 radius."
+    - "&7Dripping-water particles each cycle."
+    - "&7Soil-free passive grow tray."
 
 block:
   placeable: true

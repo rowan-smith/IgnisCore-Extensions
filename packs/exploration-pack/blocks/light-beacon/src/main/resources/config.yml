@@ -3,8 +3,9 @@ id: light-beacon
 display:
   title: "&bLight Beacon"
   description:
-    - "&7Place to activate the light beacon."
-    - "&7Runs passively while placed nearby."
+    - "&7End-rod sparkles and glow pulse ring."
+    - "&7Amethyst chime each cycle."
+    - "&33-block&7 radius light marker."
 
 block:
   placeable: true

@@ -3,8 +3,9 @@ id: compost-heap
 display:
   title: "&aCompost Heap"
   description:
-    - "&7Place to activate the compost heap."
-    - "&7Runs passively while placed nearby."
+    - "&7Composter particles and fill sound."
+    - "&7Ambient composting activity while placed."
+    - "&7Pairs with farming setups."
 
 block:
   placeable: true

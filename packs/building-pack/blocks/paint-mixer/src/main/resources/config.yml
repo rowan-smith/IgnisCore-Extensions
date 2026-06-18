@@ -3,8 +3,9 @@ id: paint-mixer
 display:
   title: "&6Paint Mixer"
   description:
-    - "&7Place to activate the paint mixer."
-    - "&7Runs passively while placed nearby."
+    - "&7Cycles redstone, wax, and compost particles."
+    - "&7Ambient color-mixing decoration."
+    - "&7Passive while placed."
 
 block:
   placeable: true

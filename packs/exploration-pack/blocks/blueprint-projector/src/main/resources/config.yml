@@ -3,8 +3,9 @@ id: blueprint-projector
 display:
   title: "&bBlueprint Projector"
   description:
-    - "&7Place to activate the blueprint projector."
-    - "&7Runs passively while placed nearby."
+    - "&7Projects a vertical scan beam upward."
+    - "&7Pulses an end-rod ring while active."
+    - "&7Marks build zones with happy-villager particles."
 
 block:
   placeable: true

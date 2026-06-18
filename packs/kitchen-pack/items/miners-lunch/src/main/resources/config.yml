@@ -1,10 +1,11 @@
 id: miners-lunch
 
 display:
-  title: "&eMiners Lunch"
+  title: "&eMiner's Lunch"
   description:
-    - "&7Right-click to use the miners lunch."
-    - "&7Check the effect after use."
+    - "&7Eat for &eHaste&7 and &6Saturation II&7."
+    - "&760 seconds of mining speed and food fill."
+    - "&7Consumable with cooldown."
 
 item:
   base_material: paper

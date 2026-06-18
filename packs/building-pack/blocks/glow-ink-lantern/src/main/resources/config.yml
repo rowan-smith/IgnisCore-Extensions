@@ -3,8 +3,9 @@ id: glow-ink-lantern
 display:
   title: "&6Glow Ink Lantern"
   description:
-    - "&7Place to activate the glow ink lantern."
-    - "&7Runs passively while placed nearby."
+    - "&7Glow-squid particles and amethyst chime."
+    - "&7Ambient light decoration."
+    - "&7Passive glow while placed."
 
 block:
   placeable: true

@@ -3,8 +3,9 @@ id: pipe-valve
 display:
   title: "&6Pipe Valve"
   description:
-    - "&7Place to activate the pipe valve."
-    - "&7Runs passively while placed nearby."
+    - "&7When opened remotely, drips water particles."
+    - "&7Pairs with valve wrench for toggling."
+    - "&7Part of a linked pipe network."
 
 block:
   placeable: true

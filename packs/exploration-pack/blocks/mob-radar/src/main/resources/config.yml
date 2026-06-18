@@ -3,8 +3,9 @@ id: mob-radar
 display:
   title: "&bMob Radar"
   description:
-    - "&7Place to activate the mob radar."
-    - "&7Runs passively while placed nearby."
+    - "&7Detects hostiles within &f16 blocks&7."
+    - "&7Crimson pulse ring scales with mob count."
+    - "&7Bass note alarm pitch rises with threats."
 
 block:
   placeable: true

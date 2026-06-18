@@ -3,8 +3,9 @@ id: brewing-accelerator
 display:
   title: "&6Brewing Accelerator"
   description:
-    - "&7Place to activate the brewing accelerator."
-    - "&7Runs passively while placed nearby."
+    - "&7Witch particles and brewing-stand sound."
+    - "&7Ambient accelerator near brewing setups."
+    - "&7Decorative brewing boost indicator."
 
 block:
   placeable: true

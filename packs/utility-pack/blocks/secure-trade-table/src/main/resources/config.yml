@@ -3,8 +3,9 @@ id: secure-trade-table
 display:
   title: "&6Secure Trade Table"
   description:
-    - "&7Right-click to open."
-    - "&7Interact with the secure trade table."
+    - "&7Open a two-player secure trade GUI."
+    - "&7Place offers and confirm with &alime dye&7."
+    - "&7Villager trade sound on open."
 
 block:
   placeable: true

@@ -3,8 +3,9 @@ id: player-chronicle-book
 display:
   title: "&bPlayer Chronicle Book"
   description:
-    - "&7Right-click to use the player chronicle book."
-    - "&7Check the effect after use."
+    - "&7Write a chronicle page with your name and coords."
+    - "&7Pages stored in item NBT."
+    - "&7Book page-turn sound on each entry."
 
 item:
   base_material: paper
