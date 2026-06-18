@@ -58,6 +58,9 @@ class ExtensionJarIntegrityTest {
             JarEntry configEntry = jar.getJarEntry("config.yml");
             assertNotNull(configEntry, () -> "config.yml missing from " + jarPath);
             assertTrue(configEntry.getSize() > 0, () -> "config.yml is empty in " + jarPath);
+
+            JarEntry sharedEntry = jar.getJarEntry("dev/rono/extensions/shared/ExtensionShared.class");
+            assertNotNull(sharedEntry, () -> "ExtensionShared not embedded in " + jarPath);
         }
     }
 

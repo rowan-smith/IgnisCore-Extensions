@@ -1,5 +1,6 @@
 package dev.rono.igniscore.item.flashbang;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.extensions.shared.api.config.ThrowableItemConfig;
 import dev.rono.igniscore.api.model.ItemDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
@@ -69,7 +70,7 @@ final class FlashbangBehavior {
         world.playSound(impact, "ENTITY_GENERIC_EXPLODE", 3.0f, 1.8f);
         world.playSound(impact, "ENTITY_ELDER_GUARDIAN_CURSE", 2.5f, 0.4f);
 
-        context.effects().playFakeExplosion(impact, 6.0f, world.getPlayersNear(impact, radius));
+        ExtensionShared.preview().fakeExplosion(context.effects(), world, impact, 6.0f, world.getPlayersNear(impact, radius));
 
         for (IgnisPlayer target : world.getPlayersNear(impact, radius)) {
             double dist = distance(target.getLocation(), impact);
