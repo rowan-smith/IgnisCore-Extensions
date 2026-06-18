@@ -56,7 +56,8 @@ class BehaviorTest {
                 BehaviorTest.class, EXTENSION_ID, 10001);
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
         RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
-        instance.setTicksLeft(40);
+        int fuseTicks = dev.rono.igniscore.api.strategy.StrategySupport.customInt(definition, "fuse", 80);
+        instance.setTicksLeft(Math.max(1, fuseTicks / 2));
 
         new CombustibleFuseTheatricsListener(ctx.context())
                 .onBlockTick(new BlockTickEvent(instance));

@@ -12,6 +12,7 @@ import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.testsupport.BehaviorTestSupport;
 import dev.rono.igniscore.testsupport.ExtensionTestSupport;
 import dev.rono.igniscore.testsupport.TestEventBus;
+import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -56,7 +57,9 @@ class BehaviorTest {
                 BehaviorTest.class, EXTENSION_ID, 10001);
         Strategy strategy = TestEventBus.activate(() -> new Strategy(ctx.context()), EXTENSION_ID);
         RuntimeBlockInstance instance = BehaviorTestSupport.blockInstance(definition);
-        instance.setTicksLeft(40);
+        int fuseTicks = dev.rono.igniscore.api.strategy.StrategySupport.customInt(definition, "fuse", 80);
+        Assumptions.assumeTrue(fuseTicks > 1, "instant fuse has no countdown pulse");
+        instance.setTicksLeft(Math.max(1, fuseTicks / 2));
 
         new CombustibleFuseTheatricsListener(ctx.context())
                 .onBlockTick(new BlockTickEvent(instance));
