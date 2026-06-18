@@ -94,7 +94,7 @@ final class EntityBlastSupport {
         effects.playSound(center, "ENTITY_LIGHTNING_BOLT_THUNDER", volume * 0.6f, pitch + 0.15f);
 
         if (protocol != null && protocol.isEnabled()) {
-            protocol.sendFakeExplosion(center, 4.0f, players);
+            VisualEffectSupport.safeProtocolExplosion(protocol, world, center, 4.0f, players);
         }
 
         for (IgnisPlayer player : players) {

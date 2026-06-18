@@ -29,6 +29,14 @@ public final class PreviewApi {
                                             float power) {
         PreviewTrickSupport.playDecoyExplosions(effects, world, realCenter, decoyCount, spread, power);
     }
+
+    public void fakeExplosion(IgnisEffectService effects,
+                              IgnisWorld world,
+                              IgnisLocation location,
+                              float power,
+                              java.util.Collection<IgnisPlayer> players) {
+        VisualEffectSupport.safeFakeExplosion(effects, world, location, power, players);
+    }
     public void scareExplosion(IgnisEffectService effects,
                                        IgnisProtocolService protocol,
                                        IgnisWorld world,

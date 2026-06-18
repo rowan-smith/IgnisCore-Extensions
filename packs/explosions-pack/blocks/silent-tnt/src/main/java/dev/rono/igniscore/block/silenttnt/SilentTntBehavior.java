@@ -31,7 +31,7 @@ final class SilentTntBehavior {
         boolean blockDamage = StrategySupport.customBoolean(instance.getDefinition(), "blockDamage", true);
         ExtensionShared.preview().silentDetonation(world, loc, realPower, blockDamage);
         ExtensionShared.preview().forNearbyPlayers(world, loc, 32, player ->
-                context.effects().playFakeExplosion(loc, 0f, world.getPlayersNear(loc, 32)));
+                ExtensionShared.preview().fakeExplosion(context.effects(), world, loc, 0f, world.getPlayersNear(loc, 32)));
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

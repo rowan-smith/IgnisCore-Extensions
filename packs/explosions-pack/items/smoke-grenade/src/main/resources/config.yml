@@ -4,7 +4,7 @@ display:
   title: "&cSmoke Grenade"
   description:
     - "&7Right-click to &ethrow&7."
-    - "&7Detonates after &e4.0s&7; flies on a timed fuse after thrown."
+    - "&7Billows a thick &8smoke screen&7 for &e6s&7; no explosion."
 
 item:
   base_material: snowball
@@ -17,7 +17,6 @@ behavior:
   right_click_block: throw
 
 custom_data:
-  power: 3.0
-  fuse_ticks: 40
   throw_velocity: 1.2
-  fire: false
+  smokeRadius: 5.0
+  smokeDuration: 120
