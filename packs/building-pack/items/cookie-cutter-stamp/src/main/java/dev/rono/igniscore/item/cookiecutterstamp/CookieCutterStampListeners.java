@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.cookiecutterstamp;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -37,7 +37,7 @@ final class CookieCutterStampListeners implements OnItemClickListener {
                 nbtService.setItemInt(event.item(), "ignis:shape_index", index + 1);
                 event.player().sendMessage("<light_purple>Stamped cookie shape: <white>" + shape + "</white></light_purple>");
                 IgnisWorld world = event.player().getWorld();
-                TheatricsSupport.sparkle(world, event.player().getLocation(), "HEART", 6);
+                ExtensionShared.theatrics().sparkle(world, event.player().getLocation(), "HEART", 6);
                 world.playSound(event.player().getLocation(), "BLOCK_WOOL_PLACE", 0.8f, 1.4f);
             }
     }

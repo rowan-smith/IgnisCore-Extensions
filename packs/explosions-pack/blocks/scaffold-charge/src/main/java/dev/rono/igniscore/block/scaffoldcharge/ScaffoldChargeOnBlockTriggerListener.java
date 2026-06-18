@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.scaffoldcharge;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -22,7 +22,7 @@ final class ScaffoldChargeOnBlockTriggerListener implements OnBlockTriggerListen
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = ScaffoldChargeSupport.worldAt(context, loc);
         world.playSound(loc, "BLOCK_SCAFFOLDING_BREAK", 1.2f, 0.8f);
-        ExplosionSupport.createExplosion(world, loc, def, 3.0, false);
+        ExtensionShared.explosion().create(world, loc, def, 3.0, false);
     }
 }
 

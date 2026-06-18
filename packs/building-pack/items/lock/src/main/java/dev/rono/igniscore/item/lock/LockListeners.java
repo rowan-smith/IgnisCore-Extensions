@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.lock;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -32,7 +31,7 @@ final class LockListeners implements OnItemClickListener {
                 boolean locked = nbtService.getItemBoolean(event.item(), "ignis:locked", false);
                 nbtService.setItemBoolean(event.item(), "ignis:locked", !locked);
                 event.player().sendMessage(locked ? "<green>Lock disengaged.</green>" : "<red>Lock engaged.</red>");
-                TheatricsSupport.sparkle(world, loc, locked ? "WAX_OFF" : "WAX_ON", 8);
+                ExtensionShared.theatrics().sparkle(world, loc, locked ? "WAX_OFF" : "WAX_ON", 8);
                 world.playSound(loc, "BLOCK_IRON_TRAPDOOR_CLOSE", 0.8f, locked ? 1.2f : 0.8f);
             }
     }

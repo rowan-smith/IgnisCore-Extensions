@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.entitycamera;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -34,7 +34,7 @@ final class EntityCameraOnBlockInteractListener implements OnBlockInteractListen
         context.extensions().spectateEntity(event.player(), target, duration);
         IgnisLocation entityLoc = world.getEntityLocation(target);
         if (entityLoc != null) {
-            TheatricsSupport.scanBeam(world, center, entityLoc, "END_ROD");
+            ExtensionShared.theatrics().scanBeam(world, center, entityLoc, "END_ROD");
         }
         world.playSound(center, "BLOCK_BEACON_POWER_SELECT", 0.7f, 1.4f);
         event.player().sendMessage("<light_purple>Entity camera linked for " + (duration / 20) + "s.</light_purple>");

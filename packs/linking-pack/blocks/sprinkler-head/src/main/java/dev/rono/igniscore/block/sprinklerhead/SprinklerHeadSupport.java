@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.sprinklerhead;
 
-import dev.rono.extensions.shared.strategy.LinkedBlockRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,7 +18,7 @@ final class SprinklerHeadSupport {
 
     static void tick(IgnisStrategyContext ctx, BlockDefinition definition, IgnisLocation location) {
 
-        if (!ARMED.getOrDefault(LinkedBlockRegistry.key(location), false)) {
+        if (!ARMED.getOrDefault(ExtensionShared.remote().key(location), false)) {
             return;
         }
         IgnisWorld world = worldAt(ctx, location);

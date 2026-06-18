@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.icecreamfreezer;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class IceCreamFreezerRuntime {
@@ -9,7 +10,7 @@ final class IceCreamFreezerRuntime {
 
     IceCreamFreezerRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "ice-cream-freezer");
+                this.registry = ExtensionShared.gui().blockStorage(context, "ice-cream-freezer");
     }
 }
 

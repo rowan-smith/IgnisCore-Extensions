@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.rivetgun;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -34,7 +34,7 @@ final class RivetGunListeners implements OnItemClickListener {
                 }
                 String reinforced = StrategySupport.customString(event.definition().getCustomData(), "reinforcedMaterial", "obsidian");
                 world.setBlockMaterialKey(loc, reinforced);
-                TheatricsSupport.sparkle(world, loc.add(0.5, 0.5, 0.5), "CRIT", 8);
+                ExtensionShared.theatrics().sparkle(world, loc.add(0.5, 0.5, 0.5), "CRIT", 8);
                 world.playSound(loc, "BLOCK_ANVIL_USE", 0.8f, 1.2f);
                 event.player().sendMessage("<gray>Riveted block into reinforced variant.</gray>");
                 event.item().setAmount(event.item().getAmount() - 1);

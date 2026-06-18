@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.signalcharge;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -22,7 +22,7 @@ final class SignalChargeOnBlockTriggerListener implements OnBlockTriggerListener
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = SignalChargeSupport.worldAt(context, loc);
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 1.0f, 0.9f);
-        ExplosionSupport.createExplosion(world, loc, def, 4.0, false);
+        ExtensionShared.explosion().create(world, loc, def, 4.0, false);
     }
 }
 

@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.repairstationblock;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -30,7 +30,7 @@ final class RepairStationBlockOnBlockInteractListener implements OnBlockInteract
             }
             int repairAmount = StrategySupport.customInt(event.block().definition(), "repairAmount", 25);
             event.player().sendMessage("<green>Repair station restored <white>" + repairAmount + "</white> durability.</green>");
-            TheatricsSupport.sparkle(world, center, "ENCHANT", 16);
+            ExtensionShared.theatrics().sparkle(world, center, "ENCHANT", 16);
             world.playSound(center, "BLOCK_ANVIL_USE", 0.8f, 1.0f);
     }
 }

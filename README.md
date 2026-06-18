@@ -7,7 +7,9 @@ Bundled block and item extensions for [IgnisCore](https://github.com/rowan-smith
 ## Layout
 
 ```
-shared/                    # Optional helpers (ExtensionShared facade)
+shared/                    # Optional helpers — access via ExtensionShared only
+  api/                     # Public config, GUI, and throwable types
+  impl/                    # Package-private Support implementations + *Api facades
 packs/
   explosions-pack/         # TNT, charges, mines, grenades, detonator
   linking-pack/            # Remote link tools and paired blocks

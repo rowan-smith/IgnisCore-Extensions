@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.pipevalve;
 
-import dev.rono.extensions.shared.strategy.LinkedBlockRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
@@ -16,7 +16,7 @@ final class PipeValveSupport {
 
     static void tick(IgnisStrategyContext ctx, IgnisLocation location) {
 
-        if (!OPEN.getOrDefault(LinkedBlockRegistry.key(location), false)) {
+        if (!OPEN.getOrDefault(ExtensionShared.remote().key(location), false)) {
             return;
         }
         IgnisWorld world = worldAt(ctx, location);

@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.laststandcharge;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -24,8 +23,8 @@ final class LastStandChargeOnBlockTriggerListener implements OnBlockTriggerListe
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = LastStandChargeSupport.worldAt(context, loc);
         world.playSound(loc, "ITEM_TOTEM_USE", 1.0f, 0.8f);
-        TheatricsSupport.pulseRing(world, loc, 3.0, "EXPLOSION");
-        ExplosionSupport.createExplosion(world, loc, def, StrategySupport.customDouble(def, "lastStandPower", 6.0), false);
+        ExtensionShared.theatrics().pulseRing(world, loc, 3.0, "EXPLOSION");
+        ExtensionShared.explosion().create(world, loc, def, StrategySupport.customDouble(def, "lastStandPower", 6.0), false);
     }
 }
 

@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.piglinbarterpost;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -18,22 +17,21 @@ final class PiglinBarterPostSupport {
 
     static void tick(PiglinBarterPostRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        var inventory = gui.inventory();
         IgnisItem input = inventory.getItem(INPUT_SLOT);
-        if (!ProcessingGuiSupport.matches(input, "gold_ingot")) {
+        if (!ExtensionShared.processing().matches(input, "gold_ingot")) {
             return;
         }
-        ProcessingGuiSupport.consumeOne(inventory, INPUT_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, INPUT_SLOT);
         String[] loot = {"ender_pearl", "crying_obsidian", "spectral_arrow", "gilded_blackstone", "iron_nugget"};
         String reward = loot[(int) (Math.random() * loot.length)];
-        ProcessingGuiSupport.setOutput(runtime.context.extensions(), inventory, OUTPUT_START, reward, 1);
+        ExtensionShared.processing().setOutput(runtime.context.extensions(), inventory, OUTPUT_START, reward, 1);
         IgnisWorld world = worldAt(runtime, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center, "CRIMSON_SPORE", 8);
+        ExtensionShared.theatrics().sparkle(world, center, "CRIMSON_SPORE", 8);
         world.playSound(center, "ENTITY_PIGLIN_ADMIRING_ITEM", 0.8f, 1.0f);
     
     }

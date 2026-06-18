@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.seedbomb;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -52,7 +52,7 @@ final class SeedBombListeners implements OnItemClickListener {
                             }
                         }
                     }
-                    TheatricsSupport.sparkle(world, impact, "HAPPY_VILLAGER", 12);
+                    ExtensionShared.theatrics().sparkle(world, impact, "HAPPY_VILLAGER", 12);
                     world.playSound(impact, "BLOCK_GRASS_PLACE", 0.8f, 1.2f);
                 }, fuse);
             }

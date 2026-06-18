@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.phantomtnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTickEvent;
 import dev.rono.igniscore.api.event.OnBlockTickListener;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -17,7 +17,7 @@ final class PhantomOnBlockTickListener implements OnBlockTickListener {
 
     @Override
     public void onBlockTick(BlockTickEvent event) {
-        if (event.instance().getTicksLeft() == ExplosionSupport.fuse(event.instance().getDefinition(), 160) - 20) {
+        if (event.instance().getTicksLeft() == ExtensionShared.explosion().fuse(event.instance().getDefinition(), 160) - 20) {
             IgnisWorld world = PhantomSupport.worldAt(context, event.instance().getLocation());
             if (event.instance().getDisplayEntity() != null) {
                 world.removeEntity(event.instance().getDisplayEntity());

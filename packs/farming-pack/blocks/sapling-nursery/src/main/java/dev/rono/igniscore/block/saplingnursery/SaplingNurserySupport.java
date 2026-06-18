@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.saplingnursery;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -14,15 +14,15 @@ final class SaplingNurserySupport {
 
     static void tick(SaplingNurseryRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
         IgnisWorld world = worldAt(runtime, location);
         IgnisLocation block = Locations.toBlock(location);
-        for (int i = 0; i < gui.inventory().getSize(); i++) {
-            IgnisItem sapling = gui.inventory().getItem(i);
-            if (!ProcessingGuiSupport.matches(sapling, "sapling", "propagule", "azalea")) {
+        for (int i = 0; i < inventory.getSize(); i++) {
+            IgnisItem sapling = inventory.getItem(i);
+            if (!ExtensionShared.processing().matches(sapling, "sapling", "propagule", "azalea")) {
                 continue;
             }
             IgnisLocation[] offsets = {block.add(1, 0, 0), block.add(-1, 0, 0), block.add(0, 0, 1), block.add(0, 0, -1)};
@@ -31,7 +31,7 @@ final class SaplingNurserySupport {
                 String above = world.getBlockMaterialKey(soil.add(0, 1, 0)).toLowerCase();
                 if ((below.contains("dirt") || below.contains("grass")) && above.contains("air")) {
                     world.setBlockMaterialKey(soil.add(0, 1, 0), sapling.getMaterialKey());
-                    ProcessingGuiSupport.consumeOne(gui.inventory(), i);
+                    ExtensionShared.processing().consumeOne(inventory, i);
                     world.spawnParticle(soil.add(0.5, 1.5, 0.5), "HAPPY_VILLAGER", 4, 0.2, 0.2, 0.2, 0.01);
                     world.playSound(soil, "BLOCK_GRASS_PLACE", 0.7f, 1.0f);
                     return;

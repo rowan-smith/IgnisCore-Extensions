@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.hydroponictray;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class HydroponicTraySupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         int radius = StrategySupport.customInt(definition, "hydroRadius", 2);
-          BlockScanSupport.bonemealRadius(world, center, radius);
+          ExtensionShared.scan().bonemealRadius(world, center, radius);
           world.spawnParticle(center, "DRIPPING_WATER", 6, radius * 0.4, 0.2, radius * 0.4, 0.01);
     
     }

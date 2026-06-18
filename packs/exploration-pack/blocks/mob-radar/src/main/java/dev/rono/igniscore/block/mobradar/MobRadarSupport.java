@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.mobradar;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,9 +17,9 @@ final class MobRadarSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         double radius = StrategySupport.customDouble(definition, "radarRadius", 16.0);
-          int hostiles = EntityUtilSupport.countHostiles(world, center, radius);
+          int hostiles = ExtensionShared.entities().countHostiles(world, center, radius);
           if (hostiles > 0) {
-              TheatricsSupport.pulseRing(world, center, Math.min(radius, 4 + hostiles), "CRIMSON_SPORE");
+              ExtensionShared.theatrics().pulseRing(world, center, Math.min(radius, 4 + hostiles), "CRIMSON_SPORE");
               world.playSound(center, "BLOCK_NOTE_BLOCK_BASS", 0.6f, 0.5f + hostiles * 0.05f);
           }
     

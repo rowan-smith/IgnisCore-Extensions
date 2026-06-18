@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.displaycase;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class DisplayCaseRuntime {
@@ -9,7 +10,7 @@ final class DisplayCaseRuntime {
 
     DisplayCaseRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "display-case");
+                this.registry = ExtensionShared.gui().blockStorage(context, "display-case");
     }
 }
 

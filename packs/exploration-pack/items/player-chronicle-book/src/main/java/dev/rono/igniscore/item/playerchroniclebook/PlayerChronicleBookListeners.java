@@ -1,7 +1,6 @@
 package dev.rono.igniscore.item.playerchroniclebook;
 
-import dev.rono.extensions.shared.strategy.BlockScanSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -35,7 +34,7 @@ final class PlayerChronicleBookListeners implements OnItemClickListener {
                 nbtService.setItemString(event.item(), "ignis:chronicle_" + page, entry);
                 event.player().sendMessage("<gold>Chronicle page <white>" + page + "</white> written.</gold>");
                 world.playSound(loc, "ITEM_BOOK_PAGE_TURN", 0.8f, 1.0f);
-                TheatricsSupport.sparkle(world, loc, "ENCHANT", 6);
+                ExtensionShared.theatrics().sparkle(world, loc, "ENCHANT", 6);
             }
     }
 }

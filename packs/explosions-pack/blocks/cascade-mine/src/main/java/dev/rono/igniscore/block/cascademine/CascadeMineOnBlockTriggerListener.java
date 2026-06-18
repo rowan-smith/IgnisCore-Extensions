@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.cascademine;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -22,17 +22,17 @@ final class CascadeMineOnBlockTriggerListener implements OnBlockTriggerListener 
         BlockDefinition def = event.instance().getDefinition();
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = CascadeMineSupport.worldAt(context, loc);
-        float power = ExplosionSupport.resolvePower(def, 3.5);
+        float power = ExtensionShared.explosion().resolvePower(def, 3.5);
         int waves = StrategySupport.customInt(def, "cascadeWaves", 4);
         int delay = StrategySupport.customInt(def, "cascadeDelay", 6);
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 1.0f, 1.0f);
-        ExplosionSupport.createExplosion(world, loc, def, power, false);
+        ExtensionShared.explosion().create(world, loc, def, power, false);
         for (int i = 1; i <= waves; i++) {
             final int wave = i;
             context.scheduler().runLater(loc, () -> {
                 IgnisLocation ring = loc.add(wave * 1.5, 0, 0);
                 world.spawnParticle(ring, "EXPLOSION", 3, 0.4, 0.2, 0.4, 0.02);
-                ExplosionSupport.createExplosion(world, ring, power * 0.55f, false, true);
+                ExtensionShared.explosion().create(world, ring, power * 0.55f, false, true);
             }, delay * (long) i);
         }
     }

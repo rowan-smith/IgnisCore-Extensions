@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.chunkloaderlite;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -17,19 +17,19 @@ final class ChunkLoaderLiteSupport {
 
         IgnisWorld world = worldAt(runtime, location);
         IgnisLocation center = Locations.toCenter(location);
-        var gui = runtime.registry.blockGui(location);
+        var inventory = runtime.registry.inventoryAt(location);
         boolean fueled = false;
-        if (gui != null) {
-            IgnisItem fuel = gui.inventory().getItem(0);
+        if (inventory != null) {
+            IgnisItem fuel = inventory.getItem(0);
             fueled = fuel != null && !fuel.isAir() && isFuel(runtime, fuel.getMaterialKey());
             if (fueled && StrategySupport.customBoolean(definition, "consumeFuel", true)) {
                 fuel.setAmount(fuel.getAmount() - 1);
-                gui.inventory().setItem(0, fuel.getAmount() > 0 ? fuel : null);
+                inventory.setItem(0, fuel.getAmount() > 0 ? fuel : null);
             }
         }
         world.setChunkForceLoaded(location, fueled);
         if (fueled) {
-            TheatricsSupport.pulseRing(world, center, 2.5, "PORTAL");
+            ExtensionShared.theatrics().pulseRing(world, center, 2.5, "PORTAL");
             world.playSound(center, "BLOCK_BEACON_AMBIENT", 0.2f, 1.5f);
         }
     

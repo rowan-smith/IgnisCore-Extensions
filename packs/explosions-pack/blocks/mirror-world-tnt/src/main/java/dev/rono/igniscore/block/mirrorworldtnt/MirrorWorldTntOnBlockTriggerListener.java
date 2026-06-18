@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.mirrorworldtnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.ExplosionVariantsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -23,9 +22,9 @@ final class MirrorWorldTntOnBlockTriggerListener implements OnBlockTriggerListen
         BlockDefinition def = event.instance().getDefinition();
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = MirrorWorldTntSupport.worldAt(context, loc);
-        float power = ExplosionSupport.resolvePower(def, 4.0);
+        float power = ExtensionShared.explosion().resolvePower(def, 4.0);
         double mirrorY = StrategySupport.customDouble(def, "mirrorY", loc.y());
-        ExplosionVariantsSupport.mirrorBlast(world, loc, power, mirrorY);
+        ExtensionShared.variants().mirrorBlast(world, loc, power, mirrorY);
     }
 }
 

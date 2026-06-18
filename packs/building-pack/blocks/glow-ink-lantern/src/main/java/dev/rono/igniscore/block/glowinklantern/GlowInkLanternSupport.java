@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.glowinklantern;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -16,8 +16,8 @@ final class GlowInkLanternSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center, "GLOW", StrategySupport.customInt(definition, "glowCount", 6));
-          TheatricsSupport.chime(world, center, 1.6f);
+        ExtensionShared.theatrics().sparkle(world, center, "GLOW", StrategySupport.customInt(definition, "glowCount", 6));
+          ExtensionShared.theatrics().chime(world, center, 1.6f);
     
     }
 

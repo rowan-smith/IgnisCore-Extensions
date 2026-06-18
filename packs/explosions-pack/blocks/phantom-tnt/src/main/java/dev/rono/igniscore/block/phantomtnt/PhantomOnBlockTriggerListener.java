@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.phantomtnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -17,7 +17,7 @@ final class PhantomOnBlockTriggerListener implements OnBlockTriggerListener {
     @Override
     public void onBlockTrigger(BlockTriggerEvent event) {
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
-        ExplosionSupport.createExplosion(PhantomSupport.worldAt(context, loc), loc, event.instance().getDefinition(), 4.0, false);
+        ExtensionShared.explosion().create(PhantomSupport.worldAt(context, loc), loc, event.instance().getDefinition(), 4.0, false);
     }
 }
 

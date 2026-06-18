@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.mobradar;
 
-import dev.rono.extensions.shared.strategy.PlacedTickSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockPlaceEvent;
 import dev.rono.igniscore.api.event.OnBlockPlaceListener;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -19,9 +18,9 @@ final class MobRadarOnBlockPlaceListener implements OnBlockPlaceListener {
     @Override
     public void onBlockPlace(BlockPlaceEvent event) {
         long period = StrategySupport.customInt(event.block().definition(), "tickPeriod", 20);
-        PlacedTickSupport.start(context, event.block().location(), period, () -> MobRadarSupport.tick(context, event.block().definition(), event.block().location()));
+        ExtensionShared.ticks().start(context, event.block().location(), period, () -> MobRadarSupport.tick(context, event.block().definition(), event.block().location()));
         IgnisLocation center = Locations.toCenter(event.block().location());
-        TheatricsSupport.chime(MobRadarSupport.worldAt(context, center), center, 1.0f);
+        ExtensionShared.theatrics().chime(MobRadarSupport.worldAt(context, center), center, 1.0f);
     }
 }
 

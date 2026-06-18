@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.splittercharge;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.ExplosionVariantsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -23,9 +22,9 @@ final class SplitterChargeOnBlockTriggerListener implements OnBlockTriggerListen
         BlockDefinition def = event.instance().getDefinition();
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = SplitterChargeSupport.worldAt(context, loc);
-        float power = ExplosionSupport.resolvePower(def, 4.0);
+        float power = ExtensionShared.explosion().resolvePower(def, 4.0);
         double offset = StrategySupport.customDouble(def, "splitOffset", 2.5);
-        ExplosionVariantsSupport.cardinalSplit(world, loc, power, offset);
+        ExtensionShared.variants().cardinalSplit(world, loc, power, offset);
     }
 }
 

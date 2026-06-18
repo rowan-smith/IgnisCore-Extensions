@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.checkpointobelisk;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -25,7 +25,7 @@ final class CheckpointObeliskOnBlockInteractListener implements OnBlockInteractL
         IgnisLocation center = Locations.toCenter(event.block().location());
         CheckpointObeliskSupport.nbtCheckpoint(context, event.player(), center);
          event.player().sendMessage("<gold>Checkpoint recorded.</gold>");
-         TheatricsSupport.pulseRing(world, center, 2.0, "TOTEM_OF_UNDYING");
+         ExtensionShared.theatrics().pulseRing(world, center, 2.0, "TOTEM_OF_UNDYING");
          world.playSound(center, "UI_TOAST_CHALLENGE_COMPLETE", 0.7f, 1.0f);
     }
 }

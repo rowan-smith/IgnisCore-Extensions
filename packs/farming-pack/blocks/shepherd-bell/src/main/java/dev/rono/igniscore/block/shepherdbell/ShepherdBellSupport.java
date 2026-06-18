@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.shepherdbell;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -17,7 +17,7 @@ final class ShepherdBellSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         double radius = StrategySupport.customDouble(definition, "herdRadius", 10.0);
-          EntityUtilSupport.herdPassives(world, center, radius);
+          ExtensionShared.entities().herdPassives(world, center, radius);
           world.playSound(center, "ENTITY_SHEEP_AMBIENT", 0.4f, 1.1f);
     
     }

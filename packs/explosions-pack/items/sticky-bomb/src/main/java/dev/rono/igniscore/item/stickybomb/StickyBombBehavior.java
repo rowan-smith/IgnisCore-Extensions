@@ -1,6 +1,7 @@
 package dev.rono.igniscore.item.stickybomb;
 
-import dev.rono.extensions.shared.config.ThrowableItemConfig;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.config.ThrowableItemConfig;
 import dev.rono.igniscore.api.model.ItemDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -9,7 +10,6 @@ import dev.rono.igniscore.api.port.IgnisTask;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 
 final class StickyBombBehavior {
     private final IgnisStrategyContext context;
@@ -70,6 +70,6 @@ final class StickyBombBehavior {
 
     private void detonate(IgnisWorld world, IgnisLocation impact, ItemDefinition definition, ThrowableItemConfig throwable) {
         world.playSound(impact, "ENTITY_GENERIC_EXPLODE", 1.0f, 1.0f);
-        ExplosionSupport.createExplosion(world, impact, definition, throwable.power(), throwable.fire());
+        ExtensionShared.explosion().create(world, impact, definition, throwable.power(), throwable.fire());
     }
 }

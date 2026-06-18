@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.mimictnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockActivateEvent;
 import dev.rono.igniscore.api.event.OnBlockActivateListener;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -35,7 +35,7 @@ final class MimicOnBlockActivateListener implements OnBlockActivateListener {
 
         for (int i = 0; i < totalCount; i++) {
             Object tnt = world.spawnEntity("TNT", loc);
-            int fuse = ExplosionSupport.fuse(event.definition(), 80) + (int) (Math.random() * 40 - 20);
+            int fuse = ExtensionShared.explosion().fuse(event.definition(), 80) + (int) (Math.random() * 40 - 20);
             boolean real = i == realIndex;
             world.configurePrimedTnt(
                     tnt,

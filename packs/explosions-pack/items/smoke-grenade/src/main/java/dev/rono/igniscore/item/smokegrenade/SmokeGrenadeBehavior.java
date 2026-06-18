@@ -1,5 +1,6 @@
 package dev.rono.igniscore.item.smokegrenade;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.ItemDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -8,8 +9,7 @@ import dev.rono.igniscore.api.port.IgnisTask;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.config.ThrowableItemConfig;
-import dev.rono.extensions.shared.strategy.ThrowableSupport;
+import dev.rono.extensions.shared.api.config.ThrowableItemConfig;
 
 final class SmokeGrenadeBehavior {
     private final IgnisStrategyContext context;
@@ -19,7 +19,7 @@ final class SmokeGrenadeBehavior {
     }
 
     void onItemUse(IgnisPlayer player, ItemDefinition definition, IgnisItem item) {
-        ThrowableSupport.throwProjectile(context, player, definition, item, (world, impact) -> deploySmoke(world, impact, definition));
+        ExtensionShared.throwable().throwProjectile(context, player, definition, item, (world, impact) -> deploySmoke(world, impact, definition));
     }
 
     private void deploySmoke(IgnisWorld world, IgnisLocation impact, ItemDefinition definition) {

@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.playerproximityalarm;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -19,7 +19,7 @@ final class PlayerProximityAlarmSupport {
         double radius = StrategySupport.customDouble(definition, "alarmRadius", 12.0);
           if (!world.getPlayersNear(center, radius).isEmpty()) {
               world.playSound(center, "BLOCK_NOTE_BLOCK_BELL", 1.0f, 0.6f);
-              TheatricsSupport.sparkle(world, center, "FIREWORKS_SPARK", 8);
+              ExtensionShared.theatrics().sparkle(world, center, "FIREWORKS_SPARK", 8);
           }
     
     }

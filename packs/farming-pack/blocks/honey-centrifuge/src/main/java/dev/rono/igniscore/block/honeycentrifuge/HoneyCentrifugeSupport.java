@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.honeycentrifuge;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -16,7 +16,7 @@ final class HoneyCentrifugeSupport {
 
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center, "DRIPPING_HONEY", StrategySupport.customInt(definition, "honeyParticles", 10));
+        ExtensionShared.theatrics().sparkle(world, center, "DRIPPING_HONEY", StrategySupport.customInt(definition, "honeyParticles", 10));
           world.playSound(center, "BLOCK_HONEY_BLOCK_SLIDE", 0.5f, 1.0f);
     
     }

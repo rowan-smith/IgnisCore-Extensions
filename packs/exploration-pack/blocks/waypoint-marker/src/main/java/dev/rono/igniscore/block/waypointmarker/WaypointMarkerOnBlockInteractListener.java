@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.waypointmarker;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -30,7 +30,7 @@ final class WaypointMarkerOnBlockInteractListener implements OnBlockInteractList
                 : StrategySupport.customInt(event.block().definition(), "waypointId", 1) + "";
          PlacedMetaSupport.setString(event.block().location(), name + ":" + center.x() + "," + center.y() + "," + center.z());
          event.player().sendMessage("<aqua>Waypoint <white>" + name + "</white> saved.</aqua>");
-         TheatricsSupport.sparkle(world, center, "END_ROD", 10);
+         ExtensionShared.theatrics().sparkle(world, center, "END_ROD", 10);
          world.playSound(center, "ENTITY_EXPERIENCE_ORB_PICKUP", 0.8f, 1.2f);
     }
 }

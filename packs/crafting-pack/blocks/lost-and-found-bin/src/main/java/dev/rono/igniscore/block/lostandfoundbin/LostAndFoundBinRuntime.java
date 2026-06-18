@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.lostandfoundbin;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class LostAndFoundBinRuntime {
@@ -10,7 +11,7 @@ final class LostAndFoundBinRuntime {
 
     LostAndFoundBinRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "lost-and-found-bin");
+                this.registry = ExtensionShared.gui().blockStorage(context, "lost-and-found-bin");
     }
 }
 

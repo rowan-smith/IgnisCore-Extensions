@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.ouijaslab;
 
-import dev.rono.extensions.shared.strategy.PlacedTickSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockPlaceEvent;
 import dev.rono.igniscore.api.event.OnBlockPlaceListener;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
@@ -15,7 +15,7 @@ final class OuijaSlabOnBlockPlaceListener implements OnBlockPlaceListener {
 
     @Override
     public void onBlockPlace(BlockPlaceEvent event) {
-        PlacedTickSupport.start(context, event.block().location(), StrategySupport.customInt(event.block().definition(), "tickPeriod", 30),
+        ExtensionShared.ticks().start(context, event.block().location(), StrategySupport.customInt(event.block().definition(), "tickPeriod", 30),
                 () -> OuijaSlabSupport.tick(context, event.block().definition(), event.block().location()));
     }
 }

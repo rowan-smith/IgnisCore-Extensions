@@ -1,5 +1,6 @@
 package dev.rono.igniscore.block.solarflaretnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -7,7 +8,6 @@ import dev.rono.igniscore.api.port.IgnisPlayer;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class SolarFlareTntBehavior {
@@ -39,7 +39,7 @@ final class SolarFlareTntBehavior {
             player.applyPotionEffect("BLINDNESS", blindDuration / 2, 0);
             player.applyPotionEffect("INSTANT_DAMAGE", 1, 1);
         }
-        ExplosionSupport.createExplosion(world, loc, def, 3.5, true);
+        ExtensionShared.explosion().create(world, loc, def, 3.5, true);
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

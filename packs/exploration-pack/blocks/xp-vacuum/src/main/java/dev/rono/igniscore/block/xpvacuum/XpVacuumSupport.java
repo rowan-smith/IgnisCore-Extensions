@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.xpvacuum;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.PlacedBlock;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -19,8 +18,8 @@ final class XpVacuumSupport {
         IgnisLocation center = Locations.toCenter(block.location());
         double radius = StrategySupport.customDouble(block.definition(), "vacuumRadius", 6.0);
         double strength = StrategySupport.customDouble(block.definition(), "vacuumStrength", 0.35);
-        EntityUtilSupport.pullLoot(world, center, radius, strength);
-        TheatricsSupport.sparkle(world, center, "ENCHANT", 4);
+        ExtensionShared.entities().pullLoot(world, center, radius, strength);
+        ExtensionShared.theatrics().sparkle(world, center, "ENCHANT", 4);
     }
 
     static IgnisWorld worldAt(IgnisStrategyContext context, IgnisLocation location) {

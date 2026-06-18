@@ -1,5 +1,6 @@
 package dev.rono.igniscore.block.tripwirecharge;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.IgnisCoreAPI;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
@@ -7,7 +8,6 @@ import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.PlacedMetaSupport;
 import dev.rono.igniscore.api.util.Locations;
 
@@ -35,7 +35,7 @@ final class TripwireChargeBehavior {
         IgnisLocation loc = Locations.toCenter(instance.getLocation());
         IgnisWorld world = worldAt(loc);
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 1.2f, 1.0f);
-        ExplosionSupport.createExplosion(world, loc, instance.getDefinition(), 4.0, false);
+        ExtensionShared.explosion().create(world, loc, instance.getDefinition(), 4.0, false);
     }
 
     private void watchLine(IgnisLocation a, IgnisLocation b, double radius) {

@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.kegtap;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -17,20 +17,19 @@ final class KegTapSupport {
 
     static void tick(KegTapRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        var inventory = gui.inventory();
-        if (!ProcessingGuiSupport.matches(inventory.getItem(BUCKET_SLOT), "water_bucket", "milk_bucket")) {
+        if (!ExtensionShared.processing().matches(inventory.getItem(BUCKET_SLOT), "water_bucket", "milk_bucket")) {
             return;
         }
         IgnisItem out = inventory.getItem(OUTPUT_SLOT);
         if (out != null && !out.isAir()) {
             return;
         }
-        ProcessingGuiSupport.consumeOne(inventory, BUCKET_SLOT);
-        ProcessingGuiSupport.setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "potion", 1);
+        ExtensionShared.processing().consumeOne(inventory, BUCKET_SLOT);
+        ExtensionShared.processing().setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "potion", 1);
         IgnisWorld world = worldAt(runtime, location);
         world.playSound(Locations.toCenter(location), "ITEM_BOTTLE_FILL", 0.6f, 1.0f);
     

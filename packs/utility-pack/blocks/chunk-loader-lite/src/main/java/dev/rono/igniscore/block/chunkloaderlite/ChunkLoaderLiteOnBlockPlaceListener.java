@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.chunkloaderlite;
 
-import dev.rono.extensions.shared.strategy.PlacedTickSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockPlaceEvent;
 import dev.rono.igniscore.api.event.OnBlockPlaceListener;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -21,8 +20,8 @@ final class ChunkLoaderLiteOnBlockPlaceListener implements OnBlockPlaceListener 
         world.setChunkForceLoaded(event.block().location(), true);
         runtime.registry.registerBlock(event.block().location(), ChunkLoaderLiteSupport.title(runtime, event.block().definition()), 1);
         long period = StrategySupport.customInt(event.block().definition(), "tickPeriod", 40);
-        PlacedTickSupport.start(runtime.context, event.block().location(), period, () -> ChunkLoaderLiteSupport.tick(runtime, event.block().definition(), event.block().location()));
-        TheatricsSupport.chime(world, Locations.toCenter(event.block().location()), 1.0f);
+        ExtensionShared.ticks().start(runtime.context, event.block().location(), period, () -> ChunkLoaderLiteSupport.tick(runtime, event.block().definition(), event.block().location()));
+        ExtensionShared.theatrics().chime(world, Locations.toCenter(event.block().location()), 1.0f);
     }
 }
 

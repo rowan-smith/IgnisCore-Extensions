@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.chickencoopcache;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -16,12 +16,11 @@ final class ChickenCoopCacheSupport {
 
     static boolean collectEggs(ChickenCoopCacheRuntime runtime, IgnisLocation coopLocation, Collection<IgnisItem> drops) {
 
-        var gui = runtime.registry.blockGui(coopLocation);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(coopLocation);
+        if (inventory == null) {
             return false;
         }
         boolean stored = false;
-        var inventory = gui.inventory();
         var iterator = drops.iterator();
         while (iterator.hasNext()) {
             IgnisItem drop = iterator.next();
@@ -63,11 +62,11 @@ final class ChickenCoopCacheSupport {
         IgnisLocation center = Locations.toCenter(location);
         for (Object entity : world.getNearbyEntities(center, StrategySupport.customDouble(definition, "coopRadius", 6.0))) {
             if (entity.getClass().getSimpleName().toLowerCase().contains("chicken")) {
-                TheatricsSupport.sparkle(world, center, "EGG_CRACK", 2);
+                ExtensionShared.theatrics().sparkle(world, center, "EGG_CRACK", 2);
                 world.playSound(center, "ENTITY_CHICKEN_EGG", 0.3f, 1.2f);
-                var gui = runtime.registry.blockGui(location);
-                if (gui != null) {
-                    storeItem(runtime, gui.inventory(), runtime.context.extensions().createItem("egg", 1));
+                var inventory = runtime.registry.inventoryAt(location);
+                if (inventory != null) {
+                    storeItem(runtime, inventory, runtime.context.extensions().createItem("egg", 1));
                 }
                 break;
             }

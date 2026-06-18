@@ -1,6 +1,7 @@
 package dev.rono.igniscore.block.chickencoopcache;
 
-import dev.rono.extensions.shared.gui.BlockStorageRegistry;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.gui.BlockStorageRegistry;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 
 final class ChickenCoopCacheRuntime {
@@ -9,7 +10,7 @@ final class ChickenCoopCacheRuntime {
 
     ChickenCoopCacheRuntime(IgnisStrategyContext context) {
         this.context = context;
-                this.registry = new BlockStorageRegistry(context, "chicken-coop-cache");
+                this.registry = ExtensionShared.gui().blockStorage(context, "chicken-coop-cache");
     }
 }
 

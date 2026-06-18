@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.powdertrail;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -24,8 +23,8 @@ final class PowderTrailOnBlockTriggerListener implements OnBlockTriggerListener 
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = PowderTrailSupport.worldAt(context, loc);
         world.playSound(loc, "ENTITY_TNT_PRIMED", 1.0f, 0.8f);
-        TheatricsSupport.sparkle(world, loc, "FLAME", 24);
-        ExplosionSupport.createExplosion(world, loc, def, 4.0, StrategySupport.customBoolean(def, "fire", false));
+        ExtensionShared.theatrics().sparkle(world, loc, "FLAME", 24);
+        ExtensionShared.explosion().create(world, loc, def, 4.0, StrategySupport.customBoolean(def, "fire", false));
     }
 }
 

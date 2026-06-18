@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.displaycase;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -21,16 +21,16 @@ final class DisplayCaseOnBlockInteractListener implements OnBlockInteractListene
             return;
         }
         runtime.registry.openBlock(event.player(), event.block().location());
-        var gui = runtime.registry.blockGui(event.block().location());
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(event.block().location());
+        if (inventory == null) {
             return;
         }
-        IgnisItem display = gui.inventory().getItem(DisplayCaseSupport.DISPLAY_SLOT);
+        IgnisItem display = inventory.getItem(DisplayCaseSupport.DISPLAY_SLOT);
         if (display != null && !display.isAir()) {
             event.player().sendMessage("<gray>Museum exhibit: <white>" + display.getAmount() + "x "
                     + display.getMaterialKey() + "</white></gray>");
             IgnisWorld world = DisplayCaseSupport.worldAt(runtime, event.block().location());
-            TheatricsSupport.sparkle(world, Locations.toCenter(event.block().location()), "END_ROD", 6);
+            ExtensionShared.theatrics().sparkle(world, Locations.toCenter(event.block().location()), "END_ROD", 6);
         }
     }
 }

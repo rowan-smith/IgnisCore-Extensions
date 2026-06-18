@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.riftgenerator;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -24,9 +23,9 @@ final class RiftGeneratorOnBlockTriggerListener implements OnBlockTriggerListene
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = RiftGeneratorSupport.worldAt(context, loc);
         double radius = StrategySupport.customDouble(def, "riftRadius", 7.0);
-        EntityUtilSupport.teleportRandomHorizontal(world, loc, radius, 3.0);
+        ExtensionShared.entities().teleportRandomHorizontal(world, loc, radius, 3.0);
         world.playSound(loc, "ENTITY_ENDER_DRAGON_GROWL", 0.8f, 1.2f);
-        ExplosionSupport.createExplosion(world, loc, def, 4.5, false);
+        ExtensionShared.explosion().create(world, loc, def, 4.5, false);
     }
 }
 

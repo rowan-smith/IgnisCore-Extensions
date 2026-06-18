@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.nuke;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -14,7 +14,7 @@ final class NukeSupport {
     static void playCountdown(IgnisStrategyContext ctx, RuntimeBlockInstance instance) {
 
         int ticksLeft = instance.getTicksLeft();
-        int elapsed = ExplosionSupport.elapsedFuseTicks(instance, 160);
+        int elapsed = ExtensionShared.explosion().elapsedFuseTicks(instance, 160);
         int interval = ticksLeft > 80 ? 20 : ticksLeft > 40 ? 10 : ticksLeft > 15 ? 5 : 2;
         if (elapsed % interval != 0) {
             return;

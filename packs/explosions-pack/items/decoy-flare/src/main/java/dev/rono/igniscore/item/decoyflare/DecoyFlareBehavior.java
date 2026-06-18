@@ -1,5 +1,6 @@
 package dev.rono.igniscore.item.decoyflare;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.ItemDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -8,7 +9,6 @@ import dev.rono.igniscore.api.port.IgnisTask;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.ThrowableSupport;
 
 final class DecoyFlareBehavior {
     private final IgnisStrategyContext context;
@@ -18,7 +18,7 @@ final class DecoyFlareBehavior {
     }
 
     void onItemUse(IgnisPlayer player, ItemDefinition definition, IgnisItem item) {
-        ThrowableSupport.throwProjectile(context, player, definition, item, (world, impact) -> {
+        ExtensionShared.throwable().throwProjectile(context, player, definition, item, (world, impact) -> {
             int duration = StrategySupport.customInt(definition.getCustomData(), "lureDuration", 200);
             double radius = StrategySupport.customDouble(definition.getCustomData(), "lureRadius", 24.0);
             world.playSound(impact, "ENTITY_FIREWORK_ROCKET_LAUNCH", 1.5f, 0.6f);

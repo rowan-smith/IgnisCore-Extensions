@@ -1,5 +1,6 @@
 package dev.rono.igniscore.block.antigravityzone;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -7,8 +8,6 @@ import dev.rono.igniscore.api.port.IgnisTask;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.EntityPhysicsSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 import java.util.Map;
@@ -31,7 +30,7 @@ final class AntiGravityZoneBehavior {
         ref[0] = context.scheduler().runRepeating(location, () -> {
             IgnisWorld world = worldAt(location);
             IgnisLocation center = Locations.toCenter(location);
-            EntityPhysicsSupport.applyLevitation(world, center, radius, lift);
+            ExtensionShared.physics().applyLevitation(world, center, radius, lift);
             world.spawnParticle(center, "CLOUD", 4, radius * 0.3, 0.2, radius * 0.3, 0.01);
         }, 5L, 5L);
         ACTIVE.put(key, ref[0]);
@@ -43,7 +42,7 @@ final class AntiGravityZoneBehavior {
         IgnisWorld world = worldAt(loc);
         world.playSound(loc, "BLOCK_GLASS_BREAK", 1.5f, 0.7f);
         world.spawnParticle(loc, "CLOUD", 30, 2, 1, 2, 0.05);
-        ExplosionSupport.createExplosion(world, loc, instance.getDefinition(), 2.5, false);
+        ExtensionShared.explosion().create(world, loc, instance.getDefinition(), 2.5, false);
     }
 
     private void stop(String key) {

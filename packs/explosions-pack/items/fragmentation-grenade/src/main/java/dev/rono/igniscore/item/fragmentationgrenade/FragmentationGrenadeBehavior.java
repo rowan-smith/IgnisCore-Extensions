@@ -1,6 +1,7 @@
 package dev.rono.igniscore.item.fragmentationgrenade;
 
-import dev.rono.extensions.shared.config.ThrowableItemConfig;
+import dev.rono.extensions.shared.ExtensionShared;
+import dev.rono.extensions.shared.api.config.ThrowableItemConfig;
 import dev.rono.igniscore.api.model.ItemDefinition;
 import dev.rono.igniscore.api.port.IgnisItem;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -9,7 +10,6 @@ import dev.rono.igniscore.api.port.IgnisTask;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.ShrapnelSupport;
 
 final class FragmentationGrenadeBehavior {
     private final IgnisStrategyContext context;
@@ -51,7 +51,7 @@ final class FragmentationGrenadeBehavior {
                     world.removeEntity(projectile);
                 }
                 world.playSound(impact, "ENTITY_GENERIC_EXPLODE", 1.2f, 1.15f);
-                ShrapnelSupport.launchDebris(world, impact, scanRadius, projectileCount, minVelocity, maxVelocity);
+                ExtensionShared.blasts().launchDebris(world, impact, scanRadius, projectileCount, minVelocity, maxVelocity);
                 world.createExplosion(impact, (float) throwable.power(), throwable.fire(), false);
                 if (taskRef[0] != null) {
                     taskRef[0].cancel();

@@ -1,12 +1,12 @@
 package dev.rono.igniscore.block.cavitytnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BlockBlastSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class CavityBehavior {
@@ -38,7 +38,7 @@ final class CavityBehavior {
 
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 2.0f, 0.85f);
         world.spawnParticle(loc, "EXPLOSION_EMITTER", 3, outerRadius * 0.3, outerRadius * 0.3, outerRadius * 0.3, 0.0);
-        BlockBlastSupport.breakHollowSphere(context.region(), world, loc, outerRadius, shellThickness,
+        ExtensionShared.blasts().breakHollowSphere(context.region(), world, loc, outerRadius, shellThickness,
                 staggered, batchSize, batchDelayTicks, context.scheduler());
         world.createExplosion(loc, 2.0f, false, false);
     }

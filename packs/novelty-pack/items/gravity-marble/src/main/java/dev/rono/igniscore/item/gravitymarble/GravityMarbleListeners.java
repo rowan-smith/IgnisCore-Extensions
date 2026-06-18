@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.gravitymarble;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -34,7 +34,7 @@ final class GravityMarbleListeners implements OnItemClickListener {
                             -Math.sin(pitch) * speed,
                             Math.cos(yaw) * Math.cos(pitch) * speed);
                 }
-                TheatricsSupport.sparkle(world, eye, "END_ROD", 4);
+                ExtensionShared.theatrics().sparkle(world, eye, "END_ROD", 4);
                 world.playSound(eye, "ENTITY_SLIME_JUMP", 0.7f, 1.6f);
                 event.item().setAmount(event.item().getAmount() - 1);
             }

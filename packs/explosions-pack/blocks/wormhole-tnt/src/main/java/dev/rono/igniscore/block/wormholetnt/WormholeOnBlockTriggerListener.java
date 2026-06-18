@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.wormholetnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -22,7 +22,7 @@ final class WormholeOnBlockTriggerListener implements OnBlockTriggerListener {
         IgnisWorld world = WormholeSupport.worldAt(context, loc);
         BlockDefinition def = event.instance().getDefinition();
 
-        ExplosionSupport.createExplosion(world, loc, def, 10.0, false);
+        ExtensionShared.explosion().create(world, loc, def, 10.0, false);
         world.spawnParticle(loc, "EXPLOSION_EMITTER", 5, 2, 2, 2, 0);
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 2.0f, 0.5f);
     }

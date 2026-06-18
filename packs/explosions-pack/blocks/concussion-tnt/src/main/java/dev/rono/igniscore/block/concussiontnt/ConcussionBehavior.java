@@ -1,13 +1,12 @@
 package dev.rono.igniscore.block.concussiontnt;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.EntityBlastSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class ConcussionBehavior {
@@ -41,8 +40,8 @@ final class ConcussionBehavior {
         world.spawnParticle(loc, "CLOUD", 120, knockbackRadius * 0.35, 1.2, knockbackRadius * 0.35, 0.06);
 
         context.effects().playFakeExplosion(loc, 8.0f, world.getPlayersNear(loc, knockbackRadius));
-        EntityBlastSupport.applyKnockback(world, loc, knockbackRadius, knockbackStrength, true);
-        ExplosionSupport.createExplosion(world, loc, terrainPower, false, false);
+        ExtensionShared.blasts().applyKnockback(world, loc, knockbackRadius, knockbackStrength, true);
+        ExtensionShared.explosion().create(world, loc, terrainPower, false, false);
     }
 
     private IgnisWorld worldAt(IgnisLocation location) {

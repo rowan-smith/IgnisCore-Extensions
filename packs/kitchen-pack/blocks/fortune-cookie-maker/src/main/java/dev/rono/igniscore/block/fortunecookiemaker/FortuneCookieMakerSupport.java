@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.fortunecookiemaker;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -24,18 +24,17 @@ final class FortuneCookieMakerSupport {
 
     static void tick(FortuneCookieMakerRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        var inventory = gui.inventory();
-        if (!ProcessingGuiSupport.matches(inventory.getItem(WHEAT_SLOT), "wheat")
-                || !ProcessingGuiSupport.matches(inventory.getItem(PAPER_SLOT), "paper")) {
+        if (!ExtensionShared.processing().matches(inventory.getItem(WHEAT_SLOT), "wheat")
+                || !ExtensionShared.processing().matches(inventory.getItem(PAPER_SLOT), "paper")) {
             return;
         }
-        ProcessingGuiSupport.consumeOne(inventory, WHEAT_SLOT);
-        ProcessingGuiSupport.consumeOne(inventory, PAPER_SLOT);
-        ProcessingGuiSupport.setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "cookie", 1);
+        ExtensionShared.processing().consumeOne(inventory, WHEAT_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, PAPER_SLOT);
+        ExtensionShared.processing().setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "cookie", 1);
         IgnisWorld world = worldAt(runtime, location);
         world.playSound(Locations.toCenter(location), "ENTITY_GENERIC_EAT", 0.5f, 1.3f);
     

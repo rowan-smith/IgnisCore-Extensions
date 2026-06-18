@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.motionfloodlight;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisPlayer;
@@ -19,7 +19,7 @@ final class MotionFloodlightSupport {
         IgnisLocation center = Locations.toCenter(location);
         double radius = StrategySupport.customDouble(definition, "motionRadius", 8.0);
           for (IgnisPlayer player : world.getPlayersNear(center, radius)) {
-              TheatricsSupport.scanBeam(world, center, player.getLocation(), "END_ROD");
+              ExtensionShared.theatrics().scanBeam(world, center, player.getLocation(), "END_ROD");
           }
     
     }

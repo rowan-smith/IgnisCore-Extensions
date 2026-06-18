@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.stasisfield;
 
-import dev.rono.extensions.shared.strategy.EntityUtilSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,8 +17,8 @@ final class StasisFieldSupport {
         IgnisWorld world = worldAt(ctx, location);
         IgnisLocation center = Locations.toCenter(location);
         double radius = StrategySupport.customDouble(definition, "stasisRadius", 4.5);
-          EntityUtilSupport.freezeInRadius(world, center, radius);
-          TheatricsSupport.pulseRing(world, center, radius * 0.4, "CLOUD");
+          ExtensionShared.entities().freezeInRadius(world, center, radius);
+          ExtensionShared.theatrics().pulseRing(world, center, radius * 0.4, "CLOUD");
     
     }
 

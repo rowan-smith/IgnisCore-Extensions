@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.securetradetable;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.CustomBlockAction;
 import dev.rono.igniscore.api.event.BlockInteractEvent;
 import dev.rono.igniscore.api.event.OnBlockInteractListener;
@@ -23,7 +23,7 @@ final class SecureTradeTableOnBlockInteractListener implements OnBlockInteractLi
         runtime.registry.open(event.player(), event.block().location());
         IgnisWorld world = SecureTradeTableSupport.worldAt(runtime, event.block().location());
         IgnisLocation center = Locations.toCenter(event.block().location());
-        TheatricsSupport.sparkle(world, center, "HAPPY_VILLAGER", 8);
+        ExtensionShared.theatrics().sparkle(world, center, "HAPPY_VILLAGER", 8);
         world.playSound(center, "ENTITY_VILLAGER_TRADE", 0.9f, 1.0f);
         event.player().sendMessage("<gray>Place offers and confirm with <lime>lime dye</lime>.</gray>");
     }

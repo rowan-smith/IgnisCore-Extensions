@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.quantumcoin;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -29,7 +29,7 @@ final class QuantumCoinListeners implements OnItemClickListener {
                     nbtService.setItemString(event.item(), "ignis:coin_flip", result);
                 }
                 IgnisWorld world = event.player().getWorld();
-                TheatricsSupport.sparkle(world, event.player().getLocation(), heads ? "VILLAGER_HAPPY" : "SMOKE", 6);
+                ExtensionShared.theatrics().sparkle(world, event.player().getLocation(), heads ? "VILLAGER_HAPPY" : "SMOKE", 6);
                 world.playSound(event.player().getLocation(), "ENTITY_EXPERIENCE_ORB_PICKUP", 0.8f, heads ? 1.4f : 0.8f);
                 event.player().sendMessage("<gold>Coin flip:</gold> <white>" + result + "</white>");
             }

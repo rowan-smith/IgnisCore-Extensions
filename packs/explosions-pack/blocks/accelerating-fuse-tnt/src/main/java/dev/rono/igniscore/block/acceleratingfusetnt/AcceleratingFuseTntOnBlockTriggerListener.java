@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.acceleratingfusetnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -23,8 +22,8 @@ final class AcceleratingFuseTntOnBlockTriggerListener implements OnBlockTriggerL
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = AcceleratingFuseTntSupport.worldAt(context, loc);
         world.playSound(loc, "ENTITY_GENERIC_EXPLODE", 1.5f, 1.1f);
-        TheatricsSupport.sparkle(world, loc, "EXPLOSION", 30);
-        ExplosionSupport.createExplosion(world, loc, def, 5.0, false);
+        ExtensionShared.theatrics().sparkle(world, loc, "EXPLOSION", 30);
+        ExtensionShared.explosion().create(world, loc, def, 5.0, false);
     }
 }
 

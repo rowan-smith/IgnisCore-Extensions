@@ -1,13 +1,12 @@
 package dev.rono.igniscore.block.bouncingbetty;
 
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.model.RuntimeBlockInstance;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
 import dev.rono.igniscore.api.strategy.IgnisStrategyContext;
 import dev.rono.igniscore.api.strategy.StrategySupport;
-import dev.rono.extensions.shared.strategy.BuriedMineSupport;
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
 import dev.rono.igniscore.api.util.Locations;
 
 final class BouncingBettyBehavior {
@@ -19,11 +18,11 @@ final class BouncingBettyBehavior {
 
     void onPlaced(BlockDefinition definition, IgnisLocation location) {
         double triggerRadius = StrategySupport.customDouble(definition, "triggerRadius", 1.5);
-        BuriedMineSupport.arm(context, location, definition.getId(), triggerRadius);
+        ExtensionShared.buriedMines().arm(context, location, definition.getId(), triggerRadius);
     }
 
     void onPlacedBreak(IgnisLocation location) {
-        BuriedMineSupport.disarm(location);
+        ExtensionShared.buriedMines().disarm(location);
     }
 
     void onTrigger(RuntimeBlockInstance instance, Object triggerContext) {
@@ -37,7 +36,7 @@ final class BouncingBettyBehavior {
             IgnisLocation air = loc.add(0, popHeight, 0);
             world.spawnParticle(air, "SMOKE", 6, 0.2, 0.2, 0.2, 0.02);
             world.playSound(air, "ENTITY_GENERIC_EXPLODE", 1.2f, 1.1f);
-            ExplosionSupport.createExplosion(world, air, instance.getDefinition(), 3.0, false);
+            ExtensionShared.explosion().create(world, air, instance.getDefinition(), 3.0, false);
         }, 8L);
     }
 

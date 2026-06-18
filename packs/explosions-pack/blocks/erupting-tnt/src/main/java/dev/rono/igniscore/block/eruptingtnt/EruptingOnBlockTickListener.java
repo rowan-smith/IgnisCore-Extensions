@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.eruptingtnt;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTickEvent;
 import dev.rono.igniscore.api.event.OnBlockTickListener;
 import dev.rono.igniscore.api.port.IgnisLocation;
@@ -20,7 +20,7 @@ final class EruptingOnBlockTickListener implements OnBlockTickListener {
     public void onBlockTick(BlockTickEvent event) {
         int interval = StrategySupport.customInt(event.definition(), "eruptionInterval", 5);
 
-        if (event.instance().getTicksLeft() % interval == 0 && event.instance().getTicksLeft() < ExplosionSupport.fuse(event.definition(), 100) - 10) {
+        if (event.instance().getTicksLeft() % interval == 0 && event.instance().getTicksLeft() < ExtensionShared.explosion().fuse(event.definition(), 100) - 10) {
             IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
             IgnisWorld world = EruptingSupport.worldAt(context, loc);
             Object tnt = world.spawnEntity("TNT", loc);

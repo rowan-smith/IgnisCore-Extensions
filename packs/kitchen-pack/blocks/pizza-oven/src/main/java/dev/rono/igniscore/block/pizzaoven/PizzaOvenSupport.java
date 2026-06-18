@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.pizzaoven;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -19,25 +18,24 @@ final class PizzaOvenSupport {
 
     static void tick(PizzaOvenRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        var inventory = gui.inventory();
-        if (!ProcessingGuiSupport.matches(inventory.getItem(BREAD_SLOT), "bread")
-                || !ProcessingGuiSupport.matches(inventory.getItem(TOMATO_SLOT), "beetroot")
-                || !ProcessingGuiSupport.matches(inventory.getItem(CHEESE_SLOT), "milk_bucket")) {
+        if (!ExtensionShared.processing().matches(inventory.getItem(BREAD_SLOT), "bread")
+                || !ExtensionShared.processing().matches(inventory.getItem(TOMATO_SLOT), "beetroot")
+                || !ExtensionShared.processing().matches(inventory.getItem(CHEESE_SLOT), "milk_bucket")) {
             return;
         }
-        ProcessingGuiSupport.consumeOne(inventory, BREAD_SLOT);
-        ProcessingGuiSupport.consumeOne(inventory, TOMATO_SLOT);
-        ProcessingGuiSupport.consumeOne(inventory, CHEESE_SLOT);
-        ProcessingGuiSupport.setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "cake", 1);
+        ExtensionShared.processing().consumeOne(inventory, BREAD_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, TOMATO_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, CHEESE_SLOT);
+        ExtensionShared.processing().setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "cake", 1);
         IgnisWorld world = worldAt(runtime, location);
         IgnisLocation center = Locations.toCenter(location);
         world.spawnParticle(center, "FLAME", 6, 0.3, 0.2, 0.3, 0.02);
         world.playSound(center, "BLOCK_SMOKER_SMOKE", 0.6f, 1.0f);
-        TheatricsSupport.sparkle(world, center, "LAVA", 4);
+        ExtensionShared.theatrics().sparkle(world, center, "LAVA", 4);
     
     }
 

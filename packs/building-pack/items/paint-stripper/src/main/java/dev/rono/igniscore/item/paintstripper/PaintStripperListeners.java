@@ -1,6 +1,6 @@
 package dev.rono.igniscore.item.paintstripper;
 
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.ItemClickEvent;
 import dev.rono.igniscore.api.event.OnItemClickListener;
 import dev.rono.igniscore.api.model.ItemDefinition;
@@ -37,7 +37,7 @@ final class PaintStripperListeners implements OnItemClickListener {
                     event.player().sendMessage("<gray>No paint or trim detected on this block.</gray>");
                     return;
                 }
-                TheatricsSupport.sparkle(world, loc.add(0.5, 0.5, 0.5), "CLOUD", 6);
+                ExtensionShared.theatrics().sparkle(world, loc.add(0.5, 0.5, 0.5), "CLOUD", 6);
                 world.playSound(loc, "BLOCK_WOOL_BREAK", 0.7f, 1.0f);
                 event.item().setAmount(event.item().getAmount() - 1);
             }

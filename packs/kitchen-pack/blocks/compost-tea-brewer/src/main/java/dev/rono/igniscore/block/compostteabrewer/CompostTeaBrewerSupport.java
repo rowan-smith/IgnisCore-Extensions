@@ -1,7 +1,6 @@
 package dev.rono.igniscore.block.compostteabrewer;
 
-import dev.rono.extensions.shared.strategy.ProcessingGuiSupport;
-import dev.rono.extensions.shared.strategy.TheatricsSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.model.BlockDefinition;
 import dev.rono.igniscore.api.port.IgnisLocation;
 import dev.rono.igniscore.api.port.IgnisWorld;
@@ -18,21 +17,20 @@ final class CompostTeaBrewerSupport {
 
     static void tick(CompostTeaBrewerRuntime runtime, BlockDefinition definition, IgnisLocation location) {
 
-        var gui = runtime.registry.blockGui(location);
-        if (gui == null) {
+        var inventory = runtime.registry.inventoryAt(location);
+        if (inventory == null) {
             return;
         }
-        var inventory = gui.inventory();
-        if (!ProcessingGuiSupport.matches(inventory.getItem(BONE_SLOT), "bone_meal")
-                || !ProcessingGuiSupport.matches(inventory.getItem(BOTTLE_SLOT), "glass_bottle", "potion")) {
+        if (!ExtensionShared.processing().matches(inventory.getItem(BONE_SLOT), "bone_meal")
+                || !ExtensionShared.processing().matches(inventory.getItem(BOTTLE_SLOT), "glass_bottle", "potion")) {
             return;
         }
-        ProcessingGuiSupport.consumeOne(inventory, BONE_SLOT);
-        ProcessingGuiSupport.consumeOne(inventory, BOTTLE_SLOT);
-        ProcessingGuiSupport.setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "splash_potion", 1);
+        ExtensionShared.processing().consumeOne(inventory, BONE_SLOT);
+        ExtensionShared.processing().consumeOne(inventory, BOTTLE_SLOT);
+        ExtensionShared.processing().setOutput(runtime.context.extensions(), inventory, OUTPUT_SLOT, "splash_potion", 1);
         IgnisWorld world = worldAt(runtime, location);
         IgnisLocation center = Locations.toCenter(location);
-        TheatricsSupport.sparkle(world, center, "HAPPY_VILLAGER", 6);
+        ExtensionShared.theatrics().sparkle(world, center, "HAPPY_VILLAGER", 6);
         world.playSound(center, "ITEM_BOTTLE_FILL", 0.7f, 1.0f);
     
     }

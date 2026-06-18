@@ -1,6 +1,6 @@
 package dev.rono.igniscore.block.bridgebuilder;
 
-import dev.rono.extensions.shared.strategy.ExplosionSupport;
+import dev.rono.extensions.shared.ExtensionShared;
 import dev.rono.igniscore.api.event.BlockTriggerEvent;
 import dev.rono.igniscore.api.event.OnBlockTriggerListener;
 import dev.rono.igniscore.api.model.BlockDefinition;
@@ -22,7 +22,7 @@ final class BridgeBuilderOnBlockTriggerListener implements OnBlockTriggerListene
         IgnisLocation loc = Locations.toCenter(event.instance().getLocation());
         IgnisWorld world = BridgeBuilderSupport.worldAt(context, loc);
         world.playSound(loc, "BLOCK_WOOD_PLACE", 1.0f, 0.7f);
-        ExplosionSupport.createExplosion(world, loc, def, 2.5, false);
+        ExtensionShared.explosion().create(world, loc, def, 2.5, false);
     }
 }
 
